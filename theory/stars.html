@@ -1,0 +1,196 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+	<!-- This template was created by Mantis-a [http://www.mantisa.cz/]. For more templates visit Free website templates [http://www.mantisatemplates.com/]. -->
+
+	<meta name="Description" content="Free software for Revealing magnetic structure." />
+	<meta name="Description" content="free software, magnetic structure, neutron diffraction" />
+	<meta name="robots" content="all,follow" />
+	<meta name="author" content="D.Morozov" />
+	<meta name="copyright" content="D.Morozov" />
+
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen, projection, tv" />
+	<link rel="stylesheet" href="../css/style-print.css" type="text/css" media="print" />
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+	<title>Motif MASTER Principles</title>
+	<script>
+	(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date(); a = s.createElement(o),
+		m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+	ga('create', 'UA-71074137-1', 'auto');
+	ga('send', 'pageview');
+
+	</script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<!-- Title -->
+		<div class="title">
+			<div class="title-top">
+				<div class="title-left">
+					<div class="title-right">
+						<div class="title-bottom">
+							<div class="title-top-left">
+								<div class="title-bottom-left">
+									<div class="title-top-right">
+										<div class="title-bottom-right" style="text-align:center;">
+											<h1>Motif <span>MASTER</span></h1>
+											<p>Revealing magnetic structure</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Title end -->
+
+		<hr class="noscreen" />
+
+		<div class="content">
+
+			<div class="column-left">
+				<a href="#skip-menu" class="hidden">Skip menu</a>
+				<ul class="menu">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../downloads.html">Downloads</a></li>
+					<li><a href="../links.html">Links</a></li>
+					<li><a href="contents.html" class="active">Theory</a></li>
+					<li class="last"><a href="../manual/contents.html">Manual</a></li>
+				</ul>
+			</div>
+
+			<div id="skip-menu"></div>
+			<div class="column-right">
+				<div class="box">
+					<div class="box-top"></div>
+					<div class="box-in" style="text-align:justify;">
+						<h2>Possible types of stars and magnetic structures</h2>
+						<p>
+							Presented program now
+							works only with two types of stars: the one-arm star {<strong>k</strong>} and the
+							two-arms star {<strong>k</strong>, <strong>-k</strong>}. The basic expression for magnetic moment
+							of atom with index j in the n-th unit cell is written as:
+							<nobr><strong>S</strong><sub>nj</sub>=<strong>Σ</strong><sub><i>L</i></sub><i>exp</i>(<i>-i</i><strong>k</strong><sub><i>L</i></sub><strong>t</strong><sub>n</sub>)<strong>S</strong><sup><i>L</i></sup><sub>0j</sub>(*)</nobr>,
+							where summation is taken over all the arms of the star.
+						</p>
+						<p>
+							The source of
+							limitation defining possible types of stars is the following condition: the
+							vectors of magnetic moments <nobr><strong>S</strong><sub>nj</sub></nobr>
+							must be real, whereas Fourier - components <nobr><strong>S</strong><sup><i>L</i></sup><sub>0j</sub></nobr>
+							is generally complex.
+						</p>
+						<p>Let us consider some consequences of this condition.</p>
+						<h3>The case of the one-arm star.</h3>
+						<p>
+							In this case the
+							expression (*) gets the form:
+							<nobr><strong>S</strong><sub>nj</sub>=<strong>S</strong><sub>nj</sub> <i>exp</i>(<i>-i</i><strong>k</strong><strong>t</strong><sub>n</sub>)<strong>S</strong><sub>0j</sub></nobr>.
+							The condition of reality of the moment vector <nobr><strong>S</strong><sub>nj</sub></nobr>
+							requires reality of the value <nobr><i>exp</i>(<i>-i</i><strong>k</strong><strong>t</strong><sub>n</sub>)</nobr>.
+							The value <nobr><i>exp</i>(<i>-i</i><strong>k</strong><strong>t</strong><sub>n</sub>)</nobr>
+							is real when <nobr>Sin(<strong>k</strong><strong>t</strong><sub>n</sub>)=0</nobr>.
+							This implies that (<strong>k</strong><strong>t</strong><sub>n</sub>)=&#960;m where m is an integer.
+							As <nobr>(<strong>k</strong><strong>t</strong><sub>n</sub>)=2&#960;(<strong>k</strong><sub>x</sub><strong>t</strong><sub>nx</sub>+<strong>k</strong><sub>y</sub><strong>t</strong><sub>ny</sub>+<strong>k</strong><sub>z</sub><strong>t</strong><sub>nz</sub>)</nobr>
+							then <nobr>2(<strong>k</strong><sub>x</sub><strong>t</strong><sub>nx</sub>+<strong>k</strong><sub>y</sub><strong>t</strong><sub>ny</sub>+<strong>k</strong><sub>z</sub><strong>t</strong><sub>nz</sub>)=m</nobr>.
+							This in turn implies that the components of propagation vector <nobr><strong>k</strong><sub>x</sub></nobr>, <nobr><strong>k</strong><sub>y</sub></nobr>, <nobr><strong>k</strong><sub>z</sub></nobr>can accept only 0 or 1/2 value.
+							This means that for the one - arm star only ferromagnetic or antiferromagnetic structures is possible.
+						</p>
+						<h3>The case of the two-arms star.</h3>
+						<p>
+							In this case the
+							expression (*) gets the form:
+							<nobr><strong>S</strong><sub>nj</sub>=<strong>S</strong><sup><strong>k</strong></sup><sub>0j</sub><i>exp</i>(<i>-i</i><strong>k</strong><strong>t</strong><sub>n</sub>)+<strong>S</strong><sup><strong>-k</strong></sup><sub>0j</sub><i>exp</i>(<i>i</i><strong>k</strong><strong>t</strong><sub>n</sub>)</nobr>.
+							The vector <nobr><strong>S</strong><sub>nj</sub></nobr> is real for
+							any translation vector <nobr><strong>t</strong><sub>n</sub></nobr> when
+							<nobr><strong>S</strong><sup><strong>k*</strong></sup><sub>0j</sub>=<strong>S</strong><sup><strong>-k</strong></sup><sub>0j</sub></nobr>
+							The two - arms star {<strong>k</strong>, <strong>-k</strong>} corresponds to the spiral or half -
+							ordered magnetic structures. This program allows working with the following types of structures:
+						</p>
+						<p>
+							<ul class="main-list">
+								<li>
+									<strong>
+										The superposition of the longitude spin wave (LSW) and the transverse spin wave
+										(TSW).
+									</strong> For this type of magnetic ordering
+									<nobr><strong>S</strong><sup><strong>k</strong></sup><sub>0j</sub>=<sup>1</sup>/<sub>2</sub><strong>S</strong><sub>0j</sub><strong>m</strong></nobr>,
+									where m is the normalized vector of direction, along which the magnetic moments
+									of all atoms in given sublattice are directed
+									<nobr><strong>S</strong><sup></sup><sub>nj</sub>=<sup>1</sup>/<sub>2</sub><strong>S</strong><sub>0j</sub><strong>m</strong>(<i>exp</i>(<i>-i</i><strong>k</strong><strong>t</strong><sub>n</sub>)+<i>exp</i>(<i>i</i><strong>k</strong><strong>t</strong><sub>n</sub>))</nobr>.
+								</li>
+								<li>
+									<strong>The ferromagnetic spiral (FS) transforming into the simple spiral (SS).</strong>
+									<br />
+									<nobr><strong>S</strong><sup><strong>k</strong></sup><sub>0j</sub>=<sup>1</sup>/<sub>2</sub><strong>S</strong><sub>0jm<sub>1</sub>m<sub>2</sub></sub><strong>(m<sub>1j</sub>+<i>i</i>m<sub>2j</sub>)</strong></nobr>,
+									<br />
+									<nobr><strong>S</strong><sub>0j</sub>=<strong>S</strong><sub>0jm</sub><strong>m</strong><sub>j</sub>+<sup>1</sup>/<sub>2</sub><strong>S</strong><sub>0jm<sub>1</sub>m<sub>2</sub></sub><strong>((m<sub>1j</sub>+<i>i</i>m<sub>2j</sub>)<i>exp</i>(<i>-i</i><strong>k</strong><strong>t</strong><sub>n</sub>)+(m<sub>1j</sub>-<i>i</i>m<sub>2j</sub>)<i>exp</i>(<i>i</i><strong>k</strong><strong>t</strong><sub>n</sub>))</strong></nobr>,
+									where <nobr><strong>S</strong><sub>0jm<sub>1</sub>m<sub>2</sub></sub></nobr>
+									is the value of projection of magnetic moment of atom j onto the plane
+									containing the vectors <strong>m</strong><sub>1</sub>, <strong>m</strong><sub>2</sub>,
+									and <nobr><strong>S</strong><sub>0jm</sub></nobr> is the projection of vector of magnetic moment on
+									the rotation axis <strong>m</strong>.
+								</li>
+								<li>
+									<strong>The elliptic spiral (ES).</strong>
+									<br />
+									<nobr><strong>S</strong><sup><strong>k</strong></sup><sub>0j</sub>=<sup>1</sup>/<sub>2</sub><strong>S</strong><sub>0j</sub>(<strong>m</strong><sub>1j</sub>+<i>ip</i><sub>j</sub><strong>m</strong><sub>2j</sub>)</nobr>,
+									<br />
+									<nobr><strong>S</strong><sub>nj</sub>=<sup>1</sup>/<sub>2</sub><strong>S</strong><sub>0j></sub><strong>((m<sub>1j</sub>+<i>ip</i><sub>j</sub>m<sub>2j</sub>)<i>exp</i>(<i>-i</i><strong>k</strong><strong>t</strong><sub>n</sub>)+(m<sub>1j</sub>-<i>ip</i><sub>j</sub>m<sub>2j</sub>)<i>exp</i>(<i>i</i><strong>k</strong><strong>t</strong><sub>n</sub>))</strong></nobr>,
+									where <nobr><i>p</i><sub>j</sub></nobr>-spiral
+									ellipse parameter for the magnetic moments of atoms of <i>j-</i>th sublattice, <strong>m</strong>
+									is the normalized vector directed along rotation axis.
+									<br />
+									The vectors <strong>m</strong><sub>1</sub>, <strong>m</strong><sub>2</sub>, <strong>m</strong> form
+									orthonormalized basis. The vector <strong>m</strong><sub>1</sub> is defined from the
+									condition <strong>t</strong><sub>n</sub>=0.
+									<br />
+									For the ferromagnetic spiral
+									<nobr><strong>S</strong><sub>0j</sub>=<strong>S</strong><sub>0jm</sub><strong>m</strong><sub>j</sub>+<strong>S</strong><sub>0jm<sub>1</sub>m<sub>2</sub></sub><strong>m</strong><sub>1j</sub></nobr>,
+									<nobr><strong>S</strong><sub>0jm</sub>=(<strong>S</strong><sub>0j</sub><strong>m</strong><sub>j</sub>)</nobr>,
+									hence <strong>m</strong><sub>1<i>j</i></sub> is the normalized vector directed along the vector
+									<nobr><strong>S</strong><sub>0j</sub>-(<strong>S</strong><sub>0j</sub><strong>m</strong><sub>j</sub>)<strong>m</strong><sub>j</sub></nobr>.
+									<br />For the elliptic spiral
+									<nobr><strong>S</strong><sub>0j</sub>=<strong>S</strong><sub>0j</sub><strong>m</strong><sub>1j</sub></nobr>, that
+									is the <strong>m</strong><sub>1<i>j</i></sub> is simply the normalized vector directed along magnetic moment
+									of the <i>j</i>-th atom.
+								</li>
+							</ul>
+						</p>
+						<br />
+
+					</div>
+				</div>
+				
+				<object data="adaptive-banner.html" type="text/html"></object>				
+
+				<div class="box-bottom">
+
+					<hr class="noscreen" />
+
+					<div class="footer-info-left"><img src="/copyright_stars.bmp" width="8" height="8" /> <a href="mailto:dvmorozov@hotmail.com">D.Morozov</a> </div>
+					<div class="footer-info-right"><a href="http://www.mantisatemplates.com/">Mantis-a templates</a></div>
+				</div>
+			</div>
+
+			<div class="cleaner">&nbsp;</div>
+		</div>
+	</div>
+</body>
+</html>

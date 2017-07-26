@@ -1,0 +1,193 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+
+	<!-- This template was created by Mantis-a [http://www.mantisa.cz/]. For more templates visit Free website templates [http://www.mantisatemplates.com/]. -->
+
+	<meta name="Description" content="Free software for Revealing magnetic structure." />
+	<meta name="Description" content="free software, magnetic structure, neutron diffraction" />
+	<meta name="robots" content="all,follow" />
+	<meta name="author" content="D.Morozov" />
+	<meta name="copyright" content="D.Morozov" />
+
+	<meta http-equiv="Content-Script-Type" content="text/javascript" />
+
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" href="../css/style.css" type="text/css" media="screen, projection, tv" />
+	<link rel="stylesheet" href="../css/style-print.css" type="text/css" media="print" />
+
+	<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+	<title>Motif MASTER Principles</title>
+	<script>
+	(function (i, s, o, g, r, a, m) {
+		i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+			(i[r].q = i[r].q || []).push(arguments)
+		}, i[r].l = 1 * new Date(); a = s.createElement(o),
+		m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+	})(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+	ga('create', 'UA-71074137-1', 'auto');
+	ga('send', 'pageview');
+
+	</script>
+</head>
+
+<body>
+	<div id="wrapper">
+		<!-- Title -->
+		<div class="title">
+			<div class="title-top">
+				<div class="title-left">
+					<div class="title-right">
+						<div class="title-bottom">
+							<div class="title-top-left">
+								<div class="title-bottom-left">
+									<div class="title-top-right">
+										<div class="title-bottom-right" style="text-align:center;">
+											<h1>Motif <span>MASTER</span></h1>
+											<p>Revealing magnetic structure</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- Title end -->
+
+		<hr class="noscreen" />
+
+		<div class="content">
+
+			<div class="column-left">
+				<a href="#skip-menu" class="hidden">Skip menu</a>
+				<ul class="menu">
+					<li><a href="../index.html">Home</a></li>
+					<li><a href="../downloads.html">Downloads</a></li>
+					<li><a href="../links.html">Links</a></li>
+					<li><a href="contents.html" class="active">Theory</a></li>
+					<li class="last"><a href="../manual/contents.html">Manual</a></li>
+				</ul>
+			</div>
+
+			<div id="skip-menu"></div>
+			<div class="column-right">
+				<div class="box">
+					<div class="box-top"></div>
+					<div class="box-in" style="text-align:justify;">
+						<h2>Calculating the intensities of magnetic scattering</h2>
+						<p>
+							In this program for the
+							calculation of intensity of magnetic scattering the following expression is
+							used: <nobr><i>I</i>=<i>kL</i>|<strong>F</strong>|<sup>2</sup><i>exp</i>(-2W(<strong>q</strong>))</nobr>
+							where <i>L</i> is the Lorentz factor, <strong>F</strong> is the magnetic structural amplitude, <nobr><i>exp</i>(-2W(<strong>q</strong>))</nobr>-the
+							Debye-Waller factor. The current version of the program supports only single
+							type of the Lorentz factor: <nobr><i>L</i>=<sup>1</sup>/<sub>Sin(&#920;)Sin(2&#920;)</sub></nobr>,
+							assuming the experiment with the "bathing" sample.
+						</p>
+						<p>
+							<strong>F</strong> is given as:
+							<nobr><strong>F</strong>(<strong>q</strong>)=<strong>F'</strong>(<strong>q</strong>)-(<strong>eF'</strong>(<strong>q</strong>))<strong>e</strong></nobr>,
+							where <strong>e</strong> is normalized vector directed along the scattering vector. As
+							the program is intended for search of only approximate coincidence between
+							experimental and calculated diffraction patterns, other factors influencing on
+							the intensity are neglected. As the integral intensities is given in "counts",
+							all the other factors, identical for both of nuclear and magnetic intensity, is
+							taken into account by appropriate normalization of the experimental
+							intensities.
+						</p>
+						<h2>The case of the one - arm star.</h2>
+						<p>
+							For the one-arm star, in conformity
+							with the requirement of reality of vector of magnetic moment
+							<nobr><strong>S</strong><sub>nj</sub></nobr>
+							for any translation vector <nob><strong>t</strong><sub>n</sub></nob>,
+							only ferromagnetic and antiferromagnetic structures is possible.
+						</p>
+						<h3>The ferromagnetic structure.</h3>
+						<p>
+							The structural amplitude of the
+							magnetic scattering normalized on the number of unit cells in the crystal is
+							given as (for <strong>q</strong> = <strong>b</strong>):
+							<br />
+							<nobr><strong>F'</strong>(<strong>q</strong>)|<sub><strong>q=b</strong></sub>=&#8721;<sub>j</sub><i>exp</i>(-<i>i</i><strong>qr</strong><sub>j</sub>)<strong>S</strong><sub>0j</sub><i>f</i><sub>j</sub>(<strong>q</strong>)</nobr>,
+							<br />
+							<nobr><strong>F</strong>(<strong>q</strong>)|<sub><strong>q=b</strong></sub>=&#8721;<sub>j</sub><i>exp</i>(-<i>i</i><strong>qr</strong><sub>j</sub>)<strong>S</strong><sub>0j</sub><i>f</i><sub>j</sub>(<strong>q</strong>)(<strong>m</strong><sub>j</sub>-(<strong>em</strong><sub>j</sub>)<strong>e</strong>) (*)</nobr>,
+							where <nobr><strong>m</strong><sub>j</sub></nobr> is the normalized vector directed along the magnetic moment of j-th atom.
+						</p>
+						<h3>The antiferromagnetic structure.</h3>
+						<p>
+							For this type of
+							magnetic structure the structural amplitude is defined by the expression
+							similar to (*). The difference is the maximums of coherent scattering are
+							observed for the scattering vectors <strong>q</strong> = <strong>k</strong> + <strong>b</strong>.
+						</p>
+						<p>The case of the two-arms star.</p>
+						<h2>The case of the two-arms star.</h2>
+						<h3>The ferromagnetic spiral (FS).</h3>
+						<p>
+							For this type of
+							magnetic ordering the structural amplitudes normalized on the number of unit
+							cells in the crystal are defined by:
+							<br />
+							<nobr><strong>F'</strong>(<strong>q</strong>)|<sub><strong>q=b</strong></sub>=<strong>m</strong>&#8721;<sub>j</sub><i>exp</i>(-<i>i</i><strong>qr</strong><sub>j</sub>)<strong>S</strong><sub>0j<strong>m</strong></sub><i>f</i><sub>j</sub>(<strong>q</strong>)</nobr>,
+							where <strong>m</strong> is the normalized vector directed along the spiral axis.
+							<br />
+							<nobr><strong>F</strong>(<strong>q</strong>)|<sub><strong>q=b</strong></sub>=(<strong>m</strong>-(<strong>em</strong>)<strong>e</strong>)&#8721;<sub>j</sub><i>exp</i>(-<i>i</i><strong>qr</strong><sub>j</sub>)<strong>S</strong><sub>0j<strong>m</strong></sub><i>f</i><sub>j</sub>(<strong>q</strong>)</nobr>,
+							<br />
+							<nobr><strong>F</strong>(<strong>q</strong>)|<sub><strong>q=b+k</strong></sub>=&#8721;<sub>j</sub><i>exp</i>(-<i>i</i><strong>qr</strong><sub>j</sub>)<sup>1</sup>/<sub>2</sub><strong>S</strong><sub>0jm<sub>1</sub>m<sub>2</sub></sub><i>f</i><sub>j</sub>(<strong>q</strong>)((<strong>m</strong><sub>1j</sub>-(<strong>em</strong><sub>1j</sub>)<strong>e</strong>)-<i>i</i>(<strong>m</strong><sub>2j</sub>-(<strong>em</strong><sub>2j</sub>)<strong>e</strong>))</nobr>,
+							<br />
+							<nobr><strong>F</strong>(<strong>q</strong>)|<sub><strong>q=b-k</strong></sub>=&#8721;<sub>j</sub><i>exp</i>(-<i>i</i><strong>qr</strong><sub>j</sub>)<sup>1</sup>/<sub>2</sub><strong>S</strong><sub>0jm<sub>1</sub>m<sub>2</sub></sub><i>f</i><sub>j</sub>(<strong>q</strong>)((<strong>m</strong><sub>1j</sub>-(<strong>em</strong><sub>1j</sub>)<strong>e</strong>)+<i>i</i>(<strong>m</strong><sub>2j</sub>-(<strong>em</strong><sub>2j</sub>)<strong>e</strong>))</nobr>,
+							<br />
+							<nobr><strong>F</strong>(<strong>q</strong>)<sub>Re</sub>|<sub><strong>q=b+k</strong></sub>=&#8721;<sub>j</sub><sup>1</sup>/<sub>2</sub><strong>S</strong><sub>0jm<sub>1</sub>m<sub>2</sub></sub><i>f</i><sub>j</sub>(<strong>q</strong>)(Cos(<strong>qr</strong><sub>j</sub>)(<strong>m</strong><sub>1j</sub>-(<strong>em</strong><sub>1j</sub>)<strong>e</strong>)-Sin(<strong>qr</strong><sub>j</sub>)(<strong>m</strong><sub>2j</sub>-(<strong>em</strong><sub>2j</sub>)<strong>e</strong>))</nobr>,
+							<br />
+							<nobr><strong>F</strong>(<strong>q</strong>)<sub>Im</sub>|<sub><strong>q=b+k</strong></sub>=-&#8721;<sub>j</sub><sup>1</sup>/<sub>2</sub><strong>S</strong><sub>0jm<sub>1</sub>m<sub>2</sub></sub><i>f</i><sub>j</sub>(<strong>q</strong>)(Sin(<strong>qr</strong><sub>j</sub>)(<strong>m</strong><sub>1j</sub>-(<strong>em</strong><sub>1j</sub>)<strong>e</strong>)+Cos(<strong>qr</strong><sub>j</sub>)(<strong>m</strong><sub>2j</sub>-(<strong>em</strong><sub>2j</sub>)<strong>e</strong>))</nobr>,
+							<br />
+							<nobr><strong>F</strong>(<strong>q</strong>)<sub>Re</sub>|<sub><strong>q=b-k</strong></sub>=&#8721;<sub>j</sub><sup>1</sup>/<sub>2</sub><strong>S</strong><sub>0jm<sub>1</sub>m<sub>2</sub></sub><i>f</i><sub>j</sub>(<strong>q</strong>)(Cos(<strong>qr</strong><sub>j</sub>)(<strong>m</strong><sub>1j</sub>-(<strong>em</strong><sub>1j</sub>)<strong>e</strong>)+Sin(<strong>qr</strong><sub>j</sub>)(<strong>m</strong><sub>2j</sub>-(<strong>em</strong><sub>2j</sub>)<strong>e</strong>))</nobr>,
+							<br />
+							<nobr><strong>F</strong>(<strong>q</strong>)<sub>Im</sub>|<sub><strong>q=b-k</strong></sub>=&#8721;<sub>j</sub><sup>1</sup>/<sub>2</sub><strong>S</strong><sub>0jm<sub>1</sub>m<sub>2</sub></sub><i>f</i><sub>j</sub>(<strong>q</strong>)(-Sin(<strong>qr</strong><sub>j</sub>)(<strong>m</strong><sub>1j</sub>-(<strong>em</strong><sub>1j</sub>)<strong>e</strong>)+Cos(<strong>qr</strong><sub>j</sub>)(<strong>m</strong><sub>2j</sub>-(<strong>em</strong><sub>2j</sub>)<strong>e</strong>))</nobr>,
+							<h3>The elliptic spiral (ES).</h3>
+						</p>
+						<p>
+							By analogy with the
+							FS-structure the expressions for the real and imaginary parts of structural
+							amplitude defined by:
+							<br />
+							<nobr><strong>F</strong>(<strong>q</strong>)<sub>Re</sub>|<sub><strong>q=b+k</strong></sub>=&#8721;<sub>j</sub><sup>1</sup>/<sub>2</sub><strong>S</strong><sub>0j</sub><i>f</i><sub>j</sub>(<strong>q</strong>)(Cos(<strong>qr</strong><sub>j</sub>)(<strong>m</strong><sub>1j</sub>-(<strong>em</strong><sub>1j</sub>)<strong>e</strong>)-<i>p</i><sub>j</sub>Sin(<strong>qr</strong><sub>j</sub>)(<strong>m</strong><sub>2j</sub>-(<strong>em</strong><sub>2j</sub>)<strong>e</strong>))</nobr>,
+							<br />
+							<nobr><strong>F</strong>(<strong>q</strong>)<sub>Im</sub>|<sub><strong>q=b+k</strong></sub>=-&#8721;<sub>j</sub><sup>1</sup>/<sub>2</sub><strong>S</strong><sub>0j</sub><i>f</i><sub>j</sub>(<strong>q</strong>)(Sin(<strong>qr</strong><sub>j</sub>)(<strong>m</strong><sub>1j</sub>-(<strong>em</strong><sub>1j</sub>)<strong>e</strong>)+<i>p</i><sub>j</sub>Cos(<strong>qr</strong><sub>j</sub>)(<strong>m</strong><sub>2j</sub>-(<strong>em</strong><sub>2j</sub>)<strong>e</strong>))</nobr>,
+							<br />
+							<nobr><strong>F</strong>(<strong>q</strong>)<sub>Re</sub>|<sub><strong>q=b-k</strong></sub>=&#8721;<sub>j</sub><sup>1</sup>/<sub>2</sub><strong>S</strong><sub>0j</sub><i>f</i><sub>j</sub>(<strong>q</strong>)(Cos(<strong>qr</strong><sub>j</sub>)(<strong>m</strong><sub>1j</sub>-(<strong>em</strong><sub>1j</sub>)<strong>e</strong>)+<i>p</i><sub>j</sub>Sin(<strong>qr</strong><sub>j</sub>)(<strong>m</strong><sub>2j</sub>-(<strong>em</strong><sub>2j</sub>)<strong>e</strong>))</nobr>,
+							<br />
+							<nobr><strong>F</strong>(<strong>q</strong>)<sub>Im</sub>|<sub><strong>q=b-k</strong></sub>=&#8721;<sub>j</sub><sup>1</sup>/<sub>2</sub><strong>S</strong><sub>0j</sub><i>f</i><sub>j</sub>(<strong>q</strong>)(-Sin(<strong>qr</strong><sub>j</sub>)(<strong>m</strong><sub>1j</sub>-(<strong>em</strong><sub>1j</sub>)<strong>e</strong>)+<i>p</i><sub>j</sub>Cos(<strong>qr</strong><sub>j</sub>)(<strong>m</strong><sub>2j</sub>-(<strong>em</strong><sub>2j</sub>)<strong>e</strong>))</nobr>,
+							<h3>The longitude spin wave combined with the transverse spin wave (LSW/TSW).</h3>
+
+						</p>
+
+						<p>
+							<nobr><strong>F</strong>(<strong>q</strong>)|<sub><strong>q=b+k</strong></sub>=<strong>F</strong>(<strong>q</strong>)|<sub><strong>q=b-k</strong></sub>=&#8721;<sub>j</sub><i>exp</i>(-<i>i</i><strong>qr</strong><sub>j</sub>)<sup>1</sup>/<sub>2</sub><strong>S</strong><sub>0j</sub><i>f</i><sub>j</sub>(<strong>q</strong>)(<strong>m</strong><sub>j</sub>-(<strong>em</strong><sub>j</sub>)<strong>e</strong>)</nobr>
+						</p>
+					</div>
+				</div>
+				
+				<object data="adaptive-banner.html" type="text/html"></object>				
+
+				<div class="box-bottom">
+
+					<hr class="noscreen" />
+
+					<div class="footer-info-left"><img src="/copyright_intensities.bmp" width="8" height="8" /> <a href="mailto:dvmorozov@hotmail.com">D.Morozov</a> </div>
+					<div class="footer-info-right"><a href="http://www.mantisatemplates.com/">Mantis-a templates</a></div>
+				</div>
+			</div>
+
+			<div class="cleaner">&nbsp;</div>
+		</div>
+	</div>
+</body>
+</html>
