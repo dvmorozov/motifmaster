@@ -80,33 +80,29 @@
 				<div class="box">
 					<div class="box-top"></div>
 					<div class="box-in" style="text-align:justify;">
-						<h2>Table of atom properties</h2>
-						<p><i>X</i>, <i>Y</i>, <i>Z</i> - coordinates of atom in the basis of unit cell.</p>
+						<h2>Site calculation options</h2>
+						<p><i>Site is taking part</i> - turning off excludes this site from calculation at all.</p>
+						<p><i>Site is magnetic</i> - turning off disables generating the magnetic intensities from this site.</p>
+						<p><i>Representations Using Modes</i> have following meanings:</p>
 						<p>
-							<i>Mx</i>, <i>My</i>, <i>Mz</i>
-							- direction of magnetic moment (normalized vector) in the basis of unit cell.
-							The vector is normalized automatically. Simply fill desired direction as, for
-							example, <i>Mx</i> = 1, <i>My</i> = 1, <i>Mz</i> = 1.
+							<i>By One Representation</i> - in this mode the basal functions from only single representation
+							take part in forming the magnetic structure on the atoms of site. All possible combinations of
+							representations are selected one by the other.
 						</p>
-						<p><i>Module</i> - value of the magnetic moment - "module".</p>
-						<p><i>NSA</i> - nuclear scattering amplitude of the atom.</p>
+						<p><i>By All Representations</i> - all basal functions take part simultaneously.</p>
+						<p><i>Don't Use The Representations</i> - this mode disables using the basal functions at all and activates <i>Variation Mode</i> selector.</p>
+						<p><i>Variation Modes</i> have following meanings:</p>
 						<p>
-							<i>Element</i> - symbol
-							of chemical element of the atom. This symbol can be arbitrary, but <i>must</i> coincide
-							with the symbol of desired element in the form factors database. If current
-							site is not magnetic (i.e. having no magnetic propagation vectors) this symbol
-							is ignored.
-						</p>
-						<p><i>Site</i> - name of the current site. This symbol can be arbitrary.</p>
-						<p>
-							<i>Ell. Param.</i> -
-							start value of ellipse parameter of ES type structure. For other types of
-							structures is ignored.
+							<i>Vary All Of Moment Components</i> - in this mode all components and "modules" of magnetic
+							moment varies simultaneously and independently. This mode doesn't put any restrictions on
+							possible magnetic structures. Using this mode only for small number of magnetic atoms or
+							(and) very accurate experimental data is recommended.
 						</p>
 						<p>
-							Note that before input of atom parameters the unit cell parameters should be
-							set properly. Otherwise <i>Mx</i>, <i>My</i>, <i>Mz</i> will be filled by zeros.
+							<i>Save Equal Modules At The Site</i> - in this mode the directions of magnetic moments vary
+							independently, but all moments have the same "module".
 						</p>
+						<p><i>Only Modules Vary</i> - in this mode all moment directions are fixed.</p>
 					</div>
 				</div>
 				
@@ -116,7 +112,7 @@
 
 					<hr class="noscreen" />
 
-					<div class="footer-info-left"><img src="/copyright_atoms_par_input.bmp" width="8" height="8" /> <a href="mailto:dvmorozov@hotmail.com">D.Morozov</a> </div>
+					<div class="footer-info-left"><img src="/copyright_sites_calc_opt_dlg.bmp" width="8" height="8" /> <a href="mailto:dvmorozov@hotmail.com">D.Morozov</a> </div>
 					<div class="footer-info-right"><a href="http://www.mantisatemplates.com/">Mantis-a templates</a></div>
 				</div>
 			</div>

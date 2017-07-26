@@ -63,7 +63,6 @@
 		<hr class="noscreen" />
 
 		<div class="content">
-
 			<div class="column-left">
 				<a href="#skip-menu" class="hidden">Skip menu</a>
 				<ul class="menu">
@@ -80,43 +79,51 @@
 				<div class="box">
 					<div class="box-top"></div>
 					<div class="box-in" style="text-align:justify;">
-						<h2>Table of atom properties</h2>
-						<p><i>X</i>, <i>Y</i>, <i>Z</i> - coordinates of atom in the basis of unit cell.</p>
+						<h2>Calculation options</h2>
 						<p>
-							<i>Mx</i>, <i>My</i>, <i>Mz</i>
-							- direction of magnetic moment (normalized vector) in the basis of unit cell.
-							The vector is normalized automatically. Simply fill desired direction as, for
-							example, <i>Mx</i> = 1, <i>My</i> = 1, <i>Mz</i> = 1.
+							Before the beginning of
+							process of calculation the properties of sites and stars should be set
+							properly.
 						</p>
-						<p><i>Module</i> - value of the magnetic moment - "module".</p>
-						<p><i>NSA</i> - nuclear scattering amplitude of the atom.</p>
+						<p><i>Parameters To Vary</i> have following meanings:</p>
 						<p>
-							<i>Element</i> - symbol
-							of chemical element of the atom. This symbol can be arbitrary, but <i>must</i> coincide
-							with the symbol of desired element in the form factors database. If current
-							site is not magnetic (i.e. having no magnetic propagation vectors) this symbol
-							is ignored.
-						</p>
-						<p><i>Site</i> - name of the current site. This symbol can be arbitrary.</p>
-						<p>
-							<i>Ell. Param.</i> -
-							start value of ellipse parameter of ES type structure. For other types of
-							structures is ignored.
+							<i>Debye - Waller Parameter</i>
+							- switches variation of the Debye - Waller factor. By default this factor is
+							zero.
 						</p>
 						<p>
-							Note that before input of atom parameters the unit cell parameters should be
-							set properly. Otherwise <i>Mx</i>, <i>My</i>, <i>Mz</i> will be filled by zeros.
+							<i>
+								Intensities
+								Normalization
+							</i> - switches fitting of intensities normalization factor.
+							When turned off the magnetic intensities will depend only from values of
+							magnetic moments, and nuclear intensities will not be changed at all.
 						</p>
+						<p>
+							<i>
+								Diffraction Patterns
+								Bounds
+							</i> - use this if you want to exclude initial and (or) final area of
+							the diffraction pattern. Only peaks being inside of the defined interval will
+							take part in the calculation.
+						</p>
+						<p>
+							<i>R - Factor Source</i>
+							defines the expression that will be used for R - factor calculation:
+						</p>
+						<p><i>Intensities</i> - <i>R</i>=<sup>&#8721;|<i>I<sub>calc</sub>-I<sub>exp</sub></i>|</sup>/<sub>&#8721;<i>I<sub>exp</sub></i></sub>*100%.</p>
+						<p><i>Structure Factors</i> - <i>R</i>=<sup>&#8721;|<i>|F|<sup>2</sup><sub>calc</sub>-|F|<sup>2</sup><sub>exp</sub></i>|</sup>/<sub>&#8721;<i>|F|<sup>2</sup><sub>exp</sub></i></sub>*100%.</p>
+						<p>Last expression eliminates influence of the Lorentz factor, and all intensities have equal importance.</p>
 					</div>
 				</div>
-				
-				<object data="adaptive-banner.html" type="text/html"></object>				
 
+				<object data="adaptive-banner.html" type="text/html"></object>				
+				
 				<div class="box-bottom">
 
 					<hr class="noscreen" />
 
-					<div class="footer-info-left"><img src="/copyright_atoms_par_input.bmp" width="8" height="8" /> <a href="mailto:dvmorozov@hotmail.com">D.Morozov</a> </div>
+					<div class="footer-info-left"><img src="/copyright_panel_calc_options.bmp" width="8" height="8" /> <a href="mailto:dvmorozov@hotmail.com">D.Morozov</a> </div>
 					<div class="footer-info-right"><a href="http://www.mantisatemplates.com/">Mantis-a templates</a></div>
 				</div>
 			</div>

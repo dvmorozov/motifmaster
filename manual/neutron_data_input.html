@@ -80,33 +80,27 @@
 				<div class="box">
 					<div class="box-top"></div>
 					<div class="box-in" style="text-align:justify;">
-						<h2>Table of atom properties</h2>
-						<p><i>X</i>, <i>Y</i>, <i>Z</i> - coordinates of atom in the basis of unit cell.</p>
+						<h2>Table of neutron diffraction peaks</h2>
+						<p>Columns of this table have following meanings:</p>
+						<p><i>Intensity</i> - the integral intensity of scattering peak.</p>
 						<p>
-							<i>Mx</i>, <i>My</i>, <i>Mz</i>
-							- direction of magnetic moment (normalized vector) in the basis of unit cell.
-							The vector is normalized automatically. Simply fill desired direction as, for
-							example, <i>Mx</i> = 1, <i>My</i> = 1, <i>Mz</i> = 1.
-						</p>
-						<p><i>Module</i> - value of the magnetic moment - "module".</p>
-						<p><i>NSA</i> - nuclear scattering amplitude of the atom.</p>
-						<p>
-							<i>Element</i> - symbol
-							of chemical element of the atom. This symbol can be arbitrary, but <i>must</i> coincide
-							with the symbol of desired element in the form factors database. If current
-							site is not magnetic (i.e. having no magnetic propagation vectors) this symbol
-							is ignored.
-						</p>
-						<p><i>Site</i> - name of the current site. This symbol can be arbitrary.</p>
-						<p>
-							<i>Ell. Param.</i> -
-							start value of ellipse parameter of ES type structure. For other types of
-							structures is ignored.
+							<i>Start. Pos.</i> - position of beginning of peak (position where the peak begins
+							to differ from the pattern background).
 						</p>
 						<p>
-							Note that before input of atom parameters the unit cell parameters should be
-							set properly. Otherwise <i>Mx</i>, <i>My</i>, <i>Mz</i> will be filled by zeros.
+							<i>Start. Pos.</i> - position of beginning of peak (position where the peak begins
+							to differ from the pattern background).
 						</p>
+						<p>
+							<i>Finish Pos.</i> - position of end of peak (where the peak finishes
+							to differ from the pattern background).
+						</p>
+						<p>
+							<i>Int. Corr.</i> - correction factor of magnetic intensity. This factor is intended
+							for correction of known experimental errors. Calculated magnetic intensity will
+							be multiplied by this factor before R - factor will be calculated.
+						</p>
+						<p>All of positions are set in Sin(&#952;)/&#955; units.</p>
 					</div>
 				</div>
 				
@@ -116,7 +110,7 @@
 
 					<hr class="noscreen" />
 
-					<div class="footer-info-left"><img src="/copyright_atoms_par_input.bmp" width="8" height="8" /> <a href="mailto:dvmorozov@hotmail.com">D.Morozov</a> </div>
+					<div class="footer-info-left"><img src="/copyright_neutron_data_input.bmp" width="8" height="8" /> <a href="mailto:dvmorozov@hotmail.com">D.Morozov</a> </div>
 					<div class="footer-info-right"><a href="http://www.mantisatemplates.com/">Mantis-a templates</a></div>
 				</div>
 			</div>
