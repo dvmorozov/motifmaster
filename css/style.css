@@ -188,15 +188,9 @@ height: 12px;
 background: url('../img/box-bg.gif') repeat-y 0 0;
 }
 
-.box-in {
-background-color: #FFFFFF;
-padding: 0.8em 0 5em 0;
-margin: 0 6em 0 2em;
-}
-
 /* https://action.mindjet.com/task/14945167 */
 /* Must have the same attributes as 'box-in'. */
-.adaptive-banner {
+.box-in, .adaptive-banner {
 background-color: #FFFFFF;
 padding: 0.8em 0 5em 0;
 margin: 0 6em 0 2em;
