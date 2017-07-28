@@ -7,4 +7,3 @@ social:
     - https://github.com/dvmorozov 
 
 exclude: manual, theory
-include: theory/stars.html
