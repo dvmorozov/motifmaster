@@ -1,0 +1,44 @@
+package Dclusr40;
+
+{$R *.RES}
+{$ALIGN ON}
+{$ASSERTIONS ON}
+{$BOOLEVAL OFF}
+{$DEBUGINFO ON}
+{$EXTENDEDSYNTAX ON}
+{$IMPORTEDDATA ON}
+{$IOCHECKS ON}
+{$LOCALSYMBOLS OFF}
+{$LONGSTRINGS ON}
+{$OPENSTRINGS ON}
+{$OPTIMIZATION ON}
+{$OVERFLOWCHECKS OFF}
+{$RANGECHECKS OFF}
+{$REFERENCEINFO OFF}
+{$SAFEDIVIDE ON}
+{$STACKFRAMES OFF}
+{$TYPEDADDRESS OFF}
+{$VARSTRINGCHECKS ON}
+{$WRITEABLECONST ON}
+{$MINENUMSIZE 1}
+{$IMAGEBASE $00400000}
+{$DESCRIPTION 'Borland User''s Components'}
+{$DESIGNONLY}
+{$IMPLICITBUILD ON}
+
+requires
+  vcl40;
+
+contains
+  FocusPanel in '..\..\Library\NewVCL\FocusPanel.pas',
+  NumericGrid in '..\..\Library\NewVCL\NumericGrid.pas',
+  Tools in '..\..\Library\Tools\Tools.pas',
+  SimpMath in '..\..\Library\Math\SimpMath.pas',
+  TableComp in '..\..\Library\Common\TableComp.pas',
+  CBRCComponent in '..\..\Library\Common\CBRCComponent.pas',
+  ClassInheritIDs in '..\..\Library\MMaster\ClassInheritIDs.pas',
+  SelfSaved in '..\..\Library\Common\SelfSaved.pas',
+  SelfCopied in '..\..\Library\Common\SelfCopied.pas',
+  ComponentList in '..\..\Library\Common\ComponentList.pas';
+
+end.

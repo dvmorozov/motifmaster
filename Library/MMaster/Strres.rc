@@ -1,0 +1,29 @@
+#include "strconst.pas"
+
+STRINGTABLE
+{
+  SMATFileShouldBeOpened, "MAT file should be opened..."
+  SMATFileInvalidFile, "Invalid MAT file..."
+  SMATFileAtomNumOutOfRange, "Atom number out of range..."
+  SMATFileParNumOutOfRange, "Parameter number out of range..."
+  SMATFilePrinNumOutOfRange, "Principle number out of range..."
+  SMATFileVectNumOutOfRange, "Vector number out of range..."
+  SMATFileNameNumOutOfRange, "Name number out of range..."
+
+  SGCStructGenerating, "Now the possible magnetic structures are generated..."
+  SGCStructSimple, "Now the simple structures are generated for the site "
+  SGCStructComplex, "Now the composite structures are generated for the site "
+  SGCStructChecking, "Now each structure is examined in the site "
+  SGCStructCombining, "Now the best structures are combined..."
+  SGCStructCount, " structures were generated for the site "
+  SGCCombNumber, "Total number of combination is "
+  SGCStructRemained, " structure(s) remained in the site "
+  SGCModelsGenerating, "Now the most probable models are generated..."
+  SGCModelsNumber, "The number of models to try is "
+  SGCStructTakingPart, " structures of site "
+  SGCStructTakingPart2, " will take part in models forming"
+  SGCTypesNumber, "The number of possible types of magnetic ordering is "
+
+  SERMustNotBeEmpty, "This field must not be empty..."
+  SERInvalidInput, "Invalid input..."
+}
