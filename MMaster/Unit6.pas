@@ -1,20 +1,17 @@
-{------------------------------------------------------------------------------
-    This file is part of the MotifMASTER project. This software is
-    distributed under GPL (see gpl.txt for details).
 
-    This software is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-    Copyright (C) 1999-2007 D.Morozov (dvmorozov@mail.ru)
-------------------------------------------------------------------------------}
 
+{------------------------------------------------------------------------------}
+{       Copyright (C) 1999-2007 D.Morozov (dvmorozov@mail.ru)                  }
+{------------------------------------------------------------------------------}
 unit Unit6;
+
+{$MODE Delphi}
 
 interface
 
-uses Windows, SysUtils, Classes, Graphics, Forms, Controls, StdCtrls,
-  Buttons, ExtCtrls, Dialogs;
+uses SysUtils, Classes, Graphics, Forms, Controls, StdCtrls,
+  Buttons, ExtCtrls, Dialogs, LResources;
 
 type
   TSetMomentValueDlg = class(TForm)
@@ -36,8 +33,6 @@ var
   SetMomentValueDlg: TSetMomentValueDlg;
 
 implementation
-
-{$R *.DFM}
 
 procedure TSetMomentValueDlg.ApplyToAllCheckClick(Sender: TObject);
 begin
@@ -71,5 +66,7 @@ begin
  CanClose := True;
 end;
 
+initialization
+{$I Unit6.lrs}
 end.
  

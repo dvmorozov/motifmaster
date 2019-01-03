@@ -1,0 +1,11 @@
+{ Это - файл ресурсов, автоматически созданный lazarus }
+
+LazarusResources.Add('THiddenForm','FORMDATA',[
+  'TPF0'#11'THiddenForm'#10'HiddenForm'#4'Left'#3#192#0#6'Height'#2'y'#3'Top'#2
+  +'n'#5'Width'#3#226#0#18'HorzScrollBar.Page'#3#225#0#18'VertScrollBar.Page'#2
+  +'x'#7'Caption'#6#10'HiddenForm'#11'Font.Height'#2#245#9'Font.Name'#6#13'MS S'
+  +'ans Serif'#12'OnCloseQuery'#7#14'FormCloseQuery'#8'OnCreate'#7#10'FormCreat'
+  +'e'#9'OnDestroy'#7#11'FormDestroy'#7'Visible'#9#0#0
+]);
+
+

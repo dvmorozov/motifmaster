@@ -1,21 +1,18 @@
-{------------------------------------------------------------------------------
-    This file is part of the MotifMASTER project. This software is
-    distributed under GPL (see gpl.txt for details).
 
-    This software is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-    Copyright (C) 1999-2007 D.Morozov (dvmorozov@mail.ru)
-------------------------------------------------------------------------------}
 
+{------------------------------------------------------------------------------}
+{       Copyright (C) 1999-2007 D.Morozov (dvmorozov@mail.ru)                  }
+{------------------------------------------------------------------------------}
 unit Unit9;
+
+{$MODE Delphi}
 
 interface
 
 uses
     Windows, SysUtils, Classes, Graphics, Forms, Controls, StdCtrls,
-    Buttons, ExtCtrls, DataClasses, Dialogs, StrConst, NumericGrid;
+    Buttons, ExtCtrls, DataClasses, Dialogs, StrConst, NumericGrid, LResources;
 
 type
     TEditSiteDlg = class(TForm)
@@ -46,8 +43,6 @@ var
     EditSiteDlg: TEditSiteDlg;
 
 implementation
-
-{$R *.DFM}
 
 procedure TEditSiteDlg.OKBtnClick(Sender: TObject);
 begin
@@ -105,5 +100,7 @@ begin
     if not (Key in REAL_SET) then Key := #0;
 end;
 
+initialization
+{$I Unit9.lrs}
 end.
  

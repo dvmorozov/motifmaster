@@ -1,0 +1,104 @@
+{ Это - файл ресурсов, автоматически созданный lazarus }
+
+LazarusResources.Add('TPropVectCalcOptDlg','FORMDATA',[
+  'TPF0'#19'TPropVectCalcOptDlg'#18'PropVectCalcOptDlg'#4'Left'#3'm'#1#6'Height'
+  +#3#230#0#3'Top'#3#224#0#5'Width'#3#209#1#18'HorzScrollBar.Page'#3#208#1#18'V'
+  +'ertScrollBar.Page'#3#229#0#13'ActiveControl'#7#6'RadioX'#11'BorderStyle'#7#8
+  +'bsDialog'#7'Caption'#6#27'Star Calculation Properties'#9'Icon.Data'#10#2#3#0
+  +#0#254#2#0#0#0#0#1#0#1#0'  '#16#0#0#0#0#0#232#2#0#0#22#0#0#0'('#0#0#0' '#0#0
+  +#0'@'#0#0#0#1#0#4#0#0#0#0#0#128#2#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#128#0#0#128#0#0#0#128#128#0#128#0#0#0#128#0#128#0#128#128#0#0#192#192
+  +#192#0#128#128#128#0#0#0#255#0#0#255#0#0#0#255#255#0#255#0#0#0#255#0#255#0
+  +#255#255#0#0#255#255#255#0#255#255#255#255#255#255#255#255#255#255#255#255
+  +#255#255#255#255#255#255#255#255#255#255#255#255#255#255#255#255#255#255#255
+  +#255#255#249#255#252#255#255#255#255#255#255#153#159#207#255#255#255#255#255
+  +#159#252#255#255#255#255#255#255#159#255#207#255#255#255#255#255#249#12#15
+  +#255#255#255#255#255#159#144#192#255#255#255#255#255#240#156#0#255#255#255
+  +#255#255#255#9#192#15#255#255#255#252#204#201#204#204#204#204#204#204#204#204
+  +#156#204#207#255#255#255#240#12#144#255#255#255#255#255#255#0#201#15#255#255
+  +#255#255#255#12#9#249#255#255#255#255#255#240#192#159#255#255#255#255#255#252
+  +#255#249#255#255#255#255#255#255#207#249#255#255#255#255#255#252#249#153#255
+  +#255#255#255#255#255#207#255#255#255#255#255#255#252#255#255#255#255#255#255
+  +#255#255#207#255#255#255#255#255#255#252#255#255#255#255#255#255#255#255#207
+  +#255#255#255#255#255#255#252#255#255#255#255#255#255#255#255#207#255#255#255
+  +#255#255#255#252#255#255#255#255#255#255#255#255#207#255#255#255#255#255#255
+  +#252#255#255#255#255#255#255#255#255#207#255#255#255#255#255#255#252#255#255
+  +#255#255#255#255#255#255#207#255#255#255#255#255#255#252#255#255#255#255#255
+  +#255#255#255#207#255#255#255#255#255#255#252#255#255#255#255#255#255#255#255
+  +#207#255#255#255#255#255#255#252#255#255#255#255#255#255#255#255#207#255#255
+  +#255#255#249#153#252#255#255#255#255#255#255#159#255#207#255#255#255#255#249
+  +#255#252#255#255#255#255#255#255#249#255#207#255#255#255#255#249#249#12#15
+  +#255#255#255#255#255#255#144#192#255#255#255#255#255#240#156#0#255#255#255
+  +#255#255#255#9#192#15#255#255#255#252#204#201#204#204#204#204#204#204#204#204
+  +#156#204#207#255#255#255#240#12#144#255#255#255#255#255#255#0#201#15#255#255
+  +#255#255#255#12#9#255#255#255#255#255#255#240#192#159#159#255#255#255#255#252
+  +#255#159#255#255#255#255#255#255#207#255#159#255#255#255#255#252#255#249#255
+  +#255#255#255#255#255#207#153#159#255#255#255#255#255#255#255#255#255#255#255
+  +#255#255#255#255#255#255#255#255#255#255#255#255#255#255#255#255#255#255#255
+  +#255#255#255#255#255#255#255#255#255#255#255#255#255#255#255#255#255#255#255
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0#0
+  +#0#0#0#0#0#0#0#0#0#0#0#0#0#0#6'OnShow'#7#8'FormShow'#10'ParentFont'#9#8'Posi'
+  +'tion'#7#14'poScreenCenter'#0#6'TBevel'#6'Bevel1'#4'Left'#2#8#6'Height'#3#180
+  +#0#3'Top'#2#8#5'Width'#3#193#1#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#8
+  +'akBottom'#0#5'Shape'#7#7'bsFrame'#0#0#7'TButton'#8'ButtonOK'#4'Left'#3#208#0
+  +#6'Height'#2#25#3'Top'#3#196#0#5'Width'#2'K'#7'Anchors'#11#6'akLeft'#8'akBot'
+  +'tom'#0#25'BorderSpacing.InnerBorder'#2#4#7'Caption'#6#3'&OK'#7'Default'#9#7
+  +'OnClick'#7#13'ButtonOKClick'#8'TabOrder'#2#3#0#0#7'TButton'#12'ButtonCancel'
+  +#4'Left'#3' '#1#6'Height'#2#25#3'Top'#3#196#0#5'Width'#2'K'#7'Anchors'#11#6
+  +'akLeft'#8'akBottom'#0#25'BorderSpacing.InnerBorder'#2#4#6'Cancel'#9#7'Capti'
+  +'on'#6#7'&Cancel'#11'ModalResult'#2#2#8'TabOrder'#2#4#0#0#9'TGroupBox'#9'Gro'
+  +'upBox1'#4'Left'#2#16#6'Height'#2'I'#3'Top'#2#16#5'Width'#3#193#0#7'Caption'
+  +#6#21' Common Properties : '#8'TabOrder'#2#6#0#6'TLabel'#6'Label1'#4'Left'#2
+  +#10#6'Height'#2#14#3'Top'#2#2#5'Width'#2'6'#7'Caption'#6#12'Host Site : '#5
+  +'Color'#7#6'clNone'#11'ParentColor'#8#0#0#6'TLabel'#6'Label2'#4'Left'#2#10#6
+  +'Height'#2#14#3'Top'#2#30#5'Width'#2'B'#7'Caption'#6#13'Parameters : '#5'Col'
+  +'or'#7#6'clNone'#11'ParentColor'#8#0#0#11'TStaticText'#20'StaticSiteIdentifi'
+  +'er'#4'Left'#2'P'#6'Height'#2#18#3'Top'#2#2#5'Width'#2'i'#9'Alignment'#7#8't'
+  +'aCenter'#11'BorderStyle'#7#9'sbsSunken'#0#0#11'TStaticText'#16'StaticParame'
+  +'ters'#4'Left'#2'P'#6'Height'#2#18#3'Top'#2#30#5'Width'#2'i'#9'Alignment'#7#8
+  +'taCenter'#11'BorderStyle'#7#9'sbsSunken'#0#0#0#9'TGroupBox'#9'GroupBox2'#4
+  +'Left'#3#216#0#6'Height'#2'I'#3'Top'#2#16#5'Width'#3#232#0#7'Anchors'#11#5'a'
+  +'kTop'#6'akLeft'#7'akRight'#0#7'Caption'#6#20' Taking Part Mode : '#8'TabOrd'
+  +'er'#2#2#0#9'TCheckBox'#13'CheckMagnetic'#4'Left'#2#11#6'Height'#2#13#5'Widt'
+  +'h'#3#185#0#7'Caption'#6' Magnetic / Not Magnetic (M / NM)'#7'OnClick'#7#18
+  +'CheckMagneticClick'#8'TabOrder'#2#0#0#0#9'TCheckBox'#15'CheckStructural'#4
+  +'Left'#2#11#6'Height'#2#13#3'Top'#2' '#5'Width'#3#183#0#7'Caption'#6'$Struct'
+  ,'ural / Not Structural (S / NS)'#7'OnClick'#7#18'CheckMagneticClick'#8'TabOr'
+  +'der'#2#1#0#0#0#9'TGroupBox'#9'GroupBox4'#4'Left'#3#216#0#6'Height'#2'T'#3'T'
+  +'op'#2'`'#5'Width'#3#233#0#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#8'akB'
+  +'ottom'#0#7'Caption'#6#17' Rotation Axis : '#8'TabOrder'#2#0#0#6'TLabel'#6'L'
+  +'abel3'#4'Left'#2#11#6'Height'#2#14#3'Top'#2#24#5'Width'#2'x'#7'Caption'#6#26
+  +'Rotation Axis Direction : '#5'Color'#7#6'clNone'#11'ParentColor'#8#0#0#12'T'
+  +'RadioButton'#6'RadioX'#4'Left'#2#11#6'Height'#2#13#3'Top'#2#1#5'Width'#2#27
+  +#7'Caption'#6#1'X'#7'Checked'#9#7'OnClick'#7#11'RadioXClick'#5'State'#7#9'cb'
+  +'Checked'#8'TabOrder'#2#0#0#0#12'TRadioButton'#6'RadioY'#4'Left'#2'@'#6'Heig'
+  +'ht'#2#13#3'Top'#2#1#5'Width'#2#27#7'Caption'#6#1'Y'#7'OnClick'#7#11'RadioXC'
+  +'lick'#8'TabOrder'#2#1#0#0#12'TRadioButton'#6'RadioZ'#4'Left'#2'u'#6'Height'
+  +#2#13#3'Top'#2#1#5'Width'#2#27#7'Caption'#6#1'Z'#7'OnClick'#7#11'RadioXClick'
+  +#8'TabOrder'#2#2#0#0#12'TRadioButton'#10'RadioOther'#4'Left'#3#170#0#6'Heigh'
+  +'t'#2#13#3'Top'#2#1#5'Width'#2'.'#7'Caption'#6#5'Other'#7'OnClick'#7#15'Radi'
+  +'oOtherClick'#8'TabOrder'#2#3#0#0#9'TMaskEdit'#17'EditAxisDirection'#4'Left'
+  +#2#11#6'Height'#2#21#3'Top'#2'('#5'Width'#3#207#0#11'ParentColor'#8#8'TabOrd'
+  +'er'#2#4#0#0#0#7'TButton'#10'ButtonHelp'#4'Left'#3'p'#1#6'Height'#2#25#3'Top'
+  +#3#196#0#5'Width'#2'K'#7'Anchors'#11#6'akLeft'#8'akBottom'#0#25'BorderSpacin'
+  +'g.InnerBorder'#2#4#7'Caption'#6#5'&Help'#7'OnClick'#7#15'ButtonHelpClick'#8
+  +'TabOrder'#2#5#0#0#9'TGroupBox'#9'GroupBox3'#4'Left'#2#16#6'Height'#2'T'#3'T'
+  +'op'#2'`'#5'Width'#3#193#0#7'Anchors'#11#5'akTop'#6'akLeft'#8'akBottom'#0#7
+  +'Caption'#6#13' Star Type : '#8'TabOrder'#2#1#0#6'TLabel'#6'Label4'#4'Left'#2
+  +#10#6'Height'#2#14#3'Top'#2#24#5'Width'#2'S'#7'Caption'#6#17'Structure Type '
+  +': '#5'Color'#7#6'clNone'#11'ParentColor'#8#0#0#9'TComboBox'#18'ComboStructu'
+  +'reType'#4'Left'#2#10#6'Height'#2#21#3'Top'#2'('#5'Width'#3#167#0#16'AutoCom'
+  +'pleteText'#11#22'cbactEndOfLineComplete'#20'cbactSearchAscending'#0#10'Item'
+  +'Height'#2#13#13'Items.Strings'#1#6#7'FS / SS'#6#9'LSW / TSW'#6#2'CS'#6#2'ES'
+  +#0#9'MaxLength'#2#0#8'OnChange'#7#24'ComboStructureTypeChange'#5'Style'#7#14
+  +'csDropDownList'#8'TabOrder'#2#0#0#0#12'TRadioButton'#11'RadioOneArm'#4'Left'
+  +#2#10#6'Height'#2#13#5'Width'#2'C'#7'Caption'#6#9'One - Arm'#7'OnClick'#7#16
+  +'RadioOneArmClick'#8'TabOrder'#2#1#0#0#12'TRadioButton'#12'RadioTwoArms'#4'L'
+  +'eft'#2'f'#6'Height'#2#13#3'Top'#2#1#5'Width'#2'I'#7'Caption'#6#10'Two - Arm'
+  +'s'#7'OnClick'#7#16'RadioOneArmClick'#8'TabOrder'#2#2#0#0#0#7'TButton'#11'Bu'
+  +'ttonApply'#4'Left'#3#128#0#6'Height'#2#25#3'Top'#3#196#0#5'Width'#2'K'#7'An'
+  +'chors'#11#6'akLeft'#8'akBottom'#0#25'BorderSpacing.InnerBorder'#2#4#7'Capti'
+  +'on'#6#6'&Apply'#7'OnClick'#7#16'ButtonApplyClick'#8'TabOrder'#2#7#0#0#0
+]);

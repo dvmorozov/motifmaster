@@ -1,0 +1,69 @@
+object OptionsControl: TOptionsControl
+  Left = 231
+  Height = 157
+  Top = 113
+  Width = 475
+  HorzScrollBar.Page = 474
+  VertScrollBar.Page = 156
+  ActiveControl = EditPlayerPath
+  BorderIcons = [biSystemMenu]
+  BorderStyle = bsDialog
+  Caption = 'Options'
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Position = poScreenCenter
+  object Label1: TLabel
+    Left = 16
+    Height = 17
+    Top = 8
+    Width = 133
+    Caption = 'Path to record viewer: '
+    Color = clNone
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 16
+    Height = 17
+    Top = 56
+    Width = 164
+    Caption = 'Path to form - factor editor: '
+    Color = clNone
+    ParentColor = False
+  end
+  object OKBut: TButton
+    Left = 288
+    Height = 25
+    Top = 120
+    Width = 81
+    BorderSpacing.InnerBorder = 4
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    OnClick = OKButClick
+    TabOrder = 0
+  end
+  object CancelBut: TButton
+    Left = 376
+    Height = 25
+    Top = 120
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 1
+  end
+  object EditPlayerPath: TEdit
+    Left = 8
+    Height = 21
+    Top = 24
+    Width = 457
+    TabOrder = 2
+  end
+  object EditFFPath: TEdit
+    Left = 8
+    Height = 21
+    Top = 72
+    Width = 457
+    TabOrder = 3
+  end
+end

@@ -1,0 +1,143 @@
+object AboutBox: TAboutBox
+  Left = 349
+  Height = 251
+  Top = 146
+  Width = 368
+  HorzScrollBar.Page = 367
+  VertScrollBar.Page = 250
+  ActiveControl = OKButton
+  BorderStyle = bsDialog
+  Caption = 'About Motif MASTER'
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Position = poScreenCenter
+  object Panel1: TPanel
+    Left = 8
+    Height = 201
+    Top = 8
+    Width = 353
+    BevelInner = bvLowered
+    BevelOuter = bvNone
+    TabOrder = 0
+    object StaticText1: TStaticText
+      Left = 1
+      Height = 22
+      Top = 24
+      Width = 351
+      Align = alTop
+      Alignment = taCenter
+      Caption = 'Motif MASTER'
+      Font.CharSet = EASTEUROPE_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Courier New'
+      Font.Style = [fsBold]
+    end
+    object StaticText2: TStaticText
+      Left = 1
+      Height = 23
+      Top = 46
+      Width = 351
+      Align = alTop
+      Alignment = taCenter
+      Caption = 'version 3.2'
+      Font.CharSet = EASTEUROPE_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Courier New'
+      Font.Style = [fsBold, fsItalic]
+    end
+    object StaticText3: TStaticText
+      Left = 1
+      Height = 23
+      Top = 69
+      Width = 351
+      Align = alTop
+      Alignment = taCenter
+      Caption = 'written by'
+      Font.CharSet = EASTEUROPE_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Courier New'
+      Font.Style = [fsBold, fsItalic]
+    end
+    object StaticText4: TStaticText
+      Left = 1
+      Height = 23
+      Top = 92
+      Width = 351
+      Align = alTop
+      Alignment = taCenter
+      Caption = 'D.Morozov'
+      Font.CharSet = EASTEUROPE_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Courier New'
+      Font.Style = [fsBold, fsItalic]
+    end
+    object StaticText8: TStaticText
+      Left = 1
+      Height = 20
+      Top = 115
+      Width = 351
+      Align = alTop
+      Alignment = taCenter
+      Caption = '1999-2007'
+      Font.CharSet = EASTEUROPE_CHARSET
+      Font.Color = clBlack
+      Font.Height = -13
+      Font.Name = 'Courier New'
+    end
+    object StaticText9: TStaticText
+      Left = 1
+      Height = 22
+      Top = 158
+      Width = 351
+      Align = alTop
+      Alignment = taCenter
+      Caption = 'e-mail: dvmorozov@mail.ru'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Color = clBlack
+      Font.Height = -15
+      Font.Name = 'Courier New'
+      Font.Style = [fsBold, fsItalic]
+    end
+    object StaticText5: TStaticText
+      Left = 1
+      Height = 23
+      Top = 1
+      Width = 351
+      Align = alTop
+      Alignment = taCenter
+      Font.CharSet = EASTEUROPE_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Courier New'
+      Font.Style = [fsBold, fsItalic]
+    end
+    object StaticText6: TStaticText
+      Left = 1
+      Height = 23
+      Top = 135
+      Width = 351
+      Align = alTop
+      Alignment = taCenter
+      Font.CharSet = EASTEUROPE_CHARSET
+      Font.Color = clBlack
+      Font.Height = -16
+      Font.Name = 'Courier New'
+      Font.Style = [fsBold, fsItalic]
+    end
+  end
+  object OKButton: TButton
+    Left = 146
+    Height = 25
+    Top = 220
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 1
+  end
+end

@@ -11,9 +11,17 @@
 
 unit Runner;
 
+{$IFDEF Lazarus}
+{$MODE Delphi}
+{$ENDIF}
+
 interface
 
-uses Classes, DsgnIntf, Tools;
+uses Classes,
+{$IFNDEF Lazarus}
+DsgnIntf,
+{$ENDIF}
+Tools;
 
 type
     TRunningProcedure = procedure of object;
@@ -54,8 +62,10 @@ implementation
 procedure Register;
 begin
     RegisterComponents('Common',[TRunner]);
+{$IFNDEF Lazarus}
     RegisterPropertyEditor(TypeInfo(TRunningProcedure),TRunner,'OnRunningProcedure',TMethodProperty);
     RegisterPropertyEditor(TypeInfo(TEndRunningProcedure),TRunner,'OnEndRunningProcedure',TMethodProperty);
+{$ENDIF}
 end;
 
 procedure TRunningThread.Execute;

@@ -1,0 +1,173 @@
+object SiteCalcOptDlg: TSiteCalcOptDlg
+  Left = 227
+  Height = 246
+  Top = 247
+  Width = 434
+  HorzScrollBar.Page = 433
+  VertScrollBar.Page = 245
+  ActiveControl = CheckMagnetic
+  BorderStyle = bsDialog
+  Caption = 'Site Calculation Properties'
+  Font.CharSet = RUSSIAN_CHARSET
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnDestroy = FormDestroy
+  OnShow = FormShow
+  Position = poDesktopCenter
+  object Bevel1: TBevel
+    Left = 8
+    Height = 190
+    Top = 8
+    Width = 418
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Shape = bsFrame
+  end
+  object OKBtn: TButton
+    Left = 175
+    Height = 25
+    Top = 208
+    Width = 75
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.InnerBorder = 4
+    Caption = '&OK'
+    Default = True
+    ModalResult = 1
+    OnClick = OKBtnClick
+    TabOrder = 4
+  end
+  object CancelBtn: TButton
+    Left = 254
+    Height = 25
+    Top = 208
+    Width = 75
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.InnerBorder = 4
+    Cancel = True
+    Caption = '&Cancel'
+    ModalResult = 2
+    TabOrder = 5
+  end
+  object GroupBox1: TGroupBox
+    Left = 16
+    Height = 85
+    Top = 16
+    Width = 161
+    Caption = ' Site Identifier : '
+    TabOrder = 0
+    object StaticSiteName: TStaticText
+      Left = 8
+      Height = 25
+      Width = 145
+      Alignment = taCenter
+      BorderStyle = sbsSunken
+      Font.Style = [fsBold]
+    end
+  end
+  object GroupBox2: TGroupBox
+    Left = 16
+    Height = 85
+    Top = 104
+    Width = 161
+    Anchors = [akTop, akLeft, akBottom]
+    Caption = ' Taking Part Modes : '
+    TabOrder = 1
+    object CheckMagnetic: TCheckBox
+      Left = 6
+      Height = 13
+      Width = 142
+      Caption = 'Site Is Magnetic (M / NM)'
+      Checked = True
+      State = cbChecked
+      TabOrder = 0
+    end
+    object CheckTakingPart: TCheckBox
+      Left = 6
+      Height = 13
+      Top = 24
+      Width = 142
+      Caption = 'Site Is Taking Part (E / D)'
+      Checked = True
+      State = cbChecked
+      TabOrder = 1
+    end
+  end
+  object Button1: TButton
+    Left = 334
+    Height = 25
+    Top = 208
+    Width = 75
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.InnerBorder = 4
+    Caption = '&Help'
+    OnClick = Button1Click
+    TabOrder = 6
+  end
+  object GroupBox3: TGroupBox
+    Left = 184
+    Height = 85
+    Top = 16
+    Width = 233
+    Caption = ' Representations Using Mode : '
+    TabOrder = 2
+    object RadioByOne: TRadioButton
+      Left = 8
+      Height = 13
+      Width = 130
+      Caption = 'By One Representation'
+      OnClick = RadioVaryAllClick
+      TabOrder = 0
+    end
+    object RadioByAll: TRadioButton
+      Left = 8
+      Height = 13
+      Top = 24
+      Width = 126
+      Caption = 'By All Representations'
+      OnClick = RadioVaryAllClick
+      TabOrder = 1
+    end
+    object RadioDontUse: TRadioButton
+      Left = 8
+      Height = 13
+      Top = 48
+      Width = 169
+      Caption = 'Don''t Use The Representations'
+      OnClick = RadioVaryAllClick
+      TabOrder = 2
+    end
+  end
+  object GroupVariationMode: TGroupBox
+    Left = 184
+    Height = 85
+    Top = 104
+    Width = 233
+    Caption = ' Variation Mode : '
+    TabOrder = 3
+    object RadioVaryAll: TRadioButton
+      Left = 8
+      Height = 13
+      Width = 211
+      Caption = 'Vary All Of Moment Components (VAMC)'
+      OnClick = RadioVaryAllClick
+      TabOrder = 0
+    end
+    object RadioSaveEqual: TRadioButton
+      Left = 8
+      Height = 13
+      Top = 24
+      Width = 213
+      Caption = 'Save Equal Modules At The Site (SEMS)'
+      OnClick = RadioVaryAllClick
+      TabOrder = 1
+    end
+    object RadioVaryModules: TRadioButton
+      Left = 8
+      Height = 13
+      Top = 48
+      Width = 141
+      Caption = 'Only Modules Vary (OMV)'
+      OnClick = RadioVaryAllClick
+      TabOrder = 2
+    end
+  end
+end

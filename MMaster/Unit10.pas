@@ -1,22 +1,19 @@
-{------------------------------------------------------------------------------
-    This file is part of the MotifMASTER project. This software is
-    distributed under GPL (see gpl.txt for details).
-
-    This software is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-    Copyright (C) 1999-2007 D.Morozov (dvmorozov@mail.ru)
-------------------------------------------------------------------------------}
-
+//      двойной косой чертой комментируются замечания, сохраняемые во
+//      всех версиях исходника; фигурными скобками комментируются замечания,
+//      сохраняемые только в версии исходника для бесплатного распространения
+{------------------------------------------------------------------------------}
+{       Copyright (C) 1999-2007 D.Morozov (dvmorozov@mail.ru)                  }
+{------------------------------------------------------------------------------}
 unit Unit10;
+
+{$MODE Delphi}
 
 interface
 
 uses
     Windows, SysUtils, Classes, Graphics, Forms, Controls, StdCtrls,
-    Buttons, ExtCtrls, CheckLst, DataClasses, Mask, SimpMath, Dialogs,
-    StrConst, Tools;
+    Buttons, ExtCtrls, CheckLst, DataClasses, SimpMath, Dialogs,
+    StrConst, Tools, MaskEdit, LResources, HelpIntfs;
 
 type
   TPropVectCalcOptDlg = class(TForm)
@@ -58,14 +55,17 @@ type
   protected
     FEditedPropVector: TWaveVector;
     FEditedPropVectorCopy: TWaveVector;
+    (*копия !!! редактируемого вектора; используется для временного
+    хранения сделанных изменений*)
 
     UpdatingAllowed: Boolean;
 
     procedure SetEditedPropVector(const APropVector: TWaveVector);
+    (*заполнение формы параметрами редактируемого вектора*)
     procedure SetSite(const ASite: TSite);
 
-    procedure SetRotationAxis;
-    function GetRotationAxis: Boolean;
+    procedure SetRotationAxis;          (*ось вращ.: вектор -> форма*)
+    function GetRotationAxis: Boolean;  (*ось вращ.: форма -> вектор*)
 
     procedure SetTransformType;
     function GetTransformType: Boolean;
@@ -74,7 +74,8 @@ type
     function GetStarType: Boolean;
 
     procedure FillComboStructureType;
-    procedure SetPropertiesIntoForm;
+    procedure SetPropertiesIntoForm;    (*заполняет форму в соответствии со
+                                        свойствами копии*)
 
   public
     destructor Destroy; override;
@@ -87,8 +88,6 @@ var
   PropVectCalcOptDlg: TPropVectCalcOptDlg;
 
 implementation
-
-{$R *.DFM}
 
 procedure TPropVectCalcOptDlg.SetEditedPropVector(const APropVector: TWaveVector);
 var SavedCopyingMode: LongInt;
@@ -114,6 +113,8 @@ end;
 procedure TPropVectCalcOptDlg.SetPropertiesIntoForm;
 var TempByte: Byte;
 begin
+     (*запрещает обратное изменение параметров копии в ответ на
+     первоначальное изменение элементов управления формы*)
      UpdatingAllowed := False;
      with FEditedPropVectorCopy do begin
           CheckMagnetic.Checked := IsPropVectMagnetic;
@@ -323,7 +324,7 @@ end;
 
 procedure TPropVectCalcOptDlg.ButtonHelpClick(Sender: TObject);
 begin
-    Application.HelpJump('hlp_PropVectCalcOptDlg');
+    ShowHelpOrErrorForKeyword('','HTML/prop_vect_calc_opt.html');
 end;
 
 procedure TPropVectCalcOptDlg.CheckMagneticClick(Sender: TObject);
@@ -366,6 +367,14 @@ end;
 procedure TPropVectCalcOptDlg.FormShow(Sender: TObject);
 begin
      ActiveControl := ButtonOK;
+     (*это сделано, чтобы избежать вызова обработчика OnClick
+     активного элемента при отображении формы; при нажатии кнопки [X]
+     активный элемент сохраняется, и его обработчик снова вызывается,
+     когда форма отображается и UpdatingAllowed уже = True, хотя
+     никакого действия пользователя еще не было*)
 end;
 
+initialization
+{$I Unit10.lrs}
 end.
+ 

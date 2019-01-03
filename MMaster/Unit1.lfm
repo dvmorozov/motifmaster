@@ -1,0 +1,3726 @@
+object Form1: TForm1
+  Left = 88
+  Height = 559
+  Top = 104
+  Width = 848
+  HorzScrollBar.Page = 847
+  VertScrollBar.Page = 539
+  ActiveControl = SourceFileContents
+  Caption = 'Form1'
+  Font.CharSet = RUSSIAN_CHARSET
+  Font.Height = -13
+  Font.Name = 'System'
+  Font.Style = [fsBold]
+  Icon.Data = {
+    820500002F2A2058504D202A2F0A7374617469632063686172202A6772617068
+    69635B5D203D207B0A2233322033322031342031222C0A222E2063204E6F6E65
+    222C0A222C20632023413741374646222C0A222D20632023374638334434222C
+    0A222A20632023464646464646222C0A226120632023423642364646222C0A22
+    6220632023423642414646222C0A226320632023413741414646222C0A226420
+    632023423642354646222C0A226520632023413841384646222C0A2266206320
+    23414442344646222C0A226720632023423739454533222C0A22682063202346
+    4636463642222C0A226920632023383138314646222C0A226A20632023454345
+    434646222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E
+    2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E
+    2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E
+    2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2C2E2E2E2D2E
+    2E2E2E2E2E2E2E2E2E2E2E2A2E2A2A2A2E2E2E222C0A222E2E2E2E2E2E2E612E
+    2E622E2E2E2E2E2E2E2E2E2E2E2E2E2A2E2E2E2A2E2E2E222C0A222E2E2E2E2E
+    2E2E2A2E2A2E2E2E2E2E2E2E2E2E2E2E2E2E2E2A2E2A2E2A2E2E2E222C0A222E
+    2E2E2E2E2E2E2A2A2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2A2A2E2E2E2E2E2E22
+    2C0A222E2E2E63642A2A2A2A2A2A2A642C2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A
+    2E2E2E222C0A222E2E2E2E2E2E2A2A2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2A2A
+    2E2E2E2E2E2E2E222C0A222E2E2E2C2E2A2E2A2E2E2E2E2E2E2E2E2E2E2E2E2E
+    2E2A2E2A2E2E2E2E2E2E2E222C0A222E2E2E652E2E2E2A2E2E2E2E2E2E2E2E2E
+    2E2E2E2E2A2E2E2A2E2E2E2E2E2E2E222C0A222E2E2E6667682E2A2E2E2E2E2E
+    2E2E2E2E2E2E2E2A2E2E2E2A2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2A2E
+    2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2A2E2E2E2E2E2E2E222C0A222E2E2E2E2E
+    2E2E692E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2A2E2E2E2E2E2E2E222C0A222E
+    2E2E2E2E2E2E6A2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2A2E2E2E2E2E2E2E22
+    2C0A222E2E2E2E2E2E2E2A2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2A2E2E2E2E
+    2E2E2E222C0A222E2E2E2E2E2E2E2A2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2A
+    2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2A2E2E2E2E2E2E2E2E2E2E2E2E2E
+    2E2E2E2A2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2A2E2E2E2E2E2E2E2E2E
+    2E2E2E2E2E2E2E2A2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2A2E2E2E2E2E
+    2E2E2E2E2E2E2E2E2E2E2E2A2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2A2E
+    2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2A2E2E2E2E2E2E2E222C0A222E2E2E2E2E
+    2E2E2A2E2A2A2A2E2E2E2E2E2E2E2E2E2E2E2E2A2E2E2E2E2E2E2E222C0A222E
+    2E2E2E2E2E2E2A2E2E2E2A2E2E2E2E2E2E2E2E2E2E2E2E2A2E2E2A2E2E2E2E22
+    2C0A222E2E2E2E2E2E2E2A2E2A2E2A2E2E2E2E2E2E2E2E2E2E2E2E2A2E2A2E2E
+    2E2E2E222C0A222E2E2E2E2E2E2E2A2A2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2A
+    2A2E2E2E2E2E2E222C0A222E2E2E2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A2A
+    2A2A2A2A2A2A2A2A2E2E2E222C0A222E2E2E2E2E2E2A2A2E2E2E2E2E2E2E2E2E
+    2E2E2E2E2E2E2A2A2E2E2E2E2E2E2E222C0A222E2E2E2E2E2A2E2A2E2E2E2E2E
+    2E2E2E2E2E2E2E2A2E2A2E2A2E2E2E2E2E2E2E222C0A222E2E2E2E2A2E2E2A2E
+    2E2E2E2E2E2E2E2E2E2E2E2A2E2E2E2A2E2E2E2E2E2E2E222C0A222E2E2E2A2E
+    2E2E2A2E2E2E2E2E2E2E2E2E2E2E2E2A2A2A2E2A2E2E2E2E2E2E2E222C0A222E
+    2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E22
+    2C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E
+    2E2E2E227D0A
+  }
+  Menu = MainMenu
+  OnClose = FormClose
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  OnKeyDown = FormKeyDown
+  Position = poDesktopCenter
+  ShowInTaskBar = stAlways
+  Visible = True
+  object PanelBack: TPanel
+    Left = 240
+    Height = 516
+    Top = 32
+    Width = 608
+    BevelOuter = bvNone
+    Color = clGreen
+    ParentColor = False
+    TabOrder = 1
+    Visible = False
+    object LabelMsg: TLabel
+      Left = 24
+      Height = 21
+      Top = 30
+      Width = 352
+      AutoSize = False
+      Caption = 'Select data unit in the left box'
+      Color = clNone
+      Font.Height = 25
+      ParentColor = False
+    end
+  end
+  object Splitter: TSplitter
+    Left = 238
+    Height = 520
+    Width = 2
+    ResizeStyle = rsLine
+  end
+  object StatusBar1: TStatusBar
+    Height = 20
+    Top = 520
+    Width = 848
+    Panels = <    
+      item
+        Text = ' Cycles :'
+        Width = 140
+      end    
+      item
+        Width = 60
+      end    
+      item
+        Width = 50
+      end>
+    SimplePanel = False
+  end
+  object SourceFileContentsPanel: TPanel
+    Height = 520
+    Width = 238
+    Align = alLeft
+    BevelOuter = bvNone
+    TabOrder = 0
+    object SourceFileContents: TTreeView
+      Height = 488
+      Top = 32
+      Width = 238
+      Align = alClient
+      AutoExpand = True
+      DefaultItemHeight = 16
+      HideSelection = False
+      HotTrack = True
+      Images = ImageList3
+      Indent = 19
+      ParentShowHint = False
+      PopupMenu = PopupProject
+      TabOrder = 0
+      OnChange = SourceFileContentsChange
+      OnChanging = SourceFileContentsChanging
+      OnEdited = SourceFileContentsEdited
+      OnEditing = SourceFileContentsEditing
+      OnEnter = SourceFileContentsEnter
+      OnExit = SourceFileContentsExit
+      OnKeyPress = SourceFileContentsKeyPress
+      Options = [tvoAutoExpand, tvoAutoItemHeight, tvoHotTrack, tvoKeepCollapsedNodes, tvoShowButtons, tvoShowLines, tvoShowRoot, tvoToolTips]
+    end
+    object ToolBar1: TToolBar
+      Height = 24
+      Top = 4
+      Width = 238
+      AutoSize = True
+      BorderSpacing.Top = 4
+      BorderSpacing.Bottom = 4
+      ButtonHeight = 24
+      ButtonWidth = 24
+      Caption = 'ToolBar'
+      EdgeBorders = []
+      Flat = True
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -11
+      Font.Name = 'MS Sans Serif'
+      Images = ImageList2
+      TabOrder = 1
+      Wrapable = False
+      object NewBut: TToolButton
+        Left = 9
+        Hint = 'Create new source file'
+        ImageIndex = 0
+        OnClick = MenuFileNewClick
+      end
+      object OpenBut: TToolButton
+        Left = 33
+        Hint = 'Open existing project file'
+        Caption = 'Open'
+        ImageIndex = 1
+        OnClick = MenuFileOpenClick
+      end
+      object SaveBut: TToolButton
+        Left = 57
+        Hint = 'Save project file'
+        Caption = 'Save'
+        Enabled = False
+        ImageIndex = 2
+        OnClick = MenuFileSaveClick
+      end
+      object ToolButton9: TToolButton
+        Left = 81
+        Hint = 'Remove selected unit'
+        Caption = 'Delete'
+        ImageIndex = 11
+        OnClick = MenuProjectDeleteUnitClick
+      end
+      object ToolButton15: TToolButton
+        Left = 105
+        Caption = 'ToolButton15'
+        ImageIndex = 15
+        OnClick = ToolButton15Click
+      end
+      object ToolButton1: TToolButton
+        Left = 1
+        Width = 8
+        Caption = 'ToolButton1'
+        Style = tbsSeparator
+      end
+    end
+  end
+  object PanelComments: TPanel
+    Left = 264
+    Height = 516
+    Top = 56
+    Width = 608
+    BevelOuter = bvNone
+    Color = clMaroon
+    ParentColor = False
+    TabOrder = 2
+    Visible = False
+    object ToolBar3: TToolBar
+      Height = 24
+      Top = 4
+      Width = 608
+      AutoSize = True
+      BorderSpacing.Top = 4
+      BorderSpacing.Bottom = 4
+      ButtonHeight = 24
+      ButtonWidth = 24
+      Caption = 'ToolBar'
+      EdgeBorders = []
+      Flat = True
+      Images = ImageList2
+      TabOrder = 0
+      Transparent = True
+      Wrapable = False
+      object ToolMemoCopy: TToolButton
+        Left = 9
+        Hint = 'Copy to clipboard'
+        Caption = 'Copy'
+        ImageIndex = 3
+        OnClick = MenuMemoCopyClick
+      end
+      object ToolMemoPaste: TToolButton
+        Left = 33
+        Hint = 'Paste from clipboard'
+        Caption = 'Paste'
+        ImageIndex = 4
+        OnClick = MenuMemoPasteClick
+      end
+      object ToolButton14: TToolButton
+        Left = 1
+        Width = 8
+        Caption = 'ToolButton14'
+        Style = tbsSeparator
+      end
+    end
+    object Comments: TMemo
+      Height = 484
+      Top = 32
+      Width = 608
+      Align = alClient
+      OnChange = CommentsChange
+      OnEnter = CommentsEnter
+      OnExit = CommentsExit
+      PopupMenu = PopupMemo
+      ScrollBars = ssBoth
+      TabOrder = 1
+    end
+  end
+  object PanelGraph: TPanel
+    Left = 288
+    Height = 516
+    Top = 88
+    Width = 608
+    BevelOuter = bvNone
+    Color = clBlue
+    ParentColor = False
+    TabOrder = 3
+    Visible = False
+    object Plotter: TPaintBox
+      Height = 484
+      Top = 32
+      Width = 608
+      Align = alClient
+      OnPaint = PlotterPaint
+    end
+    object ToolBar7: TToolBar
+      Height = 24
+      Top = 4
+      Width = 608
+      AutoSize = True
+      BorderSpacing.Top = 4
+      BorderSpacing.Bottom = 4
+      ButtonHeight = 24
+      ButtonWidth = 24
+      Caption = 'ToolBar'
+      EdgeBorders = []
+      Flat = True
+      Images = ImageList2
+      ShowCaptions = True
+      TabOrder = 0
+      Transparent = True
+      Wrapable = False
+      object ToolPlotterCopy: TToolButton
+        Left = 9
+        ImageIndex = 3
+        OnClick = MenuPlotPatternCopyClick
+      end
+      object ToolButton16: TToolButton
+        Left = 1
+        Width = 8
+        Caption = 'ToolButton16'
+        Style = tbsSeparator
+      end
+    end
+  end
+  object PanelUnitCell: TPanel
+    Left = 320
+    Height = 516
+    Top = 136
+    Width = 608
+    BevelOuter = bvNone
+    Color = clOlive
+    ParentColor = False
+    TabOrder = 4
+    Visible = False
+    object Plotter1: TPaintBox
+      Height = 484
+      Top = 32
+      Width = 608
+      Align = alClient
+      OnPaint = Plotter1Paint
+      OnResize = Plotter1Resize
+    end
+    object ToolBar8: TToolBar
+      Height = 24
+      Top = 4
+      Width = 608
+      AutoSize = True
+      BorderSpacing.Top = 4
+      BorderSpacing.Bottom = 4
+      ButtonHeight = 24
+      ButtonWidth = 24
+      Caption = 'ToolBar'
+      EdgeBorders = []
+      Flat = True
+      Images = ImageList2
+      ShowCaptions = True
+      TabOrder = 0
+      Transparent = True
+      Wrapable = False
+      object ToolPlotterRotX: TToolButton
+        Left = 9
+        ImageIndex = 7
+        OnClick = ToolPlotterRotXClick
+      end
+      object ToolPlotterRotY: TToolButton
+        Left = 33
+        ImageIndex = 8
+        OnClick = ToolPlotterRotYClick
+      end
+      object ToolPlotterRotZ: TToolButton
+        Left = 57
+        ImageIndex = 9
+        OnClick = ToolPlotterRotZClick
+      end
+      object ToolPlotterReset: TToolButton
+        Left = 81
+        ImageIndex = 10
+        OnClick = ToolPlotterResetClick
+      end
+      object ToolPlotterZoomIn: TToolButton
+        Left = 105
+        ImageIndex = 5
+        OnClick = ToolPlotterZoomInClick
+      end
+      object ToolPlotterZoomOut: TToolButton
+        Left = 129
+        ImageIndex = 6
+        OnClick = ToolPlotterZoomOutClick
+      end
+      object ToolUnitCellProperties: TToolButton
+        Left = 161
+        ImageIndex = 14
+        OnClick = ToolPlotterPropertiesClick
+      end
+      object ToolUnitCellCopy: TToolButton
+        Left = 185
+        ImageIndex = 3
+        OnClick = MenuPlotStructCopyClick
+      end
+      object ToolButton8: TToolButton
+        Left = 1
+        Width = 8
+        Caption = 'ToolButton8'
+        Style = tbsSeparator
+      end
+      object ToolButton10: TToolButton
+        Left = 153
+        Width = 8
+        Caption = 'ToolButton10'
+        Style = tbsSeparator
+      end
+    end
+  end
+  object PanelMiscData: TPanel
+    Left = 347
+    Height = 516
+    Top = 179
+    Width = 608
+    BevelOuter = bvNone
+    Color = clPurple
+    ParentColor = False
+    TabOrder = 5
+    Visible = False
+    object ToolBar4: TToolBar
+      Height = 26
+      Top = 4
+      Width = 608
+      AutoSize = True
+      BorderSpacing.Top = 4
+      ButtonHeight = 36
+      ButtonWidth = 65
+      Caption = 'ToolBar'
+      EdgeBorders = []
+      Flat = True
+      ShowCaptions = True
+      TabOrder = 0
+      Transparent = True
+      Wrapable = False
+    end
+    object GroupBox1: TGroupBox
+      Height = 128
+      Top = 30
+      Width = 608
+      Align = alTop
+      Caption = ' Unit Cell Parameters : '
+      TabOrder = 1
+      object Label1: TLabel
+        Left = 15
+        Height = 14
+        Top = 14
+        Width = 68
+        Caption = 'A (angstrom):'
+        Color = clNone
+        ParentColor = False
+      end
+      object Label2: TLabel
+        Left = 16
+        Height = 14
+        Top = 46
+        Width = 67
+        Caption = 'B (angstrom):'
+        Color = clNone
+        ParentColor = False
+      end
+      object Label3: TLabel
+        Left = 15
+        Height = 14
+        Top = 78
+        Width = 68
+        Caption = 'C (angstrom):'
+        Color = clNone
+        ParentColor = False
+      end
+      object Label4: TLabel
+        Left = 317
+        Height = 14
+        Top = 14
+        Width = 85
+        Caption = 'Alpha (degrees) :'
+        Color = clNone
+        ParentColor = False
+      end
+      object Label5: TLabel
+        Left = 327
+        Height = 14
+        Top = 46
+        Width = 77
+        Caption = 'Beta (degrees):'
+        Color = clNone
+        ParentColor = False
+      end
+      object Label6: TLabel
+        Left = 308
+        Height = 14
+        Top = 78
+        Width = 90
+        Caption = 'Gamma (degrees):'
+        Color = clNone
+        ParentColor = False
+      end
+      object InputA: TEdit
+        Left = 167
+        Height = 24
+        Top = 7
+        Width = 90
+        OnKeyPress = InputAKeyPress
+        TabOrder = 0
+      end
+      object InputB: TEdit
+        Left = 167
+        Height = 24
+        Top = 39
+        Width = 90
+        OnKeyPress = InputAKeyPress
+        TabOrder = 1
+      end
+      object InputC: TEdit
+        Left = 167
+        Height = 24
+        Top = 71
+        Width = 90
+        OnKeyPress = InputAKeyPress
+        TabOrder = 2
+      end
+      object InputAlpha: TEdit
+        Left = 471
+        Height = 24
+        Top = 10
+        Width = 90
+        OnKeyPress = InputAKeyPress
+        TabOrder = 3
+      end
+      object InputBeta: TEdit
+        Left = 471
+        Height = 24
+        Top = 42
+        Width = 90
+        OnKeyPress = InputAKeyPress
+        TabOrder = 4
+      end
+      object InputGamma: TEdit
+        Left = 471
+        Height = 24
+        Top = 74
+        Width = 90
+        OnKeyPress = InputAKeyPress
+        TabOrder = 5
+      end
+    end
+    object GroupBox2: TGroupBox
+      Height = 66
+      Top = 158
+      Width = 608
+      Align = alTop
+      Caption = ' Pattern Parameters : '
+      TabOrder = 2
+      object Label7: TLabel
+        Left = 15
+        Height = 14
+        Top = 14
+        Width = 119
+        Caption = 'Wavelength (angstrom):'
+        Color = clNone
+        ParentColor = False
+      end
+      object InputLambda: TEdit
+        Left = 167
+        Height = 24
+        Top = 10
+        Width = 90
+        OnKeyPress = InputAKeyPress
+        TabOrder = 0
+      end
+    end
+  end
+  object PanelTable: TPanel
+    Left = 384
+    Height = 516
+    Top = 208
+    Width = 608
+    BevelOuter = bvNone
+    Color = clFuchsia
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    ParentColor = False
+    TabOrder = 6
+    Visible = False
+    object Table: TColoredGrid
+      Height = 484
+      Top = 32
+      Width = 608
+      Align = alClient
+      ColCount = 5
+      FixedColor = clBtnFace
+      GridLineWidth = 0
+      Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goDrawFocusSelected, goRowSizing, goColSizing, goTabs, goThumbTracking]
+      RowCount = 5
+      ScrollBars = ssAutoBoth
+      TabOrder = 0
+      TabStop = True
+      OnEnter = TableEnter
+      OnExit = TableExit
+      OnMouseDown = TableMouseDown
+      OnGridModified = AtomsGridModified
+      DoubleBuffered = True
+      ColNumFixed = True
+      Changeable = True
+      OddRowColor = clWhite
+      EvenRowColor = clSilver
+      SelectedRegionColor = clBlue
+    end
+    object ToolBar5: TToolBar
+      Height = 24
+      Top = 4
+      Width = 608
+      AutoSize = True
+      BorderSpacing.Top = 4
+      BorderSpacing.Bottom = 4
+      ButtonHeight = 24
+      ButtonWidth = 24
+      Caption = 'ToolBar'
+      EdgeBorders = []
+      Flat = True
+      Images = ImageList2
+      ParentShowHint = False
+      ShowHint = True
+      TabOrder = 1
+      Transparent = True
+      Wrapable = False
+      object ToolTableCopy: TToolButton
+        Left = 9
+        Hint = 'Copy to clipboard'
+        Caption = 'Copy'
+        ImageIndex = 3
+        OnClick = MenuNeutronCopyClick
+      end
+      object ToolTablePaste: TToolButton
+        Left = 33
+        Hint = 'Paste from clipboard'
+        Caption = 'Paste'
+        ImageIndex = 4
+        OnClick = MenuNeutronPasteClick
+      end
+      object ToolTableDelete: TToolButton
+        Left = 57
+        Hint = 'Delete selected area'
+        Caption = 'Delete'
+        ImageIndex = 11
+        OnClick = MenuNeutronDeleteClick
+      end
+      object ToolButton2: TToolButton
+        Left = 81
+        Caption = 'ToolButton2'
+        ImageIndex = 15
+        OnClick = ToolButton2Click
+      end
+      object ToolButton17: TToolButton
+        Left = 1
+        Width = 8
+        Caption = 'ToolButton17'
+        Style = tbsSeparator
+      end
+    end
+  end
+  object PanelSites: TPanel
+    Left = 402
+    Height = 516
+    Top = 239
+    Width = 608
+    BevelOuter = bvNone
+    Color = clAqua
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    ParentColor = False
+    TabOrder = 7
+    Visible = False
+    object TopPanel: TPanel
+      Height = 148
+      Width = 608
+      Align = alTop
+      BevelOuter = bvNone
+      TabOrder = 0
+      object Panel1: TPanel
+        Height = 148
+        Width = 199
+        Align = alLeft
+        BevelOuter = bvNone
+        TabOrder = 0
+        object GroupBox5: TGroupBox
+          Height = 116
+          Top = 32
+          Width = 199
+          Align = alClient
+          Caption = ' Site(s) : '
+          TabOrder = 0
+          object Sites: TListBox
+            Height = 98
+            Width = 195
+            Align = alClient
+            Font.Style = [fsBold]
+            ItemHeight = 16
+            OnClick = SitesClick
+            OnEnter = SitesEnter
+            OnExit = SitesExit
+            OnKeyDown = SitesKeyDown
+            PopupMenu = PopupSites
+            TabOrder = 0
+          end
+        end
+        object ToolBarSites: TToolBar
+          Height = 24
+          Top = 4
+          Width = 199
+          AutoSize = True
+          BorderSpacing.Top = 4
+          BorderSpacing.Bottom = 4
+          ButtonHeight = 24
+          ButtonWidth = 24
+          Caption = 'ToolBar10'
+          EdgeBorders = []
+          Flat = True
+          Images = ImageList2
+          TabOrder = 1
+          Transparent = True
+          Wrapable = False
+          object ToolAddSite: TToolButton
+            Left = 9
+            Hint = 'Create a new star'
+            Caption = 'ToolButAddSite'
+            ImageIndex = 12
+            OnClick = MenuSitesAddClick
+          end
+          object ToolDelSite: TToolButton
+            Left = 33
+            Hint = 'Remove selected star'
+            Caption = 'ToolButDelSite'
+            ImageIndex = 13
+            OnClick = MenuSitesDeleteClick
+          end
+          object ToolSiteProperties: TToolButton
+            Left = 57
+            Hint = 'Change properties of the star'
+            Caption = 'ToolButEditSite'
+            ImageIndex = 14
+            OnClick = MenuSitesPropertiesClick
+          end
+          object ToolButton18: TToolButton
+            Left = 1
+            Width = 8
+            Caption = 'ToolButton4'
+            Style = tbsSeparator
+          end
+        end
+      end
+      object Panel6: TPanel
+        Left = 201
+        Height = 148
+        Width = 206
+        Align = alClient
+        BevelOuter = bvNone
+        TabOrder = 1
+        object GroupBox8: TGroupBox
+          Height = 116
+          Top = 32
+          Width = 206
+          Align = alClient
+          Caption = ' Star(s) : '
+          TabOrder = 0
+          object WaveVectors: TListBox
+            Height = 98
+            Width = 202
+            Align = alClient
+            Font.Style = [fsBold]
+            ItemHeight = 16
+            OnClick = WaveVectorsClick
+            OnEnter = WaveVectorsEnter
+            OnExit = WaveVectorsExit
+            OnKeyDown = WaveVectorsKeyDown
+            PopupMenu = PopupStars
+            TabOrder = 0
+          end
+        end
+        object ToolBarStars: TToolBar
+          Height = 24
+          Top = 4
+          Width = 206
+          AutoSize = True
+          BorderSpacing.Top = 4
+          BorderSpacing.Bottom = 4
+          ButtonHeight = 24
+          ButtonWidth = 24
+          Caption = 'ToolBar10'
+          EdgeBorders = []
+          Flat = True
+          Images = ImageList2
+          TabOrder = 1
+          Transparent = True
+          Wrapable = False
+          object ToolAddPropVect: TToolButton
+            Left = 9
+            Hint = 'Create a new star'
+            Caption = 'ToolButAddSite'
+            ImageIndex = 12
+            OnClick = MenuStarsAddClick
+          end
+          object ToolDelPropVect: TToolButton
+            Left = 33
+            Hint = 'Remove selected star'
+            Caption = 'ToolButDelSite'
+            ImageIndex = 13
+            OnClick = MenuStarsDeleteClick
+          end
+          object ToolEditPropVect: TToolButton
+            Left = 57
+            Hint = 'Change properties of the star'
+            Caption = 'ToolButEditSite'
+            ImageIndex = 14
+            OnClick = MenuStarsPropertiesClick
+          end
+          object ToolButton4: TToolButton
+            Left = 1
+            Width = 8
+            Caption = 'ToolButton4'
+            Style = tbsSeparator
+          end
+        end
+      end
+      object PanelSitesRepr: TPanel
+        Left = 409
+        Height = 148
+        Width = 199
+        Align = alRight
+        BevelOuter = bvNone
+        Enabled = False
+        TabOrder = 2
+        object GroupBox9: TGroupBox
+          Height = 116
+          Top = 32
+          Width = 199
+          Align = alClient
+          Caption = ' Representation(s) : '
+          TabOrder = 0
+          object Representations: TListBox
+            Height = 98
+            Width = 195
+            Align = alClient
+            Font.Style = [fsBold]
+            ItemHeight = 16
+            OnClick = RepresentationsClick
+            OnEnter = RepresentationsEnter
+            OnExit = RepresentationsExit
+            OnKeyDown = RepresentationsKeyDown
+            PopupMenu = PopupRepr
+            TabOrder = 0
+          end
+        end
+        object ToolBarRepr: TToolBar
+          Height = 24
+          Top = 4
+          Width = 199
+          AutoSize = True
+          BorderSpacing.Top = 4
+          BorderSpacing.Bottom = 4
+          ButtonHeight = 24
+          ButtonWidth = 24
+          Caption = 'ToolBar10'
+          EdgeBorders = []
+          Flat = True
+          Images = ImageList2
+          TabOrder = 1
+          Transparent = True
+          Wrapable = False
+          object ToolAddRepr: TToolButton
+            Left = 9
+            Hint = 'Create a new representation'
+            Caption = 'ToolButAddSite'
+            ImageIndex = 12
+            OnClick = MenuReprAddClick
+          end
+          object ToolDelRepr: TToolButton
+            Left = 33
+            Hint = 'Remove selected representation'
+            Caption = 'ToolButDelSite'
+            ImageIndex = 13
+            OnClick = MenuReprDeleteClick
+          end
+          object ToolButton5: TToolButton
+            Left = 1
+            Width = 8
+            Caption = 'ToolButton5'
+            Style = tbsSeparator
+          end
+        end
+      end
+      object Splitter7: TSplitter
+        Left = 407
+        Height = 148
+        Width = 2
+        Align = alRight
+        ResizeAnchor = akRight
+      end
+      object Splitter3: TSplitter
+        Left = 199
+        Height = 148
+        Width = 2
+      end
+    end
+    object BottomPanel: TPanel
+      Height = 366
+      Top = 150
+      Width = 608
+      Align = alClient
+      BevelOuter = bvNone
+      TabOrder = 1
+      object Splitter1: TSplitter
+        Left = 300
+        Height = 366
+        Width = 2
+      end
+      object Panel4: TPanel
+        Height = 366
+        Width = 300
+        Align = alLeft
+        BevelOuter = bvNone
+        Caption = 'Panel4'
+        TabOrder = 0
+        object GroupBox6: TGroupBox
+          Height = 334
+          Top = 32
+          Width = 300
+          Align = alClient
+          Caption = ' Atom(s) : '
+          TabOrder = 0
+          object Atoms: TColoredGrid
+            Height = 316
+            Width = 296
+            Align = alClient
+            ColCount = 5
+            FixedColor = clBtnFace
+            GridLineWidth = 0
+            Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goDrawFocusSelected, goRowSizing, goColSizing, goTabs, goThumbTracking]
+            PopupMenu = PopupAtoms
+            RowCount = 5
+            ScrollBars = ssAutoBoth
+            TabOrder = 0
+            TabStop = True
+            OnEnter = AtomsEnter
+            OnExit = AtomsExit
+            OnGridModified = AtomsGridModified
+            DoubleBuffered = True
+            ColNumFixed = True
+            Changeable = True
+            OddRowColor = clWhite
+            EvenRowColor = clSilver
+            SelectedRegionColor = clBlue
+          end
+        end
+        object ToolBarAtoms: TToolBar
+          Height = 24
+          Top = 4
+          Width = 300
+          AutoSize = True
+          BorderSpacing.Top = 4
+          BorderSpacing.Bottom = 4
+          ButtonHeight = 24
+          ButtonWidth = 24
+          Caption = 'ToolBar'
+          EdgeBorders = []
+          Flat = True
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Height = -11
+          Font.Name = 'MS Sans Serif'
+          Images = ImageList2
+          TabOrder = 1
+          Transparent = True
+          Wrapable = False
+          object ToolAtomsCopy: TToolButton
+            Left = 9
+            Hint = 'Copy selected area of the table to clipboard'
+            Caption = 'Copy'
+            ImageIndex = 3
+            OnClick = MenuAtomsCopyClick
+          end
+          object ToolAtomsPaste: TToolButton
+            Left = 33
+            Hint = 'Paste data from clipboard'
+            Caption = 'Paste'
+            ImageIndex = 4
+            OnClick = MenuAtomsPasteClick
+          end
+          object ToolAtomsDelete: TToolButton
+            Left = 57
+            Hint = 'Remove selected area of the table'
+            Caption = 'Delete'
+            ImageIndex = 11
+            OnClick = MenuAtomsDeleteClick
+          end
+          object ToolAtomsHelp: TToolButton
+            Left = 81
+            Caption = 'ToolAtomsHelp'
+            ImageIndex = 15
+            OnClick = ToolAtomsHelpClick
+          end
+          object ToolButton6: TToolButton
+            Left = 1
+            Width = 8
+            Caption = 'ToolButton6'
+            Style = tbsSeparator
+          end
+        end
+      end
+      object PanelSitesBF: TPanel
+        Left = 302
+        Height = 366
+        Width = 306
+        Align = alClient
+        BevelOuter = bvNone
+        TabOrder = 1
+        object GroupBox7: TGroupBox
+          Height = 334
+          Top = 32
+          Width = 306
+          Align = alClient
+          Caption = ' Basal Function(s) : '
+          TabOrder = 0
+          object BasisFunctions: TColoredGrid
+            Height = 316
+            Width = 302
+            Align = alClient
+            ColCount = 5
+            FixedColor = clBtnFace
+            GridLineWidth = 0
+            Options = [goFixedVertLine, goFixedHorzLine, goVertLine, goHorzLine, goRangeSelect, goDrawFocusSelected, goRowSizing, goColSizing, goTabs, goThumbTracking]
+            PopupMenu = PopupBF
+            RowCount = 5
+            ScrollBars = ssAutoBoth
+            TabOrder = 0
+            TabStop = True
+            OnEnter = BasisFunctionsEnter
+            OnExit = BasisFunctionsExit
+            OnGridModified = AtomsGridModified
+            DoubleBuffered = True
+            RowNumFixed = True
+            Changeable = True
+            OddRowColor = clWhite
+            EvenRowColor = clSilver
+            SelectedRegionColor = clBlue
+          end
+        end
+        object ToolBarBF: TToolBar
+          Height = 24
+          Top = 4
+          Width = 306
+          AutoSize = True
+          BorderSpacing.Top = 4
+          BorderSpacing.Bottom = 4
+          ButtonHeight = 24
+          ButtonWidth = 24
+          Caption = 'ToolBar'
+          EdgeBorders = []
+          Flat = True
+          Font.CharSet = RUSSIAN_CHARSET
+          Font.Height = -11
+          Font.Name = 'MS Sans Serif'
+          Images = ImageList2
+          TabOrder = 1
+          Transparent = True
+          Wrapable = False
+          object ToolBFCopy: TToolButton
+            Left = 9
+            Hint = 'Copy selected area of the table  to clipboard'
+            Caption = 'Copy'
+            ImageIndex = 3
+            OnClick = MenuBFCopyClick
+          end
+          object ToolBFPaste: TToolButton
+            Left = 33
+            Hint = 'Paste data from clipboard'
+            Caption = 'Paste'
+            ImageIndex = 4
+            OnClick = MenuBFPasteClick
+          end
+          object ToolBFDelete: TToolButton
+            Left = 57
+            Hint = 'Remove selected area of the table'
+            Caption = 'Delete'
+            ImageIndex = 11
+            OnClick = MenuBFDeleteClick
+          end
+          object ToolBFHelp: TToolButton
+            Left = 81
+            Caption = 'ToolBFHelp'
+            ImageIndex = 15
+            OnClick = ToolBFHelpClick
+          end
+          object ToolButton7: TToolButton
+            Left = 1
+            Width = 8
+            Caption = 'ToolButton7'
+            Style = tbsSeparator
+          end
+        end
+      end
+    end
+    object Splitter4: TSplitter
+      Cursor = crVSplit
+      Height = 2
+      Top = 148
+      Width = 608
+      Align = alTop
+      ResizeAnchor = akTop
+    end
+  end
+  object PanelCalcOptions: TPanel
+    Left = 425
+    Height = 516
+    Top = 259
+    Width = 608
+    BevelOuter = bvNone
+    Color = clYellow
+    Font.CharSet = RUSSIAN_CHARSET
+    Font.Height = -13
+    Font.Name = 'MS Sans Serif'
+    ParentColor = False
+    TabOrder = 8
+    Visible = False
+    object PanelTop: TPanel
+      Height = 148
+      Width = 608
+      Align = alTop
+      BevelOuter = bvNone
+      Caption = 'PanelTop'
+      TabOrder = 0
+      object Splitter5: TSplitter
+        Left = 303
+        Height = 148
+        Width = 2
+      end
+      object PanelSitesCalcOpt: TPanel
+        Height = 148
+        Width = 303
+        Align = alLeft
+        BevelOuter = bvNone
+        Caption = 'PanelSitesCalcOpt'
+        TabOrder = 0
+        object GroupBox10: TGroupBox
+          Height = 116
+          Top = 32
+          Width = 303
+          Align = alClient
+          Caption = ' Site(s) : '
+          TabOrder = 0
+          object ListBoxSitesCalcOpt: TListBox
+            Height = 98
+            Width = 299
+            Align = alClient
+            Font.Style = [fsBold]
+            ItemHeight = 16
+            OnClick = ListBoxSitesCalcOptClick
+            OnKeyDown = ListBoxSitesCalcOptKeyDown
+            TabOrder = 0
+          end
+        end
+        object ToolBar14: TToolBar
+          Height = 24
+          Top = 4
+          Width = 303
+          AutoSize = True
+          BorderSpacing.Top = 4
+          BorderSpacing.Bottom = 4
+          ButtonHeight = 24
+          ButtonWidth = 24
+          Caption = 'ToolBar10'
+          EdgeBorders = []
+          Flat = True
+          Images = ImageList2
+          TabOrder = 1
+          Transparent = True
+          Wrapable = False
+          object ToolButSitesCalcOpt: TToolButton
+            Left = 9
+            Hint = 'Calculation properties of selected site'
+            Caption = 'ToolButEditSite'
+            ImageIndex = 14
+            OnClick = ToolButSitesCalcOptClick
+          end
+          object ToolButton11: TToolButton
+            Left = 33
+            Caption = 'ToolButton11'
+            ImageIndex = 15
+            OnClick = ToolButton11Click
+          end
+          object ToolButton12: TToolButton
+            Left = 1
+            Width = 8
+            Caption = 'ToolButton12'
+            Style = tbsSeparator
+          end
+        end
+      end
+      object PanelStarsCalcOpt: TPanel
+        Left = 305
+        Height = 148
+        Width = 303
+        Align = alClient
+        BevelOuter = bvNone
+        Caption = 'PanelStarsCalcOpt'
+        TabOrder = 1
+        object GroupBox11: TGroupBox
+          Height = 116
+          Top = 32
+          Width = 303
+          Align = alClient
+          Caption = ' Star(s) : '
+          TabOrder = 0
+          object ListBoxPropVectCalcOpt: TListBox
+            Height = 98
+            Width = 299
+            Align = alClient
+            Font.Style = [fsBold]
+            ItemHeight = 16
+            OnClick = WaveVectorsClick
+            OnKeyDown = WaveVectorsKeyDown
+            TabOrder = 0
+          end
+        end
+        object ToolBar15: TToolBar
+          Height = 24
+          Top = 4
+          Width = 303
+          AutoSize = True
+          BorderSpacing.Top = 4
+          BorderSpacing.Bottom = 4
+          ButtonHeight = 24
+          ButtonWidth = 24
+          Caption = 'ToolBar10'
+          EdgeBorders = []
+          Flat = True
+          Images = ImageList2
+          TabOrder = 1
+          Transparent = True
+          Wrapable = False
+          object ToolButStarsCalcOpt: TToolButton
+            Left = 9
+            Hint = 'Calculation properties of selected star'
+            Caption = 'ToolButEditSite'
+            ImageIndex = 14
+            OnClick = EditWVButClick
+          end
+          object ToolButton13: TToolButton
+            Left = 1
+            Width = 8
+            Caption = 'ToolButton13'
+            Style = tbsSeparator
+          end
+        end
+      end
+    end
+    object Panel5: TPanel
+      Height = 72
+      Top = 148
+      Width = 608
+      Align = alTop
+      BevelOuter = bvNone
+      Caption = 'Panel5'
+      Font.CharSet = RUSSIAN_CHARSET
+      Font.Height = -13
+      Font.Name = 'MS Sans Serif'
+      TabOrder = 1
+      object GroupCommonSettings: TGroupBox
+        Height = 72
+        Width = 303
+        Align = alLeft
+        Caption = ' Parameters To Vary : '
+        TabOrder = 0
+        object CheckDebyeWaller: TCheckBox
+          Left = 7
+          Height = 13
+          Top = 10
+          Width = 141
+          Caption = 'Debye - Waller Parameter'
+          Checked = True
+          State = cbChecked
+          TabOrder = 0
+        end
+        object CheckIntensNorm: TCheckBox
+          Left = 7
+          Height = 13
+          Top = 34
+          Width = 133
+          Caption = 'Intensities Normalization'
+          Checked = True
+          State = cbChecked
+          TabOrder = 1
+        end
+      end
+      object GroupDirectSettings: TGroupBox
+        Left = 303
+        Height = 72
+        Width = 305
+        Align = alClient
+        Caption = ' Direct Calculation Settings : '
+        TabOrder = 1
+        object Label25: TLabel
+          Left = 6
+          Height = 17
+          Top = 8
+          Width = 181
+          Anchors = [akTop, akLeft, akRight]
+          AutoSize = False
+          Caption = 'Neutron data for R - Factor calculation :'
+          Color = clNone
+          ParentColor = False
+        end
+        object NeutronDataSelector: TComboBox
+          Left = 6
+          Height = 21
+          Top = 28
+          Width = 181
+          Anchors = [akTop, akLeft, akRight]
+          AutoCompleteText = [cbactEndOfLineComplete, cbactSearchAscending]
+          ItemHeight = 16
+          MaxLength = 0
+          TabOrder = 0
+          Text = 'NeutronDataSelector'
+        end
+      end
+    end
+    object SelectorContainerPanel: TPanel
+      Height = 72
+      Top = 220
+      Width = 608
+      Align = alTop
+      BevelOuter = bvNone
+      Caption = 'SelectorContainerPanel'
+      TabOrder = 2
+      object RFactorSourceSelector: TRadioGroup
+        Height = 72
+        Width = 303
+        Align = alLeft
+        AutoFill = True
+        Caption = ' R - Factor Source : '
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.TopBottomSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ItemIndex = 0
+        Items.Strings = (
+          'Intensity'
+          'Structure Factors'
+        )
+        TabOrder = 0
+      end
+      object RadioLorentz: TRadioGroup
+        Left = 303
+        Height = 72
+        Width = 305
+        Align = alClient
+        AutoFill = True
+        Caption = ' Type Of Lorentz Factor : '
+        ChildSizing.LeftRightSpacing = 6
+        ChildSizing.TopBottomSpacing = 6
+        ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+        ChildSizing.EnlargeVertical = crsHomogenousChildResize
+        ChildSizing.ShrinkHorizontal = crsScaleChilds
+        ChildSizing.ShrinkVertical = crsScaleChilds
+        ChildSizing.Layout = cclLeftToRightThenTopToBottom
+        ChildSizing.ControlsPerLine = 1
+        ItemIndex = 0
+        Items.Strings = (
+          '1/(Sin(Theta) * Sin(2 * Theta))'
+          '1/(Sin(Theta) ^ 2)'
+        )
+        TabOrder = 1
+      end
+    end
+    object CurJobProgress: TProgressBar
+      Height = 22
+      Hint = 'Current Job Progress'
+      Top = 494
+      Width = 608
+      Align = alBottom
+      Max = 100
+      Step = 1
+      TabOrder = 3
+    end
+    object GroupPatternBounds: TGroupBox
+      Height = 69
+      Top = 292
+      Width = 608
+      Align = alTop
+      Caption = ' Diffraction Pattern Bounds : '
+      TabOrder = 4
+      object Label8: TLabel
+        Left = 7
+        Height = 14
+        Top = 4
+        Width = 96
+        Caption = 'Start pos. (SinT/L): '
+        Color = clNone
+        ParentColor = False
+      end
+      object Label21: TLabel
+        Left = 267
+        Height = 14
+        Top = 4
+        Width = 87
+        Caption = 'End pos. (SinT/L):'
+        Color = clNone
+        ParentColor = False
+      end
+      object CheckUseStartEnd: TCheckBox
+        Left = 7
+        Height = 13
+        Top = 32
+        Width = 92
+        Caption = 'Enable Bounds'
+        TabOrder = 0
+      end
+      object InputStartPos: TEdit
+        Left = 126
+        Height = 24
+        Width = 90
+        TabOrder = 1
+      end
+      object InputEndPos: TEdit
+        Left = 383
+        Height = 24
+        Width = 90
+        TabOrder = 2
+      end
+    end
+    object GroupBox3: TGroupBox
+      Height = 133
+      Top = 361
+      Width = 608
+      Align = alClient
+      Caption = ' Calculation Progress: '
+      TabOrder = 5
+      object CalcComments: TMemo
+        Height = 115
+        Width = 604
+        Align = alClient
+        ReadOnly = True
+        ScrollBars = ssBoth
+        TabOrder = 0
+      end
+    end
+  end
+  object MainMenu: TMainMenu
+    left = 136
+    top = 16
+    object MenuFileEdit: TMenuItem
+      Caption = '&File'
+      object MenuFileNew: TMenuItem
+        Caption = 'New File'
+        Hint = 'Create a new source file'
+        OnClick = MenuFileNewClick
+      end
+      object MenuFileNewUnit: TMenuItem
+        Caption = 'New Data Unit'
+        Hint = 'Create a new data unit'
+        object MenuFileNewPoly: TMenuItem
+          Caption = 'Magnetic Structure (Polycrystal)'
+          Hint = 'Create new unit for magnetic structure calculation'
+          OnClick = MenuFileNewPolyClick
+        end
+        object MenuFileNewMono: TMenuItem
+          Caption = 'Magnetic Structure (Monocrystal)'
+          OnClick = MenuFileNewMonoClick
+        end
+        object MenuFileNewDirect: TMenuItem
+          Caption = 'Direct Pattern Calculation'
+          Hint = 'Create new unit for difraction pattern calculation'
+          OnClick = MenuFileNewDirectClick
+        end
+      end
+      object MenuFileOpen: TMenuItem
+        Caption = '&Open File...'
+        Bitmap.Data = {
+          F6000000424DF600000000000000760000002800000010000000100000000100
+          0400000000008000000000000000000000001000000010000000000000000000
+          80000080000000808000800000008000800080800000C0C0C000808080000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00444444444444
+          4444444444444444444444444444444444444444444444444444440000000000
+          4444400B7B7B7B7B044440F0B7B7B7B7B04440BF0B7B7B7B7B0440FBF0000000
+          000440BFBFBFBFB0444440FBFBFBFBF0444440BFBFBF00044444440BFBF04444
+          4444448000084444444444444444444444444444444444444444
+        }
+        Hint = 'Open an existing source file'
+        OnClick = MenuFileOpenClick
+      end
+      object MenuFileSave: TMenuItem
+        Caption = 'Sa&ve File'
+        Enabled = False
+        Bitmap.Data = {
+          F6000000424DF600000000000000760000002800000010000000100000000100
+          0400000000008000000000000000000000001000000010000000000000000000
+          80000080000000808000800000008000800080800000C0C0C000808080000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00444444444444
+          4444400008888888004400000877777700040000087007770004000008700777
+          0004000008777777000400000000000000040000000000000004000FFFFFFFFF
+          0004000FFFFFFFFF0004000FFFFFFFFF0004000FFFFFFFFF0004000FFFFFFFFF
+          0004000FFFFFFFFF0804000FFFFFFFFF00044009999999990044
+        }
+        Hint = 'Save changes'
+        ShortCut = 16467
+        OnClick = MenuFileSaveClick
+      end
+      object MenuFileSaveAs: TMenuItem
+        Caption = 'Save File &As...'
+        Enabled = False
+        Hint = 'Save the file with a new name'
+        OnClick = MenuFileSaveAsClick
+      end
+      object N12: TMenuItem
+        Caption = '-'
+      end
+      object MenuFileExit: TMenuItem
+        Caption = '&Exit'
+        Bitmap.Data = {
+          F6000000424DF600000000000000760000002800000010000000100000000100
+          0400000000008000000000000000000000001000000010000000000000000000
+          80000080000000808000800000008000800080800000C0C0C000808080000000
+          FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFFFF00330000000000
+          03333301BBBBBBBB033333011BBBBBBB0333330111BBBBBB03333301110BBBBB
+          03333301110BBBBB03333301110BBBBB03333301110BBBBB03333301110BBBBB
+          03333301110BBBBB0333330111B0BBBB03333301110BBBBB03333301110BBBBB
+          03333301E10BBBBB03333301EE0BBBBB03333300000000000333
+        }
+        Hint = 'Exit'
+        ShortCut = 32883
+        OnClick = MenuFileExitClick
+      end
+    end
+    object MenuProjectEdit: TMenuItem
+      Caption = '&Edit'
+      Visible = False
+      object MenuProjectRenameUnit: TMenuItem
+        Caption = 'Rename Unit'
+        Hint = 'Rename selected unit'
+        OnClick = MenuProjectRenameUnitClick
+      end
+      object MenuProjectDeleteUnit: TMenuItem
+        Caption = 'Delete  Unit'
+        Hint = 'Delete selected unit'
+        ShortCut = 16430
+        OnClick = MenuProjectDeleteUnitClick
+      end
+      object MenuPlotPatternEdit: TMenuItem
+        Caption = 'Picture'
+        Visible = False
+        object MenuPlotPatternCopy: TMenuItem
+          Caption = 'Copy'
+          GroupIndex = 1
+          Hint = 'Copy picture to clipboard'
+          ShortCut = 16451
+          OnClick = MenuPlotPatternCopyClick
+        end
+        object MenuPlotPatternSave: TMenuItem
+          Caption = 'Save To File...'
+          GroupIndex = 1
+          Hint = 'Save picture to file'
+          OnClick = MenuPlotPatternSaveClick
+        end
+      end
+      object MenuPlotStructEdit: TMenuItem
+        Caption = 'Picture'
+        Visible = False
+        object MenuPlotStructCopy: TMenuItem
+          Caption = 'Copy'
+          GroupIndex = 1
+          Hint = 'Copy picture to clipboard'
+          ShortCut = 16451
+          OnClick = MenuPlotStructCopyClick
+        end
+        object MenuPlotStructSave: TMenuItem
+          Caption = 'Save To File...'
+          GroupIndex = 1
+          Hint = 'Save picture to file'
+          OnClick = MenuPlotStructSaveClick
+        end
+      end
+      object N10: TMenuItem
+        Caption = '-'
+      end
+      object MenuFFEdit: TMenuItem
+        Caption = '&Form - Factors Editor...'
+        Hint = 'Edit form - factors database'
+        OnClick = MenuFFEditClick
+      end
+      object MenuSettings: TMenuItem
+        Caption = 'Environment &Settings...'
+        Hint = 'Change program settings'
+        Visible = False
+        OnClick = MenuSettingsClick
+      end
+    end
+    object MenuAtomsEdit: TMenuItem
+      Caption = '&Edit'
+      Visible = False
+      OnClick = MenuAtomsEditClick
+      object MenuAtomsCopy: TMenuItem
+        Caption = 'Copy'
+        Hint = 'Copy selected area of table to clipboard'
+        ShortCut = 16451
+        OnClick = MenuAtomsCopyClick
+      end
+      object MenuAtomsPaste: TMenuItem
+        Caption = 'Paste'
+        Hint = 'Paste data from clipboard'
+        ShortCut = 16470
+        OnClick = MenuAtomsPasteClick
+      end
+      object MenuAtomsDelete: TMenuItem
+        Caption = 'Delete '
+        Hint = 'Delete or clear selected area of table'
+        ShortCut = 16430
+        OnClick = MenuAtomsDeleteClick
+      end
+      object N7: TMenuItem
+        Caption = '-'
+      end
+      object MenuAtomsSelectAll: TMenuItem
+        Caption = 'Select All'
+        Hint = 'Select all the table'
+        ShortCut = 16449
+        OnClick = MenuAtomsSelectAllClick
+      end
+      object N13: TMenuItem
+        Caption = '-'
+      end
+      object MenuAtomsInsert: TMenuItem
+        Caption = 'Insert Atom'
+        Hint = 'Insert new atom'
+        ShortCut = 16429
+        OnClick = MenuAtomsInsertClick
+      end
+      object MenuAtomsAdd: TMenuItem
+        Caption = 'Add Atom'
+        Hint = 'Add new atom on the end of table'
+        OnClick = MenuAtomsAddClick
+      end
+    end
+    object MenuBFEdit: TMenuItem
+      Caption = '&Edit'
+      Visible = False
+      OnClick = MenuBFEditClick
+      object MenuBFCopy: TMenuItem
+        Caption = 'Copy'
+        Hint = 'Copy selected area of table to clipboard'
+        ShortCut = 16451
+        OnClick = MenuBFCopyClick
+      end
+      object MenuBFPaste: TMenuItem
+        Caption = 'Paste'
+        Hint = 'Paste data from clipboard'
+        ShortCut = 16470
+        OnClick = MenuBFPasteClick
+      end
+      object MenuBFDelete: TMenuItem
+        Caption = 'Delete '
+        Hint = 'Delete or clear selected area of table'
+        ShortCut = 16430
+        OnClick = MenuBFDeleteClick
+      end
+      object N14: TMenuItem
+        Caption = '-'
+      end
+      object MenuBFSelectAll: TMenuItem
+        Caption = 'Select All'
+        Hint = 'Select all the table'
+        ShortCut = 16449
+        OnClick = MenuBFSelectAllClick
+      end
+      object N15: TMenuItem
+        Caption = '-'
+      end
+      object MenuBFInsert: TMenuItem
+        Caption = 'Insert Basal Function'
+        Hint = 'Insert new basal function'
+        ShortCut = 16429
+        OnClick = MenuBFInsertClick
+      end
+      object MenuBFAdd: TMenuItem
+        Caption = 'Add Basal Function'
+        Hint = 'Add basal function on the end of table'
+        OnClick = MenuBFAddClick
+      end
+    end
+    object MenuSitesEdit: TMenuItem
+      Caption = '&Edit'
+      Visible = False
+      OnClick = MenuSitesEditClick
+      object MenuSitesAdd: TMenuItem
+        Caption = 'Add New Site...'
+        Hint = 'Add new site'
+        OnClick = MenuSitesAddClick
+      end
+      object MenuSitesDelete: TMenuItem
+        Caption = 'Delete'
+        Hint = 'Delete selected site'
+        ShortCut = 16430
+        OnClick = MenuSitesDeleteClick
+      end
+      object N16: TMenuItem
+        Caption = '-'
+      end
+      object MenuSitesProperties: TMenuItem
+        Caption = 'Properties...'
+        Hint = 'Set properties of selected site'
+        OnClick = MenuSitesPropertiesClick
+      end
+    end
+    object MenuStarsEdit: TMenuItem
+      Caption = '&Edit'
+      Visible = False
+      OnClick = MenuStarsEditClick
+      object MenuStarsAdd: TMenuItem
+        Caption = 'Add New Star...'
+        Hint = 'Add new star'
+        OnClick = MenuStarsAddClick
+      end
+      object MenuStarsDelete: TMenuItem
+        Caption = 'Delete'
+        Hint = 'Delete selected star'
+        ShortCut = 16430
+        OnClick = MenuStarsDeleteClick
+      end
+      object N17: TMenuItem
+        Caption = '-'
+      end
+      object MenuStarsProperties: TMenuItem
+        Caption = 'Properties...'
+        Hint = 'Set properties of selected star'
+        OnClick = MenuStarsPropertiesClick
+      end
+    end
+    object MenuReprEdit: TMenuItem
+      Caption = '&Edit'
+      Visible = False
+      OnClick = MenuReprEditClick
+      object MenuReprAdd: TMenuItem
+        Caption = 'Add New Representation'
+        Hint = 'Add new representation'
+        OnClick = MenuReprAddClick
+      end
+      object MenuReprDelete: TMenuItem
+        Caption = 'Delete'
+        Hint = 'Delete selected representation'
+        ShortCut = 16430
+        OnClick = MenuReprDeleteClick
+      end
+    end
+    object MenuResultsEdit: TMenuItem
+      Caption = '&Edit'
+      Visible = False
+      object MenuResultsCopy: TMenuItem
+        Caption = 'Copy'
+        Hint = 'Copy selected area of table to clipboard'
+        ShortCut = 16451
+        OnClick = MenuResultsCopyClick
+      end
+    end
+    object MenuNeutronEdit: TMenuItem
+      Caption = '&Edit'
+      Visible = False
+      OnClick = MenuNeutronEditClick
+      object MenuNeutronCopy: TMenuItem
+        Caption = 'Copy'
+        Hint = 'Copy selected area of table to clipboard'
+        ShortCut = 16451
+        OnClick = MenuNeutronCopyClick
+      end
+      object MenuNeutronPaste: TMenuItem
+        Caption = 'Paste'
+        Hint = 'Paste data from clipboard'
+        ShortCut = 16470
+        OnClick = MenuNeutronPasteClick
+      end
+      object MenuNeutronDelete: TMenuItem
+        Caption = 'Delete '
+        Hint = 'Delete or clear selected area of table'
+        ShortCut = 16430
+        OnClick = MenuNeutronDeleteClick
+      end
+      object N18: TMenuItem
+        Caption = '-'
+      end
+      object MenuNeutronSelectAll: TMenuItem
+        Caption = 'Select All'
+        Hint = 'Select all the table'
+        ShortCut = 16449
+        OnClick = MenuNeutronSelectAllClick
+      end
+      object N19: TMenuItem
+        Caption = '-'
+      end
+      object MenuNeutronInsert: TMenuItem
+        Caption = 'Insert Peak'
+        Hint = 'Insert new peak of diffraction pattern'
+        ShortCut = 16429
+        OnClick = MenuNeutronInsertClick
+      end
+      object MenuNeutronAdd: TMenuItem
+        Caption = 'Add Peak'
+        Hint = 'Add new peak on the end of table'
+        OnClick = MenuNeutronAddClick
+      end
+    end
+    object MenuMemoEdit: TMenuItem
+      Caption = '&Edit'
+      Visible = False
+      OnClick = MenuMemoEditClick
+      object MenuMemoCopy: TMenuItem
+        Caption = 'Copy'
+        Hint = 'Copy selected text to clipboard'
+        ShortCut = 16451
+        OnClick = MenuMemoCopyClick
+      end
+      object MenuMemoPaste: TMenuItem
+        Caption = 'Paste'
+        Hint = 'Paste text from clipboard'
+        ShortCut = 16470
+        OnClick = MenuMemoPasteClick
+      end
+    end
+    object MenuProjectView: TMenuItem
+      Caption = '&View'
+      Visible = False
+      object MenuProjectAutoExpand: TMenuItem
+        Caption = 'Auto Expand'
+        Checked = True
+        Hint = 'Auto expansion of the project file tree'
+        OnClick = MenuProjectAutoExpandClick
+      end
+      object MenuProjectFullExpand: TMenuItem
+        Caption = 'Full Expand'
+        Hint = 'Full expansion of the project file tree'
+        OnClick = MenuProjectFullExpandClick
+      end
+      object MenuPlotPatternView: TMenuItem
+        Caption = 'Pattern View Mode'
+        Visible = False
+        object MenuPlotPatternNeutron: TMenuItem
+          Caption = 'View Neutron Intensities'
+          OnClick = MenuPlotPatternNeutronClick
+        end
+        object MenuPlotPatternNucl: TMenuItem
+          Caption = 'View Nuclear Intensities'
+          OnClick = MenuPlotPatternNuclClick
+        end
+        object MenuPlotPatternMagn: TMenuItem
+          Caption = 'View Magnetic Intensities'
+          OnClick = MenuPlotPatternMagnClick
+        end
+        object MenuPlotPatternStructFact: TMenuItem
+          Caption = 'View As Structure Factors'
+          OnClick = MenuPlotPatternStructFactClick
+        end
+      end
+    end
+    object MenuCalculation: TMenuItem
+      Caption = '&Calculation'
+      object MenuCheckDataValidity: TMenuItem
+        Caption = '&Check Data Validity'
+        Enabled = False
+        OnClick = MenuCheckDataValidityClick
+      end
+      object MenuStartReverse: TMenuItem
+        Caption = '&Start Magnetic Structure Calculation'
+        Enabled = False
+        Hint = 'Begin searching of best structure'
+        OnClick = MenuStartReverseClick
+      end
+      object MenuStopReverse: TMenuItem
+        Caption = 'S&top Calculation'
+        Enabled = False
+        Hint = 'Stop the searching process'
+        OnClick = MenuStopReverseClick
+      end
+      object N3: TMenuItem
+        Caption = '-'
+      end
+      object MenuDirect: TMenuItem
+        Caption = '&Direct Pattern Calculation'
+        Enabled = False
+        OnClick = MenuDirectClick
+      end
+    end
+    object Help1: TMenuItem
+      Caption = '&Help'
+      object Contents1: TMenuItem
+        Caption = 'Contents'
+        OnClick = Contents1Click
+      end
+      object N6: TMenuItem
+        Caption = '-'
+      end
+      object About1: TMenuItem
+        Caption = 'About...'
+        OnClick = About1Click
+      end
+    end
+  end
+  object SaveDialog1: TSaveDialog
+    Title = 'Сохранить файл как'
+    FilterIndex = 0
+    left = 232
+    top = 128
+  end
+  object OpenDialog1: TOpenDialog
+    Title = 'Открыть существующий файл'
+    FilterIndex = 0
+    left = 232
+    top = 160
+  end
+  object PopupProject: TPopupMenu
+    left = 168
+    top = 16
+    object PopupProjectAutoExpand: TMenuItem
+      Caption = 'Auto Expand'
+      Checked = True
+      Hint = 'Auto expansion of the project file tree'
+      OnClick = MenuProjectAutoExpandClick
+    end
+    object PopupProjectFullExpand: TMenuItem
+      Caption = 'Full Expand'
+      Hint = 'Full expansion of the project file tree'
+      OnClick = MenuProjectFullExpandClick
+    end
+    object N2: TMenuItem
+      Caption = '-'
+    end
+    object PopupProjectRenameUnit: TMenuItem
+      Caption = 'Rename Unit'
+      Hint = 'Rename selected unit'
+      OnClick = MenuProjectRenameUnitClick
+    end
+    object PopupProjectDeleteUnit: TMenuItem
+      Caption = 'Delete  Unit'
+      Hint = 'Delete selected unit'
+      ShortCut = 16430
+      OnClick = MenuProjectDeleteUnitClick
+    end
+  end
+  object PopupAtoms: TPopupMenu
+    left = 200
+    top = 16
+    object PopupAtomsCopy: TMenuItem
+      Caption = 'Copy'
+      Hint = 'Copy selected area of table to clipboard'
+      ShortCut = 16451
+      OnClick = MenuAtomsCopyClick
+    end
+    object PopupAtomsPaste: TMenuItem
+      Caption = 'Paste'
+      Hint = 'Paste data from clipboard'
+      ShortCut = 16470
+      OnClick = MenuAtomsPasteClick
+    end
+    object PopupAtomsDelete: TMenuItem
+      Caption = 'Delete '
+      Hint = 'Delete or clear selected area of table'
+      ShortCut = 16430
+      OnClick = MenuAtomsDeleteClick
+    end
+    object N20: TMenuItem
+      Caption = '-'
+    end
+    object PopupAtomsSelectAll: TMenuItem
+      Caption = 'Select All'
+      Hint = 'Select all the table'
+      ShortCut = 16449
+      OnClick = MenuAtomsSelectAllClick
+    end
+    object N21: TMenuItem
+      Caption = '-'
+    end
+    object PopupAtomsInsert: TMenuItem
+      Caption = 'Insert Atom'
+      Hint = 'Insert new atom'
+      ShortCut = 16429
+      OnClick = MenuAtomsInsertClick
+    end
+    object PopupAtomsAdd: TMenuItem
+      Caption = 'Add Atom'
+      Hint = 'Add new atom on the end of table'
+      OnClick = MenuAtomsAddClick
+    end
+  end
+  object PopupBF: TPopupMenu
+    left = 232
+    top = 16
+    object PopupBFCopy: TMenuItem
+      Caption = 'Copy'
+      Hint = 'Copy selected area of table to clipboard'
+      ShortCut = 16451
+      OnClick = MenuBFCopyClick
+    end
+    object PopupBFPaste: TMenuItem
+      Caption = 'Paste'
+      Hint = 'Paste data from clipboard'
+      ShortCut = 16470
+      OnClick = MenuBFPasteClick
+    end
+    object PopupBFDelete: TMenuItem
+      Caption = 'Delete '
+      Hint = 'Delete or clear selected area of table'
+      ShortCut = 16430
+      OnClick = MenuBFDeleteClick
+    end
+    object N22: TMenuItem
+      Caption = '-'
+    end
+    object PopupBFSelectAll: TMenuItem
+      Caption = 'Select All'
+      Hint = 'Select all the table'
+      ShortCut = 16449
+      OnClick = MenuBFSelectAllClick
+    end
+    object N23: TMenuItem
+      Caption = '-'
+    end
+    object PopupBFInsert: TMenuItem
+      Caption = 'Insert Basal Function'
+      Hint = 'Insert new basal function'
+      ShortCut = 16429
+      OnClick = MenuBFInsertClick
+    end
+    object PopupBFAdd: TMenuItem
+      Caption = 'Add Basal Function'
+      Hint = 'Add basal function on the end of table'
+      OnClick = MenuBFAddClick
+    end
+  end
+  object PopupSites: TPopupMenu
+    left = 264
+    top = 16
+    object PopupSitesAdd: TMenuItem
+      Caption = 'Add New Site...'
+      Hint = 'Add new site'
+      OnClick = MenuSitesAddClick
+    end
+    object PopupSitesDelete: TMenuItem
+      Caption = 'Delete'
+      Hint = 'Delete selected site'
+      ShortCut = 16430
+      OnClick = MenuSitesDeleteClick
+    end
+    object N11: TMenuItem
+      Caption = '-'
+    end
+    object PopupSitesProperties: TMenuItem
+      Caption = 'Properties...'
+      Hint = 'Set properties of selected site'
+      OnClick = MenuSitesPropertiesClick
+    end
+  end
+  object PopupStars: TPopupMenu
+    left = 168
+    top = 48
+    object PopupStarsAdd: TMenuItem
+      Caption = 'Add New Star...'
+      Hint = 'Add new star'
+      OnClick = MenuStarsAddClick
+    end
+    object PopupStarsDelete: TMenuItem
+      Caption = 'Delete'
+      Hint = 'Delete selected star'
+      ShortCut = 16430
+      OnClick = MenuStarsDeleteClick
+    end
+    object N24: TMenuItem
+      Caption = '-'
+    end
+    object PopupStarsProperties: TMenuItem
+      Caption = 'Properties...'
+      Hint = 'Set properties of selected star'
+      OnClick = MenuStarsPropertiesClick
+    end
+  end
+  object PopupRepr: TPopupMenu
+    left = 200
+    top = 48
+    object PopupReprAdd: TMenuItem
+      Caption = 'Add New Representation'
+      Hint = 'Add new representation'
+      OnClick = MenuReprAddClick
+    end
+    object PopupReprDelete: TMenuItem
+      Caption = 'Delete'
+      Hint = 'Delete selected representation'
+      ShortCut = 16430
+      OnClick = MenuReprDeleteClick
+    end
+  end
+  object PopupResults: TPopupMenu
+    left = 232
+    top = 48
+    object PopupResultsCopy: TMenuItem
+      Caption = 'Copy'
+      Hint = 'Copy selected area of table to clipboard'
+      ShortCut = 16451
+      OnClick = MenuResultsCopyClick
+    end
+  end
+  object PopupNeutron: TPopupMenu
+    left = 264
+    top = 48
+    object PopupNeutronCopy: TMenuItem
+      Caption = 'Copy'
+      Hint = 'Copy selected area of table to clipboard'
+      ShortCut = 16451
+      OnClick = MenuNeutronCopyClick
+    end
+    object PopupNeutronPaste: TMenuItem
+      Caption = 'Paste'
+      Hint = 'Paste data from clipboard'
+      ShortCut = 16470
+      OnClick = MenuNeutronPasteClick
+    end
+    object PopupNeutronDelete: TMenuItem
+      Caption = 'Delete '
+      Hint = 'Delete or clear selected area of table'
+      ShortCut = 16430
+      OnClick = MenuNeutronDeleteClick
+    end
+    object N9: TMenuItem
+      Caption = '-'
+    end
+    object PopupNeutronSelectAll: TMenuItem
+      Caption = 'Select All'
+      Hint = 'Select all the table'
+      ShortCut = 16449
+      OnClick = MenuNeutronSelectAllClick
+    end
+    object N25: TMenuItem
+      Caption = '-'
+    end
+    object PopupNeutronInsert: TMenuItem
+      Caption = 'Insert Peak'
+      Hint = 'Insert new peak of diffraction pattern'
+      ShortCut = 16429
+      OnClick = MenuNeutronInsertClick
+    end
+    object PopupNeutronAdd: TMenuItem
+      Caption = 'Add Peak'
+      Hint = 'Add new peak on the end of table'
+      OnClick = MenuNeutronAddClick
+    end
+  end
+  object PopupPlotStruct: TPopupMenu
+    left = 168
+    top = 80
+    object PopupPlotStructCopy: TMenuItem
+      Caption = 'Copy'
+      GroupIndex = 1
+      Hint = 'Copy picture to clipboard'
+      ShortCut = 16451
+      OnClick = MenuPlotStructCopyClick
+    end
+    object PopupPlotStructSave: TMenuItem
+      Caption = 'Save Picture To File...'
+      GroupIndex = 1
+      Hint = 'Save picture to file'
+      OnClick = MenuPlotStructSaveClick
+    end
+  end
+  object PopupMemo: TPopupMenu
+    left = 232
+    top = 80
+    object PopupMemoCopy: TMenuItem
+      Caption = 'Copy'
+      Hint = 'Copy selected text to clipboard'
+      ShortCut = 16451
+      OnClick = MenuMemoCopyClick
+    end
+    object PopupMemoPaste: TMenuItem
+      Caption = 'Paste'
+      Hint = 'Paste text from clipboard'
+      ShortCut = 16470
+      OnClick = MenuMemoPasteClick
+    end
+  end
+  object PopupPlotPattern: TPopupMenu
+    left = 200
+    top = 80
+    object PopupPlotPatternNeutron: TMenuItem
+      Caption = 'View Neutron Intensities'
+      OnClick = MenuPlotPatternNeutronClick
+    end
+    object PopupPlotPatternNucl: TMenuItem
+      Caption = 'View Nuclear Intensities'
+      OnClick = MenuPlotPatternNuclClick
+    end
+    object PopupPlotPatternMagn: TMenuItem
+      Caption = 'View Magnetic Intensities'
+      OnClick = MenuPlotPatternMagnClick
+    end
+    object PopupPlotPatternStructFact: TMenuItem
+      Caption = 'View As Structure Factors'
+      OnClick = MenuPlotPatternStructFactClick
+    end
+    object N4: TMenuItem
+      Caption = '-'
+    end
+    object PopupPlotPatternCopy: TMenuItem
+      Caption = 'Copy'
+      GroupIndex = 1
+      Hint = 'Copy picture to clipboard'
+      ShortCut = 16451
+      OnClick = MenuPlotPatternCopyClick
+    end
+    object PopupPlotPattenSave: TMenuItem
+      Caption = 'Save Picture To File...'
+      GroupIndex = 1
+      Hint = 'Save picture to file'
+      OnClick = MenuPlotPatternSaveClick
+    end
+  end
+  object ImageList2: TImageList
+    left = 168
+    top = 128
+    Bitmap = {
+      6C69100000001000000010000000070B00002F2A2058504D202A2F0A73746174
+      69632063686172202A677261706869635B5D203D207B0A223137203137203133
+      332032222C0A222E2E2063204E6F6E65222C0A222E2C20632023384639313844
+      222C0A222E2D20632023424643304245222C0A222E2A20632023424643314245
+      222C0A222E6120632023424643304244222C0A222E6220632023424542464245
+      222C0A222E6320632023424442434141222C0A222E6420632023433242443832
+      222C0A222E6520632023434643383739222C0A222E6620632023433642453733
+      222C0A222E6720632023394139433938222C0A222E6820632023464646464646
+      222C0A222E6920632023463146314631222C0A222E6A20632023463246324632
+      222C0A222E6B20632023463346334633222C0A222E6C20632023463446344634
+      222C0A222E6D20632023463446344635222C0A222E6E20632023463546354635
+      222C0A222E6F20632023463546354636222C0A222E7020632023463746354534
+      222C0A222E7120632023464646353946222C0A222E7220632023464546343943
+      222C0A222E7320632023464346384445222C0A222E7420632023463546304333
+      222C0A222E7520632023463745393641222C0A222E7620632023394239443939
+      222C0A222E7720632023464146414641222C0A222E7820632023444444444444
+      222C0A222E7920632023453145314531222C0A222E7A20632023453045304530
+      222C0A222E4120632023453145304530222C0A222E4220632023453245314533
+      222C0A222E4320632023453245334532222C0A222E4420632023453945354332
+      222C0A222E4520632023463445373744222C0A222E4620632023463545454146
+      222C0A222E4720632023463646364646222C0A222E4820632023463446324445
+      222C0A222E4920632023463845423730222C0A222E4A20632023464246424642
+      222C0A222E4B20632023444644464446222C0A222E4C20632023453345334533
+      222C0A222E4D20632023453245324531222C0A222E4E20632023453245324533
+      222C0A222E4F20632023453545354535222C0A222E5020632023453645354535
+      222C0A222E5120632023453845374436222C0A222E5220632023454645384132
+      222C0A222E5320632023463545393837222C0A222E5420632023463846304230
+      222C0A222E5520632023454345343943222C0A222E5620632023463445343535
+      222C0A222E5720632023394239443938222C0A222E5820632023464346434644
+      222C0A222E5920632023453445334533222C0A222E5A20632023453445344534
+      222C0A222E3020632023453645364537222C0A222E3120632023453745374537
+      222C0A222E3220632023453745384538222C0A222E3320632023453945394532
+      222C0A222E3420632023454345374332222C0A222E3520632023464446344146
+      222C0A222E3620632023433643323931222C0A222E3720632023394539463942
+      222C0A222E3820632023454245434543222C0A222E3920632023433643374336
+      222C0A222E4020632023454345424543222C0A222E2320632023453445344535
+      222C0A222E3B20632023453645364536222C0A222E3A20632023453745374538
+      222C0A222E3D20632023453845384539222C0A222E2B20632023453945394541
+      222C0A222E2520632023454145414542222C0A222E2420632023453945414542
+      222C0A222E2820632023464646454645222C0A222E2920632023423442374330
+      222C0A222E5B20632023464146414642222C0A222E5D20632023454545454545
+      222C0A222C2E20632023463046304630222C0A222C2C20632023453645364535
+      222C0A222C2D20632023453945414539222C0A222C2A20632023454145414541
+      222C0A222C6120632023454245424542222C0A222C6220632023464646454646
+      222C0A222C6320632023424542464243222C0A222C6420632023464446444644
+      222C0A222C6520632023453845384538222C0A222C6620632023453845374538
+      222C0A222C6720632023453845384537222C0A222C6820632023453945384538
+      222C0A222C6920632023453845394539222C0A222C6A20632023454145424542
+      222C0A222C6B20632023454345434542222C0A222C6C20632023454345444543
+      222C0A222C6D20632023453945394539222C0A222C6E20632023454145394539
+      222C0A222C6F20632023454245424541222C0A222C7020632023454345434543
+      222C0A222C7120632023454445434543222C0A222C7220632023454445444545
+      222C0A222C7320632023454445454545222C0A222C7420632023454545444544
+      222C0A222C7520632023434143414339222C0A222C7620632023454145394541
+      222C0A222C7720632023454245414542222C0A222C7820632023454245434542
+      222C0A222C7920632023454445434544222C0A222C7A20632023454545454544
+      222C0A222C4120632023454645464546222C0A222C4220632023394239433938
+      222C0A222C4320632023454245394539222C0A222C4420632023454445454544
+      222C0A222C4520632023454445444544222C0A222C4620632023454545454546
+      222C0A222C4720632023463046304631222C0A222C4820632023463246324631
+      222C0A222C4920632023424442464243222C0A222C4A20632023464446434644
+      222C0A222C4B20632023454545464546222C0A222C4C20632023463046314631
+      222C0A222C4D20632023463246334632222C0A222C4E20632023463346324633
+      222C0A222C4F20632023394139433937222C0A222C5020632023463846384639
+      222C0A222C5120632023464246434644222C0A222C5220632023464546454645
+      222C0A222C5320632023384639303843222C0A222C5420632023424542464244
+      222C0A222C5520632023433443354332222C0A222C5620632023434243434339
+      222C0A222C5720632023433943414337222C0A222C5820632023443044314345
+      222C0A222C5920632023394339443939222C0A222E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2C2E2D2E2A
+      2E2D2E612E612E612E612E612E612E622E632E642E652E662E2E2E2E222C0A22
+      2E672E682E692E6A2E6B2E6C2E6C2E6D2E6E2E6F2E702E712E722E732E742E75
+      2E2E222C0A222E762E772E782E792E7A2E7A2E412E792E422E432E442E452E46
+      2E472E482E492E2E222C0A222E762E4A2E4B2E4C2E792E4D2E4E2E4C2E4F2E50
+      2E512E522E532E542E552E562E2E222C0A222E572E582E4C2E4F2E4C2E592E5A
+      2E4F2E302E312E322E332E342E352E362E2E2E2E222C0A222E372E382E392E40
+      2E5A2E232E3B2E3B2E3A2E3D2E2B2E252E242E282E292E2E2E2E222C0A222E57
+      2E5B2E5D2C2E2E4F2C2C2E312E322E3D2C2D2C2A2C612C612C622C632E2E2E2E
+      222C0A222E572C642E4C2C652C662C672C682C692E252C6A2C6B2C6C2E382E68
+      2C632E2E2E2E222C0A222E572C642E3B2C6D2C652C682C6E2C6F2C702C712C72
+      2C732C742E682C632E2E2E2E222C0A222E372C6B2C752C2E2C6D2C762C772C78
+      2C792C7A2E5D2C412C412E682C632E2E2E2E222C0A222C422C642E692E6A2C43
+      2C612C702C742C442C412C2E2C2E2C2E2E682C632E2E2E2E222C0A222C422C64
+      2E3B2C2A2C702C452C442C462C412C472C482E6A2E6A2E682C492E2E2E2E222C
+      0A222E572C4A2E3B2C2A2E382C722E5D2C4B2C4C2E692C4D2E6B2C4E2E682C49
+      2E2E2E2E222C0A222C4F2E682C502E5B2C512C642C522C622E682E682E682E68
+      2E682E682C492E2E2E2E222C0A222C532C542C552C562C572C572C572C572C57
+      2C572C572C572C572C582C592E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E227D0AC70C00002F2A20
+      58504D202A2F0A7374617469632063686172202A677261706869635B5D203D20
+      7B0A223137203137203136312032222C0A222E2E2063204E6F6E65222C0A222E
+      2C20632023414442304142222C0A222E2D20632023414642324144222C0A222E
+      2A20632023414642314143222C0A222E6120632023414642314144222C0A222E
+      6220632023413941424136222C0A222E6320632023364436463642222C0A222E
+      6420632023453845414537222C0A222E6520632023464646464646222C0A222E
+      6620632023444645304445222C0A222E6720632023363136323630222C0A222E
+      6820632023394439463944222C0A222E6920632023394239443942222C0A222E
+      6A20632023393739383937222C0A222E6B20632023393139333846222C0A222E
+      6C20632023453945394537222C0A222E6D20632023453445344534222C0A222E
+      6E20632023434143414341222C0A222E6F20632023434343434342222C0A222E
+      7020632023434343434343222C0A222E7120632023443844394438222C0A222E
+      7220632023444444454442222C0A222E7320632023363536363634222C0A222E
+      7420632023423342344233222C0A222E7520632023393139313930222C0A222E
+      7620632023394139423939222C0A222E7720632023433243344330222C0A222E
+      7820632023464146394639222C0A222E7920632023453645364535222C0A222E
+      7A20632023453045304445222C0A222E4120632023453245324531222C0A222E
+      4220632023453145314446222C0A222E4320632023444644464445222C0A222E
+      4420632023444444444442222C0A222E4520632023453745374535222C0A222E
+      4620632023434644304345222C0A222E4720632023363336343634222C0A222E
+      4820632023423042324235222C0A222E4920632023384138413839222C0A222E
+      4A20632023413341364130222C0A222E4B20632023454245424541222C0A222E
+      4C20632023414541464143222C0A222E4D20632023423142334231222C0A222E
+      4E20632023423242334231222C0A222E4F20632023414541464144222C0A222E
+      5020632023414441454143222C0A222E5120632023433343344332222C0A222E
+      5220632023454245424542222C0A222E5320632023424142434236222C0A222E
+      5420632023363236343631222C0A222E5520632023423142314231222C0A222E
+      5620632023383838413838222C0A222E5720632023424242444238222C0A222E
+      5820632023453745354446222C0A222E5920632023433743334241222C0A222E
+      5A20632023433743354243222C0A222E3020632023433843344243222C0A222E
+      3120632023433943364243222C0A222E3220632023433843364243222C0A222E
+      3320632023453745344443222C0A222E3420632023433943364244222C0A222E
+      3520632023413041344130222C0A222E3620632023354636313544222C0A222E
+      3720632023394339433942222C0A222E3820632023394339453939222C0A222E
+      3920632023434444304430222C0A222E4020632023374138434131222C0A222E
+      2320632023353537353941222C0A222E3B20632023353637333938222C0A222E
+      3A20632023353637343937222C0A222E3D20632023353637333936222C0A222E
+      2B20632023353737343937222C0A222E2520632023354537373936222C0A222E
+      2420632023373439304232222C0A222E2820632023354437413942222C0A222E
+      2920632023353037354132222C0A222E5B20632023313134453945222C0A222E
+      5D20632023383838413836222C0A222C2E20632023433843394335222C0A222C
+      2C20632023393939444130222C0A222C2D20632023393641464344222C0A222C
+      2A20632023384641454434222C0A222C6120632023393042304435222C0A222C
+      6220632023393041464435222C0A222C6320632023393242314437222C0A222C
+      6420632023393142304436222C0A222C6520632023393542324436222C0A222C
+      6620632023384641444432222C0A222C6720632023393342314436222C0A222C
+      6820632023413142434443222C0A222C6920632023354637433946222C0A222C
+      6A20632023374437463742222C0A222C6B20632023444444444439222C0A222C
+      6C20632023363838314132222C0A222C6D20632023423243414535222C0A222C
+      6E20632023393042344439222C0A222C6F20632023393342354441222C0A222C
+      7020632023393342364441222C0A222C7120632023393342364442222C0A222C
+      7220632023393142354441222C0A222C7320632023413943354534222C0A222C
+      7420632023353637394135222C0A222C7520632023373637373733222C0A222C
+      7620632023434443444336222C0A222C7720632023373338414135222C0A222C
+      7820632023414143344531222C0A222C7920632023383541434435222C0A222C
+      7A20632023383941454436222C0A222C4120632023383941464437222C0A222C
+      4220632023393742344435222C0A222C4320632023353136443930222C0A222C
+      4420632023383238333746222C0A222C4520632023413241374136222C0A222C
+      4620632023393941384239222C0A222C4720632023413142454445222C0A222C
+      4820632023383641434435222C0A222C4920632023383941444436222C0A222C
+      4A20632023383741444436222C0A222C4B20632023393042334441222C0A222C
+      4C20632023393342314435222C0A222C4D20632023373337343645222C0A222C
+      4E20632023374438393935222C0A222C4F20632023413542434434222C0A222C
+      5020632023384642334438222C0A222C5120632023383041394434222C0A222C
+      5220632023383241394435222C0A222C5320632023383241394434222C0A222C
+      5420632023383341414435222C0A222C5520632023383241414434222C0A222C
+      5620632023383341394435222C0A222C5720632023394342434530222C0A222C
+      5820632023373139344245222C0A222C5920632023364536433637222C0A222C
+      5A20632023393141304146222C0A222C3020632023394142414444222C0A222C
+      3120632023373941334432222C0A222C3220632023373941344431222C0A222C
+      3320632023373841344431222C0A222C3420632023374141344432222C0A222C
+      3520632023374341364434222C0A222C3620632023383941454437222C0A222C
+      3720632023353936393742222C0A222C3820632023344334413436222C0A222C
+      3920632023394341444246222C0A222C4020632023383742304443222C0A222C
+      2320632023373341314433222C0A222C3B20632023373441324433222C0A222C
+      3A20632023373441324432222C0A222C3D20632023373341324432222C0A222C
+      2B20632023373241314432222C0A222C2520632023384342334442222C0A222C
+      2420632023383041344341222C0A222C2820632023323431463138222C0A222C
+      2920632023353637454144222C0A222C5B20632023353838464430222C0A222C
+      5D20632023353938454343222C0A222D2E20632023353938444342222C0A222D
+      2C20632023353838444343222C0A222D2D20632023353838444342222C0A222D
+      2A20632023363839384432222C0A222D6120632023353837323933222C0A222E
+      2E2E2E2E2E2E2E2E2E2E2C2E2D2E2A2E2A2E2A2E2A2E2A2E2A2E612E622E2E2E
+      2E222C0A222E2E2E2E2E2E2E2E2E632E642E652E652E652E652E652E652E652E
+      652E662E2E2E2E222C0A222E672E682E692E6A2E6B2E6C2E6D2E6E2E6F2E6F2E
+      6F2E702E6E2E712E722E2E2E2E222C0A222E732E742E752E762E772E782E792E
+      7A2E412E422E432E432E442E452E462E2E2E2E222C0A222E472E482E492E4A2E
+      4B2E412E4C2E4D2E4E2E4D2E4F2E502E512E522E532E2E2E2E222C0A222E542E
+      552E562E572E582E592E5A2E302E302E302E312E322E332E342E352E2E2E2E22
+      2C0A222E362E372E382E392E402E232E3B2E3A2E3D2E3D2E2B2E252E242E282E
+      292E5B2E2E222C0A222E2E2E5D2C2E2C2C2C2D2C2A2C612C622C632C642C642C
+      652C662C642C672C682C69222C0A222E2E2C6A2C6B2C6C2C6D2C6E2C6F2C6F2C
+      702C702C702C712C702C702C722C732C74222C0A222E2E2C752C762C772C782C
+      792C7A2C7A2C7A2C7A2C7A2C7A2C7A2C7A2C412C422C43222C0A222E2E2C442C
+      452C462C472C482C492C492C492C492C7A2C7A2C492C4A2C4B2C4C2E2E222C0A
+      222E2E2C4D2C4E2C4F2C502C512C522C532C522C532C542C552C522C562C572C
+      582E2E222C0A222E2E2C592C5A2C302C312C312C322C312C332C312C342C312C
+      322C352C362C372E2E222C0A222E2E2C382C392C402C232C3B2C3A2C3D2C3D2C
+      3D2C3B2C3B2C2B2C252C242E2E2E2E222C0A222E2E2C282C292C5B2C5D2C5D2D
+      2E2D2C2D2E2D2C2C5D2C5D2D2D2D2A2D612E2E2E2E222C0A222E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E
+      2E227D0AF70E00002F2A2058504D202A2F0A7374617469632063686172202A67
+      7261706869635B5D203D207B0A223137203137203139362032222C0A222E2E20
+      63204E6F6E65222C0A222E2C20632023353137453941222C0A222E2D20632023
+      343937383944222C0A222E2A20632023344337413946222C0A222E6120632023
+      343737363942222C0A222E6220632023343837353932222C0A222E6320632023
+      354637393638222C0A222E6420632023353738374137222C0A222E6520632023
+      353438424239222C0A222E6620632023363339354244222C0A222E6720632023
+      364139424337222C0A222E6820632023373741464442222C0A222E6920632023
+      364441354346222C0A222E6A20632023344637444130222C0A222E6B20632023
+      344637313734222C0A222E6C20632023363738353830222C0A222E6D20632023
+      354538394130222C0A222E6E20632023363138333741222C0A222E6F20632023
+      344537333736222C0A222E7020632023343938324143222C0A222E7120632023
+      363741314430222C0A222E7220632023354639434341222C0A222E7320632023
+      343637434137222C0A222E7420632023353037333733222C0A222E7520632023
+      354237433833222C0A222E7620632023343337303842222C0A222E7720632023
+      353438464239222C0A222E7820632023354139344246222C0A222E7920632023
+      354539414339222C0A222E7A20632023353537413831222C0A222E4120632023
+      364237433637222C0A222E4220632023393239313843222C0A222E4320632023
+      394239433941222C0A222E4420632023394139433939222C0A222E4520632023
+      413441333941222C0A222E4620632023343837303845222C0A222E4720632023
+      353839334246222C0A222E4820632023353839324244222C0A222E4920632023
+      353839314244222C0A222E4A20632023354438383946222C0A222E4B20632023
+      363637453837222C0A222E4C20632023394639463942222C0A222E4D20632023
+      394539463943222C0A222E4E20632023384539303843222C0A222E4F20632023
+      364137303631222C0A222E5020632023443944414439222C0A222E5120632023
+      464646464646222C0A222E5220632023464646454644222C0A222E5320632023
+      353737463945222C0A222E5420632023353539304242222C0A222E5520632023
+      353538464239222C0A222E5620632023353939334245222C0A222E5720632023
+      344538454331222C0A222E5820632023383239454235222C0A222E5920632023
+      463846384637222C0A222E5A20632023444144424441222C0A222E3020632023
+      363736393634222C0A222E3120632023373937413736222C0A222E3220632023
+      443944394438222C0A222E3320632023463846364634222C0A222E3420632023
+      424443424435222C0A222E3520632023343437303932222C0A222E3620632023
+      334536453931222C0A222E3720632023353639314243222C0A222E3820632023
+      353338444236222C0A222E3920632023354139364333222C0A222E4020632023
+      343236463931222C0A222E2320632023344237373938222C0A222E3B20632023
+      443344384442222C0A222E3A20632023443744374436222C0A222E3D20632023
+      373737393733222C0A222E2B20632023393939413937222C0A222E2520632023
+      453545354536222C0A222E2420632023463246304546222C0A222E2820632023
+      424443384344222C0A222E2920632023343137414133222C0A222E5B20632023
+      363039464346222C0A222E5D20632023354439374332222C0A222C2E20632023
+      344538374230222C0A222C2C20632023353438454238222C0A222C2D20632023
+      353939344245222C0A222C2A20632023353639364335222C0A222C6120632023
+      343937383939222C0A222C6220632023444545304531222C0A222C6320632023
+      454645454545222C0A222C6420632023394139423937222C0A222C6520632023
+      413641374135222C0A222C6620632023463746374638222C0A222C6720632023
+      454145414542222C0A222C6820632023463546314543222C0A222C6920632023
+      414342414239222C0A222C6A20632023343237394132222C0A222C6B20632023
+      353639304243222C0A222C6C20632023344338354144222C0A222C6D20632023
+      344538364146222C0A222C6E20632023344638424239222C0A222C6F20632023
+      343937393941222C0A222C7020632023434244304339222C0A222C7120632023
+      463045454543222C0A222C7220632023464346434643222C0A222C7320632023
+      414241444141222C0A222C7420632023423742374236222C0A222C7520632023
+      463346334633222C0A222C7620632023463246324633222C0A222C7720632023
+      463346314544222C0A222C7820632023414142374236222C0A222C7920632023
+      343337424135222C0A222C7A20632023353739314245222C0A222C4120632023
+      433643434335222C0A222C4220632023464146384636222C0A222C4320632023
+      463446334634222C0A222C4420632023463246324632222C0A222C4520632023
+      423842394237222C0A222C4620632023373837413736222C0A222C4720632023
+      443544344435222C0A222C4820632023454245424542222C0A222C4920632023
+      453545354535222C0A222C4A20632023453945394539222C0A222C4B20632023
+      463446344635222C0A222C4C20632023463746364633222C0A222C4D20632023
+      414542424239222C0A222C4E20632023343137414134222C0A222C4F20632023
+      344337454131222C0A222C5020632023443144364345222C0A222C5120632023
+      454145414541222C0A222C5220632023453345334533222C0A222C5320632023
+      453545354534222C0A222C5420632023434543444345222C0A222C5520632023
+      373737383734222C0A222C5620632023374638303743222C0A222C5720632023
+      463646364636222C0A222C5820632023463446344634222C0A222C5920632023
+      454545454545222C0A222C5A20632023454645464546222C0A222C3020632023
+      454545464546222C0A222C3120632023463646344546222C0A222C3220632023
+      413942424332222C0A222C3320632023433744304346222C0A222C3420632023
+      463346324631222C0A222C3520632023454445444544222C0A222C3620632023
+      463246334632222C0A222C3720632023463546354636222C0A222C3820632023
+      374538303743222C0A222C3920632023383738393835222C0A222C4020632023
+      454545454544222C0A222C2320632023444144414441222C0A222C3B20632023
+      453045304530222C0A222C3A20632023444644464446222C0A222C3D20632023
+      444544454445222C0A222C2B20632023444344444444222C0A222C2520632023
+      453745344533222C0A222C2420632023453245314530222C0A222C2820632023
+      444344434443222C0A222C2920632023444244424442222C0A222C5B20632023
+      443944394439222C0A222C5D20632023454445444545222C0A222D2E20632023
+      383838393835222C0A222D2C20632023383638383833222C0A222D2D20632023
+      444444444444222C0A222D2A20632023443344334433222C0A222D6120632023
+      393939393939222C0A222D6220632023394439443943222C0A222D6320632023
+      414341434143222C0A222D6420632023423342334233222C0A222D6520632023
+      424242424242222C0A222D6620632023424642464246222C0A222D6720632023
+      434443444344222C0A222D6820632023433443344334222C0A222D6920632023
+      434243424342222C0A222D6A20632023434343434343222C0A222D6B20632023
+      433543354335222C0A222D6C20632023383638383834222C0A222D6D20632023
+      383738383834222C0A222D6E20632023444644454446222C0A222D6F20632023
+      434643464346222C0A222D7020632023413241324132222C0A222D7120632023
+      413341334133222C0A222D7220632023414441444144222C0A222D7320632023
+      414541454145222C0A222D7420632023433143314331222C0A222D7520632023
+      433343334333222C0A222D7620632023383538363832222C0A222D7720632023
+      453745364538222C0A222D7820632023453145314532222C0A222D7920632023
+      453245324532222C0A222D7A20632023453145304531222C0A222D4120632023
+      444644464530222C0A222D4220632023444544444445222C0A222D4320632023
+      453044464530222C0A222D4420632023444544454446222C0A222D4520632023
+      453445334534222C0A222D4620632023453345334534222C0A222D4720632023
+      363036323545222C0A222D4820632023383538373833222C0A222D4920632023
+      383638373833222C0A222D4A20632023383438363832222C0A222E2E2E2E2E2E
+      2E2C2E2D2E2A2E612E622E632E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A22
+      2E2E2E2E2E642E652E662E672E682E692E6A2E6B2E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E222C0A222E2E2E6C2E6D2E6E2E2E2E6F2E702E712E722E732E742E2E2E2E
+      2E2E2E2E2E2E2E2E222C0A222E2E2E752E2E2E2E2E2E2E2E2E762E772E782E79
+      2E7A2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E412E422E432E442E452E46
+      2E472E482E492E4A2E4B2E4C2E4D2E4E2E2E2E2E222C0A222E2E2E4F2E502E51
+      2E522E512E532E542E552E562E572E582E512E592E5A2E302E2E222C0A222E2E
+      2E312E322E332E342E352E362E372E382E562E392E402E232E3B2E3A2E3D2E2E
+      222C0A222E2E2E2B2E252E242E282E292E5B2E5D2C2E2C2C2C2D2C2A2C612C62
+      2C632C642E2E222C0A222E2E2C652C662C672C682C692C6A2C6B2C6C2C6D2C6E
+      2C6F2C702C712C722C732E2E222C0A222E2E2C742C752C752C762C772C782C79
+      2C7A2E542C6F2C412C422C432C442C452E2E222C0A222C462C472C482C492C4A
+      2C4B2C4C2C4D2C4E2C4F2C502E592C512C522C532C542C55222C0A222C562C57
+      2C582C592C5A2C592C302C312C322C332C342C592C5A2C352C362C372C38222C
+      0A222C392C402C232C3B2C3A2C3D2C3D2C2B2C252C242C282C282C292C282C5B
+      2C5D2D2E222C0A222D2C2D2D2D2A2D612D622D632D642D652D662D672D682D69
+      2D6A2D6B2D692C5B2D6C222C0A222D6D2D6E2D6F2D702D712D722D732D652D74
+      2D672D752D692D6A2D682D6A2C232C39222C0A222D762D772D782D792D7A2D41
+      2C3D2D422D432C522D442D792D792C3A2D452D462D76222C0A222D472D762D6C
+      2D6C2D6C2D6C2D6C2D6C2D6C2D482D6C2D492D482D6C2D6C2D4A2E2E227D0A96
+      0800002F2A2058504D202A2F0A7374617469632063686172202A677261706869
+      635B5D203D207B0A2231372031372039342032222C0A222E2E20632023413341
+      354131222C0A222E2C2063204E6F6E65222C0A222E2D20632023454545454544
+      222C0A222E2A20632023464646464646222C0A222E6120632023453945394538
+      222C0A222E6220632023463046304546222C0A222E6320632023463246324631
+      222C0A222E6420632023463246324630222C0A222E6520632023454145414539
+      222C0A222E6620632023434343434342222C0A222E6720632023434643464345
+      222C0A222E6820632023423042304145222C0A222E6920632023394139433938
+      222C0A222E6A20632023394541303943222C0A222E6B20632023394541303944
+      222C0A222E6C20632023394641313943222C0A222E6D20632023393839413935
+      222C0A222E6E20632023393839413936222C0A222E6F20632023393939413936
+      222C0A222E7020632023384639313843222C0A222E7120632023453145314530
+      222C0A222E7220632023453345334532222C0A222E7320632023394641303943
+      222C0A222E7420632023413341354132222C0A222E7520632023454345434542
+      222C0A222E7620632023444144414439222C0A222E7720632023444344434442
+      222C0A222E7820632023394641313944222C0A222E7920632023454645464545
+      222C0A222E7A20632023443244324431222C0A222E4120632023443444344433
+      222C0A222E4220632023394239433938222C0A222E4320632023434543454344
+      222C0A222E4420632023443544354435222C0A222E4520632023453845394538
+      222C0A222E4620632023453245324532222C0A222E4720632023413041313945
+      222C0A222E4820632023453145314531222C0A222E4920632023453945414539
+      222C0A222E4A20632023453845384537222C0A222E4B20632023434543454345
+      222C0A222E4C20632023443144314430222C0A222E4D20632023394339463941
+      222C0A222E4E20632023444244424441222C0A222E4F20632023443944394439
+      222C0A222E5020632023443444344434222C0A222E5120632023453745384537
+      222C0A222E5220632023454545454545222C0A222E5320632023454645464546
+      222C0A222E5420632023394139423938222C0A222E5520632023443344334432
+      222C0A222E5620632023443044304430222C0A222E5720632023454445444544
+      222C0A222E5820632023463046304630222C0A222E5920632023413341344130
+      222C0A222E5A20632023454245424542222C0A222E3020632023454345434543
+      222C0A222E3120632023454145414541222C0A222E3220632023413241333946
+      222C0A222E3320632023453245324531222C0A222E3420632023454445444543
+      222C0A222E3520632023434643464430222C0A222E3620632023444644464446
+      222C0A222E3720632023453545354535222C0A222E3820632023413241334130
+      222C0A222E3920632023463846384638222C0A222E4020632023463746364637
+      222C0A222E2320632023464146414641222C0A222E3B20632023413841394136
+      222C0A222E3A20632023463146314630222C0A222E3D20632023463646364636
+      222C0A222E2B20632023463746374637222C0A222E2520632023464246424642
+      222C0A222E2420632023393539373932222C0A222E2820632023383438373831
+      222C0A222E2920632023423042314145222C0A222E5B20632023393339343930
+      222C0A222E5D20632023394139423937222C0A222C2E20632023393039323845
+      222C0A222C2C20632023383738393834222C0A222C2D20632023383138333744
+      222C0A222C2A20632023464246414642222C0A222C6120632023413541384133
+      222C0A222C6220632023433643374336222C0A222C6320632023433843384338
+      222C0A222C6420632023393739393935222C0A222C6520632023464346434643
+      222C0A222C6620632023414141444141222C0A222C6720632023423942394238
+      222C0A222C6820632023393139323846222C0A222C6920632023394339453941
+      222C0A222C6A20632023394439463942222C0A222C6B20632023384339303842
+      222C0A222C6C20632023384438463842222C0A222E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2C2E2C2E2C2E2C2E2C222C0A222E2E2E2D2E2A
+      2E2A2E2A2E2A2E2A2E2A2E2A2E2A2E2A2E2E2E2C2E2C2E2C2E2C2E2C222C0A22
+      2E2E2E612E622E632E642E642E642E642E642E642E2A2E2E2E2C2E2C2E2C2E2C
+      2E2C222C0A222E2E2E652E612E662E672E682E692E6A2E6A2E6B2E6C2E6D2E6E
+      2E6E2E6F2E6D2E70222C0A222E2E2E612E2D2E712E722E732E2D2E2A2E2A2E2A
+      2E2A2E2A2E2A2E2A2E2A2E2A2E74222C0A222E2E2E652E752E762E772E782E61
+      2E622E632E642E642E642E642E632E792E2A2E2E222C0A222E2E2E652E652E7A
+      2E412E422E652E612E662E672E672E672E672E432E442E2A2E2E222C0A222E2E
+      2E452E2D2E462E722E472E612E2D2E712E722E722E722E482E712E722E2A2E2E
+      222C0A222E2E2E492E4A2E4B2E4C2E4D2E652E752E762E772E4E2E4E2E4F2E50
+      2E4E2E2A2E2E222C0A222E2E2E512E522E532E2D2E542E652E652E7A2E412E55
+      2E552E562E572E582E2A2E59222C0A222E2E2E5A2E302E5A2E312E322E452E2D
+      2E462E722E462E332E482E5A2E572E2A2E59222C0A222E2E2E612E312E652E34
+      2E592E492E4A2E4B2E4C2E352E4B2E442E362E372E2A2E38222C0A222E2E2E75
+      2E392E402E232E3B2E512E522E532E2D2E2D2E3A2E3D2E2B2E252E612E24222C
+      0A222E2E2E2E2E2E2E2E2E2E2E282E5A2E302E5A2E312E572E392E292E5B2E5D
+      2C2E2C2C222C0A222E2C2E2C2E2C2E2C2E2C2C2D2E612E312E652E342E532C2A
+      2C612C622C632C642E2C222C0A222E2C2E2C2E2C2E2C2E2C2C2D2E752E392E40
+      2E232C652E2A2C662C672C682E2C2E2C222C0A222E2C2E2C2E2C2E2C2E2C2E2C
+      2E422E6A2C692C692C6A2E782C6B2C6C2E2C2E2C2E2C227D0A070C00002F2A20
+      58504D202A2F0A7374617469632063686172202A677261706869635B5D203D20
+      7B0A223137203137203134392032222C0A222E2E2063204E6F6E65222C0A222E
+      2C20632023354135423542222C0A222E2D20632023363636363634222C0A222E
+      2A20632023363636363633222C0A222E6120632023354634453331222C0A222E
+      6220632023363736373634222C0A222E6320632023373937393732222C0A222E
+      6420632023393539353837222C0A222E6520632023393439343836222C0A222E
+      6620632023373837393732222C0A222E6720632023363736373635222C0A222E
+      6820632023363034463332222C0A222E6920632023374634443038222C0A222E
+      6A20632023414237333231222C0A222E6B20632023374636363342222C0A222E
+      6C20632023354535383445222C0A222E6D20632023383938393832222C0A222E
+      6E20632023423842384143222C0A222E6F20632023423442344138222C0A222E
+      7020632023423442344139222C0A222E7120632023423442344141222C0A222E
+      7220632023423942394144222C0A222E7320632023384238423835222C0A222E
+      7420632023354535393446222C0A222E7520632023383036373342222C0A222E
+      7620632023413737303230222C0A222E7720632023374234443036222C0A222E
+      7820632023384335393036222C0A222E7920632023413237423338222C0A222E
+      7A20632023423742414244222C0A222E4120632023453645374539222C0A222E
+      4220632023383438343832222C0A222E4320632023373237323731222C0A222E
+      4420632023373437343733222C0A222E4520632023453545364538222C0A222E
+      4620632023423642414244222C0A222E4720632023413037413338222C0A222E
+      4820632023384235383036222C0A222E4920632023384435393036222C0A222E
+      4A20632023393637323336222C0A222E4B20632023424543354342222C0A222E
+      4C20632023464646464646222C0A222E4D20632023464246424641222C0A222E
+      4E20632023424443344342222C0A222E4F20632023393537313336222C0A222E
+      5020632023384335383036222C0A222E5120632023433243324331222C0A222E
+      5220632023424442444243222C0A222E5320632023424542454244222C0A222E
+      5420632023433143314331222C0A222E5520632023424543344342222C0A222E
+      5620632023384335373036222C0A222E5720632023444544454444222C0A222E
+      5820632023444444444443222C0A222E5920632023444344434442222C0A222E
+      5A20632023444244424441222C0A222E3020632023444244424439222C0A222E
+      3120632023464346434643222C0A222E3220632023393637313336222C0A222E
+      3320632023424342434242222C0A222E3420632023423742374236222C0A222E
+      3520632023423342334232222C0A222E3620632023423842384236222C0A222E
+      3720632023464146414638222C0A222E3820632023424643354343222C0A222E
+      3920632023434543454345222C0A222E4020632023434143414339222C0A222E
+      2320632023433543354333222C0A222E3B20632023453445344531222C0A222E
+      3A20632023463446344631222C0A222E3D20632023453945394537222C0A222E
+      2B20632023454145414539222C0A222E2520632023433043364344222C0A222E
+      2420632023443844384437222C0A222E2820632023443444344432222C0A222E
+      2920632023443044304345222C0A222E5B20632023453145314445222C0A222E
+      5D20632023444544454442222C0A222C2E20632023443644374434222C0A222C
+      2C20632023433243384346222C0A222C2D20632023384235373036222C0A222C
+      2A20632023464446434643222C0A222C6120632023454345434541222C0A222C
+      6220632023454245424538222C0A222C6320632023454345434539222C0A222C
+      6420632023443344334430222C0A222C6520632023433843384336222C0A222C
+      6620632023433143314245222C0A222C6720632023444344434441222C0A222C
+      6820632023433143374345222C0A222C6920632023464146414641222C0A222C
+      6A20632023453745374535222C0A222C6B20632023453745374534222C0A222C
+      6C20632023454345434542222C0A222C6D20632023424242424238222C0A222C
+      6E20632023454245424541222C0A222C6F20632023423042384331222C0A222C
+      7020632023393237313341222C0A222C7120632023384335383035222C0A222C
+      7220632023424543354343222C0A222C7320632023463746374636222C0A222C
+      7420632023453345334531222C0A222C7520632023453245324446222C0A222C
+      7620632023443744374434222C0A222C7720632023433943394335222C0A222C
+      7820632023414141414135222C0A222C7920632023454445444543222C0A222C
+      7A20632023454545454544222C0A222C4120632023424643334337222C0A222C
+      4220632023383237423642222C0A222C4320632023424138343246222C0A222C
+      4420632023383735363039222C0A222C4520632023394437363336222C0A222C
+      4620632023414542334237222C0A222C4720632023463446374642222C0A222C
+      4820632023463046324635222C0A222C4920632023454646314634222C0A222C
+      4A20632023454445464632222C0A222C4B20632023453945424545222C0A222C
+      4C20632023453745414543222C0A222C4D20632023424142454332222C0A222C
+      4E20632023374237313541222C0A222C4F20632023423537453238222C0A222C
+      5020632023443038443238222C0A222C5120632023383435353042222C0A222C
+      5220632023384135393042222C0A222C5320632023433338393244222C0A222C
+      5420632023393237363435222C0A222C5520632023383237313533222C0A222C
+      5620632023383237303531222C0A222C5720632023383137313531222C0A222C
+      5820632023383237313531222C0A222C5920632023383137313532222C0A222C
+      5A20632023384137343446222C0A222C3020632023433938423239222C0A222C
+      3120632023434438443238222C0A222C3220632023443039303243222C0A222C
+      3320632023383435343041222C0A222C3420632023373934433035222C0A222C
+      3520632023393436313046222C0A222C3620632023394236313035222C0A222C
+      3720632023394436313034222C0A222C3820632023394336313034222C0A222C
+      3920632023394236313034222C0A222C4020632023393435453039222C0A222C
+      2320632023393435463041222C0A222C3B20632023393135433039222C0A222C
+      3A20632023373334393035222C0A222C3D20632023354635393435222C0A222E
+      2E2E2E2E2E2E2E2E2E2E2E2E2C2E2D2E2A2E2D2E2C2E2E2E2E2E2E2E2E2E2E2E
+      2E222C0A222E2E2E2E2E2E2E2E2E612E622E632E642E652E642E662E672E682E
+      2E2E2E2E2E2E2E222C0A222E2E2E692E6A2E6B2E6C2E6D2E6E2E6F2E702E712E
+      722E732E742E752E762E772E2E222C0A222E2E2E782E792E7A2E412E422E432E
+      442E442E442E432E422E452E462E472E482E2E222C0A222E2E2E492E4A2E4B2E
+      4C2E4D2E4D2E4D2E4D2E4D2E4D2E4D2E4C2E4E2E4F2E502E2E222C0A222E2E2E
+      492E4A2E4B2E4C2E512E522E532E532E532E522E542E4C2E552E4F2E562E2E22
+      2C0A222E2E2E492E4A2E4B2E4C2E572E582E582E582E592E5A2E302E312E4B2E
+      4F2E562E2E222C0A222E2E2E492E322E552E4C2E512E332E522E522E342E352E
+      362E372E382E4F2E562E2E222C0A222E2E2E492E322E552E4C2E392E402E402E
+      232E3B2E3A2E3D2E2B2E252E4F2E562E2E222C0A222E2E2E492E4F2E552E4C2E
+      242E282E282E292E5B2E3D2E5D2C2E2C2C2E4F2C2D2E2E222C0A222E2E2E492E
+      4F2E552C2A2C612C612C622C632C642C652C662C672C682E4F2C2D2E2E222C0A
+      222E2E2E492E4F2E4B2C692C6A2C6A2C6B2C6C2C6D2C6E2E4C2E4C2C6F2C702C
+      712E2E222C0A222E2E2E492E4F2C722C732C742C752C762C772C782C792C7A2C
+      412C422C432C442E2E222C0A222E2E2E482C452C462C472C482C492C4A2C4B2C
+      4B2C4C2C4D2C4E2C4F2C502C512E2E222C0A222E2E2C522C532C542C552C562C
+      562C572C582C582C592C5A2C302C312C322C332E2E222C0A222E2E2C342C352C
+      362C372C372C372C382C382C382C382C392C402C232C3B2C3A2E2E222C0A222E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2C3D2C3D2C3D2C3D2E2E2E2E2E2E2E2E2E2E2E
+      2E227D0A870B00002F2A2058504D202A2F0A7374617469632063686172202A67
+      7261706869635B5D203D207B0A223137203137203134312032222C0A222E2E20
+      63204E6F6E65222C0A222E2C20632023334433453344222C0A222E2D20632023
+      333433353333222C0A222E2A20632023413141303942222C0A222E6120632023
+      413341303939222C0A222E6220632023394539443937222C0A222E6320632023
+      394639443936222C0A222E6420632023423041454137222C0A222E6520632023
+      334233433341222C0A222E6620632023363636383634222C0A222E6720632023
+      424142414236222C0A222E6820632023414442434346222C0A222E6920632023
+      413342464444222C0A222E6A20632023413943344532222C0A222E6B20632023
+      413543304445222C0A222E6C20632023413842414430222C0A222E6D20632023
+      433343334331222C0A222E6E20632023364637303642222C0A222E6F20632023
+      324432453243222C0A222E7020632023424342424237222C0A222E7120632023
+      413142374430222C0A222E7220632023384542314436222C0A222E7320632023
+      364239334334222C0A222E7420632023333036354137222C0A222E7520632023
+      353338314239222C0A222E7620632023384241464436222C0A222E7720632023
+      394142344430222C0A222E7820632023433143324246222C0A222E7920632023
+      343434363433222C0A222E7A20632023393639363931222C0A222E4120632023
+      413742344334222C0A222E4220632023383841454436222C0A222E4320632023
+      463746434646222C0A222E4420632023373539354331222C0A222E4520632023
+      383641384345222C0A222E4620632023354538364237222C0A222E4720632023
+      434344464631222C0A222E4820632023373541314430222C0A222E4920632023
+      414442424342222C0A222E4A20632023394439443938222C0A222E4B20632023
+      423141464137222C0A222E4C20632023384641454432222C0A222E4D20632023
+      383541374346222C0A222E4E20632023414143304443222C0A222E4F20632023
+      344537374230222C0A222E5020632023393242304433222C0A222E5120632023
+      343737324143222C0A222E5220632023383741384345222C0A222E5320632023
+      354138394331222C0A222E5420632023384541464434222C0A222E5520632023
+      433343314242222C0A222E5620632023423141464138222C0A222E5720632023
+      393742384443222C0A222E5820632023333336364135222C0A222E5920632023
+      374539464338222C0A222E5A20632023383141324341222C0A222E3020632023
+      414443354531222C0A222E3120632023383241324342222C0A222E3220632023
+      374539464339222C0A222E3320632023334636454139222C0A222E3420632023
+      383241394435222C0A222E3520632023433943374331222C0A222E3620632023
+      423341464137222C0A222E3720632023394342424444222C0A222E3820632023
+      333736394138222C0A222E3920632023363538434243222C0A222E4020632023
+      354638374239222C0A222E2320632023413542454444222C0A222E3B20632023
+      363138394241222C0A222E3A20632023363438424243222C0A222E3D20632023
+      334236424138222C0A222E2B20632023383241384432222C0A222E2520632023
+      433643324243222C0A222E2420632023413142384430222C0A222E2820632023
+      363339314335222C0A222E2920632023364339394344222C0A222E5B20632023
+      334136454144222C0A222E5D20632023393942354436222C0A222C2E20632023
+      334236434141222C0A222C2C20632023364639424344222C0A222C2D20632023
+      354538414244222C0A222C2A20632023393642314344222C0A222C6120632023
+      423742364231222C0A222C6220632023364236443639222C0A222C6320632023
+      424242454246222C0A222C6420632023384542344442222C0A222C6520632023
+      364139394343222C0A222C6620632023334536464143222C0A222C6720632023
+      373139344333222C0A222C6820632023363839354336222C0A222C6920632023
+      383441444438222C0A222C6A20632023433343384344222C0A222C6B20632023
+      373537363732222C0A222C6C20632023333333333331222C0A222C6D20632023
+      333033313330222C0A222C6E20632023393039303843222C0A222C6F20632023
+      423142394330222C0A222C7020632023394642444445222C0A222C7120632023
+      353838374242222C0A222C7220632023334237314230222C0A222C7320632023
+      393742374441222C0A222C7420632023413542304239222C0A222C7520632023
+      444144394438222C0A222C7620632023393939393941222C0A222C7720632023
+      363836393636222C0A222C7820632023323832393237222C0A222C7920632023
+      364136423637222C0A222C7A20632023383138313742222C0A222C4120632023
+      413041324131222C0A222C4220632023413842324244222C0A222C4320632023
+      433844354531222C0A222C4420632023414342374332222C0A222C4520632023
+      393239363937222C0A222C4620632023363736363632222C0A222C4720632023
+      394239433939222C0A222C4820632023424642464246222C0A222C4920632023
+      384338433843222C0A222C4A20632023364136433637222C0A222C4B20632023
+      323932413238222C0A222C4C20632023383538363831222C0A222C4D20632023
+      374237413734222C0A222C4E20632023374137393732222C0A222C4F20632023
+      374137393733222C0A222C5020632023383738383831222C0A222C5120632023
+      354135423542222C0A222C5220632023413041313946222C0A222C5320632023
+      423642364236222C0A222C5420632023393139313931222C0A222C5520632023
+      323032313146222C0A222C5620632023353435353534222C0A222C5720632023
+      413941394136222C0A222C5820632023424242424242222C0A222C5920632023
+      413541344134222C0A222C5A20632023363936433638222C0A222C3020632023
+      343734373436222C0A222C3120632023413541364135222C0A222C3220632023
+      454645464545222C0A222C3320632023413941414138222C0A222C3420632023
+      343034313345222C0A222C3520632023394641303945222C0A222C3620632023
+      383638363835222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2C2E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2D2E2A2E612E622E63
+      2E642E652E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E662E672E68
+      2E692E6A2E6B2E6C2E6D2E6E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E6F
+      2E702E712E722E732E742E752E762E772E782E792E2E2E2E2E2E2E2E2E2E222C
+      0A222E2E2E7A2E412E422E432E442E452E462E472E482E492E4A2E2E2E2E2E2E
+      2E2E2E2E222C0A222E2E2E4B2E4C2E4D2E4E2E4F2E502E512E522E532E542E55
+      2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E562E572E582E592E5A2E302E312E32
+      2E332E342E352E2E2E2E2E2E2E2E2E2E222C0A222E2E2E362E372E382E392E40
+      2E232E3B2E3A2E3D2E2B2E252E2E2E2E2E2E2E2E2E2E222C0A222E2E2E562E24
+      2E282E292E5B2E5D2C2E2C2C2C2D2C2A2C612E2E2E2E2E2E2E2E2E2E222C0A22
+      2E2E2C622C632C642C652C662C672E3D2C682C692C6A2C6B2C6C2E2E2E2E2E2E
+      2E2E222C0A222E2E2C6D2C6E2C6F2C702C712C722E752C732C742C752C762C77
+      2C782E2E2E2E2E2E222C0A222E2E2E2E2C792C7A2C412C422C432C442C452C46
+      2C472C482C492C4A2C4B2E2E2E2E222C0A222E2E2E2E2E2E2E2E2C4C2C4D2C4E
+      2C4F2C502E2E2C512C522C532C542E662C552E2E222C0A222E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E2C562C572C582C592C5A2E2E222C0A222E2E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2C302C312C322C332E2E
+      222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2C34
+      2C352C362E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E2E2E2E2E2E227D0AB70B00002F2A2058504D202A2F0A737461
+      7469632063686172202A677261706869635B5D203D207B0A2231372031372031
+      34342032222C0A222E2E2063204E6F6E65222C0A222E2C206320233345334533
+      44222C0A222E2D20632023324432453243222C0A222E2A206320234139413841
+      32222C0A222E6120632023413541323942222C0A222E62206320233945394439
+      36222C0A222E6320632023413341313941222C0A222E64206320234146414541
+      37222C0A222E6520632023334433443342222C0A222E66206320233645364636
+      43222C0A222E6720632023424242424238222C0A222E68206320234145424443
+      46222C0A222E6920632023394142384439222C0A222E6A206320233942423944
+      41222C0A222E6B20632023394342394441222C0A222E6C206320234139424244
+      30222C0A222E6D20632023433343344332222C0A222E6E206320233738374137
+      34222C0A222E6F20632023324432443242222C0A222E70206320234243424242
+      37222C0A222E7120632023413142374431222C0A222E72206320233831413744
+      31222C0A222E7320632023424644344541222C0A222E74206320234334443645
+      42222C0A222E7520632023423343424534222C0A222E76206320233745413743
+      46222C0A222E7720632023394142334430222C0A222E78206320234332433242
+      46222C0A222E7920632023343534363433222C0A222E7A206320233937393639
+      31222C0A222E4120632023413642334333222C0A222E42206320233839414544
+      36222C0A222E4320632023453545444637222C0A222E44206320234638464146
+      44222C0A222E4520632023463246364642222C0A222E46206320234538463046
+      38222C0A222E4720632023424244314538222C0A222E48206320233734413144
+      30222C0A222E4920632023414442424342222C0A222E4A206320233945394539
+      38222C0A222E4B20632023423041454136222C0A222E4C206320233846414544
+      32222C0A222E4D20632023383541364345222C0A222E4E206320234130423744
+      37222C0A222E4F20632023413342424437222C0A222E50206320234133424144
+      37222C0A222E5120632023413242394435222C0A222E52206320233743413043
+      39222C0A222E5320632023354138394330222C0A222E54206320233845414644
+      33222C0A222E5520632023433343304242222C0A222E56206320234231414641
+      38222C0A222E5720632023393742384443222C0A222E58206320233333363541
+      36222C0A222E5920632023374641304341222C0A222E5A206320233738394443
+      36222C0A222E3020632023373439384335222C0A222E31206320233737394143
+      35222C0A222E3220632023374641314341222C0A222E33206320233346364441
+      39222C0A222E3420632023383241394435222C0A222E35206320234339433743
+      31222C0A222E3620632023423342304138222C0A222E37206320233943424244
+      44222C0A222E3820632023333636384138222C0A222E39206320233636384342
+      43222C0A222E4020632023363238414242222C0A222E23206320233546383842
+      41222C0A222E3B20632023363138394241222C0A222E3A206320233633384142
+      42222C0A222E3D20632023334336424138222C0A222E2B206320233832413844
+      33222C0A222E2520632023433543324244222C0A222E24206320234131423844
+      31222C0A222E2820632023363439314335222C0A222E29206320233636393443
+      39222C0A222E5B20632023363639364339222C0A222E5D206320233638393443
+      39222C0A222C2E20632023363839364339222C0A222C2C206320233642393743
+      41222C0A222C2D20632023354538414244222C0A222C2A206320233936423043
+      44222C0A222C6120632023423742364231222C0A222C62206320233643364436
+      39222C0A222C6320632023424342464246222C0A222C64206320233844423444
+      42222C0A222C6520632023363539344337222C0A222C66206320233644393943
+      42222C0A222C6720632023373339454345222C0A222C68206320233644394143
+      39222C0A222C6920632023363238464332222C0A222C6A206320233834414444
+      39222C0A222C6B20632023433443394345222C0A222C6C206320233735373637
+      32222C0A222C6D20632023333333333331222C0A222C6E206320233331333233
+      30222C0A222C6F20632023393039313843222C0A222C70206320234230423843
+      30222C0A222C7120632023394242414442222C0A222C72206320233642393643
+      37222C0A222C7320632023363739394343222C0A222C74206320233639393543
+      36222C0A222C7520632023393342344439222C0A222C76206320234135423042
+      39222C0A222C7720632023444144394439222C0A222C78206320233941393939
+      41222C0A222C7920632023363836423636222C0A222C7A206320233238323932
+      37222C0A222C4120632023363936423636222C0A222C42206320233830383037
+      41222C0A222C4320632023413041324131222C0A222C44206320234134414642
+      41222C0A222C4520632023433344304446222C0A222C46206320234138423443
+      30222C0A222C4720632023393239373937222C0A222C48206320233637363636
+      32222C0A222C4920632023394239433941222C0A222C4A206320234330424542
+      46222C0A222C4B20632023384338443843222C0A222C4C206320233639364336
+      37222C0A222C4D20632023323932413238222C0A222C4E206320233836383638
+      32222C0A222C4F20632023374337413735222C0A222C50206320233741373937
+      33222C0A222C5120632023373937383732222C0A222C52206320233837383938
+      32222C0A222C5320632023354135423541222C0A222C54206320234130413141
+      30222C0A222C5520632023423642364237222C0A222C56206320233932393239
+      31222C0A222C5720632023363636383634222C0A222C58206320233230323131
+      46222C0A222C5920632023353435363535222C0A222C5A206320234139413941
+      36222C0A222C3020632023424242414242222C0A222C31206320234136413541
+      34222C0A222C3220632023364236443639222C0A222C33206320233437343734
+      36222C0A222C3420632023413541364134222C0A222C35206320234546454645
+      45222C0A222C3620632023413841414138222C0A222C37206320233344334533
+      43222C0A222C3820632023394539463945222C0A222C39206320233836383638
+      35222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2C2E2E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2D2E2A2E612E622E632E642E652E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E662E672E682E692E6A2E
+      6B2E6C2E6D2E6E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E6F2E702E712E
+      722E732E742E752E762E772E782E792E2E2E2E2E2E2E2E2E2E222C0A222E2E2E
+      7A2E412E422E432E442E452E462E472E482E492E4A2E2E2E2E2E2E2E2E2E2E22
+      2C0A222E2E2E4B2E4C2E4D2E4E2E4F2E502E512E522E532E542E552E2E2E2E2E
+      2E2E2E2E2E222C0A222E2E2E562E572E582E592E5A2E302E312E322E332E342E
+      352E2E2E2E2E2E2E2E2E2E222C0A222E2E2E362E372E382E392E402E232E3B2E
+      3A2E3D2E2B2E252E2E2E2E2E2E2E2E2E2E222C0A222E2E2E562E242E282E292E
+      5B2E5D2C2E2C2C2C2D2C2A2C612E2E2E2E2E2E2E2E2E2E222C0A222E2E2C622C
+      632C642C652C662C672C682C692C6A2C6B2C6C2C6D2E2E2E2E2E2E2E2E222C0A
+      222E2E2C6E2C6F2C702C712C722C732C742C752C762C772C782C792C7A2E2E2E
+      2E2E2E222C0A222E2E2E2E2C412C422C432C442C452C462C472C482C492C4A2C
+      4B2C4C2C4D2E2E2E2E222C0A222E2E2E2E2E2E2E2E2C4E2C4F2C502C512C522E
+      2E2C532C542C552C562C572C582E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E2E2E2C592C5A2C302C312C322E2E222C0A222E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2C332C342C352C362E2E222C0A222E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2C372C382C392E
+      2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E227D0AFD0100002F2A2058504D202A2F0A7374617469632063
+      686172202A677261706869635B5D203D207B0A22313720313720372031222C0A
+      222E2063204E6F6E65222C0A222C20632023464630303030222C0A222D206320
+      23444430303131222C0A222A20632023303030303838222C0A22612063202330
+      3030303830222C0A226220632023303030303746222C0A226320632023303030
+      303842222C0A222E2E2E2C2C2C2C2E2E2E2C2C2C2C2E2E2E222C0A222E2E2E2E
+      2E2E2C2C2E2C2C2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2C2C2C2E2E2E2E2E
+      2E2E222C0A222E2E2E2E2E2E2E2C2C2C2E2E2E2E2E2E2E222C0A222E2E2E2E2E
+      2E2C2C2E2C2C2E2E2E2E2E2E222C0A222E2E2E2E2E2C2C2E2E2E2C2C2E2E2E2E
+      2E222C0A222E2E2E2E2C2C2D2E2A2E2C2C2C2E2E2E2E222C0A222E2E2E2E2E2E
+      2E2E612E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E6261632E2E2E2E2E2E2E
+      222C0A222E2E616161616161616161616161612E2E222C0A222E616161616161
+      6161616161616161612E222C0A226161612E2E2E2E2E612E2E2E2E2E61616122
+      2C0A2261612E2E2E2E2E2E612E2E2E2E2E2E6161222C0A2261612E2E2E2E2E2E
+      2E2E2E2E2E2E2E6161222C0A226161612E2E2E2E2E2E2E2E2E2E2E616161222C
+      0A222E6161616161616161616161616161612E222C0A222E2E61616161616161
+      6161616161612E2E227D0AFD0100002F2A2058504D202A2F0A73746174696320
+      63686172202A677261706869635B5D203D207B0A22313720313720372031222C
+      0A222E2063204E6F6E65222C0A222C20632023303030304646222C0A222D2063
+      2023303030304636222C0A222A20632023303030303738222C0A226120632023
+      303030303830222C0A226220632023303030303739222C0A2263206320233030
+      30303735222C0A222E2E2E2E2E2C2C2E2E2E2C2C2E2E2E2E2E222C0A222E2E2E
+      2E2E2C2C2E2E2E2C2C2E2E2E2E2E222C0A222E2E2E2E2E2E2C2C2E2C2C2E2E2E
+      2E2E2E222C0A222E2E2E2E2E2E2E2C2C2C2E2E2E2E2E2E2E222C0A222E2E2E2E
+      2E2E2E2C2C2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2C2D2E2E2E2E2E2E2E
+      2E2E222C0A222E2E2E2E2E2C2C2E2A2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E
+      2E2E2E612E2E2E2E2E2E2E2E222C0A222E2E2E622E2E2E6361612E6161612E2E
+      2E222C0A222E2E616161616161616161616161612E2E222C0A222E6161616161
+      616161616161616161612E222C0A226161612E2E2E2E2E612E2E2E2E2E616161
+      222C0A2261612E2E2E2E2E2E612E2E2E2E2E2E6161222C0A2261612E2E2E2E2E
+      2E2E2E2E2E2E2E2E6161222C0A226161612E2E2E2E2E2E2E2E2E2E2E61616122
+      2C0A222E6161616161616161616161616161612E222C0A222E2E616161616161
+      616161616161612E2E227D0A490200002F2A2058504D202A2F0A737461746963
+      2063686172202A677261706869635B5D203D207B0A2231372031372031322031
+      222C0A222E2063204E6F6E65222C0A222C20632023303038303030222C0A222D
+      20632023303037453030222C0A222A20632023303038323030222C0A22612063
+      2023303038453030222C0A226220632023303032453532222C0A226320632023
+      303030303841222C0A226420632023303030303746222C0A2265206320233030
+      30303836222C0A226620632023303030303844222C0A22672063202330303030
+      3842222C0A226820632023303030303830222C0A222E2E2E2E2E2C2C2C2C2C2C
+      2C2E2E2E2E2E222C0A222E2E2E2E2C2C2E2E2E2C2C2E2E2E2E2E2E222C0A222E
+      2E2E2E2E2E2E2C2C2C2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2C2C2E2E2E2C
+      2E2E2E2E2E222C0A222E2E2E2E2E2C2C2C2C2C2C2C2E2E2E2E2E222C0A222E2E
+      2E2E2E2D2C2A612A2C2D2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E622E2E2E2E
+      2E2E2E2E222C0A222E2E2E2E2E2E2E2E632E2E2E2E2E2E2E2E222C0A222E2E2E
+      6465662E6768672E6665642E2E2E222C0A222E2E686868686868686868686868
+      682E2E222C0A222E6868686868686868686868686868682E222C0A226868682E
+      2E2E2E2E682E2E2E2E2E686868222C0A2268682E2E2E2E2E2E682E2E2E2E2E2E
+      6868222C0A2268682E2E2E2E2E2E2E2E2E2E2E2E2E6868222C0A226868682E2E
+      2E2E2E2E2E2E2E2E2E686868222C0A222E686868686868686868686868686868
+      2E222C0A222E2E686868686868686868686868682E2E227D0A560800002F2A20
+      58504D202A2F0A7374617469632063686172202A677261706869635B5D203D20
+      7B0A2231372031372039302032222C0A222E2E2063204E6F6E65222C0A222E2C
+      20632023433141313041222C0A222E2D20632023433341363134222C0A222E2A
+      20632023443442323130222C0A222E6120632023433141323038222C0A222E62
+      20632023464145333236222C0A222E6320632023453143363144222C0A222E64
+      20632023433341333037222C0A222E6520632023463744453144222C0A222E66
+      20632023464545443446222C0A222E6720632023453143363233222C0A222E68
+      20632023433641323030222C0A222E6920632023433241303030222C0A222E6A
+      20632023423839383030222C0A222E6B20632023433541363036222C0A222E6C
+      20632023463644453238222C0A222E6D20632023464145343239222C0A222E6E
+      20632023463845383539222C0A222E6F20632023464245383343222C0A222E70
+      20632023464445383331222C0A222E7120632023463745313330222C0A222E72
+      20632023453543393037222C0A222E7320632023443342323033222C0A222E74
+      20632023434541463039222C0A222E7520632023463845323245222C0A222E76
+      20632023463445323442222C0A222E7720632023463745373545222C0A222E78
+      20632023463845373538222C0A222E7920632023464145413630222C0A222E7A
+      20632023463845373545222C0A222E4120632023463245313442222C0A222E42
+      20632023453944333042222C0A222E4320632023463044413136222C0A222E44
+      20632023444642463030222C0A222E4520632023424139453045222C0A222E46
+      20632023454143453138222C0A222E4720632023463945363434222C0A222E48
+      20632023463345313438222C0A222E4920632023463245303438222C0A222E4A
+      20632023453443463233222C0A222E4B20632023444343373046222C0A222E4C
+      20632023444243363044222C0A222E4D20632023443542463036222C0A222E4E
+      20632023443943333034222C0A222E4F20632023454244363135222C0A222E50
+      20632023433241353035222C0A222E5120632023423339383044222C0A222E52
+      20632023453643393137222C0A222E5320632023454144343143222C0A222E54
+      20632023444643393038222C0A222E5520632023463644463244222C0A222E56
+      20632023463944463330222C0A222E5720632023463744433237222C0A222E58
+      20632023444343363137222C0A222E5920632023444643373044222C0A222E5A
+      20632023453243443131222C0A222E3020632023434242353235222C0A222E31
+      20632023424539433031222C0A222E3220632023433241383138222C0A222E33
+      20632023453443363131222C0A222E3420632023463945343145222C0A222E35
+      20632023453543353131222C0A222E3620632023373235393030222C0A222E37
+      20632023424441363136222C0A222E3820632023443142413146222C0A222E39
+      20632023453043423138222C0A222E4020632023443442453137222C0A222E23
+      20632023424239443041222C0A222E3B20632023414239333044222C0A222E3A
+      20632023453943433230222C0A222E3D20632023463444353233222C0A222E2B
+      20632023424641373137222C0A222E2520632023444143353231222C0A222E24
+      20632023444643413134222C0A222E2820632023394238313036222C0A222E29
+      20632023453442433033222C0A222E5B20632023454644373236222C0A222E5D
+      20632023453243453141222C0A222C2E20632023384537383037222C0A222C2C
+      20632023463244413245222C0A222C2D20632023443743323146222C0A222C2A
+      20632023384237353035222C0A222C6120632023393237453045222C0A222C62
+      20632023454244413342222C0A222C6320632023424641383130222C0A222C64
+      20632023453844313137222C0A222C6520632023423941373042222C0A222C66
+      20632023373836373032222C0A222C6720632023434142343046222C0A222C68
+      20632023394638453036222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2C2E2E2E2E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2D
+      2E2A2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E
+      2E2E2E612E622E632E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A22
+      2E2E2E2E2E2E2E642E652E662E672E682E692E6A2E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E222C0A222E2E2E2E2E6B2E6C2E6D2E6E2E6F2E702E712E722E732E2E2E2E
+      2E2E2E2E2E2E2E2E222C0A222E2E2E742E752E762E772E782E792E7A2E412E42
+      2E432E442E2E2E2E2E2E2E2E2E2E222C0A222E2E2E452E462E472E482E492E4A
+      2E4B2E4C2E4D2E4E2E4F2E502E2E2E2E2E2E2E2E222C0A222E2E2E2E2E512E52
+      2E532E542E552E562E572E582E592E5A2E302E312E2E2E2E2E2E222C0A222E2E
+      2E2E2E2E2E322E332E342E352E362E2E2E372E382E392E402E232E2E2E2E2E2E
+      222C0A222E2E2E2E2E2E2E2E2E3B2E3A2E3D2E2E2E2E2E2E2E2B2E252E242E28
+      2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E292E2E2E2E2E2E2E2E
+      2E5B2E5D2C2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E2C2C2C2D2C2A2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E2E2E2E2C612C622C632E2E2E2E2E2E2E2E222C0A222E2E2E2E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2C642C652C662E2E2E2E2E2E2E2E222C
+      0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2C672C682E2E2E2E2E2E2E2E
+      2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E227D0A770C00002F2A2058504D202A2F
+      0A7374617469632063686172202A677261706869635B5D203D207B0A22313720
+      3137203135362032222C0A222E2E2063204E6F6E65222C0A222E2C2063202342
+      4634453445222C0A222E2D20632023433535313531222C0A222E2A2063202343
+      3635353535222C0A222E6120632023433534463446222C0A222E622063202343
+      3034343434222C0A222E6320632023424635333533222C0A222E642063202343
+      4636323632222C0A222E6520632023453237393739222C0A222E662063202345
+      4437413741222C0A222E6720632023463537463746222C0A222E682063202346
+      3437453745222C0A222E6920632023454237373737222C0A222E6A2063202344
+      4537353735222C0A222E6B20632023434135363536222C0A222E6C2063202343
+      3634393439222C0A222E6D20632023444337343734222C0A222E6E2063202346
+      3237423742222C0A222E6F20632023454636313631222C0A222E702063202344
+      4435333533222C0A222E7120632023443534393439222C0A222E722063202344
+      3734413441222C0A222E7320632023453035343534222C0A222E742063202346
+      3236323632222C0A222E7520632023463037383738222C0A222E762063202344
+      3336373637222C0A222E7720632023433432443244222C0A222E782063202343
+      3336303630222C0A222E7920632023444437343734222C0A222E7A2063202346
+      3436443644222C0A222E4120632023453334423442222C0A222E422063202343
+      3433443344222C0A222E4320632023423833323332222C0A222E442063202342
+      4433423342222C0A222E4520632023433934313431222C0A222E462063202345
+      3634453445222C0A222E4720632023463336453645222C0A222E482063202344
+      3236373637222C0A222E4920632023443136303630222C0A222E4A2063202346
+      3137393739222C0A222E4B20632023454234373437222C0A222E4C2063202345
+      4234353435222C0A222E4D20632023434434353435222C0A222E4E2063202342
+      4634313431222C0A222E4F20632023453534443444222C0A222E502063202345
+      4537303730222C0A222E5120632023433935303530222C0A222E522063202343
+      3535393539222C0A222E5320632023453637443744222C0A222E542063202345
+      4435363536222C0A222E5520632023434134353435222C0A222E562063202345
+      3634363436222C0A222E5720632023454334373437222C0A222E582063202343
+      4434343434222C0A222E5920632023433934333433222C0A222E5A2063202345
+      4635413541222C0A222E3020632023443936393639222C0A222E312063202343
+      4335443544222C0A222E3220632023454637363736222C0A222E332063202344
+      3834463446222C0A222E3420632023423934343434222C0A222E352063202343
+      3134323432222C0A222E3620632023453834383438222C0A222E372063202345
+      4434383438222C0A222E3820632023434534363436222C0A222E392063202342
+      4533453345222C0A222E4020632023444334463446222C0A222E232063202345
+      3236373637222C0A222E3B20632023424534303430222C0A222E3A2063202342
+      4432423242222C0A222E3D20632023463435413541222C0A222E2B2063202343
+      3633363336222C0A222E2520632023424533443344222C0A222E242063202345
+      3533413341222C0A222E2820632023454233453345222C0A222E292063202343
+      4233443344222C0A222E5B20632023443134383438222C0A222E5D2063202345
+      3736413641222C0A222C2E20632023433234383438222C0A222C2C2063202342
+      4332353235222C0A222C2D20632023463233393339222C0A222C2A2063202342
+      3630323032222C0A222C6120632023414130333033222C0A222C622063202344
+      4530343034222C0A222C6320632023453430343034222C0A222C642063202342
+      4430323032222C0A222C6520632023434534373437222C0A222C662063202345
+      3636443644222C0A222C6720632023433034353435222C0A222C682063202342
+      3831413141222C0A222C6920632023454233413341222C0A222C6A2063202343
+      3530353035222C0A222C6B20632023413930303030222C0A222C6C2063202344
+      4330303030222C0A222C6D20632023444630303030222C0A222C6E2063202342
+      3930303030222C0A222C6F20632023423933363336222C0A222C702063202344
+      3134313431222C0A222C7120632023444135463546222C0A222C722063202342
+      4333433343222C0A222C7320632023414230393039222C0A222C742063202345
+      3034323432222C0A222C7520632023444531313131222C0A222C762063202341
+      3630303030222C0A222C7720632023443630303030222C0A222C782063202344
+      3830303030222C0A222C7920632023423430303030222C0A222C7A2063202344
+      3231433143222C0A222C4120632023433533323332222C0A222C422063202343
+      3832423242222C0A222C4320632023454433323332222C0A222C442063202343
+      3530313031222C0A222C4520632023413230303030222C0A222C462063202341
+      3730303030222C0A222C4720632023434430303030222C0A222C482063202343
+      3330363036222C0A222C4920632023443132453245222C0A222C4A2063202342
+      3231353135222C0A222C4B20632023413430323032222C0A222C4C2063202344
+      4233423342222C0A222C4D20632023454131453145222C0A222C4E2063202341
+      3030303030222C0A222C4F20632023423030303030222C0A222C502063202343
+      3930323032222C0A222C5120632023443132353235222C0A222C522063202342
+      4432393239222C0A222C5320632023423730383038222C0A222C542063202344
+      4433343334222C0A222C5520632023453832423242222C0A222C562063202344
+      3830463046222C0A222C5720632023424630363036222C0A222C582063202342
+      3130303030222C0A222C5920632023423030313031222C0A222C5A2063202342
+      4330373037222C0A222C3020632023434331323132222C0A222C312063202344
+      3032463246222C0A222C3220632023433532413241222C0A222C332063202342
+      4430333033222C0A222C3420632023394330303030222C0A222C352063202344
+      3032303230222C0A222C3620632023443933323332222C0A222C372063202344
+      4332423242222C0A222C3820632023444432383238222C0A222C392063202344
+      3932383238222C0A222C4020632023443332423242222C0A222C232063202343
+      4333313331222C0A222C3B20632023433231393139222C0A222C3A2063202338
+      3230303030222C0A222C3D20632023344330303030222C0A222C2B2063202338
+      4630343034222C0A222C2520632023414231303130222C0A222C242063202342
+      4531393139222C0A222C2820632023424231383138222C0A222C292063202341
+      3330453045222C0A222C5B20632023383130323032222C0A222C5D2063202334
+      3030303030222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2C2E2D2E2A2E612E622E
+      2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E632E642E652E662E
+      672E682E692E6A2E6B2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E6C2E6D2E
+      6E2E6F2E702E712E722E732E742E752E762E772E2E2E2E222C0A222E2E2E2E2E
+      782E792E7A2E412E422E432E2E2E2E2E442E452E462E472E482E2E2E2E222C0A
+      222E2E2E2E2E492E4A2E4B2E4C2E4D2E2E2E2E2E2E2E2E2E2E2E4E2E4F2E502E
+      512E2E222C0A222E2E2E522E532E542E552E562E572E582E2E2E2E2E2E2E2E2E
+      2E2E592E5A2E302E2E222C0A222E2E2E312E322E332E342E352E362E372E382E
+      2E2E2E2E2E2E2E2E392E402E232E3B222C0A222E2E2E3A2E3D2E2B2E2E2E2E2E
+      252E242E282E292E2E2E2E2E2E2E2E2E5B2E5D2C2E222C0A222E2E2C2C2C2D2C
+      2A2E2E2E2E2E2E2C612C622C632C642E2E2E2E2E2E2C652C662C67222C0A222E
+      2E2C682C692C6A2E2E2E2E2E2E2E2E2C6B2C6C2C6D2C6E2E2E2C6F2C702C712C
+      72222C0A222E2E2C732C742C752C762E2E2E2E2E2E2E2E2C762C772C782C792C
+      6B2C7A2C412E2E222C0A222E2E2E2E2C422C432C442C452E2E2E2E2E2E2E2E2C
+      462C472C472C482C492C4A2E2E222C0A222E2E2E2E2C4B2C4C2C4D2C442C462E
+      2E2E2E2E2E2C4E2C4F2C502C512C522E2E2E2E222C0A222E2E2E2E2E2E2C532C
+      542C552C562C572C582C592C5A2C302C312C322C332E2E2E2E222C0A222E2E2E
+      2E2E2E2E2E2C342C352C362C372C382C392C402C232C3B2C3A2E2E2E2E2E2E22
+      2C0A222E2E2E2E2E2E2E2E2E2E2C3D2C2B2C252C242C282C292C5B2C5D2E2E2E
+      2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E2E2E2E2E227D0A830400002F2A2058504D202A2F0A73746174
+      69632063686172202A677261706869635B5D203D207B0A223137203137203530
+      2031222C0A222E2063204E6F6E65222C0A222C20632023333936394137222C0A
+      222D20632023344537414231222C0A222A20632023353538304235222C0A2261
+      20632023443745384636222C0A226220632023353337454234222C0A22632063
+      2023434344464631222C0A226420632023353137434233222C0A226520632023
+      333836384136222C0A226620632023344637414231222C0A2267206320233444
+      37394230222C0A226820632023344137364146222C0A22692063202336373845
+      4245222C0A226A20632023433944434630222C0A226B20632023344137364145
+      222C0A226C20632023344537394230222C0A226D20632023344537394231222C
+      0A226E20632023353037424232222C0A226F20632023443645374636222C0A22
+      7020632023424544354543222C0A227120632023433044364543222C0A227220
+      632023423744304541222C0A227320632023413042444445222C0A2274206320
+      23423443444539222C0A227520632023423543464542222C0A22762063202341
+      4643424539222C0A227720632023433444414632222C0A227820632023344437
+      394231222C0A227920632023334436434139222C0A227A206320233631384142
+      43222C0A224120632023353438314237222C0A22422063202335313745423622
+      2C0A224320632023363638464331222C0A224420632023393142364446222C0A
+      224520632023353638344244222C0A224620632023344337424235222C0A2247
+      20632023344137414236222C0A224820632023353738334241222C0A22492063
+      2023334236424138222C0A224A20632023394342454535222C0A224B20632023
+      334136434142222C0A224C20632023353938334238222C0A224D206320233946
+      43304536222C0A224E20632023334336464146222C0A224F2063202336303839
+      4243222C0A225020632023433644434634222C0A225120632023343737374235
+      222C0A225220632023343937424242222C0A225320632023374241314430222C
+      0A225420632023343437374241222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E
+      2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2C2D2C2E2E2E2E2E2E
+      2E222C0A222E2E2E2E2E2E2E2A612A2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E
+      2E6263622E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E6463642E2E2E2E2E2E2E
+      222C0A222E2E2E65666768696A696B6C6D652E2E2E222C0A222E2E2E6E6F7071
+      727374757677782E2E2E222C0A222E2E2E797A4142434445464748492E2E2E22
+      2C0A222E2E2E2E2E2E2E6E4A4B2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E4C
+      4D4E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E4F50512E2E2E2E2E2E2E222C
+      0A222E2E2E2E2E2E2E5253542E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A
+      222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E227D0AA20300002F2A2058504D20
+      2A2F0A7374617469632063686172202A677261706869635B5D203D207B0A2231
+      372031372033352031222C0A222E2063204E6F6E65222C0A222C206320233337
+      36374135222C0A222D20632023343837354144222C0A222A2063202334373734
+      4144222C0A226120632023343637334144222C0A226220632023343637344144
+      222C0A226320632023343837344144222C0A226420632023344537394231222C
+      0A226520632023434444464630222C0A226620632023424144314538222C0A22
+      6720632023423743454537222C0A226820632023423643454537222C0A226920
+      632023423543444537222C0A226A20632023423343444537222C0A226B206320
+      23423243434537222C0A226C20632023423043414536222C0A226D2063202342
+      4644354544222C0A226E20632023344237374230222C0A226F20632023343537
+      324143222C0A227020632023384341444432222C0A2271206320233735394343
+      41222C0A227220632023373339424341222C0A22732063202337313939433922
+      2C0A227420632023364439374339222C0A227520632023364139344338222C0A
+      227620632023363439314337222C0A227720632023374141314346222C0A2278
+      20632023343237314143222C0A227920632023324235443945222C0A227A2063
+      2023333136364142222C0A224120632023333236394230222C0A224220632023
+      333336394230222C0A224320632023333336414230222C0A2244206320233334
+      36414230222C0A224520632023324636334136222C0A222E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A
+      222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A22
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2C2D2A61622A2A2A
+      2A632C2E2E2E222C0A222E2E2E6465666768696A6B6C6D6E2E2E2E222C0A222E
+      2E2E6F707171727374757677782E2E2E222C0A222E2E2E2E797A414142424344
+      452E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E227D0AB70900002F
+      2A2058504D202A2F0A7374617469632063686172202A677261706869635B5D20
+      3D207B0A223137203137203131322032222C0A222E2E20632023383838413836
+      222C0A222E2C20632023394439463942222C0A222E2D20632023394541303943
+      222C0A222E2A20632023394541303942222C0A222E6120632023394539463942
+      222C0A222E6220632023383838413835222C0A222E6320632023384238443838
+      222C0A222E6420632023464646464646222C0A222E6520632023464246424642
+      222C0A222E6620632023464346434643222C0A222E6720632023464346434644
+      222C0A222E6820632023464446444644222C0A222E6920632023443944394439
+      222C0A222E6A20632023453045304530222C0A222E6B20632023443744374437
+      222C0A222E6C20632023424542454245222C0A222E6D20632023433243324332
+      222C0A222E6E20632023433343334333222C0A222E6F20632023433443344334
+      222C0A222E7020632023433143314331222C0A222E7120632023444544454445
+      222C0A222E7220632023453145314531222C0A222E7320632023453345334533
+      222C0A222E7420632023444644464446222C0A222E7520632023443444344434
+      222C0A222E7620632023443844384438222C0A222E7720632023453445344534
+      222C0A222E7820632023453545354535222C0A222E7920632023453245324532
+      222C0A222E7A20632023444344434443222C0A222E4120632023433543354335
+      222C0A222E4220632023433943394339222C0A222E4320632023434143414341
+      222C0A222E4420632023433643364336222C0A222E4520632023424642464246
+      222C0A222E4620632023453745374537222C0A222E4720632023434443444343
+      222C0A222E4820632023443344334433222C0A222E4920632023443644364436
+      222C0A222E4A20632023444244424442222C0A222E4B20632023423642364236
+      222C0A222E4C20632023424142414241222C0A222E4D20632023453845384538
+      222C0A222E4E20632023454145414541222C0A222E4F20632023433743384337
+      222C0A222E5020632023463846384638222C0A222E5120632023434343434343
+      222C0A222E5220632023423142314231222C0A222E5320632023354335433543
+      222C0A222E5420632023343534353435222C0A222E5520632023363936393639
+      222C0A222E5620632023454345434543222C0A222E5720632023454645464546
+      222C0A222E5820632023443044304430222C0A222E5920632023414641464146
+      222C0A222E5A20632023393439343934222C0A222E3020632023424242424242
+      222C0A222E3120632023373137313731222C0A222E3220632023343734373437
+      222C0A222E3320632023423342334233222C0A222E3420632023454445444544
+      222C0A222E3520632023453645364536222C0A222E3620632023453945394539
+      222C0A222E3720632023454545454545222C0A222E3820632023423542354235
+      222C0A222E3920632023344534453445222C0A222E4020632023413341334133
+      222C0A222E2320632023394639463946222C0A222E3B20632023363736373637
+      222C0A222E3A20632023354535453545222C0A222E3D20632023423042304230
+      222C0A222E2B20632023463146314631222C0A222E2520632023443144324431
+      222C0A222E2420632023354635463546222C0A222E2820632023353335333533
+      222C0A222E2920632023353635363536222C0A222E5B20632023354135413541
+      222C0A222E5D20632023363136313631222C0A222C2E20632023353935393539
+      222C0A222C2C20632023413941394139222C0A222C2D20632023433643364335
+      222C0A222C2A20632023463946394639222C0A222C6120632023394239423942
+      222C0A222C6220632023413141314131222C0A222C6320632023394439443944
+      222C0A222C6420632023364336433643222C0A222C6520632023373937393739
+      222C0A222C6620632023463246324632222C0A222C6720632023434443444344
+      222C0A222C6820632023434643464346222C0A222C6920632023444144414441
+      222C0A222C6A20632023374237423742222C0A222C6B20632023393339333933
+      222C0A222C6C20632023394139413941222C0A222C6D20632023463046304630
+      222C0A222C6E20632023423842384238222C0A222C6F20632023454245424542
+      222C0A222C7020632023433843384338222C0A222C7120632023463746374637
+      222C0A222C7220632023464446434644222C0A222C7320632023464546454646
+      222C0A222C7420632023384539303842222C0A222C7520632023423542364233
+      222C0A222C7620632023424442464242222C0A222C7720632023424342454241
+      222C0A222C7820632023424342444241222C0A222C7920632023424342444239
+      222C0A222C7A20632023424242444239222C0A222C4120632023424242434239
+      222C0A222C4220632023424543304243222C0A222C4320632023374437463742
+      222C0A222C442063204E6F6E65222C0A222E2E2E2C2E2D2E2D2E2D2E2D2E2D2E
+      2D2E2A2E2A2E2A2E612E612E612E2A2E2C2E62222C0A222E632E642E652E662E
+      672E642E642E642E642E642E642E642E642E682E682E642E63222C0A222E632E
+      642E692E6A2E6B2E6C2E6D2E6D2E6E2E6E2E6E2E6F2E702E712E722E642E6322
+      2C0A222E632E642E712E732E742E752E762E762E6B2E762E692E692E762E772E
+      782E642E63222C0A222E632E642E792E782E7A2E6C2E6D2E6E2E412E422E432E
+      442E452E6A2E462E642E63222C0A222E632E642E472E462E722E482E492E4A2E
+      412E4B2E4C2E482E762E4D2E4E2E642E63222C0A222E632E642E4F2E502E6A2E
+      512E482E7A2E522E532E542E552E6C2E562E562E642E63222C0A222E632E642E
+      4D2E572E792E582E592E5A2E752E302E312E322E332E342E342E642E63222C0A
+      222E632E642E352E462E362E372E382E392E402E232E3B2E3A2E3D2E372E2B2E
+      642E63222C0A222E632E642E252E4E2E352E722E302E242E282E292E5B2E5D2C
+      2E2C2C2E562E642E63222C0A222E632E642C2D2C2A2E782E482E762E6C2C612C
+      622C632C642E552C652E3D2E642E63222C0A222E632E642E562C662E772C672C
+      682E492E4A2E7A2C692E522C6A2C6B2C6C2E642E63222C0A222E632E642E352E
+      4E2E362E6A2E782E772E772E772E782C6D2E6A2C6E2C6E2E642E63222C0A222E
+      632E642E772C6F2E732E442E432E512E512E512C702E4E2C2A2C2A2C712E642E
+      63222C0A222E632E642C722C732C732E642E642E642E642E642E642E642E642E
+      642E642E642C74222C0A222E622C752C762C772C772C782C782C782C792C7A2C
+      7A2C412C412C412C7A2C422C43222C0A222C442C442C442C442C442C442C442C
+      442C442C442C442C442C442C442C442C442C44227D0AB70D00002F2A2058504D
+      202A2F0A7374617469632063686172202A677261706869635B5D203D207B0A22
+      3137203137203137362032222C0A222E2E2063204E6F6E65222C0A222E2C2063
+      2023333634363645222C0A222E2D20632023333434353732222C0A222E2A2063
+      2023344235433838222C0A222E6120632023353436343845222C0A222E622063
+      2023353336333844222C0A222E6320632023353536363845222C0A222E642063
+      2023343135343835222C0A222E6520632023464145413632222C0A222E662063
+      2023384639313844222C0A222E6720632023433643364333222C0A222E682063
+      2023423342324137222C0A222E6920632023343835343732222C0A222E6A2063
+      2023384139434243222C0A222E6B20632023413642424432222C0A222E6C2063
+      2023394542334343222C0A222E6D20632023414543324437222C0A222E6E2063
+      2023364137454135222C0A222E6F20632023363136373738222C0A222E702063
+      2023424142414234222C0A222E7120632023433543324130222C0A222E722063
+      2023454245313937222C0A222E7320632023464146384533222C0A222E742063
+      2023454545424342222C0A222E7520632023394139433938222C0A222E762063
+      2023464646464646222C0A222E7720632023444344424437222C0A222E782063
+      2023353736303745222C0A222E7920632023354237333941222C0A222E7A2063
+      2023353937383946222C0A222E4120632023353037303938222C0A222E422063
+      2023363338314135222C0A222E4320632023344136313842222C0A222E442063
+      2023374638333934222C0A222E4520632023463246314546222C0A222E462063
+      2023464346364337222C0A222E4720632023464446354235222C0A222E482063
+      2023463946364530222C0A222E4920632023463945413643222C0A222E4A2063
+      2023394239443939222C0A222E4B20632023434243394337222C0A222E4C2063
+      2023344635393733222C0A222E4D20632023353536423845222C0A222E4E2063
+      2023353236453931222C0A222E4F20632023343936363841222C0A222E502063
+      2023354337373938222C0A222E5120632023343835423833222C0A222E522063
+      2023363436393737222C0A222E5320632023424242424238222C0A222E542063
+      2023433943384244222C0A222E5520632023463245424234222C0A222E562063
+      2023464546354235222C0A222E5720632023453244413934222C0A222E582063
+      2023434543434339222C0A222E5920632023353335443741222C0A222E5A2063
+      2023354137313938222C0A222E3020632023353937373943222C0A222E312063
+      2023353036463935222C0A222E3220632023363237454131222C0A222E332063
+      2023344136303839222C0A222E3420632023364537333833222C0A222E352063
+      2023443043464343222C0A222E3620632023443944394441222C0A222E372063
+      2023453545364534222C0A222E3820632023464246384530222C0A222E392063
+      2023424442434141222C0A222E4020632023394239443938222C0A222E232063
+      2023443244304343222C0A222E3B20632023353636313746222C0A222E3A2063
+      2023354537384131222C0A222E3D20632023363138304138222C0A222E2B2063
+      2023353737374132222C0A222E2520632023364138384145222C0A222E242063
+      2023353136373934222C0A222E2820632023373037353835222C0A222E292063
+      2023443043464342222C0A222E5B20632023443944394439222C0A222E5D2063
+      2023453845384539222C0A222C2E20632023464446444646222C0A222C2C2063
+      2023423942434246222C0A222C2D20632023394539463942222C0A222C2A2063
+      2023463046314630222C0A222C6120632023423842374231222C0A222C622063
+      2023354636393838222C0A222C6320632023354537374130222C0A222C642063
+      2023363238324139222C0A222C6520632023354137424134222C0A222C662063
+      2023364238394230222C0A222C6720632023353236393936222C0A222C682063
+      2023364337313831222C0A222C6920632023424642454242222C0A222C6A2063
+      2023434143414341222C0A222C6B20632023454445444544222C0A222C6C2063
+      2023464546454645222C0A222C6D20632023424643304243222C0A222C6E2063
+      2023453345314443222C0A222C6F20632023363737303846222C0A222C702063
+      2023354637384131222C0A222C7120632023363838344139222C0A222C722063
+      2023353937343945222C0A222C7320632023373038444231222C0A222C742063
+      2023353036383935222C0A222C7520632023383038353936222C0A222C762063
+      2023444544444441222C0A222C7720632023453345334533222C0A222C782063
+      2023424542464243222C0A222C7920632023444644454439222C0A222C7A2063
+      2023363537303845222C0A222C4120632023344636373933222C0A222C422063
+      2023343135363833222C0A222C4320632023363937343933222C0A222C442063
+      2023343535433839222C0A222C4520632023343936303845222C0A222C462063
+      2023383238373938222C0A222C4720632023443544344431222C0A222C482063
+      2023444144414441222C0A222C4920632023454645464546222C0A222C4A2063
+      2023453745354531222C0A222C4B20632023364237363934222C0A222C4C2063
+      2023323733423730222C0A222C4D20632023413041364236222C0A222C4E2063
+      2023453345324446222C0A222C4F20632023383038414133222C0A222C502063
+      2023314433333642222C0A222C5120632023394641354235222C0A222C522063
+      2023464146394635222C0A222C5320632023463746374637222C0A222C542063
+      2023463146314631222C0A222C5520632023454445454544222C0A222C562063
+      2023433243324331222C0A222C5720632023444144414442222C0A222C582063
+      2023433143324333222C0A222C5920632023434243414341222C0A222C5A2063
+      2023434543454344222C0A222C3020632023433943394338222C0A222C312063
+      2023423942394242222C0A222C3220632023423942394241222C0A222C332063
+      2023433943394339222C0A222C3420632023443244324432222C0A222C352063
+      2023463446344634222C0A222C3620632023424442464243222C0A222C372063
+      2023394239433938222C0A222C3820632023464446444644222C0A222C392063
+      2023454545454545222C0A222C4020632023463046304630222C0A222C232063
+      2023444444444444222C0A222C3B20632023443844384438222C0A222C3A2063
+      2023444244424442222C0A222C3D20632023444544454445222C0A222C2B2063
+      2023444344434443222C0A222C2520632023453145314531222C0A222C242063
+      2023453645364536222C0A222C2820632023454245424542222C0A222C292063
+      2023453045304530222C0A222C5B20632023444644464446222C0A222C5D2063
+      2023453245324532222C0A222D2E20632023463646364636222C0A222D2C2063
+      2023424442454243222C0A222D2D20632023464446434644222C0A222D2A2063
+      2023434243424342222C0A222D6120632023434343434343222C0A222D622063
+      2023464146414641222C0A222D6320632023424442454242222C0A222D642063
+      2023394139433937222C0A222D6520632023463846384639222C0A222D662063
+      2023464146414642222C0A222D6720632023464346434643222C0A222D682063
+      2023384539303842222C0A222D6920632023433243334330222C0A222D6A2063
+      2023434243434339222C0A222D6B20632023434143424338222C0A222D6C2063
+      2023433943424337222C0A222D6D20632023433943414337222C0A222D6E2063
+      2023433843414336222C0A222D6F20632023434644304344222C0A222D702063
+      2023413041313945222C0A222E2E2E2E2E2C2E2D2E2A2E612E622E632E642E2E
+      2E2E2E2E2E2E2E652E2E2E2E2E2E222C0A222E662E672E682E692E6A2E6B2E6C
+      2E6D2E6E2E6F2E702E712E722E732E742E2E2E2E222C0A222E752E762E772E78
+      2E792E7A2E412E422E432E442E452E462E472E762E482E492E2E222C0A222E4A
+      2E762E4B2E4C2E4D2E4E2E4F2E502E512E522E532E542E552E562E572E2E2E2E
+      222C0A222E4A2E762E582E592E5A2E302E312E322E332E342E352E362E372E38
+      2E392E2E2E2E222C0A222E402E762E232E3B2E3A2E3D2E2B2E252E242E282E29
+      2E5B2E5D2C2E2C2C2E2E2E2E222C0A222C2D2C2A2C612C622C632C642C652C66
+      2C672C682C692C6A2C6B2C6C2C6D2E2E2E2E222C0A222E402E762C6E2C6F2C70
+      2C712C722C732C742C752C762C772C6B2E762C782E2E2E2E222C0A222E402E76
+      2C792C7A2C412C422C432C442C452C462C472C482C492E762C782E2E2E2E222C
+      0A222E402E762C4A2C4B2C4C2C4D2C4E2C4F2C502C512C522C532C542E762C78
+      2E2E2E2E222C0A222C2D2C552C562C572C582C592C5A2C302C312C322C332C34
+      2C352E762C362E2E2E2E222C0A222C372C382C392C402C232C3B2C3A2C232C3D
+      2E5B2C2B2C252C352E762C362E2E2E2E222C0A222C372C382C242C282C292C5B
+      2C292C292C292C5D2C5B2C5D2D2E2E762D2C2E2E2E2E222C0A222E402D2D2C24
+      2C6B2C342C332D2A2D612D612C6A2C492D622C532E762D632E2E2E2E222C0A22
+      2D642E762D652D662D672C6C2E762E762E762E762E762E762E762E762C362E2E
+      2E2E222C0A222D682D692D6A2D6B2D6C2D6C2D6D2D6D2D6D2D6D2D6E2D6E2D6E
+      2D6F2D702E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E227D0A
+    }
+  end
+  object ImageList3: TImageList
+    left = 168
+    top = 160
+    Bitmap = {
+      6C69080000001000000010000000FD0200002F2A2058504D202A2F0A73746174
+      69632063686172202A677261706869635B5D203D207B0A223137203137203234
+      2031222C0A222E2063204E6F6E65222C0A222C20632023333636364132222C0A
+      222D20632023354637373834222C0A222A20632023363037383834222C0A2261
+      20632023363437413831222C0A226220632023344437303932222C0A22632063
+      2023324636334138222C0A226420632023333436354134222C0A226520632023
+      333336344135222C0A226620632023334136373946222C0A2267206320234134
+      39353533222C0A226820632023413639363531222C0A22692063202342303941
+      3439222C0A226A20632023373438303734222C0A226B20632023323835464144
+      222C0A226C20632023333536354133222C0A226D20632023343836453935222C
+      0A226E20632023343936453935222C0A226F20632023344236463934222C0A22
+      7020632023343036413942222C0A227120632023333236344136222C0A227220
+      632023333136344136222C0A227320632023333036334137222C0A2274206320
+      23333236344135222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A22
+      2E2E2E2E2C2D2A2A2A2A2A616263642E2E222C0A222E2E2E6566676868686868
+      696A6B642E2E222C0A222E2E2E646C6D6E6E6E6E6E6F7071642E2E222C0A222E
+      2E646464727272727272737464642E2E222C0A222E2E64646464646464646464
+      6464642E2E222C0A222E2E646464646464646464646464642E2E222C0A222E2E
+      646464646464646464646464642E2E222C0A222E2E6464646464646464646464
+      64642E2E222C0A222E2E646464646464646464646464642E2E222C0A222E2E64
+      6464646464646464646464642E2E222C0A222E2E646464646464646464646464
+      642E2E222C0A222E2E646464646464646464646464642E2E222C0A222E2E6464
+      64646464646464646464642E2E222C0A222E2E64646464646464646464646464
+      2E2E222C0A222E2E646464646464646464646464642E2E222C0A222E2E2E2E2E
+      2E2E2E2E2E2E2E2E2E2E2E2E227D0A960700002F2A2058504D202A2F0A737461
+      7469632063686172202A677261706869635B5D203D207B0A2231372031372037
+      382032222C0A222E2E2063204E6F6E65222C0A222E2C20632023363236323632
+      222C0A222E2D20632023364536463645222C0A222E2A20632023364336443643
+      222C0A222E6120632023363236333632222C0A222E6220632023364136423641
+      222C0A222E6320632023364336433643222C0A222E6420632023363936393639
+      222C0A222E6520632023364236433642222C0A222E6620632023364436443644
+      222C0A222E6720632023363136323631222C0A222E6820632023363536353635
+      222C0A222E6920632023373637363736222C0A222E6A20632023373337333733
+      222C0A222E6B20632023363636373636222C0A222E6C20632023373537353735
+      222C0A222E6D20632023373037313730222C0A222E6E20632023363736383637
+      222C0A222E6F20632023373437343734222C0A222E7020632023363536363635
+      222C0A222E7120632023363736373637222C0A222E7220632023374137413741
+      222C0A222E7320632023373137313731222C0A222E7420632023383238323832
+      222C0A222E7520632023453545354535222C0A222E7620632023443244324432
+      222C0A222E7720632023413341334133222C0A222E7820632023394139423941
+      222C0A222E7920632023373937393739222C0A222E7A20632023374537453745
+      222C0A222E4120632023443744374437222C0A222E4220632023433643374336
+      222C0A222E4320632023394339433943222C0A222E4420632023393339343933
+      222C0A222E4520632023373537363735222C0A222E4620632023364536453645
+      222C0A222E4720632023434143414341222C0A222E4820632023424242424242
+      222C0A222E4920632023393539353935222C0A222E4A20632023384438453844
+      222C0A222E4B20632023383438343834222C0A222E4C20632023454145414541
+      222C0A222E4D20632023413641364136222C0A222E4E20632023394339443943
+      222C0A222E4F20632023363336333633222C0A222E5020632023364236423642
+      222C0A222E5120632023423942394239222C0A222E5220632023414341434143
+      222C0A222E5320632023384238433842222C0A222E5420632023383538363835
+      222C0A222E5520632023364136413641222C0A222E5620632023383138313831
+      222C0A222E5720632023373737373737222C0A222E5820632023383838383838
+      222C0A222E5920632023463846384638222C0A222E5A20632023453345334533
+      222C0A222E3020632023414541454145222C0A222E3120632023413341344133
+      222C0A222E3220632023363836393638222C0A222E3320632023373237323732
+      222C0A222E3420632023413241334132222C0A222E3520632023383638363836
+      222C0A222E3620632023383038313830222C0A222E3720632023383338333833
+      222C0A222E3820632023373837383738222C0A222E3920632023384138413841
+      222C0A222E4020632023464646464646222C0A222E2320632023453945394539
+      222C0A222E3B20632023423142314231222C0A222E3A20632023413641374136
+      222C0A222E3D20632023373137323731222C0A222E2B20632023414341444143
+      222C0A222E2520632023413141324131222C0A222E2420632023383538353835
+      222C0A222E2820632023374638303746222C0A222E2920632023413841394138
+      222C0A222E5B20632023394539453945222C0A222E5D20632023374537463745
+      222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2C2E2D2E2A2E612E622E63
+      2E642E612E632E652E652E662E672E2E2E2E222C0A222E2E2E2E2E682E692E6A
+      2E6B2E6A2E6C2E6D2E6E2E6C2E6F2E6F2E692E702E2E2E2E222C0A222E2E2E2E
+      2E712E722E732E742E752E752E762E772E752E752E752E752E782E2E2E2E222C
+      0A222E2E2E2E2E6B2E792E6D2E7A2E412E412E422E432E412E412E412E412E44
+      2E2E2E2E222C0A222E2E2E2E2E682E452E462E722E472E472E482E492E472E47
+      2E472E472E4A2E2E2E2E222C0A222E2E2E2E2E642E7A2E6F2E4B2E4C2E4C2E41
+      2E4D2E4C2E4C2E4C2E4C2E4E2E2E2E2E222C0A222E2E2E2E2E4F2E732E502E6C
+      2E512E512E522E532E512E512E512E512E542E2E2E2E222C0A222E2E2E2E2E55
+      2E562E572E582E592E592E5A2E302E592E592E592E592E312E2E2E2E222C0A22
+      2E2E2E2E2E2C2E2D2E322E332E302E302E342E352E302E302E302E302E362E2E
+      2E2E222C0A222E2E2E2E2E502E372E382E392E402E402E232E3B2E402E402E40
+      2E402E3A2E2E2E2E222C0A222E2E2E2E2E2C2E462E322E3D2E2B2E2B2E252E24
+      2E2B2E2B2E2B2E2B2E282E2E2E2E222C0A222E2E2E2E2E502E372E382E392E40
+      2E402E4C2E3B2E402E402E402E402E3A2E2E2E2E222C0A222E2E2E2E2E672E66
+      2E6E2E6D2E292E292E5B2E372E292E292E292E292E5D2E2E2E2E222C0A222E2E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E
+      222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E227D0A370A00002F2A2058504D202A2F0A737461746963206368
+      6172202A677261706869635B5D203D207B0A223137203137203132302032222C
+      0A222E2E2063204E6F6E65222C0A222E2C20632023464646464646222C0A222E
+      2D20632023453044464646222C0A222E2A20632023453545454646222C0A222E
+      6120632023464645304441222C0A222E6220632023464644364436222C0A222E
+      6320632023453645414646222C0A222E6420632023444543454638222C0A222E
+      6520632023464639383938222C0A222E6620632023464643344334222C0A222E
+      6720632023464646464631222C0A222E6820632023363436464338222C0A222E
+      6920632023383236394135222C0A222E6A20632023464641413844222C0A222E
+      6B20632023464646354537222C0A222E6C20632023464646464637222C0A222E
+      6D20632023373838344339222C0A222E6E20632023364435394135222C0A222E
+      6F20632023464638393645222C0A222E7020632023464639373930222C0A222E
+      7120632023443644424646222C0A222E7220632023364637384336222C0A222E
+      7320632023314430303643222C0A222E7420632023353230303534222C0A222E
+      7520632023383237324331222C0A222E7620632023413741424646222C0A222E
+      7720632023413741374646222C0A222E7820632023374638334434222C0A222E
+      7920632023314330343646222C0A222E7A20632023344630303541222C0A222E
+      4120632023373935364135222C0A222E4220632023443643374630222C0A222E
+      4320632023444443364538222C0A222E4420632023384336313946222C0A222E
+      4520632023353130303541222C0A222E4620632023314230443731222C0A222E
+      4720632023393139344436222C0A222E4820632023423642364646222C0A222E
+      4920632023423642414646222C0A222E4A20632023393337434242222C0A222E
+      4B20632023353630303531222C0A222E4C20632023314130373646222C0A222E
+      4D20632023383138394338222C0A222E4E20632023444445314646222C0A222E
+      4F20632023464639313842222C0A222E5020632023464638333641222C0A222E
+      5120632023374536454237222C0A222E5220632023384639414441222C0A222E
+      5320632023464646464643222C0A222E5420632023464645444530222C0A222E
+      5520632023464641423846222C0A222E5620632023393138334242222C0A222E
+      5720632023374338354439222C0A222E5820632023464644324432222C0A222E
+      5920632023464641394139222C0A222E5A20632023414641304639222C0A222E
+      3020632023424543314646222C0A222E3120632023464644434443222C0A222E
+      3220632023464645414535222C0A222E3320632023424443354646222C0A222E
+      3420632023414641454646222C0A222E3520632023413741414646222C0A222E
+      3620632023423642354646222C0A222E3720632023423642374646222C0A222E
+      3820632023413841384646222C0A222E3920632023423642334643222C0A222E
+      4020632023464646364637222C0A222E2320632023413841374646222C0A222E
+      3B20632023414442344646222C0A222E3A20632023423739454533222C0A222E
+      3D20632023464636463642222C0A222E2B20632023464642314231222C0A222E
+      2520632023424442444646222C0A222E2420632023413741454646222C0A222E
+      2820632023464644464442222C0A222E2920632023464646364636222C0A222E
+      5B20632023453545364441222C0A222E5D20632023333734333937222C0A222C
+      2E20632023364433333731222C0A222C2C20632023463039343835222C0A222C
+      2D20632023464642434242222C0A222C2A20632023454545454537222C0A222C
+      6120632023343635323938222C0A222C6220632023354232453731222C0A222C
+      6320632023454339333833222C0A222C6420632023464646374636222C0A222C
+      6520632023433443354646222C0A222C6620632023343834424331222C0A222C
+      6720632023333730303638222C0A222C6820632023334330303635222C0A222C
+      6920632023353735334341222C0A222C6A20632023383138344646222C0A222C
+      6B20632023383138314646222C0A222C6C20632023383138374646222C0A222C
+      6D20632023353635414431222C0A222C6E20632023333030303641222C0A222C
+      6F20632023343230303634222C0A222C7020632023344134374244222C0A222C
+      7120632023433443364646222C0A222C7220632023463646384646222C0A222C
+      7320632023434638363843222C0A222C7420632023353531343545222C0A222C
+      7520632023324633363834222C0A222C7620632023443244344530222C0A222C
+      7720632023454345444646222C0A222C7820632023454345434646222C0A222C
+      7920632023454342434346222C0A222C7A20632023443539363943222C0A222C
+      4120632023363431443633222C0A222C4220632023323432393833222C0A222C
+      4320632023433643394430222C0A222C4420632023463646364646222C0A222C
+      4520632023464642424241222C0A222C4620632023464642444142222C0A222C
+      4720632023394341374634222C0A222C4820632023423342364645222C0A222C
+      4920632023464641313945222C0A222C4A20632023464635383445222C0A222C
+      4B20632023414438464431222C0A222C4C20632023413241434644222C0A222E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E
+      2E222C0A222E2E2E2C2E2C2E2D2E2A2E612E622E2C2E2C2E2C2E2C2E2C2E632E
+      642E652E662E2E222C0A222E2E2E2C2E672E682E692E6A2E6B2E2C2E2C2E2C2E
+      2C2E6C2E6D2E6E2E6F2E702E2E222C0A222E2E2E712E722E732E742E752E762E
+      772E772E772E772E782E792E7A2E412E422E2E222C0A222E2E2E432E442E452E
+      462E472E482E482E482E482E492E4A2E4B2E4C2E4D2E4E2E2E222C0A222E2E2E
+      4F2E502E512E522E532E2C2E2C2E2C2E2C2E542E552E562E572E6C2E2C2E2E22
+      2C0A222E2E2E582E592E5A2E302E2C2E2C2E2C2E2C2E2C2E312E322E332E342E
+      2C2E2C2E2E222C0A222E2E2E2C2E2C2E352E362E2C2E2C2E2C2E2C2E2C2E2C2E
+      2C2E362E772E2C2E2C2E2E222C0A222E2E2E2C2E2C2E772E482E2C2E2C2E2C2E
+      2C2E2C2E2C2E2C2E482E772E2C2E2C2E2E222C0A222E2E2E2C2E2C2E772E372E
+      2C2E2C2E2C2E2C2E2C2E2C2E2C2E482E772E2C2E2C2E2E222C0A222E2E2E2C2E
+      2C2E382E392E402E2C2E2C2E2C2E2C2E2C2E2C2E482E232E2C2E2C2E2E222C0A
+      222E2E2E2C2E2C2E3B2E3A2E3D2E2B2E2C2E2C2E2C2E2C2E2C2E252E242E282E
+      292E2E222C0A222E2E2E2C2E5B2E5D2C2E2C2C2C2D2E2C2E2C2E2C2E2C2C2A2C
+      612C622C632C642E2E222C0A222E2E2C652C662C672C682C692C6A2C6B2C6B2C
+      6B2C6C2C6D2C6E2C6F2C702C712E2E222C0A222E2E2C722C732C742C752C762C
+      772C782C782C782C792C7A2C412C422C432C442E2E222C0A222E2E2C452C462C
+      472C482E2C2E2C2E2C2E2C2E2C2C492C4A2C4B2C4C2E2C2E2C2E2E222C0A222E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E
+      2E227D0A740400002F2A2058504D202A2F0A7374617469632063686172202A67
+      7261706869635B5D203D207B0A2231372031372034392031222C0A222E206320
+      4E6F6E65222C0A222C20632023374137423741222C0A222D2063202341424143
+      4142222C0A222A20632023413741374136222C0A226120632023413941394137
+      222C0A226220632023414441434141222C0A226320632023393139313846222C
+      0A226420632023373137323732222C0A226520632023413141324131222C0A22
+      6620632023464646464646222C0A226720632023434644304346222C0A226820
+      632023364536443644222C0A226920632023383338333833222C0A226A206320
+      23453345414633222C0A226B20632023384541414344222C0A226C2063202339
+      3541464430222C0A226D20632023393842334435222C0A226E20632023383039
+      344143222C0A226F20632023354535463545222C0A2270206320233645364636
+      46222C0A227120632023373237323732222C0A22722063202341364136413322
+      2C0A227320632023454146324643222C0A227420632023393341444346222C0A
+      227520632023393942324431222C0A227620632023394242344433222C0A2277
+      20632023384441374336222C0A227820632023363337443945222C0A22792063
+      2023423943314342222C0A227A20632023393139303845222C0A224120632023
+      413641364134222C0A224220632023393241434345222C0A2243206320233941
+      42324432222C0A224420632023394342344434222C0A22452063202339434237
+      4439222C0A224620632023454446354646222C0A224720632023413641354133
+      222C0A224820632023393341434346222C0A224920632023413741364134222C
+      0A224A20632023453746304642222C0A224B20632023383941364341222C0A22
+      4C20632023393141434345222C0A224D20632023413441344132222C0A224E20
+      632023463946454646222C0A224F20632023433444354543222C0A2250206320
+      23433844384544222C0A225120632023414641464144222C0A22522063202342
+      3242304142222C0A225320632023423141464142222C0A222E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C
+      0A222E2E2E2C2D2A6161616263642E2E2E2E2E222C0A222E2E2E656666666666
+      666768692E2E2E2E222C0A222E2E2E65666A6B6C6C6D6E6F70712E2E2E222C0A
+      222E2E2E727374757575767778797A2E2E2E222C0A222E2E2E41734243434343
+      444546472E2E2E222C0A222E2E2E72734843434343434873722E2E2E222C0A22
+      2E2E2E72734843434343434873722E2E2E222C0A222E2E2E7273484343434343
+      4873722E2E2E222C0A222E2E2E72734843434343434873722E2E2E222C0A222E
+      2E2E72734843434343434873722E2E2E222C0A222E2E2E494A4B4C4C4C4C4C4B
+      4A492E2E2E222C0A222E2E2E4D4E4F50505050504F4E4D2E2E2E222C0A222E2E
+      2E2C5152535353535352512C2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E227D0AD6070000
+      2F2A2058504D202A2F0A7374617469632063686172202A677261706869635B5D
+      203D207B0A2231372031372038322032222C0A222E2E2063204E6F6E65222C0A
+      222E2C20632023464646464646222C0A222E2D20632023464646454645222C0A
+      222E2A20632023464642374237222C0A222E6120632023464643334333222C0A
+      222E6220632023464641334133222C0A222E6320632023464642434243222C0A
+      222E6420632023464644354435222C0A222E6520632023464642384238222C0A
+      222E6620632023464646424642222C0A222E6720632023464639453945222C0A
+      222E6820632023464646384638222C0A222E6920632023464641374137222C0A
+      222E6A20632023464643354335222C0A222E6B20632023464641344134222C0A
+      222E6C20632023464645414541222C0A222E6D20632023464642314231222C0A
+      222E6E20632023464646444644222C0A222E6F20632023464645354535222C0A
+      222E7020632023464637393739222C0A222E7120632023464646364636222C0A
+      222E7220632023464643324332222C0A222E7320632023464643384338222C0A
+      222E7420632023464641434143222C0A222E7520632023464644464446222C0A
+      222E7620632023464638443844222C0A222E7720632023464646334633222C0A
+      222E7820632023464638333833222C0A222E7920632023464638303830222C0A
+      222E7A20632023463641374137222C0A222E4120632023463843324332222C0A
+      222E4220632023464641424142222C0A222E4320632023464645314531222C0A
+      222E4420632023464639333933222C0A222E4520632023414341374137222C0A
+      222E4620632023424143324332222C0A222E4720632023464638343834222C0A
+      222E4820632023413541374137222C0A222E4920632023423443324332222C0A
+      222E4A20632023464545314531222C0A222E4B20632023464339333933222C0A
+      222E4C20632023413741374137222C0A222E4D20632023423643324332222C0A
+      222E4E20632023444145314531222C0A222E4F20632023413039333933222C0A
+      222E5020632023464446454645222C0A222E5120632023443238303830222C0A
+      222E5220632023464346364636222C0A222E5320632023433043324332222C0A
+      222E5420632023443343384338222C0A222E5520632023424341424142222C0A
+      222E5620632023444345314531222C0A222E5720632023384139333933222C0A
+      222E5820632023464146454645222C0A222E5920632023373938303830222C0A
+      222E5A20632023463546364636222C0A222E3020632023414641464146222C0A
+      222E3120632023434243424342222C0A222E3220632023434544314431222C0A
+      222E3320632023414642334233222C0A222E3420632023454345424542222C0A
+      222E3520632023393939413941222C0A222E3620632023414238413841222C0A
+      222E3720632023383638363836222C0A222E3820632023453645364536222C0A
+      222E3920632023373937393739222C0A222E4020632023384638463846222C0A
+      222E2320632023393439343934222C0A222E3B20632023374337433743222C0A
+      222E3A20632023413841384138222C0A222E3D20632023363836383638222C0A
+      222E2B20632023423642374237222C0A222E2520632023353535433543222C0A
+      222E2420632023433043304330222C0A222E2820632023353935393539222C0A
+      222E2920632023433443344334222C0A222E5B20632023464546454645222C0A
+      222E5D20632023443744374437222C0A222C2E20632023394139413941222C0A
+      222C2C20632023394239423942222C0A222C2D20632023393939393939222C0A
+      222C2A20632023414441444144222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2C2E2C2E2C2E
+      2C2E2C2E2C2E2C2E2C2E2C2E2C2E2C2E2C2E2C2E2C2E2C2E2E222C0A222E2E2E
+      2C2E2C2E2D2E2D2E2C2E2C2E2C2E2C2E2C2E2C2E2C2E2C2E2C2E2C2E2C2E2E22
+      2C0A222E2E2E2C2E2C2E2A2E612E2C2E2C2E2C2E2C2E2C2E2C2E2C2E2C2E2C2E
+      2C2E2C2E2E222C0A222E2E2E2C2E2C2E622E632E642E652E2C2E2C2E2C2E2C2E
+      662E672E682E2C2E2C2E2E222C0A222E2E2E2C2E2C2E692E612E6A2E6B2E6C2E
+      6D2E6E2E6F2E662E702E712E2C2E2C2E2E222C0A222E2E2E2C2E2C2E692E722E
+      732E742E752E762E772E782E2D2E792E712E2C2E2C2E2E222C0A222E2E2E2C2E
+      2C2E7A2E412E732E422E432E442E772E782E2D2E792E712E2C2E2C2E2E222C0A
+      222E2E2E2C2E2C2E452E462E732E422E432E442E772E472E2D2E792E712E2C2E
+      2C2E2E222C0A222E2E2E2C2E2C2E482E492E732E422E4A2E4B2E772E472E2D2E
+      792E712E2C2E2C2E2E222C0A222E2E2E2C2E2C2E4C2E4D2E732E422E4E2E4F2E
+      772E472E502E512E522E2C2E2C2E2E222C0A222E2E2E2C2E2C2E4C2E532E542E
+      552E562E572E772E472E582E592E5A2E2C2E2C2E2E222C0A222E2E2E2C2E2C2E
+      302E312E322E332E342E352E2D2E362E2C2E372E2C2E2C2E2C2E2E222C0A222E
+      2E2E2C2E382E392E402E232E3B2E3A2E3D2E2B2E252E242E282E292E5B2E2C2E
+      2E222C0A222E2E2E2C2E5D2C2E2C2E2C2E2C2E2C2C2C2E2C2C2C2E2C2C2C2D2C
+      2A2E5B2E2C2E2E222C0A222E2E2E2C2E2C2E2C2E2C2E2C2E2C2E2C2E2C2E2C2E
+      2C2E2C2E2C2E2C2E2C2E2C2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E227D0A190500002F2A2058504D
+      202A2F0A7374617469632063686172202A677261706869635B5D203D207B0A22
+      31372031372036302031222C0A222E2063204E6F6E65222C0A222C2063202336
+      3736423644222C0A222D20632023383038383846222C0A222A20632023373537
+      423830222C0A226120632023353135313446222C0A2262206320233835384439
+      36222C0A226320632023434245304639222C0A22642063202342434346453522
+      2C0A226520632023394541424241222C0A226620632023394641444243222C0A
+      226720632023413242314330222C0A226820632023384539394134222C0A2269
+      20632023383238413932222C0A226A20632023433344374545222C0A226B2063
+      2023424444304535222C0A226C20632023433744434634222C0A226D20632023
+      434345324641222C0A226E20632023414442444346222C0A226F206320234243
+      43464534222C0A227020632023433044334538222C0A22712063202341454241
+      4337222C0A227220632023414442414336222C0A227320632023423042454342
+      222C0A227420632023393941324142222C0A227520632023433444374544222C
+      0A227620632023393941364235222C0A227720632023343335433741222C0A22
+      7820632023343635463745222C0A227920632023343336303833222C0A227A20
+      632023353035433638222C0A224120632023434245304637222C0A2242206320
+      23413542324244222C0A224320632023343035463836222C0A22442063202332
+      4536334138222C0A224520632023333036344138222C0A224620632023324536
+      354144222C0A224720632023333936333941222C0A2248206320233838393139
+      41222C0A224920632023423743354434222C0A224A2063202334373633383522
+      2C0A224B20632023324436324135222C0A224C20632023333436354135222C0A
+      224D20632023333436354134222C0A224E20632023333236364138222C0A224F
+      20632023333836343942222C0A225020632023353635393543222C0A22512063
+      2023374138303833222C0A225220632023354237353936222C0A225320632023
+      324236314137222C0A225420632023333236364141222C0A2255206320233332
+      36364139222C0A225620632023333136364142222C0A22572063202333353635
+      4131222C0A225820632023353335423634222C0A225920632023353635363534
+      222C0A225A20632023343835393645222C0A223020632023344235453735222C
+      0A223120632023344235443733222C0A223220632023344135453735222C0A22
+      3320632023353135423637222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E
+      222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E
+      2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E22
+      2C0A222E2E2C2D2A612E2E2E2E2E2E2E2E2E2E2E222C0A222E2E626364656666
+      66666667682E2E2E2E222C0A222E2E696A6B6A6C6C6C6C6C6D6E2E2E2E2E222C
+      0A222E2E696A6F70717272727273742E2E2E2E222C0A222E2E696A7576777878
+      78787878797A2E2E222C0A222E2E6941424344454545454546472E2E2E222C0A
+      222E2E48494A4B4C4D4D4D4D4E4F502E2E2E222C0A222E2E5152535455555555
+      5657582E2E2E2E222C0A222E2E595A30313131313132332E2E2E2E2E222C0A22
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E227D0AC10200002F2A2058504D202A2F
+      0A7374617469632063686172202A677261706869635B5D203D207B0A22313720
+      31372032302031222C0A222E2063204E6F6E65222C0A222C2063202336383643
+      3645222C0A222D20632023383038383930222C0A222A20632023373337393745
+      222C0A226120632023353035303444222C0A226220632023383739303939222C
+      0A226320632023434245304639222C0A226420632023424243444532222C0A22
+      6520632023394441414239222C0A226620632023394641444243222C0A226720
+      632023413442334333222C0A226820632023373737453834222C0A2269206320
+      23383438443935222C0A226A20632023433344374545222C0A226B2063202342
+      4444314536222C0A226C20632023433244374544222C0A226D20632023434144
+      464638222C0A226E20632023424343464534222C0A226F206320233745383638
+      45222C0A227020632023374338333841222C0A222E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E222C0A222E2E2E2C2D2A612E2E2E2E2E2E2E2E2E2E222C0A222E2E2E
+      62636465666666666667682E2E2E222C0A222E2E2E696A6B6A6C6C6C6C6C6D62
+      2E2E2E222C0A222E2E2E696A6E6E6E6E6E6E6E6A692E2E2E222C0A222E2E2E69
+      6A6E6E6E6E6E6E6E6A692E2E2E222C0A222E2E2E696A6E6E6E6E6E6E6E6A692E
+      2E2E222C0A222E2E2E696A6E6E6E6E6E6E6E6A692E2E2E222C0A222E2E2E626D
+      6C6C6C6C6C6C6C6D622E2E2E222C0A222E2E2E2C6F707070707070706F2C2E2E
+      2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E
+      2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E
+      222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E227D0AB20100002F2A2058
+      504D202A2F0A7374617469632063686172202A677261706869635B5D203D207B
+      0A22313720313720322031222C0A222E2063204E6F6E65222C0A222C20632023
+      464630303030222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E
+      2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2C2E2E2E222C0A222E2E
+      2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2C
+      2E2E2E2E222C0A222E2E2C2E2E2E2E2E2E2E2E2C2E2E2E2E2E222C0A222E2E2E
+      2C2E2E2E2E2E2E2C2C2E2E2E2E2E222C0A222E2E2E2C2C2E2E2E2E2C2C2E2E2E
+      2E2E2E222C0A222E2E2E2E2C2C2E2E2E2C2C2E2E2E2E2E2E222C0A222E2E2E2E
+      2E2C2C2C2C2C2E2E2E2E2E2E2E222C0A222E2E2E2E2E2C2C2C2C2E2E2E2E2E2E
+      2E2E222C0A222E2E2E2E2E2E2C2C2C2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E
+      2E2E2C2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E2E2C2E2E2E2E2E2E2E2E
+      2E222C0A222E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E2E222C0A222E2E2E2E2E2E
+      2E2E2E2E2E2E2E2E2E2E2E227D0A
+    }
+  end
+  object ApplicationProperties1: TApplicationProperties
+    CaptureExceptions = True
+    HintColor = clInfoBk
+    HintHidePause = 2500
+    HintPause = 500
+    HintShortCuts = True
+    ShowHint = True
+    Title = 'Motif MASTER v.3.2'
+    left = 88
+    top = 80
+  end
+  object HTMLHelpDatabase1: THTMLHelpDatabase
+    BaseURL = 'http://motifmaster.sourceforge.net/v3_2/manual/'
+    AutoRegister = True
+    KeywordPrefix = 'HTML/'
+    left = 88
+    top = 128
+  end
+  object HTMLBrowserHelpViewer1: THTMLBrowserHelpViewer
+    BrowserParams = '%s'
+    AutoRegister = True
+    left = 88
+    top = 160
+  end
+end

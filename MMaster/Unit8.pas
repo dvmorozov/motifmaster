@@ -1,23 +1,23 @@
-{------------------------------------------------------------------------------
-    This file is part of the MotifMASTER project. This software is
-    distributed under GPL (see gpl.txt for details).
-
-    This software is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-    Copyright (C) 1999-2007 D.Morozov (dvmorozov@mail.ru)
-------------------------------------------------------------------------------}
-
+//      двойной косой чертой комментируютс€ замечани€, сохран€емые во
+//      всех верси€х исходника; фигурными скобками комментируютс€ замечани€,
+//      сохран€емые только в версии исходника дл€ бесплатного распространени€
+{------------------------------------------------------------------------------}
+{       Copyright (C) 1999-2007 D.Morozov (dvmorozov@mail.ru)                  }
+{------------------------------------------------------------------------------}
 unit Unit8;
+
+{$MODE Delphi}
 
 interface
 
 uses
     Windows, SysUtils, Classes, Graphics, Forms, Controls, StdCtrls,
-    Buttons, ExtCtrls, DataClasses, Tools;
+    Buttons, ExtCtrls, DataClasses, Tools, LResources, HelpIntfs;
 
 type
+
+  { TSiteCalcOptDlg }
+
   TSiteCalcOptDlg = class(TForm)
     OKBtn: TButton;
     CancelBtn: TButton;
@@ -61,8 +61,6 @@ var
   SiteCalcOptDlg: TSiteCalcOptDlg;
 
 implementation
-
-{$R *.DFM}
 
 procedure TSiteCalcOptDlg.SetPropertiesIntoForm;
 var TempByte: Byte;
@@ -164,12 +162,19 @@ end;
 procedure TSiteCalcOptDlg.FormShow(Sender: TObject);
 begin
     ActiveControl := OkBtn;
+    (*это сделано, чтобы избежать вызова обработчика OnClick
+    активного элемента при отображении формы; при нажатии кнопки [X]
+    активный элемент сохран€етс€, и его обработчик снова вызываетс€,
+    когда форма отображаетс€ и UpdatingAllowed уже = True, хот€
+    никакого действи€ пользовател€ еще не было*)
 end;
 
 procedure TSiteCalcOptDlg.Button1Click(Sender: TObject);
 begin
-    Application.HelpJump('hlp_SitesCalcOptDlg');
+    ShowHelpOrErrorForKeyword('','HTML/sites_calc_opt_dlg.html');
 end;
 
+initialization
+{$I Unit8.lrs}
 end.
  

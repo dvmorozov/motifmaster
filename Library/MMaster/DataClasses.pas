@@ -85,7 +85,10 @@ var
 type
     TCellProc = procedure(Grid: TStringGrid; ColNum, RowNum: LongInt);
         procedure StructCompListCellProcedure(Grid: TStringGrid;
-    ColNum, RowNum: LongInt); forward;
+    ColNum, RowNum: LongInt);
+{$IFNDEF Lazarus}
+         forward;
+{$ENDIF}
 
 const
     StructCompListCellProc: Pointer = @StructCompListCellProcedure;

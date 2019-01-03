@@ -14,7 +14,11 @@ unit Plotter2;
 interface
 
 uses
-    ExtCtrls, WinTypes, Graphics, Math3d, Classes, SysUtils,
+    ExtCtrls,
+    {$IFNDEF Lazarus}
+    WinTypes,
+    {$ENDIF}
+    Graphics, Math3d, Classes, SysUtils,
     DataClasses, ComponentList, SimpMath, SelfCopied, Tools,
     SelfSaved, ClassInheritIDs;
 
@@ -388,7 +392,13 @@ const TINY = 1e-6;
             Ellipse(x3 - RadInt, y3 - RadInt, x3 + RadInt, y3 + RadInt);
             SavedColor := GetMyBufCanvas.Brush.Color;
             GetMyBufCanvas.Brush.Color := PaintColor;
-            if RadInt >= 2 then FloodFill(x3, y3, PaintColor, fsBorder);
+            if RadInt >= 2 then FloodFill(x3, y3, PaintColor,
+            {$IFNDEF Lazarus}
+            fsBorder
+            {$ELSE}
+            tFillStyle.fsBorder
+            {$ENDIF}
+            );
             TextOut(x3 - TextWidth(St) div 2, y3 - TextHeight(St) div 2, St);
             GetMyBufCanvas.Brush.Color := SavedColor;
         end;
@@ -407,7 +417,13 @@ const TINY = 1e-6;
 
             SavedColor := GetMyBufCanvas.Brush.Color;
             GetMyBufCanvas.Brush.Color := PaintColor;
-            FloodFill(x3, y3, PaintColor, fsBorder);
+            FloodFill(x3, y3, PaintColor,
+            {$IFNDEF Lazarus}
+            fsBorder
+            {$ELSE}
+            tFillStyle.fsBorder
+            {$ENDIF}
+            );
             TextOut(x3 - TextWidth(St) div 2, y3 - TextHeight(St) div 2, St);
             GetMyBufCanvas.Brush.Color := SavedColor;
         end;

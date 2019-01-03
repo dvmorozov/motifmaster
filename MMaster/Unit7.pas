@@ -1,20 +1,17 @@
-{------------------------------------------------------------------------------
-    This file is part of the MotifMASTER project. This software is
-    distributed under GPL (see gpl.txt for details).
 
-    This software is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-    Copyright (C) 1999-2007 D.Morozov (dvmorozov@mail.ru)
-------------------------------------------------------------------------------}
 
+{------------------------------------------------------------------------------}
+{       Copyright (C) 1999-2007 D.Morozov (dvmorozov@mail.ru)                  }
+{------------------------------------------------------------------------------}
 unit Unit7;
+
+{$MODE Delphi}
 
 interface
 
-uses Windows, SysUtils, Classes, Graphics, Forms, Controls, StdCtrls, 
-  Buttons, ExtCtrls;
+uses SysUtils, Classes, Graphics, Forms, Controls, StdCtrls,
+  Buttons, ExtCtrls, LResources;
 
 type
   TSetMeanMomentValueDlg = class(TForm)
@@ -37,8 +34,6 @@ var
 
 implementation
 
-{$R *.DFM}
-
 procedure TSetMeanMomentValueDlg.ApplyToAllCheckClick(Sender: TObject);
 begin
  if ApplyToAllCheck.Checked then
@@ -55,5 +50,7 @@ begin
   end;
 end;
 
+initialization
+{$I Unit7.lrs}
 end.
  

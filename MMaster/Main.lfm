@@ -1,0 +1,15 @@
+object HiddenForm: THiddenForm
+  Left = 192
+  Height = 121
+  Top = 110
+  Width = 226
+  HorzScrollBar.Page = 225
+  VertScrollBar.Page = 120
+  Caption = 'HiddenForm'
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  OnCloseQuery = FormCloseQuery
+  OnCreate = FormCreate
+  OnDestroy = FormDestroy
+  Visible = True
+end

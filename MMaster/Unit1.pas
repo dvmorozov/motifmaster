@@ -1,34 +1,90 @@
-{------------------------------------------------------------------------------
-    This file is part of the MotifMASTER project. This software is
-    distributed under GPL (see gpl.txt for details).
-
-    This software is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-    Copyright (C) 1999-2007 D.Morozov (dvmorozov@mail.ru)
-------------------------------------------------------------------------------}
-
+//      двойной косой чертой комментируются замечания, сохраняемые во
+//      всех версиях исходника; фигурными скобками комментируются замечания,
+//      сохраняемые только в версии исходника для бесплатного распространения
+{------------------------------------------------------------------------------}
+{       Copyright (C) 1999-2007 D.Morozov (dvmorozov@mail.ru)                  }
+{------------------------------------------------------------------------------}
 unit Unit1;
+
+{$MODE Delphi}
 
 interface
 
 uses
-    SysUtils, WinTypes, WinProcs, Messages, Classes, Graphics, Forms,
-    Dialogs, DB, DBTables, Grids, DBGrids, Menus, Tabs, StdCtrls, ExtCtrls,
-    Plotter, Plotter2, ClipBrd, SimpMath, Buttons, ComCtrls, NumericGrid,
-    ShellAPI, FileCtrl, ToolWin, ImgList, Controls, Math3d, SourceFile,
-    ComponentList, DataClasses, CalcModule, Tools, FFDataFile, SyntMessages,
-    TableComp, AlgorithmContainer, DownhillSimplexContainer,
-    FocusPanel;
-
-    {$REALCOMPATIBILITY ON}
+    SysUtils, Messages, Classes, Graphics, Forms, Dialogs, DB, Grids,
+    Menus, StdCtrls, ExtCtrls, Plotter, Plotter2, ClipBrd, SimpMath,
+    Buttons, ComCtrls, NumericGrid, Controls, Math3d, SourceFile,
+    ComponentList, DataClasses, CalcModule, Tools, FFDataFile, TableComp,
+    AlgorithmContainer, DownhillSimplexContainer, FocusPanel, LResources,
+    MyExceptions, IDEWindowIntf, LazHelpHTML, HelpIntfs;
+    
 const
-    LBM_VIEW            = 0;
-    LBM_CALC            = 1;
+    //  константы режимов отображения позиций и
+    //  волновых векторов в ListBox'е
+    LBM_VIEW            = 0;    //  режим просмотра
+    LBM_CALC            = 1;    //  режим подготовки к расчету
+    
+    VK_UP = 38;
+    VK_DOWN = 40;
+    VK_LEFT = 37;
+    VK_RIGHT = 39;
 
 type
+
+    { TForm1 }
+    
     TForm1 = class(TForm, IUpdatingResults)
+      ApplicationProperties1: TApplicationProperties;
+      Atoms: TColoredGrid;
+      BasisFunctions: TColoredGrid;
+      BottomPanel: TPanel;
+      CalcComments: TMemo;
+      CheckDebyeWaller: TCheckBox;
+      CheckIntensNorm: TCheckBox;
+      CheckUseStartEnd: TCheckBox;
+      Comments: TMemo;
+      CurJobProgress: TProgressBar;
+      GroupBox1: TGroupBox;
+      GroupBox10: TGroupBox;
+      GroupBox11: TGroupBox;
+      GroupBox2: TGroupBox;
+      GroupBox3: TGroupBox;
+      GroupBox5: TGroupBox;
+      GroupBox6: TGroupBox;
+      GroupBox7: TGroupBox;
+      GroupBox8: TGroupBox;
+      GroupBox9: TGroupBox;
+      GroupCommonSettings: TGroupBox;
+      GroupDirectSettings: TGroupBox;
+      GroupPatternBounds: TGroupBox;
+      HTMLBrowserHelpViewer1: THTMLBrowserHelpViewer;
+      HTMLHelpDatabase1: THTMLHelpDatabase;
+      ImageList2: TImageList;
+      ImageList3: TImageList;
+      InputA: TEdit;
+      InputAlpha: TEdit;
+      InputB: TEdit;
+      InputBeta: TEdit;
+      InputC: TEdit;
+      InputEndPos: TEdit;
+      InputGamma: TEdit;
+      InputLambda: TEdit;
+      InputStartPos: TEdit;
+      Label1: TLabel;
+      Label2: TLabel;
+      Label21: TLabel;
+      Label25: TLabel;
+      Label3: TLabel;
+      Label4: TLabel;
+      Label5: TLabel;
+      Label6: TLabel;
+      Label7: TLabel;
+      Label8: TLabel;
+      Label9: TLabel;
+      LabelMsg: TLabel;
+      LabelMsg1: TLabel;
+      ListBoxPropVectCalcOpt: TListBox;
+      ListBoxSitesCalcOpt: TListBox;
         MainMenu: TMainMenu;
         MenuFileEdit: TMenuItem;
         MenuFileNew: TMenuItem;
@@ -36,192 +92,56 @@ type
         MenuFileExit: TMenuItem;
         MenuFileSave: TMenuItem;
         MenuCalculation: TMenuItem;
+        NeutronDataSelector: TComboBox;
+        Panel1: TPanel;
+        Panel4: TPanel;
+        Panel5: TPanel;
+        Panel6: TPanel;
+        PanelTop: TPanel;
+        PanelBack: TPanel;
+        PanelCalcOptions: TPanel;
+        PanelMiscData: TPanel;
+        PanelSites: TPanel;
+        PanelSitesBF: TPanel;
+        PanelSitesCalcOpt: TPanel;
+        PanelSitesRepr: TPanel;
+        PanelStarsCalcOpt: TPanel;
+        PanelTable: TPanel;
+        PanelUnitCell: TPanel;
+        PanelGraph: TPanel;
+        PanelComments: TPanel;
+        Plotter: TPaintBox;
+        Plotter1: TPaintBox;
+        RadioLorentz: TRadioGroup;
+        Representations: TListBox;
+        RFactorSourceSelector: TRadioGroup;
         SaveDialog1: TSaveDialog;
         MenuFileSaveAs: TMenuItem;
         MenuStartReverse: TMenuItem;
         MenuStopReverse: TMenuItem;
-        StartRecording: TMenuItem;
-        StopRecording: TMenuItem;
-        RecordItem: TMenuItem;
+        SelectorContainerPanel: TPanel;
+        Sites: TListBox;
+        Splitter1: TSplitter;
+        Splitter3: TSplitter;
+        Splitter4: TSplitter;
+        Splitter5: TSplitter;
+        Splitter7: TSplitter;
         StatusBar1: TStatusBar;
         MenuDirect: TMenuItem;
         OpenDialog1: TOpenDialog;
-        RecordViewer: TMenuItem;
-        N5: TMenuItem;
         N3: TMenuItem; 
         Help1: TMenuItem;
         Contents1: TMenuItem; 
         N6: TMenuItem;
         About1: TMenuItem;
         MenuFileNewUnit: TMenuItem;
-        PanelTable: TPanel;
-        PanelGeneralData: TPanel;
-        GroupBox1: TGroupBox; 
-        InputA: TEdit; 
-        InputB: TEdit;
-        InputC: TEdit;
-        InputAlpha: TEdit;
-        InputBeta: TEdit;
-        InputGamma: TEdit;
-        Label1: TLabel; 
-        Label2: TLabel; 
-        Label3: TLabel; 
-        Label4: TLabel; 
-        Label5: TLabel; 
-        Label6: TLabel;
         MenuFileNewDirect: TMenuItem;
-        PanelComments: TPanel;
-        Comments: TMemo;
-        PanelBack: TPanel;
-        StaticMsg: TStaticText; 
-        GroupBox2: TGroupBox;
-        InputLambda: TEdit; 
-        Label7: TLabel;
         Splitter: TSplitter; 
         N12: TMenuItem;
-        PanelPlotter: TFocusPanel;
-    MenuFileNewPoly: TMenuItem;
-        PanelSites: TPanel;
-        TopPanel: TPanel;
-        Panel1: TPanel;
-        Panel6: TPanel;
-        PanelSitesRepr: TPanel;
-        BottomPanel: TPanel; 
-        Splitter1: TSplitter;
-        Panel4: TPanel;
-        PanelSitesBF: TPanel;
+        MenuFileNewPoly: TMenuItem;
         SourceFileContentsPanel: TPanel; 
-        SourceFileContents: TTreeView; 
-        Plotter: TPaintBox;
-        CoolBar2: TCoolBar; 
-        ToolBar2: TToolBar;
-        ToolPlotterCopy: TToolButton;
-        ToolPlotterSeparat1: TToolButton;
-        ToolPlotterZoomIn: TToolButton;
-        ToolPlotterZoomOut: TToolButton;
-        ToolPlotterRotX: TToolButton;
-        ToolPlotterRotY: TToolButton;
-        ToolPlotterRotZ: TToolButton;
-        ToolPlotterReset: TToolButton;
-        CoolBar3: TCoolBar;
-        ToolBar3: TToolBar;
-        ToolMemoCopy: TToolButton;
-        ToolMemoPaste: TToolButton;
-        CoolBar4: TCoolBar;
-        ToolBar4: TToolBar;
-        CoolBar5: TCoolBar; 
-        ToolBar5: TToolBar;
-        ToolTableCopy: TToolButton;
-        ToolTablePaste: TToolButton;
-        ToolTableDelete: TToolButton;
-        CoolBar6: TCoolBar;
-        ToolBar6: TToolBar; 
-        CoolBar1: TCoolBar; 
-        ToolBar1: TToolBar;
-        NewBut: TToolButton;
-        OpenBut: TToolButton; 
-        SaveBut: TToolButton; 
-        ToolButton9: TToolButton;
-        ToolButton1: TToolButton;
-        ToolPlotterSeparat2: TToolButton;
-        Panel3: TPanel;
-        PanelCalcOptions: TPanel;
-        ImportSARAhsoutputfile: TMenuItem;
-        N1: TMenuItem; 
-        ImageList3: TImageList;
-        Splitter2: TSplitter;
-        Splitter3: TSplitter;
-        Splitter4: TSplitter;
-        CoolBar10: TCoolBar;
-        Label9: TLabel;
-        ToolBarSites: TToolBar;
-        ToolAddSite: TToolButton;
-        ToolDelSite: TToolButton;
-        ToolEditSite: TToolButton;
-        CoolBar7: TCoolBar;
-        ToolBarAtoms: TToolBar;
-        ToolAtomsCopy: TToolButton;
-        ToolAtomsPaste: TToolButton;
-        ToolAtomsDelete: TToolButton;
-        GroupBox5: TGroupBox;
-        Sites: TListBox;
-        GroupBox6: TGroupBox;
-        CoolBar11: TCoolBar;
-        ToolBarBF: TToolBar;
-        ToolBFCopy: TToolButton;
-        ToolBFPaste: TToolButton;
-        ToolBFDelete: TToolButton;
-        GroupBox7: TGroupBox;
-        CoolBar12: TCoolBar;
-        ToolBarStars: TToolBar;
-        ToolAddPropVect: TToolButton;
-        ToolDelPropVect: TToolButton;
-        ToolEditPropVect: TToolButton;
-        GroupBox8: TGroupBox;
-        WaveVectors: TListBox;
-        CoolBar13: TCoolBar;
-        ToolBarRepr: TToolBar;
-        ToolAddRepr: TToolButton;
-        ToolDelRepr: TToolButton;
-        GroupBox9: TGroupBox;
-        Representations: TListBox;
-        Panel9: TPanel;
-        Splitter5: TSplitter;
-        Splitter6: TSplitter;
-        PanelSitesCalcOpt: TPanel;
-        Label10: TLabel;
-        CoolBar14: TCoolBar;
-        ToolBar14: TToolBar;
-        ToolButSitesCalcOpt: TToolButton;
-        GroupBox10: TGroupBox;
-        ListBoxSitesCalcOpt: TListBox;
-        PanelStarsCalcOpt: TPanel;
-        CoolBar15: TCoolBar;
-        ToolBar15: TToolBar;
-        ToolButton14: TToolButton;
-        GroupBox11: TGroupBox;
-        ListBoxPropVectCalcOpt: TListBox;
-        PanelReprCalcOpt: TPanel;
-        CoolBar16: TCoolBar;
-        GroupBox12: TGroupBox;
-        ListBoxReprCalcOpt: TListBox;
-        Panel5: TPanel;
-        GroupCommonSettings: TGroupBox;
-        CheckDebyeWaller: TCheckBox;
-        SelectorContainerPanel: TPanel;
-        RFactorSourceSelector: TRadioGroup;
-        CurJobProgress: TProgressBar;
-        ToolBar9: TToolBar;
-        RadioLorentz: TRadioGroup;
-        ToolAtomsHelp: TToolButton;
-        ToolBFHelp: TToolButton;
-        ToolPlotterSeparat3: TToolButton;
-        ToolPlotterProperties: TToolButton;
-        ToolButton16: TToolButton;
-        ToolButton17: TToolButton;
-        GroupDirectSettings: TGroupBox;
-        Label25: TLabel;
-        NeutronDataSelector: TComboBox;
-        GroupPatternBounds: TGroupBox;
-        CheckUseStartEnd: TCheckBox;
-        Label8: TLabel;
-        InputStartPos: TEdit;
-        Label21: TLabel;
-        InputEndPos: TEdit;
+        SourceFileContents: TTreeView;
         MenuCheckDataValidity: TMenuItem;
-        Atoms: TColoredGrid;
-        BasisFunctions: TColoredGrid;
-        Table: TColoredGrid;
-        GroupBox3: TGroupBox;
-        CalcComments: TMemo;
-        CheckIntensNorm: TCheckBox;
-        ToolButton2: TToolButton;
-        ToolButton8: TToolButton;
-        ToolButton10: TToolButton;
-        ToolButton11: TToolButton;
-        ToolButton13: TToolButton;
-        ToolButton15: TToolButton;
-        PanelResultedStruct: TPanel;
         MenuProjectEdit: TMenuItem;
         MenuProjectRenameUnit: TMenuItem;
         MenuProjectDeleteUnit: TMenuItem;
@@ -349,28 +269,100 @@ type
         N4: TMenuItem;
         PopupPlotPatternCopy: TMenuItem;
         PopupPlotPattenSave: TMenuItem;
-    MenuFileNewMono: TMenuItem;
+        MenuFileNewMono: TMenuItem;
+        Table: TColoredGrid;
+        ToolAddPropVect: TToolButton;
+        ToolAddSite: TToolButton;
+        ToolAddRepr: TToolButton;
+        ToolAtomsCopy: TToolButton;
+        ToolAtomsDelete: TToolButton;
+        ToolAtomsHelp: TToolButton;
+        ToolAtomsPaste: TToolButton;
+        ToolBar1: TToolBar;
+        NewBut: TToolButton;
+        OpenBut: TToolButton;
+        SaveBut: TToolButton;
+        ToolBar14: TToolBar;
+        ToolBar15: TToolBar;
+        ToolBar3: TToolBar;
+        ToolBar4: TToolBar;
+        ToolBar5: TToolBar;
+        ToolBar7: TToolBar;
+        ToolBar8: TToolBar;
+        ToolBarAtoms: TToolBar;
+        ToolBarBF: TToolBar;
+        ToolBarRepr: TToolBar;
+        ToolBarStars: TToolBar;
+        ToolBarSites: TToolBar;
+        ToolBFCopy: TToolButton;
+        ToolBFDelete: TToolButton;
+        ToolBFHelp: TToolButton;
+        ToolBFPaste: TToolButton;
+        ToolButSitesCalcOpt: TToolButton;
+        ToolButStarsCalcOpt: TToolButton;
+        ToolButton1: TToolButton;
+        ToolButton10: TToolButton;
+        ToolButton11: TToolButton;
+        ToolButton12: TToolButton;
+        ToolButton13: TToolButton;
+        ToolButton14: TToolButton;
+        ToolButton16: TToolButton;
+        ToolButton17: TToolButton;
+        ToolButton18: TToolButton;
+        ToolButton2: TToolButton;
+        ToolButton4: TToolButton;
+        ToolButton5: TToolButton;
+        ToolButton6: TToolButton;
+        ToolButton7: TToolButton;
+        ToolButton8: TToolButton;
+        ToolDelPropVect: TToolButton;
+        ToolDelSite: TToolButton;
+        ToolDelRepr: TToolButton;
+        ToolEditPropVect: TToolButton;
+        ToolSiteProperties: TToolButton;
+        ToolMemoCopy: TToolButton;
+        ToolMemoPaste: TToolButton;
+        ToolPlotterCopy: TToolButton;
+        ToolButton9: TToolButton;
+        ToolButton15: TToolButton;
+        ToolPlotterReset: TToolButton;
+        ToolPlotterRotX: TToolButton;
+        ToolPlotterRotY: TToolButton;
+        ToolPlotterRotZ: TToolButton;
+        ToolPlotterZoomIn: TToolButton;
+        ToolPlotterZoomOut: TToolButton;
+        ToolTableCopy: TToolButton;
+        ToolTableDelete: TToolButton;
+        ToolTablePaste: TToolButton;
+        ToolUnitCellCopy: TToolButton;
+        ToolUnitCellProperties: TToolButton;
+        ToolBar9: TToolBar;
+        ToolBar2: TToolBar;
+        TopPanel: TPanel;
+        WaveVectors: TListBox;
         procedure FormCreate(Sender: TObject);
         procedure MenuFileExitClick(Sender: TObject);
-        procedure FormClose(Sender: TObject; var Action: TCloseAction); 
+        procedure FormClose(Sender: TObject; var Action: TCloseAction);
         procedure MenuFileSaveClick(Sender: TObject);
         procedure MenuFileOpenClick(Sender: TObject);
         procedure MenuStartReverseClick(Sender: TObject);
         procedure MenuFileSaveAsClick(Sender: TObject);
         procedure MenuFileNewClick(Sender: TObject);
         procedure MenuStopReverseClick(Sender: TObject);
+        procedure Plotter1Paint(Sender: TObject);
+        procedure Plotter1Resize(Sender: TObject);
         procedure ToolPlotterRotZClick(Sender: TObject);
         procedure ToolPlotterRotYClick(Sender: TObject);
         procedure ToolPlotterRotXClick(Sender: TObject);
         procedure ToolPlotterResetClick(Sender: TObject);
         procedure ToolPlotterZoomInClick(Sender: TObject);
         procedure ToolPlotterZoomOutClick(Sender: TObject);
-        procedure MenuDirectClick(Sender: TObject); 
+        procedure MenuDirectClick(Sender: TObject);
         procedure Contents1Click(Sender: TObject); 
         procedure About1Click(Sender: TObject); 
         procedure MenuFileNewDirectClick(Sender: TObject);
         procedure PlotterPaint(Sender: TObject);
-        procedure SourceFileContentsChanging(Sender: TObject; Node: TTreeNode; 
+        procedure SourceFileContentsChanging(Sender: TObject; Node: TTreeNode;
         var AllowChange: Boolean);
         procedure SourceFileContentsChange(Sender: TObject; Node: TTreeNode); 
         procedure TableEnter(Sender: TObject); 
@@ -390,6 +382,7 @@ type
         procedure MenuFileNewPolyClick(Sender: TObject);
         procedure SitesKeyDown(Sender: TObject; var Key: Word; Shift: TShiftState);
         procedure SitesClick(Sender: TObject);
+        procedure ToolUnitCellPropertiesClick(Sender: TObject);
         procedure WaveVectorsKeyDown(Sender: TObject; var Key: Word;
         Shift: TShiftState);
         procedure RepresentationsKeyDown(Sender: TObject; var Key: Word;
@@ -411,7 +404,6 @@ type
         procedure ListBoxSitesCalcOptKeyDown(Sender: TObject; var Key: Word;
           Shift: TShiftState);
         procedure ToolPlotterPropertiesClick(Sender: TObject);
-        procedure FormResize(Sender: TObject);
         procedure FormDestroy(Sender: TObject);
         procedure MenuCheckDataValidityClick(Sender: TObject);
         procedure ToolAtomsHelpClick(Sender: TObject);
@@ -464,6 +456,7 @@ type
         procedure MenuPlotStructSaveClick(Sender: TObject);
         procedure MenuMemoCopyClick(Sender: TObject);
         procedure MenuMemoPasteClick(Sender: TObject);
+        procedure MenuSettingsClick(Sender: TObject);
         procedure MenuFFEditClick(Sender: TObject);
         procedure CommentsEnter(Sender: TObject);
         procedure CommentsExit(Sender: TObject);
@@ -472,23 +465,25 @@ type
         procedure MenuNeutronEditClick(Sender: TObject);
         procedure MenuMemoEditClick(Sender: TObject);
         procedure AtomsGridModified(Sender: TObject);
-    procedure MenuSitesEditClick(Sender: TObject);
-    procedure MenuStarsEditClick(Sender: TObject);
-    procedure MenuReprEditClick(Sender: TObject);
-    procedure MenuFileNewMonoClick(Sender: TObject);
+        procedure MenuSitesEditClick(Sender: TObject);
+        procedure MenuStarsEditClick(Sender: TObject);
+        procedure MenuReprEditClick(Sender: TObject);
+        procedure MenuFileNewMonoClick(Sender: TObject);
 
     protected
-        FSaved: Boolean;
+        FSaved: Boolean;        //содержит признак неизменности содержимого файла, загруженного в память,
+                                //который говорит о необходимости обновления файла на диске
         FSourceFile: TSourceFile;
         FFileName: TFileName;
         FFileOpened: Boolean;
         FPlotMode: Integer;
         FPlotDiagrMode: Integer;
-        FCurModified: Boolean;
-
-        procedure SetSavedState(SaveState: Boolean);
-        procedure SetSourceFile(ASourceFile: TSourceFile);
-        procedure SetFileName(AFileName: TFileName);
+        FCurModified: Boolean;  //содержит признак изменения данных в текущем элементе
+                                //редактирования, который говорит о необходимости переноса
+                                //данных в структуры SourceFile
+        procedure SetSavedState(SaveState: Boolean);        (*управляет элементами сохранения*)
+        procedure SetSourceFile(ASourceFile: TSourceFile);  (*вкл. - выкл. эл - тов управления*)
+        procedure SetFileName(AFileName: TFileName);        (*изменение заголовка главного окна*)
         procedure SetFileOpenedState(AFileOpened: Boolean);
         procedure SetPlotDiagrMode(APlotDiagrMode: Integer);
         procedure SetModifiedState(AModifiedState: Boolean);
@@ -497,40 +492,41 @@ type
     public
         Container: TAlgorithmContainer;
         CalcModule: TCalcModule;
-        CalcModuleDirect: TCalcModule;
+        CalcModuleDirect: TCalcModule;                      (*для прямого расчёта*)
         Flag_Rec: Boolean;
-        RecFile: TFileStream;
+        RecFile: TFileStream;                               (*файл, который записывается*)
         Ext: string;
-        TempBitMap: TBitMap;
+        TempBitMap: TBitMap;    //  промежуточная матрица для рисования графика
         PlayerPath: string;
-        FFPath: string;
-        CurrentPath: string;
-        OpenFilePath: string;
+        FFPath: string;         //  путь к базе форм-факторов
+        CurrentPath: string;    //  каталог из которого запускается программа
+        OpenFilePath: string;   //  каталог из которого открывается файл
 
         Plotter3D: TExtBufPlotter3D;
 
         TreeUpdatingAllowed: Boolean;
-        FileLoading: Boolean;
+        FileLoading: Boolean;   //  состояние чтения нового файла -
+                                //  некоторые действия должны быть запрещены
 
         procedure Minimize;
 
         procedure Save(SaveAs: Boolean);
 
-        procedure StartRecord;
-        procedure MakeRecord;
-        procedure StopRecord;
-
         function SetUserParameters(ACalcModule: TCalcModule): Boolean;
+            //  установка в CalcModule параметров, значения
+            //  которых могут выбираться пользователем
 
         procedure StandardViewAction;
+            //  стандартные действия для выполнения записи и отображения
+            //  информации каждого цикла расчёта
 
         procedure LoadProgramSettings;
         procedure SaveProgramSettings;
         procedure SetDefaultSettings;
-        procedure LoadImages;
 
         procedure NewSourceFile;
         procedure OpenFile(AFileName: string);
+            //  создает объект файла проекта
         procedure SaveFile(AFileName: string);
 
         function GetReverseData(ACalcModule: TCalcModule;
@@ -541,29 +537,42 @@ type
         function GetSelectedData: TComponent;
         function GetLastEditedData(TC: TComponent): Boolean;
         function GetNeutronDataCollection(ASourceFile: TSourceFile): TStrings;
+            //  возвращает список всех ReverseUnit'ов, хранящихся в ASourceFile
+
+        //  нижеследующие функции относятся к форме создания / модификации
+        //  исходной структуры
         procedure FillSites;
         procedure FillRepresentations;
         procedure FillPropVectors;
 
-        procedure FillAtoms;
-        procedure FillBasisFunctions;
-        procedure AssignAtoms;
-        procedure AssignBasisFunctions;
-        procedure ReleaseAtoms;
+        procedure FillAtoms;            //  присоединяют к таблицам источники
+        procedure FillBasisFunctions;   //  данных так, чтобы таблицы были
+                                        //  активными
+        procedure AssignAtoms;          //  присоединяют к таблицам источники
+        procedure AssignBasisFunctions; //  данных так, чтобы таблицы были
+                                        //  пассивными
+        procedure ReleaseAtoms;         //  освобождают пассивные таблицы
         procedure ReleaseBasisFunctions;
 
-        procedure SetAtoms;
+        procedure SetAtoms;             //  обновляет данные в пассивной сетке
         procedure SetBasisFunctions;
 
-        function GetCurSite: TSite;
+        function GetCurSite: TSite;     //  возвращает указатель на TSite,
+                                        //  выбранный в данный момент
         function GetCurRepr: TRepresentation;
+                                        //  возвращает указатель на TRepresentation,
+                                        //  выбранный в данный момент
 
         procedure SitesChanged;
         procedure PropVectorsChanged;
         procedure RepresentationsChanged;
 
         procedure LinkPlotterParamsWithSiteList;
+            //  правильно устанавливает обратные указатели на объкты TSiteList у
+            //  объектов - контейнеров параметров отображения структуры
 
+        //  нижеследующие функции относятся к форме,
+        //  задающей опции для проведения расчета
         procedure FillSitesCalcOpt;
         procedure FillPropVectorsCalcOpt;
         procedure SitesChangedCalcOpt;
@@ -575,9 +584,11 @@ type
             const SiteList: TSiteList; ListBox: TListBox; Mode: LongInt);
 
         procedure ShowHint(Sender: TObject);
-        procedure MessagesHandler(var Msg: TMsg; var Handled: Boolean);
         procedure StopCalculationProcess;
         procedure UpdateFFContents;
+        //  вводится для замены окна вывода исключений Lazarus
+        //  стандартным окном сообщений
+        procedure OnException(Sender: TObject; E: Exception);
 
         procedure ShowCurJobProgress(Sender: TComponent;
             MinValue, MaxValue, CurValue: LongInt);
@@ -599,15 +610,21 @@ type
 
         property CurModified: Boolean
             read FCurModified write SetModifiedState;
+            //  эти свойства используются для определения необходимости
+            //  переноса данных из полей редактирования текущей открытой
+            //  панели в объект, который должен хранить эти данные
     end;
 
 var Form1: TForm1;
 
 const
-    PROGRAM_CAPTION: string = 'Motif MASTER v. 3.1';
+    PROGRAM_CAPTION: string = 'Motif MASTER v. 3.2';
     PROJECT_FILE_FILTER: string = 'Motif MASTER Project (*.MMP)|*.MMP';
     REC_FILE_FILTER: string = 'File of records (*.REC)|*.REC';
+    SARAH_OUT_FILTER: string = 'SARAh''s output file (*.MAT)|*.MAT';
     MAX_CAPTION_LEN = 300;
+    
+    MsgDataUnit: string = 'Select data unit in the left box';
 
     SETTINGS_FILE_NAME = 'MotifMASTER.set';
     FORM_FACTORS_FILE_NAME = 'MotifMASTER.ff';
@@ -615,51 +632,66 @@ const
 
     UpDownCodes = [VK_UP, VK_DOWN];
 
-type
-    TListSortCompare = function(Item1, Item2: Pointer): Integer;
-
 implementation
 
 uses
     Unit2, Unit4, Unit6, Unit7, Main, Unit9, Unit5, Unit8, Unit10,
     Unit11, Unit12;
 
-{$R SyntIcon.res}
-{$R *.DFM}
-
 procedure TForm1.FormCreate(Sender: TObject);
 var St: string;
 begin
+    PanelBack.Color := clBtnFace;
+    PanelComments.Color := clBtnFace;
+    PanelGraph.Color := clBtnFace;
+    PanelUnitCell.Color := clBtnFace;
+    PanelMiscData.Color := clBtnFace;
+    PanelTable.Color := clBtnFace;
+    PanelSites.Color := clBtnFace;
+    PanelCalcOptions.Color := clBtnFace;
+
+    PanelBack.Align := alClient;
+    PanelComments.Align := alClient;
+    PanelGraph.Align := alClient;
+    PanelUnitCell.Align := alClient;
+    PanelMiscData.Align := alClient;
+    PanelTable.Align := alClient;
+    PanelSites.Align := alClient;
+    PanelCalcOptions.Align := alClient;
+    
+    PanelBack.BringToFront;
+    PanelBack.Visible := True;
+
     FileOpened := False;
     Saved := True;
     Flag_Rec := False;
 
     TempBitMap := TBitMap.Create;
-    TempBitMap.Width := Plotter.Width;
-    TempBitMap.Height := Plotter.Height;
 
+    //  рисовать нужно на TempBitMap, чтобы
+    //  иметь возможность сохранять в файле
+    //  и копировать в буфер
     Plotter3D := TExtBufPlotter3D.Create;
     Plotter3D.SetBufCanvas(TempBitMap.Canvas);
-    Plotter3D.SetOutCanvas(Plotter.Canvas);
-    Plotter3D.SetHeight(TempBitMap.Height);
-    Plotter3D.SetWidth(TempBitMap.Width);
+    Plotter3D.SetOutCanvas(Plotter1.Canvas);
+    Plotter3D.SetHeight(Plotter1.Height);
+    Plotter3D.SetWidth(Plotter1.Width);
 
     CurrentPath := ExtractFilePath(ParamStr(0));
     OpenFilePath := ExtractFilePath(ParamStr(0));
 
     if FileExists(CurrentPath + SETTINGS_FILE_NAME) then
-        LoadProgramSettings
+        LoadProgramSettings     //  файл установок существует
     else SetDefaultSettings;
 
     Application.HelpFile := ExtractFilePath(ParamStr(0)) + HELP_FILE_NAME;
     Application.OnHint := ShowHint;
-    Application.OnMessage := MessagesHandler;
+    Application.OnException := OnException;
     Application.Title := PROGRAM_CAPTION;
     SourceFile := nil;
     FileName := '';
     Table.DoubleBuffered := True;
     Form1.KeyPreview := True;
-    LoadImages;
     OpenFFDataFile(FFPath + FORM_FACTORS_FILE_NAME);
     St := ParamStr(1);
     if FileExists(St) then OpenFile(St);
@@ -723,6 +755,12 @@ begin
                 with SourceData as TDirectSourceData do
                 begin
                     GetDataToCalc(ACalcModule);
+                    (*!!! работа с NeutronDataSelector'ом должна быть расположена
+                    раньше ShowFileInTree, потому что там обновляется "дерево"
+                    содержимого файла; при этом вызывается обработчик события
+                    изменения "дерева", что приводит к сбросу индекса
+                    NeutronDataSelector.ItemIndex; почему - то такое обновление
+                    не происходит, если работаем с последним элементом в "дереве" !!!*)
                     with NeutronDataSelector do
                     begin
                         if Assigned(Items.Objects[ItemIndex]) and
@@ -754,6 +792,8 @@ begin
             SaveDialog1.FileName := '';
             if SetCurrentDir(OpenFilePath) then SaveDialog1.InitialDir := OpenFilePath;
             SaveDialog1.Filter := PROJECT_FILE_FILTER;
+            //  SaveDialog1.DefaultExt := DEFAULT_EXT;
+            //  расширение по умолчанию добавляется заглавными буквами
             Result := SaveDialog1.Execute;
             TempFileName := SaveDialog1.FileName;
             if ExtractFileExt(TempFileName) = '' then
@@ -836,7 +876,6 @@ procedure TForm1.MenuStartReverseClick(Sender: TObject);
 
     procedure TerminateCurrentCalculation;
     begin
-        StopRecord;
         UtilizeObject(CalcModule);
         Container := nil;
         CalcModule := nil;
@@ -874,9 +913,8 @@ begin
         MenuStopReverse.Enabled := True;
         MenuStartReverse.Enabled := False;
 
-        StartRecording.Enabled := True;
-
         OpenBut.Enabled := False;
+            //  нельзя открывать файл пока производится расчет
         NewBut.Enabled := False;
         Screen.Cursor := SaveCursor;
     end;    //  if FileOpened then...
@@ -897,34 +935,40 @@ begin
     StopCalculationProcess;
 end;
 
+procedure TForm1.Plotter1Paint(Sender: TObject);
+var TC: TComponent;
+begin
+    TC := GetSelectedData;
+    if Assigned(TC) then
+    begin
+        if TC is TSiteListPlotParams then Plotter3D.Plot;
+    end;
+end;
+
+procedure TForm1.Plotter1Resize(Sender: TObject);
+begin
+    if not (csDestroying in ComponentState) then
+    begin
+        TempBitMap.Width := Plotter1.Width;
+        TempBitMap.Height := Plotter1.Height;
+
+        Plotter3D.SetHeight(Plotter1.Height);
+        Plotter3D.SetWidth(Plotter1.Width);
+    end;
+end;
+
 procedure TForm1.StopCalculationProcess;
 begin
     if Assigned(Container) then
     begin
-        StopRecord;
         UtilizeObject(CalcModule);
         Container := nil;
         CalcModule := nil;
         MenuStartReverse.Enabled := True;
         MenuStopReverse.Enabled := False;
-        StartRecording.Enabled := False;
-        StopRecording.Enabled := False;
         OpenBut.Enabled := True;
         NewBut.Enabled := True;
     end;
-end;
-
-procedure TForm1.MakeRecord;
-begin
-end;
-
-procedure TForm1.StartRecord;
-
-begin
-end;
-
-procedure TForm1.StopRecord;
-begin
 end;
 
 procedure TForm1.ToolPlotterRotZClick(Sender: TObject);
@@ -1074,7 +1118,6 @@ begin
                 end;
         end;
 
-        //    if Flag_Rec then MakeRecord;
         Saved := False;
     end;
 end;
@@ -1127,9 +1170,7 @@ end;
 
 procedure TForm1.Contents1Click(Sender: TObject);
 begin
-    if FileExists(Application.HelpFile) then
-        Application.HelpJump('hlp_Index')
-    else MessageDlg('Help file does not exist...', mtError, [mbOk], 0);
+    ShowHelpOrErrorForKeyword('','HTML/contents.html');
 end;
 
 procedure TForm1.About1Click(Sender: TObject);
@@ -1218,35 +1259,35 @@ begin
     SaveSourceFile(SourceFile);
 end;
 
-procedure TForm1.SetFileName;
+procedure TForm1.SetFileName(AFileName: TFileName);
 var St: string;
 begin
     FFileName := AFileName;
     if AFileName <> '' then
     begin
         St := PROGRAM_CAPTION;
-        St := St + ' [ ' +
-        MinimizeName(AFileName, Form1.Canvas, MAX_CAPTION_LEN) + ' ]';
+        St := St + ' [ ' + AFileName + ' ]';
         Caption := St;
     end else Caption := PROGRAM_CAPTION;
 end;
 
-procedure TForm1.SetSourceFile;
+procedure TForm1.SetSourceFile(ASourceFile: TSourceFile);
 begin
     FSourceFile := ASourceFile;
     PanelBack.BringToFront;
+    PanelBack.Visible := True;
     if ASourceFile = nil then
     begin
         MenuFileNewUnit.Enabled := False;
         MenuFileSave.Enabled := False;
         MenuFileSaveAs.Enabled := False;
-        StaticMsg.Visible := False;
+        LabelMsg.Visible := False;
     end
     else
     begin
         MenuFileNewUnit.Enabled := True;
         MenuFileSaveAs.Enabled := True;
-        StaticMsg.Visible := True;
+        LabelMsg.Visible := True;
         with ASourceFile do SetTreeView(SourceFileContents);
         ShowFileInTree;
         LinkPlotterParamsWithSiteList;
@@ -1262,7 +1303,7 @@ begin
     CalcModule.RunAlgorithm;
 end;
 
-procedure TForm1.SetFileOpenedState;
+procedure TForm1.SetFileOpenedState(AFileOpened: Boolean);
 begin
     FFileOpened := AFileOpened;
     if AFileOpened then
@@ -1305,7 +1346,6 @@ begin
     TC := GetSelectedData;
     if Assigned(TC) then
     begin
-        if TC is TSiteListPlotParams then Plotter3D.Plot;
         if TC is TSinTDataPointer then
             with TC as TSinTDataPointer, SinTPointer do
                 PlotDiagr(PlotMode, TempBitMap, Plotter, SinTPointer);
@@ -1435,6 +1475,9 @@ begin
 
         if TC is TSiteList then
         begin
+            //  определяется тип объекта, который владеет данной структурой
+            //  для этого извлекается указатель на объект из узла дерева,
+            //  стоящего на уровень выше
             TempNode := Node.Parent;
             if TempNode <> nil then
             begin
@@ -1442,16 +1485,29 @@ begin
                 if TempComp <> nil then
                 begin
                     if TempComp is TReverseSourceData then
+                    //  выход из панели данных обратного расчета
                     begin
+                        (*??? это событие срабатывает раньше, чем вызывается
+                        DoExit таблицы - поэтому последнее изменение уже не
+                        может сохраниться
+                        Atoms.SetGridDataSource(nil);
+                        BasisFunctions.SetGridDataSource(nil);
+                        *)
                         Exit;
                     end;
 
                     if TempComp is TDirectSourceData then
+                    //  выход из панели данных прямого расчета
                     begin
+                        (*???
+                        Atoms.SetGridDataSource(nil);
+                        BasisFunctions.SetGridDataSource(nil);
+                        *)
                         Exit;
                     end;
 
                     if TempComp is TReverseCalcData then
+                    //  выход из панели результатов обратного расчета
                     begin
                         ReleaseAtoms;
                         ReleaseBasisFunctions;
@@ -1464,13 +1520,15 @@ begin
 
         if TC is TNeutronCompList then
         begin
+            //  выход из таблицы ввода данных о нейтронограмме
             Table.SetGridDataSource(nil);
             Exit;
         end;
 
         if TC is TSinTDataPointer then
         begin
-            PanelPlotter.PopupMenu := nil;
+            //  выход из панели просмотра графика картины
+            PanelGraph.PopupMenu := nil;
             ToolPlotterCopy.OnClick := nil;
             MenuPlotPatternView.Visible := False;
             MenuPlotPatternEdit.Visible := False;
@@ -1479,7 +1537,8 @@ begin
 
         if TC is TSiteListPlotParams then
         begin
-            PanelPlotter.PopupMenu := nil;
+            //  выход из панели просмотра структуры
+            PanelGraph.PopupMenu := nil;
             ToolPlotterCopy.OnClick := nil;
             MenuPlotStructEdit.Visible := False;
             Exit;
@@ -1520,6 +1579,9 @@ procedure TForm1.SourceFileContentsChange(Sender: TObject;
     var TempNode: TTreeNode;
         Comp: TComponent;
     begin
+        //  определяется тип объекта, который владеет данной структурой
+        //  для этого извлекается указатель на объект из узла дерева,
+        //  стоящего на уровень выше
         TempNode := Node.Parent;
         if TempNode <> nil then
         begin
@@ -1527,8 +1589,10 @@ procedure TForm1.SourceFileContentsChange(Sender: TObject;
             if Comp <> nil then
             begin
                 if Comp is TReverseSourceData then
+                //  исходные данные обратного расчета - разрешается все
                 begin
                     PanelSites.BringToFront;
+                    PanelSites.Visible := True;
                     FillSites;
                     FillAtoms;
                     FillPropVectors;
@@ -1544,8 +1608,11 @@ procedure TForm1.SourceFileContentsChange(Sender: TObject;
                 end;
 
                 if Comp is TDirectSourceData then
+                //  исходные данные прямого расчета - ??? пока запрещается
+                //  ввод представлений и базисных функций
                 begin
                     PanelSites.BringToFront;
+                    PanelSites.Visible := True;
                     FillSites;
                     FillAtoms;
                     FillPropVectors;
@@ -1561,8 +1628,10 @@ procedure TForm1.SourceFileContentsChange(Sender: TObject;
                 end;
 
                 if Comp is TReverseCalcData then
+                //  результаты обратного расчета
                 begin
                     PanelSites.BringToFront;
+                    PanelSites.Visible := True;
                     FillSites;
                     FillPropVectors;
                     FillRepresentations;
@@ -1583,16 +1652,24 @@ procedure TForm1.SourceFileContentsChange(Sender: TObject;
 
     procedure ViewTable(TC: TComponent);
     begin
+        PanelTable.BringToFront;
+        PanelTable.Visible := True;
+        //  отображение нужных кнопок
         if TC is TNeutronCompList then
         begin
-            PanelTable.BringToFront;
             Table.SetGridDataSource(TNeutronCompList(TC));
+            //  ??? запрещение видимости кнопок почему-то
+            //  вызывает отсоединение от некоторых
+            //  оставшихся видимыми обработчиков событий
+            //  ToolTableDel.Visible := True;
+            //  ToolTablePaste.Visible := True;
             ToolTableDelete.Enabled := True;
             ToolTablePaste.Enabled := True;
         end else
         begin
-            PanelTable.BringToFront;
             TTableCompList(TC).GridAssign(Table);
+            //  ToolTableDel.Visible := False;
+            //  ToolTablePaste.Visible := False;
             ToolTableDelete.Enabled := False;
             ToolTablePaste.Enabled := False;
         end;
@@ -1601,7 +1678,8 @@ procedure TForm1.SourceFileContentsChange(Sender: TObject;
     procedure ViewBack(St: string);
     begin
         PanelBack.BringToFront;
-        StaticMsg.Caption := St;
+        PanelBack.Visible := True;
+        LabelMsg.Caption := St;
     end;
 
     procedure ViewReverseCalcSettings(TC: TComponent);
@@ -1620,8 +1698,12 @@ procedure TForm1.SourceFileContentsChange(Sender: TObject;
         end;
 
         PanelCalcOptions.BringToFront;
+        PanelCalcOptions.Visible := True;
         FillSitesCalcOpt;
         FillPropVectorsCalcOpt;
+
+        //  ??? здесь можно сделать проверку готовности модуля к расчету
+        //  и вывод сообщения, если модуль не готов
 
         with TC as TReverseUnit do
             with SourceData.GeneralData do
@@ -1639,6 +1721,8 @@ procedure TForm1.SourceFileContentsChange(Sender: TObject;
                     InputEndPos.Enabled := False
                 end;
             end;
+        //  для установки свойств Enabled используется свойство CheckBox'а -
+        //  при изменении свойств Checked или State вызывается событие OnClick
     end;
 
     procedure ViewDirectCalcSettings(TC: TComponent);
@@ -1658,8 +1742,12 @@ procedure TForm1.SourceFileContentsChange(Sender: TObject;
         CheckIntensNorm.Checked := False;
 
         PanelCalcOptions.BringToFront;
+        PanelCalcOptions.Visible := True;
         FillSitesCalcOpt;
         FillPropVectorsCalcOpt;
+
+        //  ??? здесь можно сделать проверку готовности модуля к расчету
+        //  и вывод сообщения, если модуль не готов
 
         with TC as TDirectUnit do
             with SourceData.GeneralData do
@@ -1677,6 +1765,8 @@ procedure TForm1.SourceFileContentsChange(Sender: TObject;
                     InputEndPos.Enabled := False
                 end;
             end;
+        //  для установки свойств Enabled используется свойство CheckBox'а -
+        //  при изменении свойств Checked или State вызывается событие OnClick
     end;
 
     procedure ViewComments(TC: TComponent);
@@ -1684,12 +1774,15 @@ procedure TForm1.SourceFileContentsChange(Sender: TObject;
     begin
         with TC as TCommentsClass, Comments do
         begin
-            Tag := 1;
-            
+            Tag := 1;   //  Tag используется как флаг, чтобы правильно
+                        //  управлять признаком CurModified в OnChanged;
+                        //  OnChanged вызывается в момент появления TMemo
+                        //  на экране несмотря на сброс признака Modified
             Lines.Clear;
             for i := 0 to List.Count - 1 do Lines.Add(List.strings[i]);
             Modified := False;
             PanelComments.BringToFront;
+            PanelComments.Visible := True;
             Tag := 0;
         end;
     end;
@@ -1706,7 +1799,8 @@ procedure TForm1.SourceFileContentsChange(Sender: TObject;
             InputGamma.Text := FloatToStrF(Gamma, ffGeneral, 6, 4);
             InputLambda.Text := FloatToStrF(Lambda, ffGeneral, 6, 4);
         end;
-        PanelGeneralData.BringToFront;
+        PanelMiscData.BringToFront;
+        PanelMiscData.Visible := True;
     end;
 
     procedure ViewStructDataAs3D(TC: TObject);
@@ -1716,19 +1810,12 @@ procedure TForm1.SourceFileContentsChange(Sender: TObject;
             Plotter3D.SetSiteList(GetSiteList);
             Plotter3D.Plot;
         end;
-        PanelPlotter.BringToFront;
-
-        ToolPlotterRotX.Enabled := True;
-        ToolPlotterRotY.Enabled := True;
-        ToolPlotterRotZ.Enabled := True;
-        ToolPlotterReset.Enabled := True;
-        ToolPlotterZoomIn.Enabled := True;
-        ToolPlotterZoomOut.Enabled := True;
-        ToolPlotterProperties.Enabled := True;
+        PanelUnitCell.BringToFront;
+        PanelUnitCell.Visible := True;
 
         MenuPlotStructEdit.Visible := True;
         ToolPlotterCopy.OnClick := MenuPlotStructCopyClick;
-        PanelPlotter.PopupMenu := PopupPlotStruct;
+        PanelUnitCell.PopupMenu := PopupPlotStruct;
     end;
 
     procedure ViewSinTDataAsBarGraph(TC: TObject);
@@ -1736,27 +1823,22 @@ procedure TForm1.SourceFileContentsChange(Sender: TObject;
         with TC as TSinTDataPointer do
             with SinTPointer do
                 PlotDiagr(PlotMode, TempBitMap, Plotter, SinTPointer);
-        PanelPlotter.BringToFront;
+        PanelGraph.BringToFront;
+        PanelGraph.Visible := True;
+        
         PlotDiagrMode := TSinTDataPointer(TC).PlotMode;
-
-        ToolPlotterRotX.Enabled := False;
-        ToolPlotterRotY.Enabled := False;
-        ToolPlotterRotZ.Enabled := False;
-        ToolPlotterReset.Enabled := False;
-        ToolPlotterZoomIn.Enabled := False;
-        ToolPlotterZoomOut.Enabled := False;
-        ToolPlotterProperties.Enabled := False;
 
         MenuPlotPatternView.Visible := True;
         MenuPlotPatternEdit.Visible := True;
-        PanelPlotter.PopupMenu := PopupPlotPattern;
-        ToolPlotterCopy.OnClick := MenuPlotPatternCopyClick;
+        PanelGraph.PopupMenu := PopupPlotPattern;
+        ToolUnitCellCopy.OnClick := MenuPlotPatternCopyClick;
     end;
 
 var TC: TComponent;
 begin
     if TreeUpdatingAllowed then
     begin
+        //  сброс признаков изменения
         CurModified := False;
 
         TC := GetSelectedData;
@@ -1770,15 +1852,18 @@ begin
             if TC is TDirectUnit then begin ViewDirectCalcSettings(TC); Exit end;
             if TC is TSiteListPlotParams then begin ViewStructDataAs3D(TC); Exit; end;
             if TC is TSinTDataPointer then begin ViewSinTDataAsBarGraph(TC); Exit; end;
-            ViewBack('Select necessary data unit in the left box');
+            ViewBack(MsgDataUnit);
         end //  if Assigned(TC) then...
-        else ViewBack('Select necessary data unit in the left box');
+        else ViewBack(MsgDataUnit);
     end;
 end;
 
 procedure TForm1.TableEnter(Sender: TObject);
 var TC: TComponent;
 begin
+    //  определение типа редактируемого элемента
+    //  и включение соответствующего меню редактирования,
+    //  всплывающего меню и событий кнопок
     TC := GetSelectedData;
 
     if TC <> nil then
@@ -1807,6 +1892,7 @@ end;
 
 procedure TForm1.TableExit(Sender: TObject);
 begin
+    //  выключение меню редактирования
     MenuResultsEdit.Visible := False;
     MenuNeutronEdit.Visible := False;
 end;
@@ -1893,7 +1979,7 @@ begin
         end;
 end;
 
-procedure TForm1.SetModifiedState;
+procedure TForm1.SetModifiedState(AModifiedState: Boolean);
 begin
     FCurModified := AModifiedState;
     if AModifiedState then Saved := False;
@@ -1911,6 +1997,7 @@ begin
             TC := Items[i];
             if TC is TReverseUnit then with TC as TReverseUnit do
                 TempStrings.AddObject(Caption, TC);
+                    //  в список вставляются указатели на модули TReverseUnit
         end;
     Result := TempStrings;
 end;
@@ -1978,37 +2065,6 @@ begin
             end;
 end;
 
-procedure TForm1.LoadImages;
-var NewIcon: TIcon;
-begin
-    SourceFileContents.Images := TImageList.Create(Self);
-    NewIcon := TIcon.Create;
-    NewIcon.Handle := LoadIcon(HInstance, 'FileIcon');
-    SourceFileContents.Images.AddIcon(NewIcon);
-
-    NewIcon.Handle := LoadIcon(HInstance, 'TableIcon');
-    SourceFileContents.Images.AddIcon(NewIcon);
-
-    NewIcon.Handle := LoadIcon(HInstance, 'PlotIn3DIcon');
-    SourceFileContents.Images.AddIcon(NewIcon);
-
-    NewIcon.Handle := LoadIcon(HInstance, 'CommentsIcon');
-    SourceFileContents.Images.AddIcon(NewIcon);
-
-    NewIcon.Handle := LoadIcon(HInstance, 'BarGraphIcon');
-    SourceFileContents.Images.AddIcon(NewIcon);
-
-    NewIcon.Handle := LoadIcon(HInstance, 'UnitOpenIcon');
-    SourceFileContents.Images.AddIcon(NewIcon);
-
-    NewIcon.Handle := LoadIcon(HInstance, 'UnitCloseIcon');
-    SourceFileContents.Images.AddIcon(NewIcon);
-
-    NewIcon.Handle := LoadIcon(HInstance, 'GeneralIcon');
-    SourceFileContents.Images.AddIcon(NewIcon);
-    UtilizeObject(NewIcon);
-end;
-
 procedure TForm1.Paint(var Msg: TMessage);
 begin
     if Msg.Msg = WM_PAINT then
@@ -2035,7 +2091,7 @@ var DateTime: TDateTime;
 begin
     if Assigned(SourceFile) then
     begin
-        DateTime := Date;
+        DateTime := Date;    
         SourceFile.CreateReverseUnit(
             'MONOCRYSTAL (' + DateToStr(DateTime) + ')', NDT_MONOCRYSTAL);
         ShowFileInTree;
@@ -2071,7 +2127,7 @@ end;
 
 function TForm1.GetCurSite: TSite;
 begin
-    if Sites.Items.Count <> 0 then
+    if (Sites.Items.Count <> 0) and (Sites.ItemIndex <> -1) then
         Result := TSite(Sites.Items.Objects[Sites.ItemIndex])
     else Result := nil;
 end;
@@ -2079,7 +2135,7 @@ end;
 function TForm1.GetCurRepr: TRepresentation;
 begin
     with Representations.Items do
-        if Count <> 0 then
+        if (Count <> 0) and (Representations.ItemIndex <> -1) then
             Result := TRepresentation(Objects[Representations.ItemIndex])
         else Result := nil;
 end;
@@ -2155,7 +2211,7 @@ end;
 procedure TForm1.FillPropVectors;
 var TS: TSite;
 begin
-    if Sites.Items.Count <> 0 then
+    if (Sites.Items.Count <> 0) and (Sites.ItemIndex <> -1) then
         with Sites do
         begin
             TS := TSite(Sites.Items.Objects[ItemIndex]);
@@ -2169,7 +2225,8 @@ end;
 procedure TForm1.FillPropVectorsCalcOpt;
 var TS: TSite;
 begin
-    if ListBoxSitesCalcOpt.Items.Count <> 0 then
+    if (ListBoxSitesCalcOpt.Items.Count <> 0) and
+       (ListBoxSitesCalcOpt.ItemIndex <> -1) then
         with ListBoxSitesCalcOpt do
         begin
             TS := TSite(ListBoxSitesCalcOpt.Items.Objects[ItemIndex]);
@@ -2256,7 +2313,7 @@ var WV: TWaveVector;
     i: LongInt;
 begin
     Representations.Items.Clear;
-    if WaveVectors.Items.Count <> 0 then
+    if (WaveVectors.Items.Count <> 0) and (WaveVectors.ItemIndex <> -1) then
     begin
         WV := TWaveVector(WaveVectors.Items.Objects[WaveVectors.ItemIndex]);
         if Assigned(WV) then
@@ -2284,6 +2341,11 @@ end;
 procedure TForm1.SitesClick(Sender: TObject);
 begin
     SitesChanged;
+end;
+
+procedure TForm1.ToolUnitCellPropertiesClick(Sender: TObject);
+begin
+
 end;
 
 procedure TForm1.WaveVectorsKeyDown(Sender: TObject; var Key: Word;
@@ -2349,7 +2411,8 @@ var TW: TWaveVector;
     TS: TSite;
     SaveIndex: LongInt;
 begin
-    if ListBoxPropVectCalcOpt.Items.Count <> 0 then
+    if (ListBoxPropVectCalcOpt.Items.Count <> 0) and
+       (ListBoxPropVectCalcOpt.ItemIndex <> -1) then
     begin
         SaveIndex := ListBoxPropVectCalcOpt.ItemIndex;
 
@@ -2389,6 +2452,8 @@ end;
 
 procedure TForm1.CommentsChange(Sender: TObject);
 begin
+    //  OnChange вызывается даже когда TMemo появляется на экране,
+    //  поэтому Tag используется как флаг первоначального заполнения
     with Comments do
         if Modified and (Tag = 0) then CurModified := True;
 end;
@@ -2424,20 +2489,12 @@ end;
 procedure TForm1.UpdateFFContents;
 begin
     OpenFFDataFile(FFPath + FORM_FACTORS_FILE_NAME);
-    SourceFileContentsChange(nil, nil);
-end;
-
-procedure TForm1.MessagesHandler(var Msg: TMsg; var Handled: Boolean);
-begin
-    if Msg.Message = WM_FFEditor then
-    begin
-        UpdateFFContents;
-        Handled := True;
-    end;
+    SourceFileContentsChange(nil, nil); //  обновление активной панели
 end;
 
 procedure TForm1.CheckUseStartEndClick(Sender: TObject);
 begin
+    //  обработчик вызывается при изменении свойства Checked
     if CheckUseStartEnd.Checked then
     begin InputStartPos.Enabled := True; InputEndPos.Enabled := True end
     else begin InputStartPos.Enabled := False; InputEndPos.Enabled := False end;
@@ -2528,7 +2585,8 @@ var TS: TSite;
     SaveIndex: LongInt;
 begin
     with ListBoxSitesCalcOpt do
-        if Items.Count <> 0 then
+        if (Items.Count <> 0) and
+           (ItemIndex <> -1) then
         begin
             SaveIndex := ItemIndex;
             TS := TSite(Items.Objects[ItemIndex]);
@@ -2569,17 +2627,8 @@ end;
 
 procedure TForm1.UpdateStructViewProperties(Sender: TObject);
 begin
-    PlotterPaint(Sender);
+    Plotter1Paint(Sender);
     Saved := False;
-end;
-
-procedure TForm1.FormResize(Sender: TObject);
-begin
-    if not (csDestroying in ComponentState) then
-    begin
-        Plotter3D.SetHeight(Plotter.Height);
-        Plotter3D.SetWidth(Plotter.Width);
-    end;
 end;
 
 procedure TForm1.FormDestroy(Sender: TObject);
@@ -2593,7 +2642,9 @@ begin
     UtilizeObject(RecFile);
     UtilizeObject(SourceFile);
     CloseFFDataFile;
+    (*???
     Application.HelpCommand(Help_Quit, 0);
+    *)
 end;
 
 procedure TForm1.LinkPlotterParamsWithSiteList;
@@ -2638,12 +2689,14 @@ begin
         if TC is TReverseUnit then
             with TC as TReverseUnit do begin
                 IsReady;
+                //  исключения не произошло
                 MessageDlg('All data are valid...', mtInformation, [mbOk], 0);
             end;
 
         if TC is TDirectUnit then
             with TC as TDirectUnit do begin
                 IsReady;
+                //  исключения не произошло
                 MessageDlg('All data is valid', mtInformation, [mbOk], 0);
             end;
     end;
@@ -2658,7 +2711,7 @@ end;
 
 procedure TForm1.ToolAtomsHelpClick(Sender: TObject);
 begin
-    Application.HelpJump('hlp_AtomsParInput');
+    ShowHelpOrErrorForKeyword('','HTML/atoms_par_input.html');
 end;
 
 procedure TForm1.ToolButton2Click(Sender: TObject);
@@ -2667,26 +2720,27 @@ begin
     TC := GetSelectedData;
     if Assigned(TC) then
     begin
+        //  проверка типа источника данных, выбранного в данный момент
         if TC is TNeutronCompList then
-            Application.HelpJump('hlp_NeutronDataInput');
+            ShowHelpOrErrorForKeyword('','HTML/neutron_data_input.html');
         if TC is TSinTCompList then
-            Application.HelpJump('hlp_CalcResOutput');
+            ShowHelpOrErrorForKeyword('','HTML/calc_res_output.html');
     end;
 end;
 
 procedure TForm1.ToolBFHelpClick(Sender: TObject);
 begin
-    Application.HelpJump('hlp_BasalFunctionsInput');
+    ShowHelpOrErrorForKeyword('','HTML/basal_functions_input.html');
 end;
 
 procedure TForm1.ToolButton11Click(Sender: TObject);
 begin
-    Application.HelpJump('hlp_PanelCalcOptions');
+    ShowHelpOrErrorForKeyword('','HTML/panel_calc_options.html');
 end;
 
 procedure TForm1.ToolButton15Click(Sender: TObject);
 begin
-    Application.HelpJump('hlp_SourceFile');
+    ShowHelpOrErrorForKeyword('','HTML/project_file.html');
 end;
 
 procedure TForm1.MenuProjectDeleteUnitClick(Sender: TObject);
@@ -2733,6 +2787,8 @@ begin
             if (Comp is TReverseSourceData) or
                (Comp is TDirectSourceData) then
             begin
+                //  выбран модуль прямого или обратного расчета -
+                //  все разрешить
                 for i := 0 to PopupSites.Items.Count - 1 do
                     PopupSites.Items[i].Enabled := True;
                 Exit;
@@ -2740,6 +2796,8 @@ begin
 
             if Comp is TReverseCalcData then
             begin
+                //  выбран модуль результатов обратного расчета -
+                //  все запретить
                 for i := 0 to PopupSites.Items.Count - 1 do
                     PopupSites.Items[i].Enabled := False;
             end;
@@ -2769,6 +2827,8 @@ begin
             if (Comp is TReverseSourceData) or
                (Comp is TDirectSourceData) then
             begin
+                //  выбран модуль прямого или обратного расчета -
+                //  все разрешить
                 for i := 0 to PopupStars.Items.Count - 1 do
                     PopupStars.Items[i].Enabled := True;
                 Exit;
@@ -2776,6 +2836,8 @@ begin
 
             if Comp is TReverseCalcData then
             begin
+                //  выбран модуль результатов обратного расчета -
+                //  все запретить
                 for i := 0 to PopupStars.Items.Count - 1 do
                     PopupStars.Items[i].Enabled := False;
             end;
@@ -2804,6 +2866,8 @@ begin
         begin
             if Comp is TReverseSourceData then
             begin
+                //  выбран модуль обратного расчета -
+                //  все разрешить
                 for i := 0 to PopupRepr.Items.Count - 1 do
                     PopupRepr.Items[i].Enabled := True;
                 Exit;
@@ -2812,6 +2876,9 @@ begin
             if (Comp is TReverseCalcData) or
                (Comp is TDirectSourceData) then
             begin
+                //  выбран модуль прямого расчета или
+                //  результатов обратного расчета -
+                //  все запретить
                 for i := 0 to PopupRepr.Items.Count - 1 do
                     PopupRepr.Items[i].Enabled := False;
             end;
@@ -2841,6 +2908,8 @@ begin
             if (Comp is TReverseSourceData) or
                (Comp is TDirectSourceData) then
             begin
+                //  выбран модуль прямого или обратного расчета -
+                //  все разрешить
                 if ClipBoard.HasFormat(CF_TEXT) then
                     PopupAtomsPaste.Enabled := True
                 else PopupAtomsPaste.Enabled := False;
@@ -2853,6 +2922,8 @@ begin
 
             if Comp is TReverseCalcData then
             begin
+                //  выбран модуль результатов обратного расчета -
+                //  все запретить, кроме копирования
                 PopupAtomsCopy.Enabled := True;
 
                 for i := 0 to PopupAtoms.Items.Count - 1 do
@@ -2880,6 +2951,8 @@ begin
             if (Comp is TReverseSourceData) or
                (Comp is TDirectSourceData) then
             begin
+                //  выбран модуль прямого или обратного расчета -
+                //  все разрешить
                 if ClipBoard.HasFormat(CF_TEXT) then
                     PopupBFPaste.Enabled := True
                 else PopupBFPaste.Enabled := False;
@@ -2892,6 +2965,8 @@ begin
 
             if Comp is TReverseCalcData then
             begin
+                //  выбран модуль результатов обратного расчета -
+                //  все запретить, кроме копирования
                 PopupBFCopy.Enabled := True;
 
                 for i := 0 to PopupBF.Items.Count - 1 do
@@ -2906,7 +2981,7 @@ procedure TForm1.MenuProjectAutoExpandClick(Sender: TObject);
 begin
     SourceFileContents.AutoExpand := not SourceFileContents.AutoExpand;
     MenuProjectAutoExpand.Checked := SourceFileContents.AutoExpand;
-    PopupProjectAutoExpand.Checked := SourceFileContents.AutoExpand;
+    PopupProjectAutoExpand.Checked := SourceFileContents.AutoExpand;    
 end;
 
 procedure TForm1.MenuProjectFullExpandClick(Sender: TObject);
@@ -2921,16 +2996,25 @@ end;
 
 procedure TForm1.MenuAtomsPasteClick(Sender: TObject);
 begin
+    //  проверка формата делается здесь потому что невозможно
+    //  управлять разрешением/запрещением кнопки по событию
+    //  (текст может быть скопирован в этом же элементе управления)
     if Clipboard.HasFormat(CF_TEXT) then
     begin
         Atoms.PasteFromClipboard;
-        FillBasisFunctions;
+        //  ??? если надо, чтобы реакция была правильной и в режиме вывода
+        //  результатов расчета, нужно сделать развязку с определением типа
+        //  модуля и вызовом GridRelease, GridAssign 
+        FillBasisFunctions;        
     end;
 end;
 
 procedure TForm1.MenuAtomsDeleteClick(Sender: TObject);
 begin
     Atoms.DeleteSelection;
+    //  ??? если надо, чтобы реакция была правильной и в режиме вывода
+    //  результатов расчета, нужно сделать развязку с определением типа
+    //  модуля и вызовом GridRelease, GridAssign
     FillBasisFunctions;
 end;
 
@@ -2942,13 +3026,19 @@ end;
 procedure TForm1.MenuAtomsInsertClick(Sender: TObject);
 begin
     with Atoms do InsertRows(
-        Row, 1, False);
+        Row, 1, False(*область должна быть заполнена данными из источника*));
+    //  ??? если надо, чтобы реакция была правильной и в режиме вывода
+    //  результатов расчета, нужно сделать развязку с определением типа
+    //  модуля и вызовом GridRelease, GridAssign
     FillBasisFunctions;
 end;
 
 procedure TForm1.MenuAtomsAddClick(Sender: TObject);
 begin
     Atoms.AddRow;
+    //  ??? если надо, чтобы реакция была правильной и в режиме вывода
+    //  результатов расчета, нужно сделать развязку с определением типа
+    //  модуля и вызовом GridRelease, GridAssign
     FillBasisFunctions;
 end;
 
@@ -2959,6 +3049,9 @@ end;
 
 procedure TForm1.MenuBFPasteClick(Sender: TObject);
 begin
+    //  проверка формата делается здесь потому что невозможно
+    //  управлять разрешением/запрещением кнопки по событию
+    //  (текст может быть скопирован в этом же элементе управления)
     if Clipboard.HasFormat(CF_TEXT) then BasisFunctions.PasteFromClipboard;
 end;
 
@@ -2980,7 +3073,7 @@ end;
 procedure TForm1.MenuBFInsertClick(Sender: TObject);
 begin
     with BasisFunctions do InsertColumns(
-        Col, 1, False);
+        Col, 1, False(*область должна быть заполнена данными из источника*));
 end;
 
 procedure TForm1.MenuSitesAddClick(Sender: TObject);
@@ -3010,7 +3103,7 @@ end;
 procedure TForm1.MenuSitesDeleteClick(Sender: TObject);
 var TC: TComponent;
 begin
-    if Sites.Items.Count <> 0 then
+    if (Sites.Items.Count <> 0) and (Sites.ItemIndex <> -1) then
     begin
         TC := GetSelectedData;
         if Assigned(TC) then
@@ -3032,7 +3125,7 @@ procedure TForm1.MenuSitesPropertiesClick(Sender: TObject);
 var TS: TSite;
     SaveIndex: LongInt;
 begin
-    if Sites.Items.Count <> 0 then
+    if (Sites.Items.Count <> 0) and (Sites.ItemIndex <> -1) then
     begin
         SaveIndex := Sites.ItemIndex;
         TS := TSite(Sites.Items.Objects[Sites.ItemIndex]);
@@ -3040,7 +3133,9 @@ begin
         if EditSiteDlg.ShowModal = mrOk then
         begin
             FillSites;
-            FillAtoms;
+            FillAtoms;  //  обновление измененных свойств атомов
+            //  восстановление прежнего индекса
+            //  выбранной позиции после FillSites
             Sites.ItemIndex := SaveIndex;
             Saved := False;
         end;
@@ -3051,7 +3146,7 @@ procedure TForm1.MenuStarsAddClick(Sender: TObject);
 var TS: TSite;
     TW: TWaveVector;
 begin
-    if Sites.Items.Count <> 0 then
+    if (Sites.Items.Count <> 0) and (Sites.ItemIndex <> -1) then
     begin
         TS := TSite(Sites.Items.Objects[Sites.ItemIndex]);
         TW := CreateNewWaveVector;
@@ -3071,7 +3166,7 @@ procedure TForm1.MenuStarsDeleteClick(Sender: TObject);
 var TS: TSite;
     WL: TWaveVectorList;
 begin
-    if WaveVectors.Items.Count <> 0 then
+    if (WaveVectors.Items.Count <> 0) and (Sites.ItemIndex <> -1) then
     begin
         TS := TSite(Sites.Items.Objects[Sites.ItemIndex]);
         WL := TWaveVectorList(TS.WaveVectorList);
@@ -3087,7 +3182,7 @@ procedure TForm1.MenuStarsPropertiesClick(Sender: TObject);
 var TW: TWaveVector;
     SaveIndex: LongInt;
 begin
-    if WaveVectors.Items.Count <> 0 then
+    if (WaveVectors.Items.Count <> 0) and (WaveVectors.ItemIndex <> -1) then
     begin
         SaveIndex := WaveVectors.ItemIndex;
 
@@ -3107,7 +3202,7 @@ procedure TForm1.MenuReprAddClick(Sender: TObject);
 var TW: TWaveVector;
     TR: TRepresentation;
 begin
-    if WaveVectors.Items.Count <> 0 then
+    if (WaveVectors.Items.Count <> 0) and (WaveVectors.ItemIndex <> -1) then
     begin
         TW := TWaveVector(WaveVectors.Items.Objects[WaveVectors.ItemIndex]);
         TR := CreateNewRepr;
@@ -3122,7 +3217,7 @@ procedure TForm1.MenuReprDeleteClick(Sender: TObject);
 var TW: TWaveVector;
     TR: TRepresentationList;
 begin
-    if Representations.Items.Count <> 0 then
+    if (Representations.Items.Count <> 0) and (WaveVectors.ItemIndex <> -1) then
     begin
         TW := TWaveVector(WaveVectors.Items.Objects[WaveVectors.ItemIndex]);
         TR := TRepresentationList(TW.Representations);
@@ -3146,6 +3241,9 @@ end;
 
 procedure TForm1.MenuNeutronPasteClick(Sender: TObject);
 begin
+    //  проверка формата делается здесь потому что невозможно
+    //  управлять разрешением/запрещением кнопки по событию
+    //  (текст может быть скопирован в этом же элементе управления)
     if Clipboard.HasFormat(CF_TEXT) then Table.PasteFromClipboard;
 end;
 
@@ -3162,7 +3260,7 @@ end;
 procedure TForm1.MenuNeutronInsertClick(Sender: TObject);
 begin
     with Table do InsertRows(
-        Row, 1, False);
+        Row, 1, False(*область должна быть заполнена данными из источника*));
 end;
 
 procedure TForm1.MenuNeutronAddClick(Sender: TObject);
@@ -3226,17 +3324,40 @@ end;
 
 procedure TForm1.MenuMemoPasteClick(Sender: TObject);
 begin
+    //  проверка формата делается здесь потому что невозможно
+    //  управлять разрешением/запрещением кнопки по событию
+    //  (текст может быть скопирован в этом же элементе управления)
     if Clipboard.HasFormat(CF_TEXT) then
         with Comments do PasteFromClipboard;
+end;
+
+procedure TForm1.MenuSettingsClick(Sender: TObject);
+begin
+    OptionsControl.EditPlayerPath.Text := PlayerPath;
+    OptionsControl.EditFFPath.Text := FFPath;
+    OptionsControl.ActiveControl := OptionsControl.EditPlayerPath;
+    OptionsControl.OkBut.Default := True;
+    OptionsControl.CancelBut.Default := False;
+    if OptionsControl.ShowModal = mrOk then
+    begin
+        PlayerPath := OptionsControl.EditPlayerPath.Text;
+        if PlayerPath[Length(PlayerPath)] <> '\' then PlayerPath := PlayerPath + '\';
+        FFPath := OptionsControl.EditFFPath.Text;
+        if Length(FFPath) <> 0 then
+            if FFPath[Length(FFPath)] <> '\' then FFPath := FFPath + '\';
+        SaveProgramSettings;
+    end;
 end;
 
 procedure TForm1.MenuFFEditClick(Sender: TObject);
 var St: string;
 begin
     St := '"' + FFPath + FORM_FACTORS_FILE_NAME + '"';
+    (*???
     if ShellExecute(0, nil, PChar(FFPath + 'FFEditor.exe'),
-    PChar(St), nil, sw_Show) <= 32 then
-        MessageDlg('Can''t execute "Form - Factor Editor"...', mtError, [mbOk], 0);
+       PChar(St), nil, sw_Show) <= 32 then
+       MessageDlg('Can''t execute "Form - Factor Editor"...', mtError, [mbOk], 0);
+    *)
 end;
 
 procedure TForm1.CommentsEnter(Sender: TObject);
@@ -3264,6 +3385,8 @@ begin
             if (Comp is TReverseSourceData) or
                (Comp is TDirectSourceData) then
             begin
+                //  выбран модуль прямого или обратного расчета -
+                //  все разрешить
                 if ClipBoard.HasFormat(CF_TEXT) then
                     MenuAtomsPaste.Enabled := True
                 else MenuAtomsPaste.Enabled := False;
@@ -3276,6 +3399,8 @@ begin
 
             if Comp is TReverseCalcData then
             begin
+                //  выбран модуль результатов обратного расчета -
+                //  все запретить, кроме копирования
                 MenuAtomsCopy.Enabled := True;
 
                 for i := 0 to MenuAtomsEdit.Count - 1 do
@@ -3301,6 +3426,8 @@ begin
             if (Comp is TReverseSourceData) or
                (Comp is TDirectSourceData) then
             begin
+                //  выбран модуль прямого или обратного расчета -
+                //  все разрешить
                 if ClipBoard.HasFormat(CF_TEXT) then
                     MenuBFPaste.Enabled := True
                 else MenuBFPaste.Enabled := False;
@@ -3313,6 +3440,8 @@ begin
 
             if Comp is TReverseCalcData then
             begin
+                //  выбран модуль результатов обратного расчета -
+                //  все запретить, кроме копирования
                 MenuBFCopy.Enabled := True;
 
                 for i := 0 to MenuBFEdit.Count - 1 do
@@ -3357,6 +3486,8 @@ begin
             if (Comp is TReverseSourceData) or
                (Comp is TDirectSourceData) then
             begin
+                //  выбран модуль прямого или обратного расчета -
+                //  все разрешить
                 for i := 0 to MenuSitesEdit.Count - 1 do
                     MenuSitesEdit[i].Enabled := True;
                 Exit;
@@ -3364,6 +3495,8 @@ begin
 
             if Comp is TReverseCalcData then
             begin
+                //  выбран модуль результатов обратного расчета -
+                //  все запретить
                 for i := 0 to MenuSitesEdit.Count - 1 do
                     MenuSitesEdit[i].Enabled := False;
             end;
@@ -3386,6 +3519,8 @@ begin
             if (Comp is TReverseSourceData) or
                (Comp is TDirectSourceData) then
             begin
+                //  выбран модуль прямого или обратного расчета -
+                //  все разрешить
                 for i := 0 to MenuStarsEdit.Count - 1 do
                     MenuStarsEdit[i].Enabled := True;
                 Exit;
@@ -3393,6 +3528,8 @@ begin
 
             if Comp is TReverseCalcData then
             begin
+                //  выбран модуль результатов обратного расчета -
+                //  все запретить
                 for i := 0 to MenuStarsEdit.Count - 1 do
                     MenuStarsEdit[i].Enabled := False;
             end;
@@ -3414,6 +3551,8 @@ begin
         begin
             if Comp is TReverseSourceData then
             begin
+                //  выбран модуль обратного расчета -
+                //  все разрешить
                 for i := 0 to MenuReprEdit.Count - 1 do
                     MenuReprEdit[i].Enabled := True;
                 Exit;
@@ -3422,6 +3561,9 @@ begin
             if (Comp is TReverseCalcData) or
                (Comp is TDirectSourceData) then
             begin
+                //  выбран модуль прямого расчета или
+                //  результатов обратного расчета -
+                //  все запретить
                 for i := 0 to MenuReprEdit.Count - 1 do
                     MenuReprEdit[i].Enabled := False;
             end;
@@ -3429,6 +3571,16 @@ begin
     end;
 end;
 
+procedure TForm1.OnException(Sender: TObject; E: Exception);
+begin
+    if E is EMyException then
+        MessageDlg(E.Message, mtInformation, [mbOk], 0)
+    else
+        MessageDlg(E.Message, mtError, [mbOk], 0);
+end;
+
 initialization
     Dilat1 := 1; Dilat2 := 1; Dilat3 := 1;
+{$I Unit1.lrs}
 end.
+   

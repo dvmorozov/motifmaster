@@ -13,7 +13,11 @@ unit Plotter;
 
 interface
 
-uses ExtCtrls, WinTypes, Graphics, Math3d, Classes, SysUtils, CalcModule,
+uses ExtCtrls,
+{$IFNDEF Lazarus}
+     WinTypes,
+{$ENDIF}
+     Graphics, Math3d, Classes, SysUtils, CalcModule,
      DataClasses, ComponentList, SimpMath, SelfCopied, Tools;
 
 const

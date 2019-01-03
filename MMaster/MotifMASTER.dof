@@ -13,7 +13,7 @@ K=0
 L=1
 M=0
 N=1
-O=0
+O=1
 P=1
 Q=0
 R=0
@@ -25,8 +25,8 @@ W=0
 X=1
 Y=1
 Z=1
-ShowHints=0
-ShowWarnings=0
+ShowHints=1
+ShowWarnings=1
 UnitAliases=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;
 [Linker]
 MapFile=0
@@ -44,20 +44,20 @@ UnitOutputDir=
 PackageDLLOutputDir=
 PackageDCPOutputDir=
 SearchPath=
-Packages=VCL40;VCLX40;VCLDB40;VCLDBX40;VCLSMP40;QRPT40;TEEUI40;TEEDB40;TEE40;DSS40;ibevnt40;VCLMID40;NMFAST40;INETDB40;INET40;FocusPanelPkg;NumericGridPkg
-Conditionals=USE_DELPHI
+Packages=Vcl40;Vclx40;Vcldb40;vcldbx40;VclSmp40;Qrpt40;TeeUI40;teedb40;tee40;Dss40;ibevnt40;Vclmid40;NMFast40;Inetdb40;Inet40
+Conditionals=
 DebugSourceDirs=
 UsePackages=0
 [Parameters]
-RunParams="sample.mmp"
+RunParams=
 HostApplication=
 [Version Info]
-IncludeVerInfo=1
-AutoIncBuild=1
-MajorVer=3
-MinorVer=1
-Release=1
-Build=400
+IncludeVerInfo=0
+AutoIncBuild=0
+MajorVer=1
+MinorVer=0
+Release=0
+Build=0
 Debug=0
 PreRelease=0
 Special=0
@@ -66,20 +66,13 @@ DLL=0
 Locale=1049
 CodePage=1251
 [Version Info Keys]
-CompanyName=D.V. Morozov
+CompanyName=
 FileDescription=
-FileVersion=3.1.1.400
-InternalName=MotifMASTER
-LegalCopyright=D.V. Morozov
+FileVersion=1.0.0.0
+InternalName=
+LegalCopyright=
 LegalTrademarks=
-OriginalFilename=MotifMASTER.exe
-ProductName=Motif MASTER
-ProductVersion=3.1.0.0
-Comments=the tool for the neutron diffraction treatment
-[HistoryLists\hlConditionals]
-Count=2
-Item0=USE_DELPHI
-Item1=DELPHI
-[HistoryLists\hlUnitAliases]
-Count=1
-Item0=WinTypes=Windows;WinProcs=Windows;DbiTypes=BDE;DbiProcs=BDE;DbiErrs=BDE;
+OriginalFilename=
+ProductName=
+ProductVersion=1.0.0.0
+Comments=

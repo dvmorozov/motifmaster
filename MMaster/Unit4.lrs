@@ -1,0 +1,27 @@
+LazarusResources.Add('TInputValueDlg','FORMDATA',[
+  'TPF0'#14'TInputValueDlg'#13'InputValueDlg'#4'Left'#2'1'#6'Height'#3#189#0#3
+  +'Top'#3#177#0#5'Width'#3'a'#1#18'HorzScrollBar.Page'#3'`'#1#18'VertScrollBar'
+  +'.Page'#3#188#0#13'ActiveControl'#7#10'InputValue'#11'BorderStyle'#7#8'bsDia'
+  +'log'#7'Caption'#6#31'Input Max. Spin Component Value'#12'OnCloseQuery'#7#14
+  +'FormCloseQuery'#10'ParentFont'#9#8'Position'#7#14'poScreenCenter'#0#6'TBeve'
+  +'l'#6'Bevel1'#4'Left'#2#8#6'Height'#3#137#0#3'Top'#2#8#5'Width'#3'Q'#1#5'Sha'
+  +'pe'#7#7'bsFrame'#0#0#6'TLabel'#6'Label1'#4'Left'#2#20#6'Height'#2#17#3'Top'
+  +#2'D'#5'Width'#3#214#0#7'Caption'#6'$Input max value of spin component : '#5
+  +'Color'#7#6'clNone'#11'ParentColor'#8#0#0#6'TLabel'#6'Label3'#4'Left'#2#20#6
+  +'Height'#2#17#3'Top'#2#28#5'Width'#2'u'#7'Caption'#6#23'Input site identifie'
+  +'r :'#5'Color'#7#6'clNone'#11'ParentColor'#8#0#0#6'TBevel'#6'Bevel2'#4'Left'
+  +#2#18#6'Height'#2#9#3'Top'#2'^'#5'Width'#3'9'#1#5'Shape'#7#12'bsBottomLine'#0
+  +#0#7'TButton'#5'OKBtn'#4'Left'#3#176#0#6'Height'#2#25#3'Top'#3#152#0#5'Width'
+  +#2'K'#25'BorderSpacing.InnerBorder'#2#4#7'Caption'#6#2'OK'#7'Default'#9#11'M'
+  +'odalResult'#2#1#8'TabOrder'#2#0#0#0#7'TButton'#9'CancelBtn'#4'Left'#3#0#1#6
+  +'Height'#2#25#3'Top'#3#152#0#5'Width'#2'K'#25'BorderSpacing.InnerBorder'#2#4
+  +#6'Cancel'#9#7'Caption'#6#6'Cancel'#11'ModalResult'#2#2#8'TabOrder'#2#1#0#0#5
+  +'TEdit'#10'InputValue'#4'Left'#3#242#0#6'Height'#2#21#3'Top'#2'@'#5'Width'#2
+  +'Y'#8'TabOrder'#2#2#0#0#9'TCheckBox'#15'ApplyToAllCheck'#4'Left'#2#24#6'Heig'
+  +'ht'#2#15#3'Top'#2'p'#5'Width'#2'a'#7'Caption'#6#18'Apply to all sites'#7'On'
+  +'Click'#7#20'ApplyToAllCheckClick'#8'TabOrder'#2#3#0#0#5'TEdit'#19'InputSite'
+  +'Identifier'#4'Left'#3#242#0#6'Height'#2#21#3'Top'#2#24#5'Width'#2'Y'#8'TabO'
+  +'rder'#2#4#0#0#9'TCheckBox'#14'EntirelyAtSite'#4'Left'#3#152#0#6'Height'#2#15
+  +#3'Top'#2'p'#5'Width'#2'Z'#7'Caption'#6#16'Entirely At Site'#8'TabOrder'#2#5
+  +#0#0#0
+]);

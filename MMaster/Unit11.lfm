@@ -1,0 +1,156 @@
+object StructViewPropDlg: TStructViewPropDlg
+  Left = 349
+  Height = 190
+  Top = 428
+  Width = 361
+  HorzScrollBar.Page = 360
+  VertScrollBar.Page = 189
+  ActiveControl = BtnOk
+  BorderStyle = bsDialog
+  Caption = 'Structure Viewing Properties'
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Icon.Data = {
+    FE0200000000010001002020100000000000E802000016000000280000002000
+    0000400000000100040000000000800200000000000000000000000000000000
+    000000000000000080000080000000808000800000008000800080800000C0C0
+    C000808080000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFF
+    FF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    FFFFFFF9FFFCFFFFFFFFFFFF999FCFFFFFFFFFFF9FFCFFFFFFFFFFFF9FFFCFFF
+    FFFFFFFFF90C0FFFFFFFFFFF9F90C0FFFFFFFFFFF09C00FFFFFFFFFFFF09C00F
+    FFFFFFFCCCC9CCCCCCCCCCCCCCCC9CCCCFFFFFFFF00C90FFFFFFFFFFFF00C90F
+    FFFFFFFFFF0C09F9FFFFFFFFFFF0C09FFFFFFFFFFFFCFFF9FFFFFFFFFFFFCFF9
+    FFFFFFFFFFFCF999FFFFFFFFFFFFCFFFFFFFFFFFFFFCFFFFFFFFFFFFFFFFCFFF
+    FFFFFFFFFFFCFFFFFFFFFFFFFFFFCFFFFFFFFFFFFFFCFFFFFFFFFFFFFFFFCFFF
+    FFFFFFFFFFFCFFFFFFFFFFFFFFFFCFFFFFFFFFFFFFFCFFFFFFFFFFFFFFFFCFFF
+    FFFFFFFFFFFCFFFFFFFFFFFFFFFFCFFFFFFFFFFFFFFCFFFFFFFFFFFFFFFFCFFF
+    FFFFFFFFFFFCFFFFFFFFFFFFFFFFCFFFFFFFFFFFFFFCFFFFFFFFFFFFFFFFCFFF
+    FFFFFFF999FCFFFFFFFFFFFF9FFFCFFFFFFFFFF9FFFCFFFFFFFFFFFFF9FFCFFF
+    FFFFFFF9F90C0FFFFFFFFFFFFF90C0FFFFFFFFFFF09C00FFFFFFFFFFFF09C00F
+    FFFFFFFCCCC9CCCCCCCCCCCCCCCC9CCCCFFFFFFFF00C90FFFFFFFFFFFF00C90F
+    FFFFFFFFFF0C09FFFFFFFFFFFFF0C09F9FFFFFFFFFFCFF9FFFFFFFFFFFFFCFFF
+    9FFFFFFFFFFCFFF9FFFFFFFFFFFFCF999FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    FFFF000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000
+  }
+  Position = poDesktopCenter
+  object TabControlSites: TTabControl
+    Height = 22
+    Width = 361
+    HotTrack = True
+    OnChange = TabControlSitesChange
+    OnChanging = TabControlSitesChanging
+    TabIndex = 0
+    TabOrder = 4
+    Tabs.Strings = (
+      'Common'
+      '4d'
+    )
+    TabStop = False
+  end
+  object BtnOk: TButton
+    Left = 104
+    Height = 25
+    Top = 152
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Caption = '&OK'
+    Default = True
+    ModalResult = 1
+    OnClick = BtnOkClick
+    TabOrder = 0
+  end
+  object BtnCancel: TButton
+    Left = 184
+    Height = 25
+    Top = 152
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Caption = '&Cancel'
+    ModalResult = 2
+    TabOrder = 1
+  end
+  object BtnApply: TButton
+    Left = 24
+    Height = 25
+    Top = 152
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Caption = '&Apply'
+    OnClick = BtnApplyClick
+    TabOrder = 2
+  end
+  object BtnHelp: TButton
+    Left = 264
+    Height = 25
+    Top = 152
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Caption = '&Help'
+    OnClick = BtnHelpClick
+    TabOrder = 3
+  end
+  object RadioMomentsMode: TRadioGroup
+    Left = 4
+    Height = 105
+    Top = 32
+    Width = 174
+    AutoFill = True
+    Caption = ' Moments Plot Mode : '
+    ChildSizing.LeftRightSpacing = 6
+    ChildSizing.TopBottomSpacing = 6
+    ChildSizing.EnlargeHorizontal = crsHomogenousChildResize
+    ChildSizing.EnlargeVertical = crsHomogenousChildResize
+    ChildSizing.ShrinkHorizontal = crsScaleChilds
+    ChildSizing.ShrinkVertical = crsScaleChilds
+    ChildSizing.Layout = cclLeftToRightThenTopToBottom
+    ChildSizing.ControlsPerLine = 1
+    ItemIndex = 0
+    Items.Strings = (
+      'Arrows'
+      'Modules'
+      'Element'
+      'Serial Number'
+    )
+    TabOrder = 5
+  end
+  object GroupBox1: TGroupBox
+    Left = 184
+    Height = 105
+    Top = 32
+    Width = 172
+    Caption = ' Color : '
+    TabOrder = 6
+    object ColorBox1: TColorBox
+      Left = 8
+      Height = 24
+      Top = 1
+      Width = 152
+      Items.Strings = (
+        'clBlack'
+        'clMaroon'
+        'clGreen'
+        'clOlive'
+        'clNavy'
+        'clPurple'
+        'clTeal'
+        'clGray'
+        'clSilver'
+        'clRed'
+        'clLime'
+        'clYellow'
+        'clBlue'
+        'clFuchsia'
+        'clAqua'
+        'clWhite'
+      )
+      MaxLength = 0
+      ParentColor = False
+      TabOrder = 0
+    end
+  end
+end

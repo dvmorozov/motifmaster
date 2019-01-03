@@ -1,0 +1,1467 @@
+LazarusResources.Add('TForm1','FORMDATA',[
+  'TPF0'#6'TForm1'#5'Form1'#4'Left'#2'X'#6'Height'#3'/'#2#3'Top'#2'h'#5'Width'#3
+  +'P'#3#18'HorzScrollBar.Page'#3'O'#3#18'VertScrollBar.Page'#3#27#2#13'ActiveC'
+  +'ontrol'#7#18'SourceFileContents'#7'Caption'#6#5'Form1'#12'Font.CharSet'#7#15
+  +'RUSSIAN_CHARSET'#11'Font.Height'#2#243#9'Font.Name'#6#6'System'#10'Font.Sty'
+  +'le'#11#6'fsBold'#0#9'Icon.Data'#10#134#5#0#0#130#5#0#0'/* XPM */'#10'static'
+  +' char *graphic[] = {'#10'"32 32 14 1",'#10'". c None",'#10'", c #A7A7FF",'
+  +#10'"- c #7F83D4",'#10'"* c #FFFFFF",'#10'"a c #B6B6FF",'#10'"b c #B6BAFF",'
+  +#10'"c c #A7AAFF",'#10'"d c #B6B5FF",'#10'"e c #A8A8FF",'#10'"f c #ADB4FF",'
+  +#10'"g c #B79EE3",'#10'"h c #FF6F6B",'#10'"i c #8181FF",'#10'"j c #ECECFF",'
+  +#10'"................................",'#10'"...............................'
+  +'.",'#10'"................................",'#10'".......,...-............*.'
+  +'***...",'#10'".......a..b.............*...*...",'#10'".......*.*...........'
+  +'...*.*.*...",'#10'".......**...............**......",'#10'"...cd*******d,**'
+  +'*************...",'#10'"......**...............**.......",'#10'"...,.*.*...'
+  +'...........*.*.......",'#10'"...e...*.............*..*.......",'#10'"...fgh'
+  +'.*............*...*.......",'#10'".......*................*.......",'#10'".'
+  +'......i................*.......",'#10'".......j................*.......",'
+  +#10'".......*................*.......",'#10'".......*................*......'
+  +'.",'#10'".......*................*.......",'#10'".......*................*.'
+  +'......",'#10'".......*................*.......",'#10'".......*.............'
+  +'...*.......",'#10'".......*.***............*.......",'#10'".......*...*....'
+  +'........*..*....",'#10'".......*.*.*............*.*.....",'#10'".......**..'
+  +'.............**......",'#10'"...**************************...",'#10'"......'
+  +'**...............**.......",'#10'".....*.*............*.*.*.......",'#10'".'
+  +'...*..*............*...*.......",'#10'"...*...*............***.*.......",'
+  +#10'"................................",'#10'"...............................'
+  +'."}'#10#4'Menu'#7#8'MainMenu'#7'OnClose'#7#9'FormClose'#12'OnCloseQuery'#7
+  +#14'FormCloseQuery'#8'OnCreate'#7#10'FormCreate'#9'OnDestroy'#7#11'FormDestr'
+  +'oy'#9'OnKeyDown'#7#11'FormKeyDown'#8'Position'#7#15'poDesktopCenter'#13'Sho'
+  +'wInTaskBar'#7#8'stAlways'#7'Visible'#9#0#6'TPanel'#9'PanelBack'#4'Left'#3
+  +#240#0#6'Height'#3#4#2#3'Top'#2' '#5'Width'#3'`'#2#10'BevelOuter'#7#6'bvNone'
+  +#5'Color'#7#7'clGreen'#11'ParentColor'#8#8'TabOrder'#2#1#7'Visible'#8#0#6'TL'
+  +'abel'#8'LabelMsg'#4'Left'#2#24#6'Height'#2#21#3'Top'#2#30#5'Width'#3'`'#1#8
+  +'AutoSize'#8#7'Caption'#6' Select data unit in the left box'#5'Color'#7#6'cl'
+  +'None'#11'Font.Height'#2#25#11'ParentColor'#8#0#0#0#9'TSplitter'#8'Splitter'
+  +#4'Left'#3#238#0#6'Height'#3#8#2#5'Width'#2#2#11'ResizeStyle'#7#6'rsLine'#0#0
+  +#10'TStatusBar'#10'StatusBar1'#6'Height'#2#20#3'Top'#3#8#2#5'Width'#3'P'#3#6
+  +'Panels'#14#1#4'Text'#6#9' Cycles :'#5'Width'#3#140#0#0#1#5'Width'#2'<'#0#1#5
+  +'Width'#2'2'#0#0#11'SimplePanel'#8#0#0#6'TPanel'#23'SourceFileContentsPanel'
+  +#6'Height'#3#8#2#5'Width'#3#238#0#5'Align'#7#6'alLeft'#10'BevelOuter'#7#6'bv'
+  +'None'#8'TabOrder'#2#0#0#9'TTreeView'#18'SourceFileContents'#6'Height'#3#232
+  +#1#3'Top'#2' '#5'Width'#3#238#0#5'Align'#7#8'alClient'#10'AutoExpand'#9#17'D'
+  +'efaultItemHeight'#2#16#13'HideSelection'#8#8'HotTrack'#9#6'Images'#7#10'Ima'
+  +'geList3'#6'Indent'#2#19#14'ParentShowHint'#8#9'PopupMenu'#7#12'PopupProject'
+  +#8'TabOrder'#2#0#8'OnChange'#7#24'SourceFileContentsChange'#10'OnChanging'#7
+  +#26'SourceFileContentsChanging'#8'OnEdited'#7#24'SourceFileContentsEdited'#9
+  +'OnEditing'#7#25'SourceFileContentsEditing'#7'OnEnter'#7#23'SourceFileConten'
+  +'tsEnter'#6'OnExit'#7#22'SourceFileContentsExit'#10'OnKeyPress'#7#26'SourceF'
+  +'ileContentsKeyPress'#7'Options'#11#13'tvoAutoExpand'#17'tvoAutoItemHeight'
+  +#11'tvoHotTrack'#21'tvoKeepCollapsedNodes'#14'tvoShowButtons'#12'tvoShowLine'
+  +'s'#11'tvoShowRoot'#11'tvoToolTips'#0#0#0#8'TToolBar'#8'ToolBar1'#6'Height'#2
+  +#24#3'Top'#2#4#5'Width'#3#238#0#8'AutoSize'#9#17'BorderSpacing.Top'#2#4#20'B'
+  +'orderSpacing.Bottom'#2#4#12'ButtonHeight'#2#24#11'ButtonWidth'#2#24#7'Capti'
+  +'on'#6#7'ToolBar'#11'EdgeBorders'#11#0#4'Flat'#9#12'Font.CharSet'#7#15'RUSSI'
+  +'AN_CHARSET'#11'Font.Height'#2#245#9'Font.Name'#6#13'MS Sans Serif'#6'Images'
+  +#7#10'ImageList2'#8'TabOrder'#2#1#8'Wrapable'#8#0#11'TToolButton'#6'NewBut'#4
+  +'Left'#2#9#4'Hint'#6#22'Create new source file'#10'ImageIndex'#2#0#7'OnClick'
+  +#7#16'MenuFileNewClick'#0#0#11'TToolButton'#7'OpenBut'#4'Left'#2'!'#4'Hint'#6
+  +#26'Open existing project file'#7'Caption'#6#4'Open'#10'ImageIndex'#2#1#7'On'
+  +'Click'#7#17'MenuFileOpenClick'#0#0#11'TToolButton'#7'SaveBut'#4'Left'#2'9'#4
+  +'Hint'#6#17'Save project file'#7'Caption'#6#4'Save'#7'Enabled'#8#10'ImageInd'
+  +'ex'#2#2#7'OnClick'#7#17'MenuFileSaveClick'#0#0#11'TToolButton'#11'ToolButto'
+  +'n9'#4'Left'#2'Q'#4'Hint'#6#20'Remove selected unit'#7'Caption'#6#6'Delete'
+  +#10'ImageIndex'#2#11#7'OnClick'#7#26'MenuProjectDeleteUnitClick'#0#0#11'TToo'
+  ,'lButton'#12'ToolButton15'#4'Left'#2'i'#7'Caption'#6#12'ToolButton15'#10'Ima'
+  +'geIndex'#2#15#7'OnClick'#7#17'ToolButton15Click'#0#0#11'TToolButton'#11'Too'
+  +'lButton1'#4'Left'#2#1#5'Width'#2#8#7'Caption'#6#11'ToolButton1'#5'Style'#7
+  +#12'tbsSeparator'#0#0#0#0#6'TPanel'#13'PanelComments'#4'Left'#3#8#1#6'Height'
+  +#3#4#2#3'Top'#2'8'#5'Width'#3'`'#2#10'BevelOuter'#7#6'bvNone'#5'Color'#7#8'c'
+  +'lMaroon'#11'ParentColor'#8#8'TabOrder'#2#2#7'Visible'#8#0#8'TToolBar'#8'Too'
+  +'lBar3'#6'Height'#2#24#3'Top'#2#4#5'Width'#3'`'#2#8'AutoSize'#9#17'BorderSpa'
+  +'cing.Top'#2#4#20'BorderSpacing.Bottom'#2#4#12'ButtonHeight'#2#24#11'ButtonW'
+  +'idth'#2#24#7'Caption'#6#7'ToolBar'#11'EdgeBorders'#11#0#4'Flat'#9#6'Images'
+  +#7#10'ImageList2'#8'TabOrder'#2#0#11'Transparent'#9#8'Wrapable'#8#0#11'TTool'
+  +'Button'#12'ToolMemoCopy'#4'Left'#2#9#4'Hint'#6#17'Copy to clipboard'#7'Capt'
+  +'ion'#6#4'Copy'#10'ImageIndex'#2#3#7'OnClick'#7#17'MenuMemoCopyClick'#0#0#11
+  +'TToolButton'#13'ToolMemoPaste'#4'Left'#2'!'#4'Hint'#6#20'Paste from clipboa'
+  +'rd'#7'Caption'#6#5'Paste'#10'ImageIndex'#2#4#7'OnClick'#7#18'MenuMemoPasteC'
+  +'lick'#0#0#11'TToolButton'#12'ToolButton14'#4'Left'#2#1#5'Width'#2#8#7'Capti'
+  +'on'#6#12'ToolButton14'#5'Style'#7#12'tbsSeparator'#0#0#0#5'TMemo'#8'Comment'
+  +'s'#6'Height'#3#228#1#3'Top'#2' '#5'Width'#3'`'#2#5'Align'#7#8'alClient'#8'O'
+  +'nChange'#7#14'CommentsChange'#7'OnEnter'#7#13'CommentsEnter'#6'OnExit'#7#12
+  +'CommentsExit'#9'PopupMenu'#7#9'PopupMemo'#10'ScrollBars'#7#6'ssBoth'#8'TabO'
+  +'rder'#2#1#0#0#0#6'TPanel'#10'PanelGraph'#4'Left'#3' '#1#6'Height'#3#4#2#3'T'
+  +'op'#2'X'#5'Width'#3'`'#2#10'BevelOuter'#7#6'bvNone'#5'Color'#7#6'clBlue'#11
+  +'ParentColor'#8#8'TabOrder'#2#3#7'Visible'#8#0#9'TPaintBox'#7'Plotter'#6'Hei'
+  +'ght'#3#228#1#3'Top'#2' '#5'Width'#3'`'#2#5'Align'#7#8'alClient'#7'OnPaint'#7
+  +#12'PlotterPaint'#0#0#8'TToolBar'#8'ToolBar7'#6'Height'#2#24#3'Top'#2#4#5'Wi'
+  +'dth'#3'`'#2#8'AutoSize'#9#17'BorderSpacing.Top'#2#4#20'BorderSpacing.Bottom'
+  +#2#4#12'ButtonHeight'#2#24#11'ButtonWidth'#2#24#7'Caption'#6#7'ToolBar'#11'E'
+  +'dgeBorders'#11#0#4'Flat'#9#6'Images'#7#10'ImageList2'#12'ShowCaptions'#9#8
+  +'TabOrder'#2#0#11'Transparent'#9#8'Wrapable'#8#0#11'TToolButton'#15'ToolPlot'
+  +'terCopy'#4'Left'#2#9#10'ImageIndex'#2#3#7'OnClick'#7#24'MenuPlotPatternCopy'
+  +'Click'#0#0#11'TToolButton'#12'ToolButton16'#4'Left'#2#1#5'Width'#2#8#7'Capt'
+  +'ion'#6#12'ToolButton16'#5'Style'#7#12'tbsSeparator'#0#0#0#0#6'TPanel'#13'Pa'
+  +'nelUnitCell'#4'Left'#3'@'#1#6'Height'#3#4#2#3'Top'#3#136#0#5'Width'#3'`'#2
+  +#10'BevelOuter'#7#6'bvNone'#5'Color'#7#7'clOlive'#11'ParentColor'#8#8'TabOrd'
+  +'er'#2#4#7'Visible'#8#0#9'TPaintBox'#8'Plotter1'#6'Height'#3#228#1#3'Top'#2
+  +' '#5'Width'#3'`'#2#5'Align'#7#8'alClient'#7'OnPaint'#7#13'Plotter1Paint'#8
+  +'OnResize'#7#14'Plotter1Resize'#0#0#8'TToolBar'#8'ToolBar8'#6'Height'#2#24#3
+  +'Top'#2#4#5'Width'#3'`'#2#8'AutoSize'#9#17'BorderSpacing.Top'#2#4#20'BorderS'
+  +'pacing.Bottom'#2#4#12'ButtonHeight'#2#24#11'ButtonWidth'#2#24#7'Caption'#6#7
+  +'ToolBar'#11'EdgeBorders'#11#0#4'Flat'#9#6'Images'#7#10'ImageList2'#12'ShowC'
+  +'aptions'#9#8'TabOrder'#2#0#11'Transparent'#9#8'Wrapable'#8#0#11'TToolButton'
+  +#15'ToolPlotterRotX'#4'Left'#2#9#10'ImageIndex'#2#7#7'OnClick'#7#20'ToolPlot'
+  +'terRotXClick'#0#0#11'TToolButton'#15'ToolPlotterRotY'#4'Left'#2'!'#10'Image'
+  +'Index'#2#8#7'OnClick'#7#20'ToolPlotterRotYClick'#0#0#11'TToolButton'#15'Too'
+  +'lPlotterRotZ'#4'Left'#2'9'#10'ImageIndex'#2#9#7'OnClick'#7#20'ToolPlotterRo'
+  +'tZClick'#0#0#11'TToolButton'#16'ToolPlotterReset'#4'Left'#2'Q'#10'ImageInde'
+  +'x'#2#10#7'OnClick'#7#21'ToolPlotterResetClick'#0#0#11'TToolButton'#17'ToolP'
+  +'lotterZoomIn'#4'Left'#2'i'#10'ImageIndex'#2#5#7'OnClick'#7#22'ToolPlotterZo'
+  +'omInClick'#0#0#11'TToolButton'#18'ToolPlotterZoomOut'#4'Left'#3#129#0#10'Im'
+  +'ageIndex'#2#6#7'OnClick'#7#23'ToolPlotterZoomOutClick'#0#0#11'TToolButton'
+  +#22'ToolUnitCellProperties'#4'Left'#3#161#0#10'ImageIndex'#2#14#7'OnClick'#7
+  +#26'ToolPlotterPropertiesClick'#0#0#11'TToolButton'#16'ToolUnitCellCopy'#4'L'
+  +'eft'#3#185#0#10'ImageIndex'#2#3#7'OnClick'#7#23'MenuPlotStructCopyClick'#0#0
+  +#11'TToolButton'#11'ToolButton8'#4'Left'#2#1#5'Width'#2#8#7'Caption'#6#11'To'
+  +'olButton8'#5'Style'#7#12'tbsSeparator'#0#0#11'TToolButton'#12'ToolButton10'
+  +#4'Left'#3#153#0#5'Width'#2#8#7'Caption'#6#12'ToolButton10'#5'Style'#7#12'tb'
+  +'sSeparator'#0#0#0#0#6'TPanel'#13'PanelMiscData'#4'Left'#3'['#1#6'Height'#3#4
+  +#2#3'Top'#3#179#0#5'Width'#3'`'#2#10'BevelOuter'#7#6'bvNone'#5'Color'#7#8'cl'
+  +'Purple'#11'ParentColor'#8#8'TabOrder'#2#5#7'Visible'#8#0#8'TToolBar'#8'Tool'
+  +'Bar4'#6'Height'#2#26#3'Top'#2#4#5'Width'#3'`'#2#8'AutoSize'#9#17'BorderSpac'
+  +'ing.Top'#2#4#12'ButtonHeight'#2'$'#11'ButtonWidth'#2'A'#7'Caption'#6#7'Tool'
+  +'Bar'#11'EdgeBorders'#11#0#4'Flat'#9#12'ShowCaptions'#9#8'TabOrder'#2#0#11'T'
+  +'ransparent'#9#8'Wrapable'#8#0#0#9'TGroupBox'#9'GroupBox1'#6'Height'#3#128#0
+  +#3'Top'#2#30#5'Width'#3'`'#2#5'Align'#7#5'alTop'#7'Caption'#6#24' Unit Cell '
+  +'Parameters : '#8'TabOrder'#2#1#0#6'TLabel'#6'Label1'#4'Left'#2#15#6'Height'
+  ,#2#14#3'Top'#2#14#5'Width'#2'D'#7'Caption'#6#13'A (angstrom):'#5'Color'#7#6
+  +'clNone'#11'ParentColor'#8#0#0#6'TLabel'#6'Label2'#4'Left'#2#16#6'Height'#2
+  +#14#3'Top'#2'.'#5'Width'#2'C'#7'Caption'#6#13'B (angstrom):'#5'Color'#7#6'cl'
+  +'None'#11'ParentColor'#8#0#0#6'TLabel'#6'Label3'#4'Left'#2#15#6'Height'#2#14
+  +#3'Top'#2'N'#5'Width'#2'D'#7'Caption'#6#13'C (angstrom):'#5'Color'#7#6'clNon'
+  +'e'#11'ParentColor'#8#0#0#6'TLabel'#6'Label4'#4'Left'#3'='#1#6'Height'#2#14#3
+  +'Top'#2#14#5'Width'#2'U'#7'Caption'#6#17'Alpha (degrees) :'#5'Color'#7#6'clN'
+  +'one'#11'ParentColor'#8#0#0#6'TLabel'#6'Label5'#4'Left'#3'G'#1#6'Height'#2#14
+  +#3'Top'#2'.'#5'Width'#2'M'#7'Caption'#6#15'Beta (degrees):'#5'Color'#7#6'clN'
+  +'one'#11'ParentColor'#8#0#0#6'TLabel'#6'Label6'#4'Left'#3'4'#1#6'Height'#2#14
+  +#3'Top'#2'N'#5'Width'#2'Z'#7'Caption'#6#16'Gamma (degrees):'#5'Color'#7#6'cl'
+  +'None'#11'ParentColor'#8#0#0#5'TEdit'#6'InputA'#4'Left'#3#167#0#6'Height'#2
+  +#24#3'Top'#2#7#5'Width'#2'Z'#10'OnKeyPress'#7#14'InputAKeyPress'#8'TabOrder'
+  +#2#0#0#0#5'TEdit'#6'InputB'#4'Left'#3#167#0#6'Height'#2#24#3'Top'#2''''#5'Wi'
+  +'dth'#2'Z'#10'OnKeyPress'#7#14'InputAKeyPress'#8'TabOrder'#2#1#0#0#5'TEdit'#6
+  +'InputC'#4'Left'#3#167#0#6'Height'#2#24#3'Top'#2'G'#5'Width'#2'Z'#10'OnKeyPr'
+  +'ess'#7#14'InputAKeyPress'#8'TabOrder'#2#2#0#0#5'TEdit'#10'InputAlpha'#4'Lef'
+  +'t'#3#215#1#6'Height'#2#24#3'Top'#2#10#5'Width'#2'Z'#10'OnKeyPress'#7#14'Inp'
+  +'utAKeyPress'#8'TabOrder'#2#3#0#0#5'TEdit'#9'InputBeta'#4'Left'#3#215#1#6'He'
+  +'ight'#2#24#3'Top'#2'*'#5'Width'#2'Z'#10'OnKeyPress'#7#14'InputAKeyPress'#8
+  +'TabOrder'#2#4#0#0#5'TEdit'#10'InputGamma'#4'Left'#3#215#1#6'Height'#2#24#3
+  +'Top'#2'J'#5'Width'#2'Z'#10'OnKeyPress'#7#14'InputAKeyPress'#8'TabOrder'#2#5
+  +#0#0#0#9'TGroupBox'#9'GroupBox2'#6'Height'#2'B'#3'Top'#3#158#0#5'Width'#3'`'
+  +#2#5'Align'#7#5'alTop'#7'Caption'#6#22' Pattern Parameters : '#8'TabOrder'#2
+  +#2#0#6'TLabel'#6'Label7'#4'Left'#2#15#6'Height'#2#14#3'Top'#2#14#5'Width'#2
+  +'w'#7'Caption'#6#22'Wavelength (angstrom):'#5'Color'#7#6'clNone'#11'ParentCo'
+  +'lor'#8#0#0#5'TEdit'#11'InputLambda'#4'Left'#3#167#0#6'Height'#2#24#3'Top'#2
+  +#10#5'Width'#2'Z'#10'OnKeyPress'#7#14'InputAKeyPress'#8'TabOrder'#2#0#0#0#0#0
+  +#6'TPanel'#10'PanelTable'#4'Left'#3#128#1#6'Height'#3#4#2#3'Top'#3#208#0#5'W'
+  +'idth'#3'`'#2#10'BevelOuter'#7#6'bvNone'#5'Color'#7#9'clFuchsia'#12'Font.Cha'
+  +'rSet'#7#15'RUSSIAN_CHARSET'#11'Font.Height'#2#243#9'Font.Name'#6#13'MS Sans'
+  +' Serif'#11'ParentColor'#8#8'TabOrder'#2#6#7'Visible'#8#0#12'TColoredGrid'#5
+  +'Table'#6'Height'#3#228#1#3'Top'#2' '#5'Width'#3'`'#2#5'Align'#7#8'alClient'
+  +#8'ColCount'#2#5#10'FixedColor'#7#9'clBtnFace'#13'GridLineWidth'#2#0#7'Optio'
+  +'ns'#11#15'goFixedVertLine'#15'goFixedHorzLine'#10'goVertLine'#10'goHorzLine'
+  +#13'goRangeSelect'#19'goDrawFocusSelected'#11'goRowSizing'#11'goColSizing'#6
+  +'goTabs'#15'goThumbTracking'#0#8'RowCount'#2#5#10'ScrollBars'#7#10'ssAutoBot'
+  +'h'#8'TabOrder'#2#0#7'TabStop'#9#7'OnEnter'#7#10'TableEnter'#6'OnExit'#7#9'T'
+  +'ableExit'#11'OnMouseDown'#7#14'TableMouseDown'#14'OnGridModified'#7#17'Atom'
+  +'sGridModified'#14'DoubleBuffered'#9#11'ColNumFixed'#9#10'Changeable'#9#11'O'
+  +'ddRowColor'#7#7'clWhite'#12'EvenRowColor'#7#8'clSilver'#19'SelectedRegionCo'
+  +'lor'#7#6'clBlue'#0#0#8'TToolBar'#8'ToolBar5'#6'Height'#2#24#3'Top'#2#4#5'Wi'
+  +'dth'#3'`'#2#8'AutoSize'#9#17'BorderSpacing.Top'#2#4#20'BorderSpacing.Bottom'
+  +#2#4#12'ButtonHeight'#2#24#11'ButtonWidth'#2#24#7'Caption'#6#7'ToolBar'#11'E'
+  +'dgeBorders'#11#0#4'Flat'#9#6'Images'#7#10'ImageList2'#14'ParentShowHint'#8#8
+  +'ShowHint'#9#8'TabOrder'#2#1#11'Transparent'#9#8'Wrapable'#8#0#11'TToolButto'
+  +'n'#13'ToolTableCopy'#4'Left'#2#9#4'Hint'#6#17'Copy to clipboard'#7'Caption'
+  +#6#4'Copy'#10'ImageIndex'#2#3#7'OnClick'#7#20'MenuNeutronCopyClick'#0#0#11'T'
+  +'ToolButton'#14'ToolTablePaste'#4'Left'#2'!'#4'Hint'#6#20'Paste from clipboa'
+  +'rd'#7'Caption'#6#5'Paste'#10'ImageIndex'#2#4#7'OnClick'#7#21'MenuNeutronPas'
+  +'teClick'#0#0#11'TToolButton'#15'ToolTableDelete'#4'Left'#2'9'#4'Hint'#6#20
+  +'Delete selected area'#7'Caption'#6#6'Delete'#10'ImageIndex'#2#11#7'OnClick'
+  +#7#22'MenuNeutronDeleteClick'#0#0#11'TToolButton'#11'ToolButton2'#4'Left'#2
+  +'Q'#7'Caption'#6#11'ToolButton2'#10'ImageIndex'#2#15#7'OnClick'#7#16'ToolBut'
+  +'ton2Click'#0#0#11'TToolButton'#12'ToolButton17'#4'Left'#2#1#5'Width'#2#8#7
+  +'Caption'#6#12'ToolButton17'#5'Style'#7#12'tbsSeparator'#0#0#0#0#6'TPanel'#10
+  +'PanelSites'#4'Left'#3#146#1#6'Height'#3#4#2#3'Top'#3#239#0#5'Width'#3'`'#2
+  +#10'BevelOuter'#7#6'bvNone'#5'Color'#7#6'clAqua'#12'Font.CharSet'#7#15'RUSSI'
+  +'AN_CHARSET'#11'Font.Height'#2#243#9'Font.Name'#6#13'MS Sans Serif'#11'Paren'
+  +'tColor'#8#8'TabOrder'#2#7#7'Visible'#8#0#6'TPanel'#8'TopPanel'#6'Height'#3
+  +#148#0#5'Width'#3'`'#2#5'Align'#7#5'alTop'#10'BevelOuter'#7#6'bvNone'#8'TabO'
+  +'rder'#2#0#0#6'TPanel'#6'Panel1'#6'Height'#3#148#0#5'Width'#3#199#0#5'Align'
+  +#7#6'alLeft'#10'BevelOuter'#7#6'bvNone'#8'TabOrder'#2#0#0#9'TGroupBox'#9'Gro'
+  +'upBox5'#6'Height'#2't'#3'Top'#2' '#5'Width'#3#199#0#5'Align'#7#8'alClient'#7
+  ,'Caption'#6#11' Site(s) : '#8'TabOrder'#2#0#0#8'TListBox'#5'Sites'#6'Height'
+  +#2'b'#5'Width'#3#195#0#5'Align'#7#8'alClient'#10'Font.Style'#11#6'fsBold'#0
+  +#10'ItemHeight'#2#16#7'OnClick'#7#10'SitesClick'#7'OnEnter'#7#10'SitesEnter'
+  +#6'OnExit'#7#9'SitesExit'#9'OnKeyDown'#7#12'SitesKeyDown'#9'PopupMenu'#7#10
+  +'PopupSites'#8'TabOrder'#2#0#0#0#0#8'TToolBar'#12'ToolBarSites'#6'Height'#2
+  +#24#3'Top'#2#4#5'Width'#3#199#0#8'AutoSize'#9#17'BorderSpacing.Top'#2#4#20'B'
+  +'orderSpacing.Bottom'#2#4#12'ButtonHeight'#2#24#11'ButtonWidth'#2#24#7'Capti'
+  +'on'#6#9'ToolBar10'#11'EdgeBorders'#11#0#4'Flat'#9#6'Images'#7#10'ImageList2'
+  +#8'TabOrder'#2#1#11'Transparent'#9#8'Wrapable'#8#0#11'TToolButton'#11'ToolAd'
+  +'dSite'#4'Left'#2#9#4'Hint'#6#17'Create a new star'#7'Caption'#6#14'ToolButA'
+  +'ddSite'#10'ImageIndex'#2#12#7'OnClick'#7#17'MenuSitesAddClick'#0#0#11'TTool'
+  +'Button'#11'ToolDelSite'#4'Left'#2'!'#4'Hint'#6#20'Remove selected star'#7'C'
+  +'aption'#6#14'ToolButDelSite'#10'ImageIndex'#2#13#7'OnClick'#7#20'MenuSitesD'
+  +'eleteClick'#0#0#11'TToolButton'#18'ToolSiteProperties'#4'Left'#2'9'#4'Hint'
+  +#6#29'Change properties of the star'#7'Caption'#6#15'ToolButEditSite'#10'Ima'
+  +'geIndex'#2#14#7'OnClick'#7#24'MenuSitesPropertiesClick'#0#0#11'TToolButton'
+  +#12'ToolButton18'#4'Left'#2#1#5'Width'#2#8#7'Caption'#6#11'ToolButton4'#5'St'
+  +'yle'#7#12'tbsSeparator'#0#0#0#0#6'TPanel'#6'Panel6'#4'Left'#3#201#0#6'Heigh'
+  +'t'#3#148#0#5'Width'#3#206#0#5'Align'#7#8'alClient'#10'BevelOuter'#7#6'bvNon'
+  +'e'#8'TabOrder'#2#1#0#9'TGroupBox'#9'GroupBox8'#6'Height'#2't'#3'Top'#2' '#5
+  +'Width'#3#206#0#5'Align'#7#8'alClient'#7'Caption'#6#11' Star(s) : '#8'TabOrd'
+  +'er'#2#0#0#8'TListBox'#11'WaveVectors'#6'Height'#2'b'#5'Width'#3#202#0#5'Ali'
+  +'gn'#7#8'alClient'#10'Font.Style'#11#6'fsBold'#0#10'ItemHeight'#2#16#7'OnCli'
+  +'ck'#7#16'WaveVectorsClick'#7'OnEnter'#7#16'WaveVectorsEnter'#6'OnExit'#7#15
+  +'WaveVectorsExit'#9'OnKeyDown'#7#18'WaveVectorsKeyDown'#9'PopupMenu'#7#10'Po'
+  +'pupStars'#8'TabOrder'#2#0#0#0#0#8'TToolBar'#12'ToolBarStars'#6'Height'#2#24
+  +#3'Top'#2#4#5'Width'#3#206#0#8'AutoSize'#9#17'BorderSpacing.Top'#2#4#20'Bord'
+  +'erSpacing.Bottom'#2#4#12'ButtonHeight'#2#24#11'ButtonWidth'#2#24#7'Caption'
+  +#6#9'ToolBar10'#11'EdgeBorders'#11#0#4'Flat'#9#6'Images'#7#10'ImageList2'#8
+  +'TabOrder'#2#1#11'Transparent'#9#8'Wrapable'#8#0#11'TToolButton'#15'ToolAddP'
+  +'ropVect'#4'Left'#2#9#4'Hint'#6#17'Create a new star'#7'Caption'#6#14'ToolBu'
+  +'tAddSite'#10'ImageIndex'#2#12#7'OnClick'#7#17'MenuStarsAddClick'#0#0#11'TTo'
+  +'olButton'#15'ToolDelPropVect'#4'Left'#2'!'#4'Hint'#6#20'Remove selected sta'
+  +'r'#7'Caption'#6#14'ToolButDelSite'#10'ImageIndex'#2#13#7'OnClick'#7#20'Menu'
+  +'StarsDeleteClick'#0#0#11'TToolButton'#16'ToolEditPropVect'#4'Left'#2'9'#4'H'
+  +'int'#6#29'Change properties of the star'#7'Caption'#6#15'ToolButEditSite'#10
+  +'ImageIndex'#2#14#7'OnClick'#7#24'MenuStarsPropertiesClick'#0#0#11'TToolButt'
+  +'on'#11'ToolButton4'#4'Left'#2#1#5'Width'#2#8#7'Caption'#6#11'ToolButton4'#5
+  +'Style'#7#12'tbsSeparator'#0#0#0#0#6'TPanel'#14'PanelSitesRepr'#4'Left'#3#153
+  +#1#6'Height'#3#148#0#5'Width'#3#199#0#5'Align'#7#7'alRight'#10'BevelOuter'#7
+  +#6'bvNone'#7'Enabled'#8#8'TabOrder'#2#2#0#9'TGroupBox'#9'GroupBox9'#6'Height'
+  +#2't'#3'Top'#2' '#5'Width'#3#199#0#5'Align'#7#8'alClient'#7'Caption'#6#21' R'
+  +'epresentation(s) : '#8'TabOrder'#2#0#0#8'TListBox'#15'Representations'#6'He'
+  +'ight'#2'b'#5'Width'#3#195#0#5'Align'#7#8'alClient'#10'Font.Style'#11#6'fsBo'
+  +'ld'#0#10'ItemHeight'#2#16#7'OnClick'#7#20'RepresentationsClick'#7'OnEnter'#7
+  +#20'RepresentationsEnter'#6'OnExit'#7#19'RepresentationsExit'#9'OnKeyDown'#7
+  +#22'RepresentationsKeyDown'#9'PopupMenu'#7#9'PopupRepr'#8'TabOrder'#2#0#0#0#0
+  +#8'TToolBar'#11'ToolBarRepr'#6'Height'#2#24#3'Top'#2#4#5'Width'#3#199#0#8'Au'
+  +'toSize'#9#17'BorderSpacing.Top'#2#4#20'BorderSpacing.Bottom'#2#4#12'ButtonH'
+  +'eight'#2#24#11'ButtonWidth'#2#24#7'Caption'#6#9'ToolBar10'#11'EdgeBorders'
+  +#11#0#4'Flat'#9#6'Images'#7#10'ImageList2'#8'TabOrder'#2#1#11'Transparent'#9
+  +#8'Wrapable'#8#0#11'TToolButton'#11'ToolAddRepr'#4'Left'#2#9#4'Hint'#6#27'Cr'
+  +'eate a new representation'#7'Caption'#6#14'ToolButAddSite'#10'ImageIndex'#2
+  +#12#7'OnClick'#7#16'MenuReprAddClick'#0#0#11'TToolButton'#11'ToolDelRepr'#4
+  +'Left'#2'!'#4'Hint'#6#30'Remove selected representation'#7'Caption'#6#14'Too'
+  +'lButDelSite'#10'ImageIndex'#2#13#7'OnClick'#7#19'MenuReprDeleteClick'#0#0#11
+  +'TToolButton'#11'ToolButton5'#4'Left'#2#1#5'Width'#2#8#7'Caption'#6#11'ToolB'
+  +'utton5'#5'Style'#7#12'tbsSeparator'#0#0#0#0#9'TSplitter'#9'Splitter7'#4'Lef'
+  +'t'#3#151#1#6'Height'#3#148#0#5'Width'#2#2#5'Align'#7#7'alRight'#12'ResizeAn'
+  +'chor'#7#7'akRight'#0#0#9'TSplitter'#9'Splitter3'#4'Left'#3#199#0#6'Height'#3
+  +#148#0#5'Width'#2#2#0#0#0#6'TPanel'#11'BottomPanel'#6'Height'#3'n'#1#3'Top'#3
+  +#150#0#5'Width'#3'`'#2#5'Align'#7#8'alClient'#10'BevelOuter'#7#6'bvNone'#8'T'
+  +'abOrder'#2#1#0#9'TSplitter'#9'Splitter1'#4'Left'#3','#1#6'Height'#3'n'#1#5
+  +'Width'#2#2#0#0#6'TPanel'#6'Panel4'#6'Height'#3'n'#1#5'Width'#3','#1#5'Align'
+  ,#7#6'alLeft'#10'BevelOuter'#7#6'bvNone'#7'Caption'#6#6'Panel4'#8'TabOrder'#2
+  +#0#0#9'TGroupBox'#9'GroupBox6'#6'Height'#3'N'#1#3'Top'#2' '#5'Width'#3','#1#5
+  +'Align'#7#8'alClient'#7'Caption'#6#11' Atom(s) : '#8'TabOrder'#2#0#0#12'TCol'
+  +'oredGrid'#5'Atoms'#6'Height'#3'<'#1#5'Width'#3'('#1#5'Align'#7#8'alClient'#8
+  +'ColCount'#2#5#10'FixedColor'#7#9'clBtnFace'#13'GridLineWidth'#2#0#7'Options'
+  +#11#15'goFixedVertLine'#15'goFixedHorzLine'#10'goVertLine'#10'goHorzLine'#13
+  +'goRangeSelect'#19'goDrawFocusSelected'#11'goRowSizing'#11'goColSizing'#6'go'
+  +'Tabs'#15'goThumbTracking'#0#9'PopupMenu'#7#10'PopupAtoms'#8'RowCount'#2#5#10
+  +'ScrollBars'#7#10'ssAutoBoth'#8'TabOrder'#2#0#7'TabStop'#9#7'OnEnter'#7#10'A'
+  +'tomsEnter'#6'OnExit'#7#9'AtomsExit'#14'OnGridModified'#7#17'AtomsGridModifi'
+  +'ed'#14'DoubleBuffered'#9#11'ColNumFixed'#9#10'Changeable'#9#11'OddRowColor'
+  +#7#7'clWhite'#12'EvenRowColor'#7#8'clSilver'#19'SelectedRegionColor'#7#6'clB'
+  +'lue'#0#0#0#8'TToolBar'#12'ToolBarAtoms'#6'Height'#2#24#3'Top'#2#4#5'Width'#3
+  +','#1#8'AutoSize'#9#17'BorderSpacing.Top'#2#4#20'BorderSpacing.Bottom'#2#4#12
+  +'ButtonHeight'#2#24#11'ButtonWidth'#2#24#7'Caption'#6#7'ToolBar'#11'EdgeBord'
+  +'ers'#11#0#4'Flat'#9#12'Font.CharSet'#7#15'RUSSIAN_CHARSET'#11'Font.Height'#2
+  +#245#9'Font.Name'#6#13'MS Sans Serif'#6'Images'#7#10'ImageList2'#8'TabOrder'
+  +#2#1#11'Transparent'#9#8'Wrapable'#8#0#11'TToolButton'#13'ToolAtomsCopy'#4'L'
+  +'eft'#2#9#4'Hint'#6',Copy selected area of the table to clipboard'#7'Caption'
+  +#6#4'Copy'#10'ImageIndex'#2#3#7'OnClick'#7#18'MenuAtomsCopyClick'#0#0#11'TTo'
+  +'olButton'#14'ToolAtomsPaste'#4'Left'#2'!'#4'Hint'#6#25'Paste data from clip'
+  +'board'#7'Caption'#6#5'Paste'#10'ImageIndex'#2#4#7'OnClick'#7#19'MenuAtomsPa'
+  +'steClick'#0#0#11'TToolButton'#15'ToolAtomsDelete'#4'Left'#2'9'#4'Hint'#6'!R'
+  +'emove selected area of the table'#7'Caption'#6#6'Delete'#10'ImageIndex'#2#11
+  +#7'OnClick'#7#20'MenuAtomsDeleteClick'#0#0#11'TToolButton'#13'ToolAtomsHelp'
+  +#4'Left'#2'Q'#7'Caption'#6#13'ToolAtomsHelp'#10'ImageIndex'#2#15#7'OnClick'#7
+  +#18'ToolAtomsHelpClick'#0#0#11'TToolButton'#11'ToolButton6'#4'Left'#2#1#5'Wi'
+  +'dth'#2#8#7'Caption'#6#11'ToolButton6'#5'Style'#7#12'tbsSeparator'#0#0#0#0#6
+  +'TPanel'#12'PanelSitesBF'#4'Left'#3'.'#1#6'Height'#3'n'#1#5'Width'#3'2'#1#5
+  +'Align'#7#8'alClient'#10'BevelOuter'#7#6'bvNone'#8'TabOrder'#2#1#0#9'TGroupB'
+  +'ox'#9'GroupBox7'#6'Height'#3'N'#1#3'Top'#2' '#5'Width'#3'2'#1#5'Align'#7#8
+  +'alClient'#7'Caption'#6#21' Basal Function(s) : '#8'TabOrder'#2#0#0#12'TColo'
+  +'redGrid'#14'BasisFunctions'#6'Height'#3'<'#1#5'Width'#3'.'#1#5'Align'#7#8'a'
+  +'lClient'#8'ColCount'#2#5#10'FixedColor'#7#9'clBtnFace'#13'GridLineWidth'#2#0
+  +#7'Options'#11#15'goFixedVertLine'#15'goFixedHorzLine'#10'goVertLine'#10'goH'
+  +'orzLine'#13'goRangeSelect'#19'goDrawFocusSelected'#11'goRowSizing'#11'goCol'
+  +'Sizing'#6'goTabs'#15'goThumbTracking'#0#9'PopupMenu'#7#7'PopupBF'#8'RowCoun'
+  +'t'#2#5#10'ScrollBars'#7#10'ssAutoBoth'#8'TabOrder'#2#0#7'TabStop'#9#7'OnEnt'
+  +'er'#7#19'BasisFunctionsEnter'#6'OnExit'#7#18'BasisFunctionsExit'#14'OnGridM'
+  +'odified'#7#17'AtomsGridModified'#14'DoubleBuffered'#9#11'RowNumFixed'#9#10
+  +'Changeable'#9#11'OddRowColor'#7#7'clWhite'#12'EvenRowColor'#7#8'clSilver'#19
+  +'SelectedRegionColor'#7#6'clBlue'#0#0#0#8'TToolBar'#9'ToolBarBF'#6'Height'#2
+  +#24#3'Top'#2#4#5'Width'#3'2'#1#8'AutoSize'#9#17'BorderSpacing.Top'#2#4#20'Bo'
+  +'rderSpacing.Bottom'#2#4#12'ButtonHeight'#2#24#11'ButtonWidth'#2#24#7'Captio'
+  +'n'#6#7'ToolBar'#11'EdgeBorders'#11#0#4'Flat'#9#12'Font.CharSet'#7#15'RUSSIA'
+  +'N_CHARSET'#11'Font.Height'#2#245#9'Font.Name'#6#13'MS Sans Serif'#6'Images'
+  +#7#10'ImageList2'#8'TabOrder'#2#1#11'Transparent'#9#8'Wrapable'#8#0#11'TTool'
+  +'Button'#10'ToolBFCopy'#4'Left'#2#9#4'Hint'#6'-Copy selected area of the tab'
+  +'le  to clipboard'#7'Caption'#6#4'Copy'#10'ImageIndex'#2#3#7'OnClick'#7#15'M'
+  +'enuBFCopyClick'#0#0#11'TToolButton'#11'ToolBFPaste'#4'Left'#2'!'#4'Hint'#6
+  +#25'Paste data from clipboard'#7'Caption'#6#5'Paste'#10'ImageIndex'#2#4#7'On'
+  +'Click'#7#16'MenuBFPasteClick'#0#0#11'TToolButton'#12'ToolBFDelete'#4'Left'#2
+  +'9'#4'Hint'#6'!Remove selected area of the table'#7'Caption'#6#6'Delete'#10
+  +'ImageIndex'#2#11#7'OnClick'#7#17'MenuBFDeleteClick'#0#0#11'TToolButton'#10
+  +'ToolBFHelp'#4'Left'#2'Q'#7'Caption'#6#10'ToolBFHelp'#10'ImageIndex'#2#15#7
+  +'OnClick'#7#15'ToolBFHelpClick'#0#0#11'TToolButton'#11'ToolButton7'#4'Left'#2
+  +#1#5'Width'#2#8#7'Caption'#6#11'ToolButton7'#5'Style'#7#12'tbsSeparator'#0#0
+  +#0#0#0#9'TSplitter'#9'Splitter4'#6'Cursor'#7#8'crVSplit'#6'Height'#2#2#3'Top'
+  +#3#148#0#5'Width'#3'`'#2#5'Align'#7#5'alTop'#12'ResizeAnchor'#7#5'akTop'#0#0
+  +#0#6'TPanel'#16'PanelCalcOptions'#4'Left'#3#169#1#6'Height'#3#4#2#3'Top'#3#3
+  +#1#5'Width'#3'`'#2#10'BevelOuter'#7#6'bvNone'#5'Color'#7#8'clYellow'#12'Font'
+  +'.CharSet'#7#15'RUSSIAN_CHARSET'#11'Font.Height'#2#243#9'Font.Name'#6#13'MS '
+  +'Sans Serif'#11'ParentColor'#8#8'TabOrder'#2#8#7'Visible'#8#0#6'TPanel'#8'Pa'
+  +'nelTop'#6'Height'#3#148#0#5'Width'#3'`'#2#5'Align'#7#5'alTop'#10'BevelOuter'
+  ,#7#6'bvNone'#7'Caption'#6#8'PanelTop'#8'TabOrder'#2#0#0#9'TSplitter'#9'Split'
+  +'ter5'#4'Left'#3'/'#1#6'Height'#3#148#0#5'Width'#2#2#0#0#6'TPanel'#17'PanelS'
+  +'itesCalcOpt'#6'Height'#3#148#0#5'Width'#3'/'#1#5'Align'#7#6'alLeft'#10'Beve'
+  +'lOuter'#7#6'bvNone'#7'Caption'#6#17'PanelSitesCalcOpt'#8'TabOrder'#2#0#0#9
+  +'TGroupBox'#10'GroupBox10'#6'Height'#2't'#3'Top'#2' '#5'Width'#3'/'#1#5'Alig'
+  +'n'#7#8'alClient'#7'Caption'#6#11' Site(s) : '#8'TabOrder'#2#0#0#8'TListBox'
+  +#19'ListBoxSitesCalcOpt'#6'Height'#2'b'#5'Width'#3'+'#1#5'Align'#7#8'alClien'
+  +'t'#10'Font.Style'#11#6'fsBold'#0#10'ItemHeight'#2#16#7'OnClick'#7#24'ListBo'
+  +'xSitesCalcOptClick'#9'OnKeyDown'#7#26'ListBoxSitesCalcOptKeyDown'#8'TabOrde'
+  +'r'#2#0#0#0#0#8'TToolBar'#9'ToolBar14'#6'Height'#2#24#3'Top'#2#4#5'Width'#3
+  +'/'#1#8'AutoSize'#9#17'BorderSpacing.Top'#2#4#20'BorderSpacing.Bottom'#2#4#12
+  +'ButtonHeight'#2#24#11'ButtonWidth'#2#24#7'Caption'#6#9'ToolBar10'#11'EdgeBo'
+  +'rders'#11#0#4'Flat'#9#6'Images'#7#10'ImageList2'#8'TabOrder'#2#1#11'Transpa'
+  +'rent'#9#8'Wrapable'#8#0#11'TToolButton'#19'ToolButSitesCalcOpt'#4'Left'#2#9
+  +#4'Hint'#6'''Calculation properties of selected site'#7'Caption'#6#15'ToolBu'
+  +'tEditSite'#10'ImageIndex'#2#14#7'OnClick'#7#24'ToolButSitesCalcOptClick'#0#0
+  +#11'TToolButton'#12'ToolButton11'#4'Left'#2'!'#7'Caption'#6#12'ToolButton11'
+  +#10'ImageIndex'#2#15#7'OnClick'#7#17'ToolButton11Click'#0#0#11'TToolButton'
+  +#12'ToolButton12'#4'Left'#2#1#5'Width'#2#8#7'Caption'#6#12'ToolButton12'#5'S'
+  +'tyle'#7#12'tbsSeparator'#0#0#0#0#6'TPanel'#17'PanelStarsCalcOpt'#4'Left'#3
+  +'1'#1#6'Height'#3#148#0#5'Width'#3'/'#1#5'Align'#7#8'alClient'#10'BevelOuter'
+  +#7#6'bvNone'#7'Caption'#6#17'PanelStarsCalcOpt'#8'TabOrder'#2#1#0#9'TGroupBo'
+  +'x'#10'GroupBox11'#6'Height'#2't'#3'Top'#2' '#5'Width'#3'/'#1#5'Align'#7#8'a'
+  +'lClient'#7'Caption'#6#11' Star(s) : '#8'TabOrder'#2#0#0#8'TListBox'#22'List'
+  +'BoxPropVectCalcOpt'#6'Height'#2'b'#5'Width'#3'+'#1#5'Align'#7#8'alClient'#10
+  +'Font.Style'#11#6'fsBold'#0#10'ItemHeight'#2#16#7'OnClick'#7#16'WaveVectorsC'
+  +'lick'#9'OnKeyDown'#7#18'WaveVectorsKeyDown'#8'TabOrder'#2#0#0#0#0#8'TToolBa'
+  +'r'#9'ToolBar15'#6'Height'#2#24#3'Top'#2#4#5'Width'#3'/'#1#8'AutoSize'#9#17
+  +'BorderSpacing.Top'#2#4#20'BorderSpacing.Bottom'#2#4#12'ButtonHeight'#2#24#11
+  +'ButtonWidth'#2#24#7'Caption'#6#9'ToolBar10'#11'EdgeBorders'#11#0#4'Flat'#9#6
+  +'Images'#7#10'ImageList2'#8'TabOrder'#2#1#11'Transparent'#9#8'Wrapable'#8#0
+  +#11'TToolButton'#19'ToolButStarsCalcOpt'#4'Left'#2#9#4'Hint'#6'''Calculation'
+  +' properties of selected star'#7'Caption'#6#15'ToolButEditSite'#10'ImageInde'
+  +'x'#2#14#7'OnClick'#7#14'EditWVButClick'#0#0#11'TToolButton'#12'ToolButton13'
+  +#4'Left'#2#1#5'Width'#2#8#7'Caption'#6#12'ToolButton13'#5'Style'#7#12'tbsSep'
+  +'arator'#0#0#0#0#0#6'TPanel'#6'Panel5'#6'Height'#2'H'#3'Top'#3#148#0#5'Width'
+  +#3'`'#2#5'Align'#7#5'alTop'#10'BevelOuter'#7#6'bvNone'#7'Caption'#6#6'Panel5'
+  +#12'Font.CharSet'#7#15'RUSSIAN_CHARSET'#11'Font.Height'#2#243#9'Font.Name'#6
+  +#13'MS Sans Serif'#8'TabOrder'#2#1#0#9'TGroupBox'#19'GroupCommonSettings'#6
+  +'Height'#2'H'#5'Width'#3'/'#1#5'Align'#7#6'alLeft'#7'Caption'#6#22' Paramete'
+  +'rs To Vary : '#8'TabOrder'#2#0#0#9'TCheckBox'#16'CheckDebyeWaller'#4'Left'#2
+  +#7#6'Height'#2#13#3'Top'#2#10#5'Width'#3#141#0#7'Caption'#6#24'Debye - Walle'
+  +'r Parameter'#7'Checked'#9#5'State'#7#9'cbChecked'#8'TabOrder'#2#0#0#0#9'TCh'
+  +'eckBox'#15'CheckIntensNorm'#4'Left'#2#7#6'Height'#2#13#3'Top'#2'"'#5'Width'
+  +#3#133#0#7'Caption'#6#25'Intensities Normalization'#7'Checked'#9#5'State'#7#9
+  +'cbChecked'#8'TabOrder'#2#1#0#0#0#9'TGroupBox'#19'GroupDirectSettings'#4'Lef'
+  +'t'#3'/'#1#6'Height'#2'H'#5'Width'#3'1'#1#5'Align'#7#8'alClient'#7'Caption'#6
+  +#31' Direct Calculation Settings : '#8'TabOrder'#2#1#0#6'TLabel'#7'Label25'#4
+  +'Left'#2#6#6'Height'#2#17#3'Top'#2#8#5'Width'#3#181#0#7'Anchors'#11#5'akTop'
+  +#6'akLeft'#7'akRight'#0#8'AutoSize'#8#7'Caption'#6')Neutron data for R - Fac'
+  +'tor calculation :'#5'Color'#7#6'clNone'#11'ParentColor'#8#0#0#9'TComboBox'
+  +#19'NeutronDataSelector'#4'Left'#2#6#6'Height'#2#21#3'Top'#2#28#5'Width'#3
+  +#181#0#7'Anchors'#11#5'akTop'#6'akLeft'#7'akRight'#0#16'AutoCompleteText'#11
+  +#22'cbactEndOfLineComplete'#20'cbactSearchAscending'#0#10'ItemHeight'#2#16#9
+  +'MaxLength'#2#0#8'TabOrder'#2#0#4'Text'#6#19'NeutronDataSelector'#0#0#0#0#6
+  +'TPanel'#22'SelectorContainerPanel'#6'Height'#2'H'#3'Top'#3#220#0#5'Width'#3
+  +'`'#2#5'Align'#7#5'alTop'#10'BevelOuter'#7#6'bvNone'#7'Caption'#6#22'Selecto'
+  +'rContainerPanel'#8'TabOrder'#2#2#0#11'TRadioGroup'#21'RFactorSourceSelector'
+  +#6'Height'#2'H'#5'Width'#3'/'#1#5'Align'#7#6'alLeft'#8'AutoFill'#9#7'Caption'
+  +#6#21' R - Factor Source : '#28'ChildSizing.LeftRightSpacing'#2#6#28'ChildSi'
+  +'zing.TopBottomSpacing'#2#6#29'ChildSizing.EnlargeHorizontal'#7#24'crsHomoge'
+  +'nousChildResize'#27'ChildSizing.EnlargeVertical'#7#24'crsHomogenousChildRes'
+  +'ize'#28'ChildSizing.ShrinkHorizontal'#7#14'crsScaleChilds'#26'ChildSizing.S'
+  +'hrinkVertical'#7#14'crsScaleChilds'#18'ChildSizing.Layout'#7#29'cclLeftToRi'
+  ,'ghtThenTopToBottom'#27'ChildSizing.ControlsPerLine'#2#1#9'ItemIndex'#2#0#13
+  +'Items.Strings'#1#6#9'Intensity'#6#17'Structure Factors'#0#8'TabOrder'#2#0#0
+  +#0#11'TRadioGroup'#12'RadioLorentz'#4'Left'#3'/'#1#6'Height'#2'H'#5'Width'#3
+  +'1'#1#5'Align'#7#8'alClient'#8'AutoFill'#9#7'Caption'#6#26' Type Of Lorentz '
+  +'Factor : '#28'ChildSizing.LeftRightSpacing'#2#6#28'ChildSizing.TopBottomSpa'
+  +'cing'#2#6#29'ChildSizing.EnlargeHorizontal'#7#24'crsHomogenousChildResize'
+  +#27'ChildSizing.EnlargeVertical'#7#24'crsHomogenousChildResize'#28'ChildSizi'
+  +'ng.ShrinkHorizontal'#7#14'crsScaleChilds'#26'ChildSizing.ShrinkVertical'#7
+  +#14'crsScaleChilds'#18'ChildSizing.Layout'#7#29'cclLeftToRightThenTopToBotto'
+  +'m'#27'ChildSizing.ControlsPerLine'#2#1#9'ItemIndex'#2#0#13'Items.Strings'#1
+  +#6#31'1/(Sin(Theta) * Sin(2 * Theta))'#6#18'1/(Sin(Theta) ^ 2)'#0#8'TabOrder'
+  +#2#1#0#0#0#12'TProgressBar'#14'CurJobProgress'#6'Height'#2#22#4'Hint'#6#20'C'
+  +'urrent Job Progress'#3'Top'#3#238#1#5'Width'#3'`'#2#5'Align'#7#8'alBottom'#3
+  +'Max'#2'd'#4'Step'#2#1#8'TabOrder'#2#3#0#0#9'TGroupBox'#18'GroupPatternBound'
+  +'s'#6'Height'#2'E'#3'Top'#3'$'#1#5'Width'#3'`'#2#5'Align'#7#5'alTop'#7'Capti'
+  +'on'#6#30' Diffraction Pattern Bounds : '#8'TabOrder'#2#4#0#6'TLabel'#6'Labe'
+  +'l8'#4'Left'#2#7#6'Height'#2#14#3'Top'#2#4#5'Width'#2'`'#7'Caption'#6#21'Sta'
+  +'rt pos. (SinT/L): '#5'Color'#7#6'clNone'#11'ParentColor'#8#0#0#6'TLabel'#7
+  +'Label21'#4'Left'#3#11#1#6'Height'#2#14#3'Top'#2#4#5'Width'#2'W'#7'Caption'#6
+  +#18'End pos. (SinT/L):'#5'Color'#7#6'clNone'#11'ParentColor'#8#0#0#9'TCheckB'
+  +'ox'#16'CheckUseStartEnd'#4'Left'#2#7#6'Height'#2#13#3'Top'#2' '#5'Width'#2
+  +'\'#7'Caption'#6#13'Enable Bounds'#8'TabOrder'#2#0#0#0#5'TEdit'#13'InputStar'
+  +'tPos'#4'Left'#2'~'#6'Height'#2#24#5'Width'#2'Z'#8'TabOrder'#2#1#0#0#5'TEdit'
+  +#11'InputEndPos'#4'Left'#3#127#1#6'Height'#2#24#5'Width'#2'Z'#8'TabOrder'#2#2
+  +#0#0#0#9'TGroupBox'#9'GroupBox3'#6'Height'#3#133#0#3'Top'#3'i'#1#5'Width'#3
+  +'`'#2#5'Align'#7#8'alClient'#7'Caption'#6#23' Calculation Progress: '#8'TabO'
+  +'rder'#2#5#0#5'TMemo'#12'CalcComments'#6'Height'#2's'#5'Width'#3'\'#2#5'Alig'
+  +'n'#7#8'alClient'#8'ReadOnly'#9#10'ScrollBars'#7#6'ssBoth'#8'TabOrder'#2#0#0
+  +#0#0#0#9'TMainMenu'#8'MainMenu'#4'left'#3#136#0#3'top'#2#16#0#9'TMenuItem'#12
+  +'MenuFileEdit'#7'Caption'#6#5'&File'#0#9'TMenuItem'#11'MenuFileNew'#7'Captio'
+  +'n'#6#8'New File'#4'Hint'#6#24'Create a new source file'#7'OnClick'#7#16'Men'
+  +'uFileNewClick'#0#0#9'TMenuItem'#15'MenuFileNewUnit'#7'Caption'#6#13'New Dat'
+  +'a Unit'#4'Hint'#6#22'Create a new data unit'#0#9'TMenuItem'#15'MenuFileNewP'
+  +'oly'#7'Caption'#6' Magnetic Structure (Polycrystal)'#4'Hint'#6'2Create new '
+  +'unit for magnetic structure calculation'#7'OnClick'#7#20'MenuFileNewPolyCli'
+  +'ck'#0#0#9'TMenuItem'#15'MenuFileNewMono'#7'Caption'#6' Magnetic Structure ('
+  +'Monocrystal)'#7'OnClick'#7#20'MenuFileNewMonoClick'#0#0#9'TMenuItem'#17'Men'
+  +'uFileNewDirect'#7'Caption'#6#26'Direct Pattern Calculation'#4'Hint'#6'2Crea'
+  +'te new unit for difraction pattern calculation'#7'OnClick'#7#22'MenuFileNew'
+  +'DirectClick'#0#0#0#9'TMenuItem'#12'MenuFileOpen'#7'Caption'#6#13'&Open File'
+  +'...'#11'Bitmap.Data'#10#250#0#0#0#246#0#0#0'BM'#246#0#0#0#0#0#0#0'v'#0#0#0
+  +'('#0#0#0#16#0#0#0#16#0#0#0#1#0#4#0#0#0#0#0#128#0#0#0#0#0#0#0#0#0#0#0#16#0#0
+  +#0#16#0#0#0#0#0#0#0#0#0#128#0#0#128#0#0#0#128#128#0#128#0#0#0#128#0#128#0#128
+  +#128#0#0#192#192#192#0#128#128#128#0#0#0#255#0#0#255#0#0#0#255#255#0#255#0#0
+  +#0#255#0#255#0#255#255#0#0#255#255#255#0'DDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDDD'#0
+  +#0#0#0#0'DD@'#11'{{{{'#4'D@'#240#183#183#183#183#176'D@'#191#11'{{{{'#4'@'
+  +#251#240#0#0#0#0#4'@'#191#191#191#191#176'DD@'#251#251#251#251#240'DD@'#191
+  +#191#191#0#4'DDD'#11#251#240'DDDDD'#128#0#8'DDDDDDDDDDDDDDDDDDDD'#4'Hint'#6
+  +#28'Open an existing source file'#7'OnClick'#7#17'MenuFileOpenClick'#0#0#9'T'
+  +'MenuItem'#12'MenuFileSave'#7'Caption'#6#10'Sa&ve File'#7'Enabled'#8#11'Bitm'
+  +'ap.Data'#10#250#0#0#0#246#0#0#0'BM'#246#0#0#0#0#0#0#0'v'#0#0#0'('#0#0#0#16#0
+  +#0#0#16#0#0#0#1#0#4#0#0#0#0#0#128#0#0#0#0#0#0#0#0#0#0#0#16#0#0#0#16#0#0#0#0#0
+  +#0#0#0#0#128#0#0#128#0#0#0#128#128#0#128#0#0#0#128#0#128#0#128#128#0#0#192
+  +#192#192#0#128#128#128#0#0#0#255#0#0#255#0#0#0#255#255#0#255#0#0#0#255#0#255
+  +#0#255#255#0#0#255#255#255#0'DDDDDDDD@'#0#8#136#136#136#0'D'#0#0#8'www'#0#4#0
+  +#0#8'p'#7'w'#0#4#0#0#8'p'#7'w'#0#4#0#0#8'www'#0#4#0#0#0#0#0#0#0#4#0#0#0#0#0#0
+  +#0#4#0#15#255#255#255#255#0#4#0#15#255#255#255#255#0#4#0#15#255#255#255#255#0
+  +#4#0#15#255#255#255#255#0#4#0#15#255#255#255#255#0#4#0#15#255#255#255#255#8#4
+  +#0#15#255#255#255#255#0#4'@'#9#153#153#153#153#0'D'#4'Hint'#6#12'Save change'
+  +'s'#8'ShortCut'#3'S@'#7'OnClick'#7#17'MenuFileSaveClick'#0#0#9'TMenuItem'#14
+  +'MenuFileSaveAs'#7'Caption'#6#16'Save File &As...'#7'Enabled'#8#4'Hint'#6#29
+  +'Save the file with a new name'#7'OnClick'#7#19'MenuFileSaveAsClick'#0#0#9'T'
+  +'MenuItem'#3'N12'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#12'MenuFileExit'#7'Capt'
+  +'ion'#6#5'&Exit'#11'Bitmap.Data'#10#250#0#0#0#246#0#0#0'BM'#246#0#0#0#0#0#0#0
+  ,'v'#0#0#0'('#0#0#0#16#0#0#0#16#0#0#0#1#0#4#0#0#0#0#0#128#0#0#0#0#0#0#0#0#0#0
+  +#0#16#0#0#0#16#0#0#0#0#0#0#0#0#0#128#0#0#128#0#0#0#128#128#0#128#0#0#0#128#0
+  +#128#0#128#128#0#0#192#192#192#0#128#128#128#0#0#0#255#0#0#255#0#0#0#255#255
+  +#0#255#0#0#0#255#0#255#0#255#255#0#0#255#255#255#0'3'#0#0#0#0#0#3'33'#1#187
+  +#187#187#187#3'33'#1#27#187#187#187#3'33'#1#17#187#187#187#3'33'#1#17#11#187
+  +#187#3'33'#1#17#11#187#187#3'33'#1#17#11#187#187#3'33'#1#17#11#187#187#3'33'
+  +#1#17#11#187#187#3'33'#1#17#11#187#187#3'33'#1#17#176#187#187#3'33'#1#17#11
+  +#187#187#3'33'#1#17#11#187#187#3'33'#1#225#11#187#187#3'33'#1#238#11#187#187
+  +#3'33'#0#0#0#0#0#3'3'#4'Hint'#6#4'Exit'#8'ShortCut'#4's'#128#0#0#7'OnClick'#7
+  +#17'MenuFileExitClick'#0#0#0#9'TMenuItem'#15'MenuProjectEdit'#7'Caption'#6#5
+  +'&Edit'#7'Visible'#8#0#9'TMenuItem'#21'MenuProjectRenameUnit'#7'Caption'#6#11
+  +'Rename Unit'#4'Hint'#6#20'Rename selected unit'#7'OnClick'#7#26'MenuProject'
+  +'RenameUnitClick'#0#0#9'TMenuItem'#21'MenuProjectDeleteUnit'#7'Caption'#6#12
+  +'Delete  Unit'#4'Hint'#6#20'Delete selected unit'#8'ShortCut'#3'.@'#7'OnClic'
+  +'k'#7#26'MenuProjectDeleteUnitClick'#0#0#9'TMenuItem'#19'MenuPlotPatternEdit'
+  +#7'Caption'#6#7'Picture'#7'Visible'#8#0#9'TMenuItem'#19'MenuPlotPatternCopy'
+  +#7'Caption'#6#4'Copy'#10'GroupIndex'#2#1#4'Hint'#6#25'Copy picture to clipbo'
+  +'ard'#8'ShortCut'#3'C@'#7'OnClick'#7#24'MenuPlotPatternCopyClick'#0#0#9'TMen'
+  +'uItem'#19'MenuPlotPatternSave'#7'Caption'#6#15'Save To File...'#10'GroupInd'
+  +'ex'#2#1#4'Hint'#6#20'Save picture to file'#7'OnClick'#7#24'MenuPlotPatternS'
+  +'aveClick'#0#0#0#9'TMenuItem'#18'MenuPlotStructEdit'#7'Caption'#6#7'Picture'
+  +#7'Visible'#8#0#9'TMenuItem'#18'MenuPlotStructCopy'#7'Caption'#6#4'Copy'#10
+  +'GroupIndex'#2#1#4'Hint'#6#25'Copy picture to clipboard'#8'ShortCut'#3'C@'#7
+  +'OnClick'#7#23'MenuPlotStructCopyClick'#0#0#9'TMenuItem'#18'MenuPlotStructSa'
+  +'ve'#7'Caption'#6#15'Save To File...'#10'GroupIndex'#2#1#4'Hint'#6#20'Save p'
+  +'icture to file'#7'OnClick'#7#23'MenuPlotStructSaveClick'#0#0#0#9'TMenuItem'
+  +#3'N10'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#10'MenuFFEdit'#7'Caption'#6#25'&F'
+  +'orm - Factors Editor...'#4'Hint'#6#28'Edit form - factors database'#7'OnCli'
+  +'ck'#7#15'MenuFFEditClick'#0#0#9'TMenuItem'#12'MenuSettings'#7'Caption'#6#24
+  +'Environment &Settings...'#4'Hint'#6#23'Change program settings'#7'Visible'#8
+  +#7'OnClick'#7#17'MenuSettingsClick'#0#0#0#9'TMenuItem'#13'MenuAtomsEdit'#7'C'
+  +'aption'#6#5'&Edit'#7'Visible'#8#7'OnClick'#7#18'MenuAtomsEditClick'#0#9'TMe'
+  +'nuItem'#13'MenuAtomsCopy'#7'Caption'#6#4'Copy'#4'Hint'#6'(Copy selected are'
+  +'a of table to clipboard'#8'ShortCut'#3'C@'#7'OnClick'#7#18'MenuAtomsCopyCli'
+  +'ck'#0#0#9'TMenuItem'#14'MenuAtomsPaste'#7'Caption'#6#5'Paste'#4'Hint'#6#25
+  +'Paste data from clipboard'#8'ShortCut'#3'V@'#7'OnClick'#7#19'MenuAtomsPaste'
+  +'Click'#0#0#9'TMenuItem'#15'MenuAtomsDelete'#7'Caption'#6#7'Delete '#4'Hint'
+  +#6'&Delete or clear selected area of table'#8'ShortCut'#3'.@'#7'OnClick'#7#20
+  +'MenuAtomsDeleteClick'#0#0#9'TMenuItem'#2'N7'#7'Caption'#6#1'-'#0#0#9'TMenuI'
+  +'tem'#18'MenuAtomsSelectAll'#7'Caption'#6#10'Select All'#4'Hint'#6#20'Select'
+  +' all the table'#8'ShortCut'#3'A@'#7'OnClick'#7#23'MenuAtomsSelectAllClick'#0
+  +#0#9'TMenuItem'#3'N13'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#15'MenuAtomsInsert'
+  +#7'Caption'#6#11'Insert Atom'#4'Hint'#6#15'Insert new atom'#8'ShortCut'#3'-@'
+  +#7'OnClick'#7#20'MenuAtomsInsertClick'#0#0#9'TMenuItem'#12'MenuAtomsAdd'#7'C'
+  +'aption'#6#8'Add Atom'#4'Hint'#6' Add new atom on the end of table'#7'OnClic'
+  +'k'#7#17'MenuAtomsAddClick'#0#0#0#9'TMenuItem'#10'MenuBFEdit'#7'Caption'#6#5
+  +'&Edit'#7'Visible'#8#7'OnClick'#7#15'MenuBFEditClick'#0#9'TMenuItem'#10'Menu'
+  +'BFCopy'#7'Caption'#6#4'Copy'#4'Hint'#6'(Copy selected area of table to clip'
+  +'board'#8'ShortCut'#3'C@'#7'OnClick'#7#15'MenuBFCopyClick'#0#0#9'TMenuItem'
+  +#11'MenuBFPaste'#7'Caption'#6#5'Paste'#4'Hint'#6#25'Paste data from clipboar'
+  +'d'#8'ShortCut'#3'V@'#7'OnClick'#7#16'MenuBFPasteClick'#0#0#9'TMenuItem'#12
+  +'MenuBFDelete'#7'Caption'#6#7'Delete '#4'Hint'#6'&Delete or clear selected a'
+  +'rea of table'#8'ShortCut'#3'.@'#7'OnClick'#7#17'MenuBFDeleteClick'#0#0#9'TM'
+  +'enuItem'#3'N14'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#15'MenuBFSelectAll'#7'Ca'
+  +'ption'#6#10'Select All'#4'Hint'#6#20'Select all the table'#8'ShortCut'#3'A@'
+  +#7'OnClick'#7#20'MenuBFSelectAllClick'#0#0#9'TMenuItem'#3'N15'#7'Caption'#6#1
+  +'-'#0#0#9'TMenuItem'#12'MenuBFInsert'#7'Caption'#6#21'Insert Basal Function'
+  +#4'Hint'#6#25'Insert new basal function'#8'ShortCut'#3'-@'#7'OnClick'#7#17'M'
+  +'enuBFInsertClick'#0#0#9'TMenuItem'#9'MenuBFAdd'#7'Caption'#6#18'Add Basal F'
+  +'unction'#4'Hint'#6'&Add basal function on the end of table'#7'OnClick'#7#14
+  +'MenuBFAddClick'#0#0#0#9'TMenuItem'#13'MenuSitesEdit'#7'Caption'#6#5'&Edit'#7
+  +'Visible'#8#7'OnClick'#7#18'MenuSitesEditClick'#0#9'TMenuItem'#12'MenuSitesA'
+  +'dd'#7'Caption'#6#15'Add New Site...'#4'Hint'#6#12'Add new site'#7'OnClick'#7
+  +#17'MenuSitesAddClick'#0#0#9'TMenuItem'#15'MenuSitesDelete'#7'Caption'#6#6'D'
+  ,'elete'#4'Hint'#6#20'Delete selected site'#8'ShortCut'#3'.@'#7'OnClick'#7#20
+  +'MenuSitesDeleteClick'#0#0#9'TMenuItem'#3'N16'#7'Caption'#6#1'-'#0#0#9'TMenu'
+  +'Item'#19'MenuSitesProperties'#7'Caption'#6#13'Properties...'#4'Hint'#6#31'S'
+  +'et properties of selected site'#7'OnClick'#7#24'MenuSitesPropertiesClick'#0
+  +#0#0#9'TMenuItem'#13'MenuStarsEdit'#7'Caption'#6#5'&Edit'#7'Visible'#8#7'OnC'
+  +'lick'#7#18'MenuStarsEditClick'#0#9'TMenuItem'#12'MenuStarsAdd'#7'Caption'#6
+  +#15'Add New Star...'#4'Hint'#6#12'Add new star'#7'OnClick'#7#17'MenuStarsAdd'
+  +'Click'#0#0#9'TMenuItem'#15'MenuStarsDelete'#7'Caption'#6#6'Delete'#4'Hint'#6
+  +#20'Delete selected star'#8'ShortCut'#3'.@'#7'OnClick'#7#20'MenuStarsDeleteC'
+  +'lick'#0#0#9'TMenuItem'#3'N17'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#19'MenuSta'
+  +'rsProperties'#7'Caption'#6#13'Properties...'#4'Hint'#6#31'Set properties of'
+  +' selected star'#7'OnClick'#7#24'MenuStarsPropertiesClick'#0#0#0#9'TMenuItem'
+  +#12'MenuReprEdit'#7'Caption'#6#5'&Edit'#7'Visible'#8#7'OnClick'#7#17'MenuRep'
+  +'rEditClick'#0#9'TMenuItem'#11'MenuReprAdd'#7'Caption'#6#22'Add New Represen'
+  +'tation'#4'Hint'#6#22'Add new representation'#7'OnClick'#7#16'MenuReprAddCli'
+  +'ck'#0#0#9'TMenuItem'#14'MenuReprDelete'#7'Caption'#6#6'Delete'#4'Hint'#6#30
+  +'Delete selected representation'#8'ShortCut'#3'.@'#7'OnClick'#7#19'MenuReprD'
+  +'eleteClick'#0#0#0#9'TMenuItem'#15'MenuResultsEdit'#7'Caption'#6#5'&Edit'#7
+  +'Visible'#8#0#9'TMenuItem'#15'MenuResultsCopy'#7'Caption'#6#4'Copy'#4'Hint'#6
+  +'(Copy selected area of table to clipboard'#8'ShortCut'#3'C@'#7'OnClick'#7#20
+  +'MenuResultsCopyClick'#0#0#0#9'TMenuItem'#15'MenuNeutronEdit'#7'Caption'#6#5
+  +'&Edit'#7'Visible'#8#7'OnClick'#7#20'MenuNeutronEditClick'#0#9'TMenuItem'#15
+  +'MenuNeutronCopy'#7'Caption'#6#4'Copy'#4'Hint'#6'(Copy selected area of tabl'
+  +'e to clipboard'#8'ShortCut'#3'C@'#7'OnClick'#7#20'MenuNeutronCopyClick'#0#0
+  +#9'TMenuItem'#16'MenuNeutronPaste'#7'Caption'#6#5'Paste'#4'Hint'#6#25'Paste '
+  +'data from clipboard'#8'ShortCut'#3'V@'#7'OnClick'#7#21'MenuNeutronPasteClic'
+  +'k'#0#0#9'TMenuItem'#17'MenuNeutronDelete'#7'Caption'#6#7'Delete '#4'Hint'#6
+  +'&Delete or clear selected area of table'#8'ShortCut'#3'.@'#7'OnClick'#7#22
+  +'MenuNeutronDeleteClick'#0#0#9'TMenuItem'#3'N18'#7'Caption'#6#1'-'#0#0#9'TMe'
+  +'nuItem'#20'MenuNeutronSelectAll'#7'Caption'#6#10'Select All'#4'Hint'#6#20'S'
+  +'elect all the table'#8'ShortCut'#3'A@'#7'OnClick'#7#25'MenuNeutronSelectAll'
+  +'Click'#0#0#9'TMenuItem'#3'N19'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#17'MenuNe'
+  +'utronInsert'#7'Caption'#6#11'Insert Peak'#4'Hint'#6'&Insert new peak of dif'
+  +'fraction pattern'#8'ShortCut'#3'-@'#7'OnClick'#7#22'MenuNeutronInsertClick'
+  +#0#0#9'TMenuItem'#14'MenuNeutronAdd'#7'Caption'#6#8'Add Peak'#4'Hint'#6' Add'
+  +' new peak on the end of table'#7'OnClick'#7#19'MenuNeutronAddClick'#0#0#0#9
+  +'TMenuItem'#12'MenuMemoEdit'#7'Caption'#6#5'&Edit'#7'Visible'#8#7'OnClick'#7
+  +#17'MenuMemoEditClick'#0#9'TMenuItem'#12'MenuMemoCopy'#7'Caption'#6#4'Copy'#4
+  +'Hint'#6#31'Copy selected text to clipboard'#8'ShortCut'#3'C@'#7'OnClick'#7
+  +#17'MenuMemoCopyClick'#0#0#9'TMenuItem'#13'MenuMemoPaste'#7'Caption'#6#5'Pas'
+  +'te'#4'Hint'#6#25'Paste text from clipboard'#8'ShortCut'#3'V@'#7'OnClick'#7
+  +#18'MenuMemoPasteClick'#0#0#0#9'TMenuItem'#15'MenuProjectView'#7'Caption'#6#5
+  +'&View'#7'Visible'#8#0#9'TMenuItem'#21'MenuProjectAutoExpand'#7'Caption'#6#11
+  +'Auto Expand'#7'Checked'#9#4'Hint'#6'''Auto expansion of the project file tr'
+  +'ee'#7'OnClick'#7#26'MenuProjectAutoExpandClick'#0#0#9'TMenuItem'#21'MenuPro'
+  +'jectFullExpand'#7'Caption'#6#11'Full Expand'#4'Hint'#6'''Full expansion of '
+  +'the project file tree'#7'OnClick'#7#26'MenuProjectFullExpandClick'#0#0#9'TM'
+  +'enuItem'#19'MenuPlotPatternView'#7'Caption'#6#17'Pattern View Mode'#7'Visib'
+  +'le'#8#0#9'TMenuItem'#22'MenuPlotPatternNeutron'#7'Caption'#6#24'View Neutro'
+  +'n Intensities'#7'OnClick'#7#27'MenuPlotPatternNeutronClick'#0#0#9'TMenuItem'
+  +#19'MenuPlotPatternNucl'#7'Caption'#6#24'View Nuclear Intensities'#7'OnClick'
+  +#7#24'MenuPlotPatternNuclClick'#0#0#9'TMenuItem'#19'MenuPlotPatternMagn'#7'C'
+  +'aption'#6#25'View Magnetic Intensities'#7'OnClick'#7#24'MenuPlotPatternMagn'
+  +'Click'#0#0#9'TMenuItem'#25'MenuPlotPatternStructFact'#7'Caption'#6#25'View '
+  +'As Structure Factors'#7'OnClick'#7#30'MenuPlotPatternStructFactClick'#0#0#0
+  +#0#9'TMenuItem'#15'MenuCalculation'#7'Caption'#6#12'&Calculation'#0#9'TMenuI'
+  +'tem'#21'MenuCheckDataValidity'#7'Caption'#6#20'&Check Data Validity'#7'Enab'
+  +'led'#8#7'OnClick'#7#26'MenuCheckDataValidityClick'#0#0#9'TMenuItem'#16'Menu'
+  +'StartReverse'#7'Caption'#6'%&Start Magnetic Structure Calculation'#7'Enable'
+  +'d'#8#4'Hint'#6'!Begin searching of best structure'#7'OnClick'#7#21'MenuStar'
+  +'tReverseClick'#0#0#9'TMenuItem'#15'MenuStopReverse'#7'Caption'#6#17'S&top C'
+  +'alculation'#7'Enabled'#8#4'Hint'#6#26'Stop the searching process'#7'OnClick'
+  +#7#20'MenuStopReverseClick'#0#0#9'TMenuItem'#2'N3'#7'Caption'#6#1'-'#0#0#9'T'
+  +'MenuItem'#10'MenuDirect'#7'Caption'#6#27'&Direct Pattern Calculation'#7'Ena'
+  ,'bled'#8#7'OnClick'#7#15'MenuDirectClick'#0#0#0#9'TMenuItem'#5'Help1'#7'Capt'
+  +'ion'#6#5'&Help'#0#9'TMenuItem'#9'Contents1'#7'Caption'#6#8'Contents'#7'OnCl'
+  +'ick'#7#14'Contents1Click'#0#0#9'TMenuItem'#2'N6'#7'Caption'#6#1'-'#0#0#9'TM'
+  +'enuItem'#6'About1'#7'Caption'#6#8'About...'#7'OnClick'#7#11'About1Click'#0#0
+  +#0#0#11'TSaveDialog'#11'SaveDialog1'#5'Title'#6'"'#195#145#195#174#195#181
+  +#195#176#195#160#195#173#195#168#195#178#195#188' '#195#180#195#160#195#169
+  +#195#171' '#195#170#195#160#195#170#11'FilterIndex'#2#0#4'left'#3#232#0#3'to'
+  +'p'#3#128#0#0#0#11'TOpenDialog'#11'OpenDialog1'#5'Title'#6'0'#195#142#195#178
+  +#195#170#195#176#195#187#195#178#195#188' '#195#177#195#179#195#185#195#165
+  +#195#177#195#178#195#162#195#179#195#190#195#185#195#168#195#169' '#195#180
+  +#195#160#195#169#195#171#11'FilterIndex'#2#0#4'left'#3#232#0#3'top'#3#160#0#0
+  +#0#10'TPopupMenu'#12'PopupProject'#4'left'#3#168#0#3'top'#2#16#0#9'TMenuItem'
+  +#22'PopupProjectAutoExpand'#7'Caption'#6#11'Auto Expand'#7'Checked'#9#4'Hint'
+  +#6'''Auto expansion of the project file tree'#7'OnClick'#7#26'MenuProjectAut'
+  +'oExpandClick'#0#0#9'TMenuItem'#22'PopupProjectFullExpand'#7'Caption'#6#11'F'
+  +'ull Expand'#4'Hint'#6'''Full expansion of the project file tree'#7'OnClick'
+  +#7#26'MenuProjectFullExpandClick'#0#0#9'TMenuItem'#2'N2'#7'Caption'#6#1'-'#0
+  +#0#9'TMenuItem'#22'PopupProjectRenameUnit'#7'Caption'#6#11'Rename Unit'#4'Hi'
+  +'nt'#6#20'Rename selected unit'#7'OnClick'#7#26'MenuProjectRenameUnitClick'#0
+  +#0#9'TMenuItem'#22'PopupProjectDeleteUnit'#7'Caption'#6#12'Delete  Unit'#4'H'
+  +'int'#6#20'Delete selected unit'#8'ShortCut'#3'.@'#7'OnClick'#7#26'MenuProje'
+  +'ctDeleteUnitClick'#0#0#0#10'TPopupMenu'#10'PopupAtoms'#4'left'#3#200#0#3'to'
+  +'p'#2#16#0#9'TMenuItem'#14'PopupAtomsCopy'#7'Caption'#6#4'Copy'#4'Hint'#6'(C'
+  +'opy selected area of table to clipboard'#8'ShortCut'#3'C@'#7'OnClick'#7#18
+  +'MenuAtomsCopyClick'#0#0#9'TMenuItem'#15'PopupAtomsPaste'#7'Caption'#6#5'Pas'
+  +'te'#4'Hint'#6#25'Paste data from clipboard'#8'ShortCut'#3'V@'#7'OnClick'#7
+  +#19'MenuAtomsPasteClick'#0#0#9'TMenuItem'#16'PopupAtomsDelete'#7'Caption'#6#7
+  +'Delete '#4'Hint'#6'&Delete or clear selected area of table'#8'ShortCut'#3'.'
+  +'@'#7'OnClick'#7#20'MenuAtomsDeleteClick'#0#0#9'TMenuItem'#3'N20'#7'Caption'
+  +#6#1'-'#0#0#9'TMenuItem'#19'PopupAtomsSelectAll'#7'Caption'#6#10'Select All'
+  +#4'Hint'#6#20'Select all the table'#8'ShortCut'#3'A@'#7'OnClick'#7#23'MenuAt'
+  +'omsSelectAllClick'#0#0#9'TMenuItem'#3'N21'#7'Caption'#6#1'-'#0#0#9'TMenuIte'
+  +'m'#16'PopupAtomsInsert'#7'Caption'#6#11'Insert Atom'#4'Hint'#6#15'Insert ne'
+  +'w atom'#8'ShortCut'#3'-@'#7'OnClick'#7#20'MenuAtomsInsertClick'#0#0#9'TMenu'
+  +'Item'#13'PopupAtomsAdd'#7'Caption'#6#8'Add Atom'#4'Hint'#6' Add new atom on'
+  +' the end of table'#7'OnClick'#7#17'MenuAtomsAddClick'#0#0#0#10'TPopupMenu'#7
+  +'PopupBF'#4'left'#3#232#0#3'top'#2#16#0#9'TMenuItem'#11'PopupBFCopy'#7'Capti'
+  +'on'#6#4'Copy'#4'Hint'#6'(Copy selected area of table to clipboard'#8'ShortC'
+  +'ut'#3'C@'#7'OnClick'#7#15'MenuBFCopyClick'#0#0#9'TMenuItem'#12'PopupBFPaste'
+  +#7'Caption'#6#5'Paste'#4'Hint'#6#25'Paste data from clipboard'#8'ShortCut'#3
+  +'V@'#7'OnClick'#7#16'MenuBFPasteClick'#0#0#9'TMenuItem'#13'PopupBFDelete'#7
+  +'Caption'#6#7'Delete '#4'Hint'#6'&Delete or clear selected area of table'#8
+  +'ShortCut'#3'.@'#7'OnClick'#7#17'MenuBFDeleteClick'#0#0#9'TMenuItem'#3'N22'#7
+  +'Caption'#6#1'-'#0#0#9'TMenuItem'#16'PopupBFSelectAll'#7'Caption'#6#10'Selec'
+  +'t All'#4'Hint'#6#20'Select all the table'#8'ShortCut'#3'A@'#7'OnClick'#7#20
+  +'MenuBFSelectAllClick'#0#0#9'TMenuItem'#3'N23'#7'Caption'#6#1'-'#0#0#9'TMenu'
+  +'Item'#13'PopupBFInsert'#7'Caption'#6#21'Insert Basal Function'#4'Hint'#6#25
+  +'Insert new basal function'#8'ShortCut'#3'-@'#7'OnClick'#7#17'MenuBFInsertCl'
+  +'ick'#0#0#9'TMenuItem'#10'PopupBFAdd'#7'Caption'#6#18'Add Basal Function'#4
+  +'Hint'#6'&Add basal function on the end of table'#7'OnClick'#7#14'MenuBFAddC'
+  +'lick'#0#0#0#10'TPopupMenu'#10'PopupSites'#4'left'#3#8#1#3'top'#2#16#0#9'TMe'
+  +'nuItem'#13'PopupSitesAdd'#7'Caption'#6#15'Add New Site...'#4'Hint'#6#12'Add'
+  +' new site'#7'OnClick'#7#17'MenuSitesAddClick'#0#0#9'TMenuItem'#16'PopupSite'
+  +'sDelete'#7'Caption'#6#6'Delete'#4'Hint'#6#20'Delete selected site'#8'ShortC'
+  +'ut'#3'.@'#7'OnClick'#7#20'MenuSitesDeleteClick'#0#0#9'TMenuItem'#3'N11'#7'C'
+  +'aption'#6#1'-'#0#0#9'TMenuItem'#20'PopupSitesProperties'#7'Caption'#6#13'Pr'
+  +'operties...'#4'Hint'#6#31'Set properties of selected site'#7'OnClick'#7#24
+  +'MenuSitesPropertiesClick'#0#0#0#10'TPopupMenu'#10'PopupStars'#4'left'#3#168
+  +#0#3'top'#2'0'#0#9'TMenuItem'#13'PopupStarsAdd'#7'Caption'#6#15'Add New Star'
+  +'...'#4'Hint'#6#12'Add new star'#7'OnClick'#7#17'MenuStarsAddClick'#0#0#9'TM'
+  +'enuItem'#16'PopupStarsDelete'#7'Caption'#6#6'Delete'#4'Hint'#6#20'Delete se'
+  +'lected star'#8'ShortCut'#3'.@'#7'OnClick'#7#20'MenuStarsDeleteClick'#0#0#9
+  +'TMenuItem'#3'N24'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#20'PopupStarsPropertie'
+  +'s'#7'Caption'#6#13'Properties...'#4'Hint'#6#31'Set properties of selected s'
+  ,'tar'#7'OnClick'#7#24'MenuStarsPropertiesClick'#0#0#0#10'TPopupMenu'#9'Popup'
+  +'Repr'#4'left'#3#200#0#3'top'#2'0'#0#9'TMenuItem'#12'PopupReprAdd'#7'Caption'
+  +#6#22'Add New Representation'#4'Hint'#6#22'Add new representation'#7'OnClick'
+  +#7#16'MenuReprAddClick'#0#0#9'TMenuItem'#15'PopupReprDelete'#7'Caption'#6#6
+  +'Delete'#4'Hint'#6#30'Delete selected representation'#8'ShortCut'#3'.@'#7'On'
+  +'Click'#7#19'MenuReprDeleteClick'#0#0#0#10'TPopupMenu'#12'PopupResults'#4'le'
+  +'ft'#3#232#0#3'top'#2'0'#0#9'TMenuItem'#16'PopupResultsCopy'#7'Caption'#6#4
+  +'Copy'#4'Hint'#6'(Copy selected area of table to clipboard'#8'ShortCut'#3'C@'
+  +#7'OnClick'#7#20'MenuResultsCopyClick'#0#0#0#10'TPopupMenu'#12'PopupNeutron'
+  +#4'left'#3#8#1#3'top'#2'0'#0#9'TMenuItem'#16'PopupNeutronCopy'#7'Caption'#6#4
+  +'Copy'#4'Hint'#6'(Copy selected area of table to clipboard'#8'ShortCut'#3'C@'
+  +#7'OnClick'#7#20'MenuNeutronCopyClick'#0#0#9'TMenuItem'#17'PopupNeutronPaste'
+  +#7'Caption'#6#5'Paste'#4'Hint'#6#25'Paste data from clipboard'#8'ShortCut'#3
+  +'V@'#7'OnClick'#7#21'MenuNeutronPasteClick'#0#0#9'TMenuItem'#18'PopupNeutron'
+  +'Delete'#7'Caption'#6#7'Delete '#4'Hint'#6'&Delete or clear selected area of'
+  +' table'#8'ShortCut'#3'.@'#7'OnClick'#7#22'MenuNeutronDeleteClick'#0#0#9'TMe'
+  +'nuItem'#2'N9'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#21'PopupNeutronSelectAll'#7
+  +'Caption'#6#10'Select All'#4'Hint'#6#20'Select all the table'#8'ShortCut'#3
+  +'A@'#7'OnClick'#7#25'MenuNeutronSelectAllClick'#0#0#9'TMenuItem'#3'N25'#7'Ca'
+  +'ption'#6#1'-'#0#0#9'TMenuItem'#18'PopupNeutronInsert'#7'Caption'#6#11'Inser'
+  +'t Peak'#4'Hint'#6'&Insert new peak of diffraction pattern'#8'ShortCut'#3'-@'
+  +#7'OnClick'#7#22'MenuNeutronInsertClick'#0#0#9'TMenuItem'#15'PopupNeutronAdd'
+  +#7'Caption'#6#8'Add Peak'#4'Hint'#6' Add new peak on the end of table'#7'OnC'
+  +'lick'#7#19'MenuNeutronAddClick'#0#0#0#10'TPopupMenu'#15'PopupPlotStruct'#4
+  +'left'#3#168#0#3'top'#2'P'#0#9'TMenuItem'#19'PopupPlotStructCopy'#7'Caption'
+  +#6#4'Copy'#10'GroupIndex'#2#1#4'Hint'#6#25'Copy picture to clipboard'#8'Shor'
+  +'tCut'#3'C@'#7'OnClick'#7#23'MenuPlotStructCopyClick'#0#0#9'TMenuItem'#19'Po'
+  +'pupPlotStructSave'#7'Caption'#6#23'Save Picture To File...'#10'GroupIndex'#2
+  +#1#4'Hint'#6#20'Save picture to file'#7'OnClick'#7#23'MenuPlotStructSaveClic'
+  +'k'#0#0#0#10'TPopupMenu'#9'PopupMemo'#4'left'#3#232#0#3'top'#2'P'#0#9'TMenuI'
+  +'tem'#13'PopupMemoCopy'#7'Caption'#6#4'Copy'#4'Hint'#6#31'Copy selected text'
+  +' to clipboard'#8'ShortCut'#3'C@'#7'OnClick'#7#17'MenuMemoCopyClick'#0#0#9'T'
+  +'MenuItem'#14'PopupMemoPaste'#7'Caption'#6#5'Paste'#4'Hint'#6#25'Paste text '
+  +'from clipboard'#8'ShortCut'#3'V@'#7'OnClick'#7#18'MenuMemoPasteClick'#0#0#0
+  +#10'TPopupMenu'#16'PopupPlotPattern'#4'left'#3#200#0#3'top'#2'P'#0#9'TMenuIt'
+  +'em'#23'PopupPlotPatternNeutron'#7'Caption'#6#24'View Neutron Intensities'#7
+  +'OnClick'#7#27'MenuPlotPatternNeutronClick'#0#0#9'TMenuItem'#20'PopupPlotPat'
+  +'ternNucl'#7'Caption'#6#24'View Nuclear Intensities'#7'OnClick'#7#24'MenuPlo'
+  +'tPatternNuclClick'#0#0#9'TMenuItem'#20'PopupPlotPatternMagn'#7'Caption'#6#25
+  +'View Magnetic Intensities'#7'OnClick'#7#24'MenuPlotPatternMagnClick'#0#0#9
+  +'TMenuItem'#26'PopupPlotPatternStructFact'#7'Caption'#6#25'View As Structure'
+  +' Factors'#7'OnClick'#7#30'MenuPlotPatternStructFactClick'#0#0#9'TMenuItem'#2
+  +'N4'#7'Caption'#6#1'-'#0#0#9'TMenuItem'#20'PopupPlotPatternCopy'#7'Caption'#6
+  +#4'Copy'#10'GroupIndex'#2#1#4'Hint'#6#25'Copy picture to clipboard'#8'ShortC'
+  +'ut'#3'C@'#7'OnClick'#7#24'MenuPlotPatternCopyClick'#0#0#9'TMenuItem'#19'Pop'
+  +'upPlotPattenSave'#7'Caption'#6#23'Save Picture To File...'#10'GroupIndex'#2
+  +#1#4'Hint'#6#20'Save picture to file'#7'OnClick'#7#24'MenuPlotPatternSaveCli'
+  +'ck'#0#0#0#10'TImageList'#10'ImageList2'#4'left'#3#168#0#3'top'#3#128#0#6'Bi'
+  +'tmap'#10#145#141#0#0'li'#16#0#0#0#16#0#0#0#16#0#0#0#7#11#0#0'/* XPM */'#10
+  +'static char *graphic[] = {'#10'"17 17 133 2",'#10'".. c None",'#10'"., c #8'
+  +'F918D",'#10'".- c #BFC0BE",'#10'".* c #BFC1BE",'#10'".a c #BFC0BD",'#10'".b'
+  +' c #BEBFBE",'#10'".c c #BDBCAA",'#10'".d c #C2BD82",'#10'".e c #CFC879",'#10
+  +'".f c #C6BE73",'#10'".g c #9A9C98",'#10'".h c #FFFFFF",'#10'".i c #F1F1F1",'
+  +#10'".j c #F2F2F2",'#10'".k c #F3F3F3",'#10'".l c #F4F4F4",'#10'".m c #F4F4F'
+  +'5",'#10'".n c #F5F5F5",'#10'".o c #F5F5F6",'#10'".p c #F7F5E4",'#10'".q c #'
+  +'FFF59F",'#10'".r c #FEF49C",'#10'".s c #FCF8DE",'#10'".t c #F5F0C3",'#10'".'
+  +'u c #F7E96A",'#10'".v c #9B9D99",'#10'".w c #FAFAFA",'#10'".x c #DDDDDD",'
+  +#10'".y c #E1E1E1",'#10'".z c #E0E0E0",'#10'".A c #E1E0E0",'#10'".B c #E2E1E'
+  +'3",'#10'".C c #E2E3E2",'#10'".D c #E9E5C2",'#10'".E c #F4E77D",'#10'".F c #'
+  +'F5EEAF",'#10'".G c #F6F6FF",'#10'".H c #F4F2DE",'#10'".I c #F8EB70",'#10'".'
+  +'J c #FBFBFB",'#10'".K c #DFDFDF",'#10'".L c #E3E3E3",'#10'".M c #E2E2E1",'
+  +#10'".N c #E2E2E3",'#10'".O c #E5E5E5",'#10'".P c #E6E5E5",'#10'".Q c #E8E7D'
+  +'6",'#10'".R c #EFE8A2",'#10'".S c #F5E987",'#10'".T c #F8F0B0",'#10'".U c #'
+  +'ECE49C",'#10'".V c #F4E455",'#10'".W c #9B9D98",'#10'".X c #FCFCFD",'#10'".'
+  ,'Y c #E4E3E3",'#10'".Z c #E4E4E4",'#10'".0 c #E6E6E7",'#10'".1 c #E7E7E7",'
+  +#10'".2 c #E7E8E8",'#10'".3 c #E9E9E2",'#10'".4 c #ECE7C2",'#10'".5 c #FDF4A'
+  +'F",'#10'".6 c #C6C291",'#10'".7 c #9E9F9B",'#10'".8 c #EBECEC",'#10'".9 c #'
+  +'C6C7C6",'#10'".@ c #ECEBEC",'#10'".# c #E4E4E5",'#10'".; c #E6E6E6",'#10'".'
+  +': c #E7E7E8",'#10'".= c #E8E8E9",'#10'".+ c #E9E9EA",'#10'".% c #EAEAEB",'
+  +#10'".$ c #E9EAEB",'#10'".( c #FFFEFE",'#10'".) c #B4B7C0",'#10'".[ c #FAFAF'
+  +'B",'#10'".] c #EEEEEE",'#10'",. c #F0F0F0",'#10'",, c #E6E6E5",'#10'",- c #'
+  +'E9EAE9",'#10'",* c #EAEAEA",'#10'",a c #EBEBEB",'#10'",b c #FFFEFF",'#10'",'
+  +'c c #BEBFBC",'#10'",d c #FDFDFD",'#10'",e c #E8E8E8",'#10'",f c #E8E7E8",'
+  +#10'",g c #E8E8E7",'#10'",h c #E9E8E8",'#10'",i c #E8E9E9",'#10'",j c #EAEBE'
+  +'B",'#10'",k c #ECECEB",'#10'",l c #ECEDEC",'#10'",m c #E9E9E9",'#10'",n c #'
+  +'EAE9E9",'#10'",o c #EBEBEA",'#10'",p c #ECECEC",'#10'",q c #EDECEC",'#10'",'
+  +'r c #EDEDEE",'#10'",s c #EDEEEE",'#10'",t c #EEEDED",'#10'",u c #CACAC9",'
+  +#10'",v c #EAE9EA",'#10'",w c #EBEAEB",'#10'",x c #EBECEB",'#10'",y c #EDECE'
+  +'D",'#10'",z c #EEEEED",'#10'",A c #EFEFEF",'#10'",B c #9B9C98",'#10'",C c #'
+  +'EBE9E9",'#10'",D c #EDEEED",'#10'",E c #EDEDED",'#10'",F c #EEEEEF",'#10'",'
+  +'G c #F0F0F1",'#10'",H c #F2F2F1",'#10'",I c #BDBFBC",'#10'",J c #FDFCFD",'
+  +#10'",K c #EEEFEF",'#10'",L c #F0F1F1",'#10'",M c #F2F3F2",'#10'",N c #F3F2F'
+  +'3",'#10'",O c #9A9C97",'#10'",P c #F8F8F9",'#10'",Q c #FBFCFD",'#10'",R c #'
+  +'FEFEFE",'#10'",S c #8F908C",'#10'",T c #BEBFBD",'#10'",U c #C4C5C2",'#10'",'
+  +'V c #CBCCC9",'#10'",W c #C9CAC7",'#10'",X c #D0D1CE",'#10'",Y c #9C9D99",'
+  +#10'"..................................",'#10'".,.-.*.-.a.a.a.a.a.a.b.c.d.e.'
+  +'f....",'#10'".g.h.i.j.k.l.l.m.n.o.p.q.r.s.t.u..",'#10'".v.w.x.y.z.z.A.y.B.C'
+  +'.D.E.F.G.H.I..",'#10'".v.J.K.L.y.M.N.L.O.P.Q.R.S.T.U.V..",'#10'".W.X.L.O.L.'
+  +'Y.Z.O.0.1.2.3.4.5.6....",'#10'".7.8.9.@.Z.#.;.;.:.=.+.%.$.(.)....",'#10'".W'
+  +'.[.],..O,,.1.2.=,-,*,a,a,b,c....",'#10'".W,d.L,e,f,g,h,i.%,j,k,l.8.h,c...."'
+  +','#10'".W,d.;,m,e,h,n,o,p,q,r,s,t.h,c....",'#10'".7,k,u,.,m,v,w,x,y,z.],A,A'
+  +'.h,c....",'#10'",B,d.i.j,C,a,p,t,D,A,.,.,..h,c....",'#10'",B,d.;,*,p,E,D,F,'
+  +'A,G,H.j.j.h,I....",'#10'".W,J.;,*.8,r.],K,L.i,M.k,N.h,I....",'#10'",O.h,P.['
+  +',Q,d,R,b.h.h.h.h.h.h,I....",'#10'",S,T,U,V,W,W,W,W,W,W,W,W,W,X,Y....",'#10
+  +'".................................."}'#10#199#12#0#0'/* XPM */'#10'static c'
+  +'har *graphic[] = {'#10'"17 17 161 2",'#10'".. c None",'#10'"., c #ADB0AB",'
+  +#10'".- c #AFB2AD",'#10'".* c #AFB1AC",'#10'".a c #AFB1AD",'#10'".b c #A9ABA'
+  +'6",'#10'".c c #6D6F6B",'#10'".d c #E8EAE7",'#10'".e c #FFFFFF",'#10'".f c #'
+  +'DFE0DE",'#10'".g c #616260",'#10'".h c #9D9F9D",'#10'".i c #9B9D9B",'#10'".'
+  +'j c #979897",'#10'".k c #91938F",'#10'".l c #E9E9E7",'#10'".m c #E4E4E4",'
+  +#10'".n c #CACACA",'#10'".o c #CCCCCB",'#10'".p c #CCCCCC",'#10'".q c #D8D9D'
+  +'8",'#10'".r c #DDDEDB",'#10'".s c #656664",'#10'".t c #B3B4B3",'#10'".u c #'
+  +'919190",'#10'".v c #9A9B99",'#10'".w c #C2C4C0",'#10'".x c #FAF9F9",'#10'".'
+  +'y c #E6E6E5",'#10'".z c #E0E0DE",'#10'".A c #E2E2E1",'#10'".B c #E1E1DF",'
+  +#10'".C c #DFDFDE",'#10'".D c #DDDDDB",'#10'".E c #E7E7E5",'#10'".F c #CFD0C'
+  +'E",'#10'".G c #636464",'#10'".H c #B0B2B5",'#10'".I c #8A8A89",'#10'".J c #'
+  +'A3A6A0",'#10'".K c #EBEBEA",'#10'".L c #AEAFAC",'#10'".M c #B1B3B1",'#10'".'
+  +'N c #B2B3B1",'#10'".O c #AEAFAD",'#10'".P c #ADAEAC",'#10'".Q c #C3C4C2",'
+  +#10'".R c #EBEBEB",'#10'".S c #BABCB6",'#10'".T c #626461",'#10'".U c #B1B1B'
+  +'1",'#10'".V c #888A88",'#10'".W c #BBBDB8",'#10'".X c #E7E5DF",'#10'".Y c #'
+  +'C7C3BA",'#10'".Z c #C7C5BC",'#10'".0 c #C8C4BC",'#10'".1 c #C9C6BC",'#10'".'
+  +'2 c #C8C6BC",'#10'".3 c #E7E4DC",'#10'".4 c #C9C6BD",'#10'".5 c #A0A4A0",'
+  +#10'".6 c #5F615D",'#10'".7 c #9C9C9B",'#10'".8 c #9C9E99",'#10'".9 c #CDD0D'
+  +'0",'#10'".@ c #7A8CA1",'#10'".# c #55759A",'#10'".; c #567398",'#10'".: c #'
+  +'567497",'#10'".= c #567396",'#10'".+ c #577497",'#10'".% c #5E7796",'#10'".'
+  +'$ c #7490B2",'#10'".( c #5D7A9B",'#10'".) c #5075A2",'#10'".[ c #114E9E",'
+  +#10'".] c #888A86",'#10'",. c #C8C9C5",'#10'",, c #999DA0",'#10'",- c #96AFC'
+  +'D",'#10'",* c #8FAED4",'#10'",a c #90B0D5",'#10'",b c #90AFD5",'#10'",c c #'
+  +'92B1D7",'#10'",d c #91B0D6",'#10'",e c #95B2D6",'#10'",f c #8FADD2",'#10'",'
+  +'g c #93B1D6",'#10'",h c #A1BCDC",'#10'",i c #5F7C9F",'#10'",j c #7D7F7B",'
+  +#10'",k c #DDDDD9",'#10'",l c #6881A2",'#10'",m c #B2CAE5",'#10'",n c #90B4D'
+  +'9",'#10'",o c #93B5DA",'#10'",p c #93B6DA",'#10'",q c #93B6DB",'#10'",r c #'
+  +'91B5DA",'#10'",s c #A9C5E4",'#10'",t c #5679A5",'#10'",u c #767773",'#10'",'
+  +'v c #CDCDC6",'#10'",w c #738AA5",'#10'",x c #AAC4E1",'#10'",y c #85ACD5",'
+  +#10'",z c #89AED6",'#10'",A c #89AFD7",'#10'",B c #97B4D5",'#10'",C c #516D9'
+  +'0",'#10'",D c #82837F",'#10'",E c #A2A7A6",'#10'",F c #99A8B9",'#10'",G c #'
+  +'A1BEDE",'#10'",H c #86ACD5",'#10'",I c #89ADD6",'#10'",J c #87ADD6",'#10'",'
+  +'K c #90B3DA",'#10'",L c #93B1D5",'#10'",M c #73746E",'#10'",N c #7D8995",'
+  ,#10'",O c #A5BCD4",'#10'",P c #8FB3D8",'#10'",Q c #80A9D4",'#10'",R c #82A9D'
+  +'5",'#10'",S c #82A9D4",'#10'",T c #83AAD5",'#10'",U c #82AAD4",'#10'",V c #'
+  +'83A9D5",'#10'",W c #9CBCE0",'#10'",X c #7194BE",'#10'",Y c #6E6C67",'#10'",'
+  +'Z c #91A0AF",'#10'",0 c #9ABADD",'#10'",1 c #79A3D2",'#10'",2 c #79A4D1",'
+  +#10'",3 c #78A4D1",'#10'",4 c #7AA4D2",'#10'",5 c #7CA6D4",'#10'",6 c #89AED'
+  +'7",'#10'",7 c #59697B",'#10'",8 c #4C4A46",'#10'",9 c #9CADBF",'#10'",@ c #'
+  +'87B0DC",'#10'",# c #73A1D3",'#10'",; c #74A2D3",'#10'",: c #74A2D2",'#10'",'
+  +'= c #73A2D2",'#10'",+ c #72A1D2",'#10'",% c #8CB3DB",'#10'",$ c #80A4CA",'
+  +#10'",( c #241F18",'#10'",) c #567EAD",'#10'",[ c #588FD0",'#10'",] c #598EC'
+  +'C",'#10'"-. c #598DCB",'#10'"-, c #588DCC",'#10'"-- c #588DCB",'#10'"-* c #'
+  +'6898D2",'#10'"-a c #587293",'#10'"...........,.-.*.*.*.*.*.*.a.b....",'#10
+  +'".........c.d.e.e.e.e.e.e.e.e.f....",'#10'".g.h.i.j.k.l.m.n.o.o.o.p.n.q.r..'
+  +'..",'#10'".s.t.u.v.w.x.y.z.A.B.C.C.D.E.F....",'#10'".G.H.I.J.K.A.L.M.N.M.O.'
+  +'P.Q.R.S....",'#10'".T.U.V.W.X.Y.Z.0.0.0.1.2.3.4.5....",'#10'".6.7.8.9.@.#.;'
+  +'.:.=.=.+.%.$.(.).[..",'#10'"...],.,,,-,*,a,b,c,d,d,e,f,d,g,h,i",'#10'"..,j,'
+  +'k,l,m,n,o,o,p,p,p,q,p,p,r,s,t",'#10'"..,u,v,w,x,y,z,z,z,z,z,z,z,z,A,B,C",'
+  +#10'"..,D,E,F,G,H,I,I,I,I,z,z,I,J,K,L..",'#10'"..,M,N,O,P,Q,R,S,R,S,T,U,R,V,'
+  +'W,X..",'#10'"..,Y,Z,0,1,1,2,1,3,1,4,1,2,5,6,7..",'#10'"..,8,9,@,#,;,:,=,=,='
+  +',;,;,+,%,$....",'#10'"..,(,),[,],]-.-,-.-,,],]---*-a....",'#10'"...........'
+  +'.......................",'#10'".................................."}'#10#247
+  +#14#0#0'/* XPM */'#10'static char *graphic[] = {'#10'"17 17 196 2",'#10'".. '
+  +'c None",'#10'"., c #517E9A",'#10'".- c #49789D",'#10'".* c #4C7A9F",'#10'".'
+  +'a c #47769B",'#10'".b c #487592",'#10'".c c #5F7968",'#10'".d c #5787A7",'
+  +#10'".e c #548BB9",'#10'".f c #6395BD",'#10'".g c #6A9BC7",'#10'".h c #77AFD'
+  +'B",'#10'".i c #6DA5CF",'#10'".j c #4F7DA0",'#10'".k c #4F7174",'#10'".l c #'
+  +'678580",'#10'".m c #5E89A0",'#10'".n c #61837A",'#10'".o c #4E7376",'#10'".'
+  +'p c #4982AC",'#10'".q c #67A1D0",'#10'".r c #5F9CCA",'#10'".s c #467CA7",'
+  +#10'".t c #507373",'#10'".u c #5B7C83",'#10'".v c #43708B",'#10'".w c #548FB'
+  +'9",'#10'".x c #5A94BF",'#10'".y c #5E9AC9",'#10'".z c #557A81",'#10'".A c #'
+  +'6B7C67",'#10'".B c #92918C",'#10'".C c #9B9C9A",'#10'".D c #9A9C99",'#10'".'
+  +'E c #A4A39A",'#10'".F c #48708E",'#10'".G c #5893BF",'#10'".H c #5892BD",'
+  +#10'".I c #5891BD",'#10'".J c #5D889F",'#10'".K c #667E87",'#10'".L c #9F9F9'
+  +'B",'#10'".M c #9E9F9C",'#10'".N c #8E908C",'#10'".O c #6A7061",'#10'".P c #'
+  +'D9DAD9",'#10'".Q c #FFFFFF",'#10'".R c #FFFEFD",'#10'".S c #577F9E",'#10'".'
+  +'T c #5590BB",'#10'".U c #558FB9",'#10'".V c #5993BE",'#10'".W c #4E8EC1",'
+  +#10'".X c #829EB5",'#10'".Y c #F8F8F7",'#10'".Z c #DADBDA",'#10'".0 c #67696'
+  +'4",'#10'".1 c #797A76",'#10'".2 c #D9D9D8",'#10'".3 c #F8F6F4",'#10'".4 c #'
+  +'BDCBD5",'#10'".5 c #447092",'#10'".6 c #3E6E91",'#10'".7 c #5691BC",'#10'".'
+  +'8 c #538DB6",'#10'".9 c #5A96C3",'#10'".@ c #426F91",'#10'".# c #4B7798",'
+  +#10'".; c #D3D8DB",'#10'".: c #D7D7D6",'#10'".= c #777973",'#10'".+ c #999A9'
+  +'7",'#10'".% c #E5E5E6",'#10'".$ c #F2F0EF",'#10'".( c #BDC8CD",'#10'".) c #'
+  +'417AA3",'#10'".[ c #609FCF",'#10'".] c #5D97C2",'#10'",. c #4E87B0",'#10'",'
+  +', c #548EB8",'#10'",- c #5994BE",'#10'",* c #5696C5",'#10'",a c #497899",'
+  +#10'",b c #DEE0E1",'#10'",c c #EFEEEE",'#10'",d c #9A9B97",'#10'",e c #A6A7A'
+  +'5",'#10'",f c #F7F7F8",'#10'",g c #EAEAEB",'#10'",h c #F5F1EC",'#10'",i c #'
+  +'ACBAB9",'#10'",j c #4279A2",'#10'",k c #5690BC",'#10'",l c #4C85AD",'#10'",'
+  +'m c #4E86AF",'#10'",n c #4F8BB9",'#10'",o c #49799A",'#10'",p c #CBD0C9",'
+  +#10'",q c #F0EEEC",'#10'",r c #FCFCFC",'#10'",s c #ABADAA",'#10'",t c #B7B7B'
+  +'6",'#10'",u c #F3F3F3",'#10'",v c #F2F2F3",'#10'",w c #F3F1ED",'#10'",x c #'
+  +'AAB7B6",'#10'",y c #437BA5",'#10'",z c #5791BE",'#10'",A c #C6CCC5",'#10'",'
+  +'B c #FAF8F6",'#10'",C c #F4F3F4",'#10'",D c #F2F2F2",'#10'",E c #B8B9B7",'
+  +#10'",F c #787A76",'#10'",G c #D5D4D5",'#10'",H c #EBEBEB",'#10'",I c #E5E5E'
+  +'5",'#10'",J c #E9E9E9",'#10'",K c #F4F4F5",'#10'",L c #F7F6F3",'#10'",M c #'
+  +'AEBBB9",'#10'",N c #417AA4",'#10'",O c #4C7EA1",'#10'",P c #D1D6CE",'#10'",'
+  +'Q c #EAEAEA",'#10'",R c #E3E3E3",'#10'",S c #E5E5E4",'#10'",T c #CECDCE",'
+  +#10'",U c #777874",'#10'",V c #7F807C",'#10'",W c #F6F6F6",'#10'",X c #F4F4F'
+  +'4",'#10'",Y c #EEEEEE",'#10'",Z c #EFEFEF",'#10'",0 c #EEEFEF",'#10'",1 c #'
+  +'F6F4EF",'#10'",2 c #A9BBC2",'#10'",3 c #C7D0CF",'#10'",4 c #F3F2F1",'#10'",'
+  +'5 c #EDEDED",'#10'",6 c #F2F3F2",'#10'",7 c #F5F5F6",'#10'",8 c #7E807C",'
+  +#10'",9 c #878985",'#10'",@ c #EEEEED",'#10'",# c #DADADA",'#10'",; c #E0E0E'
+  +'0",'#10'",: c #DFDFDF",'#10'",= c #DEDEDE",'#10'",+ c #DCDDDD",'#10'",% c #'
+  +'E7E4E3",'#10'",$ c #E2E1E0",'#10'",( c #DCDCDC",'#10'",) c #DBDBDB",'#10'",'
+  +'[ c #D9D9D9",'#10'",] c #EDEDEE",'#10'"-. c #888985",'#10'"-, c #868883",'
+  +#10'"-- c #DDDDDD",'#10'"-* c #D3D3D3",'#10'"-a c #999999",'#10'"-b c #9D9D9'
+  ,'C",'#10'"-c c #ACACAC",'#10'"-d c #B3B3B3",'#10'"-e c #BBBBBB",'#10'"-f c #'
+  +'BFBFBF",'#10'"-g c #CDCDCD",'#10'"-h c #C4C4C4",'#10'"-i c #CBCBCB",'#10'"-'
+  +'j c #CCCCCC",'#10'"-k c #C5C5C5",'#10'"-l c #868884",'#10'"-m c #878884",'
+  +#10'"-n c #DFDEDF",'#10'"-o c #CFCFCF",'#10'"-p c #A2A2A2",'#10'"-q c #A3A3A'
+  +'3",'#10'"-r c #ADADAD",'#10'"-s c #AEAEAE",'#10'"-t c #C1C1C1",'#10'"-u c #'
+  +'C3C3C3",'#10'"-v c #858682",'#10'"-w c #E7E6E8",'#10'"-x c #E1E1E2",'#10'"-'
+  +'y c #E2E2E2",'#10'"-z c #E1E0E1",'#10'"-A c #DFDFE0",'#10'"-B c #DEDDDE",'
+  +#10'"-C c #E0DFE0",'#10'"-D c #DEDEDF",'#10'"-E c #E4E3E4",'#10'"-F c #E3E3E'
+  +'4",'#10'"-G c #60625E",'#10'"-H c #858783",'#10'"-I c #868783",'#10'"-J c #'
+  +'848682",'#10'".......,.-.*.a.b.c................",'#10'".....d.e.f.g.h.i.j.'
+  +'k..............",'#10'"...l.m.n...o.p.q.r.s.t............",'#10'"...u......'
+  +'...v.w.x.y.z............",'#10'"...A.B.C.D.E.F.G.H.I.J.K.L.M.N....",'#10'".'
+  +'..O.P.Q.R.Q.S.T.U.V.W.X.Q.Y.Z.0..",'#10'"...1.2.3.4.5.6.7.8.V.9.@.#.;.:.=..'
+  +'",'#10'"...+.%.$.(.).[.],.,,,-,*,a,b,c,d..",'#10'"..,e,f,g,h,i,j,k,l,m,n,o,'
+  +'p,q,r,s..",'#10'"..,t,u,u,v,w,x,y,z.T,o,A,B,C,D,E..",'#10'",F,G,H,I,J,K,L,M'
+  +',N,O,P.Y,Q,R,S,T,U",'#10'",V,W,X,Y,Z,Y,0,1,2,3,4,Y,Z,5,6,7,8",'#10'",9,@,#,'
+  +';,:,=,=,+,%,$,(,(,),(,[,]-.",'#10'"-,---*-a-b-c-d-e-f-g-h-i-j-k-i,[-l",'#10
+  +'"-m-n-o-p-q-r-s-e-t-g-u-i-j-h-j,#,9",'#10'"-v-w-x-y-z-A,=-B-C,R-D-y-y,:-E-F'
+  +'-v",'#10'"-G-v-l-l-l-l-l-l-l-H-l-I-H-l-l-J.."}'#10#150#8#0#0'/* XPM */'#10
+  +'static char *graphic[] = {'#10'"17 17 94 2",'#10'".. c #A3A5A1",'#10'"., c '
+  +'None",'#10'".- c #EEEEED",'#10'".* c #FFFFFF",'#10'".a c #E9E9E8",'#10'".b '
+  +'c #F0F0EF",'#10'".c c #F2F2F1",'#10'".d c #F2F2F0",'#10'".e c #EAEAE9",'#10
+  +'".f c #CCCCCB",'#10'".g c #CFCFCE",'#10'".h c #B0B0AE",'#10'".i c #9A9C98",'
+  +#10'".j c #9EA09C",'#10'".k c #9EA09D",'#10'".l c #9FA19C",'#10'".m c #989A9'
+  +'5",'#10'".n c #989A96",'#10'".o c #999A96",'#10'".p c #8F918C",'#10'".q c #'
+  +'E1E1E0",'#10'".r c #E3E3E2",'#10'".s c #9FA09C",'#10'".t c #A3A5A2",'#10'".'
+  +'u c #ECECEB",'#10'".v c #DADAD9",'#10'".w c #DCDCDB",'#10'".x c #9FA19D",'
+  +#10'".y c #EFEFEE",'#10'".z c #D2D2D1",'#10'".A c #D4D4D3",'#10'".B c #9B9C9'
+  +'8",'#10'".C c #CECECD",'#10'".D c #D5D5D5",'#10'".E c #E8E9E8",'#10'".F c #'
+  +'E2E2E2",'#10'".G c #A0A19E",'#10'".H c #E1E1E1",'#10'".I c #E9EAE9",'#10'".'
+  +'J c #E8E8E7",'#10'".K c #CECECE",'#10'".L c #D1D1D0",'#10'".M c #9C9F9A",'
+  +#10'".N c #DBDBDA",'#10'".O c #D9D9D9",'#10'".P c #D4D4D4",'#10'".Q c #E7E8E'
+  +'7",'#10'".R c #EEEEEE",'#10'".S c #EFEFEF",'#10'".T c #9A9B98",'#10'".U c #'
+  +'D3D3D2",'#10'".V c #D0D0D0",'#10'".W c #EDEDED",'#10'".X c #F0F0F0",'#10'".'
+  +'Y c #A3A4A0",'#10'".Z c #EBEBEB",'#10'".0 c #ECECEC",'#10'".1 c #EAEAEA",'
+  +#10'".2 c #A2A39F",'#10'".3 c #E2E2E1",'#10'".4 c #EDEDEC",'#10'".5 c #CFCFD'
+  +'0",'#10'".6 c #DFDFDF",'#10'".7 c #E5E5E5",'#10'".8 c #A2A3A0",'#10'".9 c #'
+  +'F8F8F8",'#10'".@ c #F7F6F7",'#10'".# c #FAFAFA",'#10'".; c #A8A9A6",'#10'".'
+  +': c #F1F1F0",'#10'".= c #F6F6F6",'#10'".+ c #F7F7F7",'#10'".% c #FBFBFB",'
+  +#10'".$ c #959792",'#10'".( c #848781",'#10'".) c #B0B1AE",'#10'".[ c #93949'
+  +'0",'#10'".] c #9A9B97",'#10'",. c #90928E",'#10'",, c #878984",'#10'",- c #'
+  +'81837D",'#10'",* c #FBFAFB",'#10'",a c #A5A8A3",'#10'",b c #C6C7C6",'#10'",'
+  +'c c #C8C8C8",'#10'",d c #979995",'#10'",e c #FCFCFC",'#10'",f c #AAADAA",'
+  +#10'",g c #B9B9B8",'#10'",h c #91928F",'#10'",i c #9C9E9A",'#10'",j c #9D9F9'
+  +'B",'#10'",k c #8C908B",'#10'",l c #8D8F8B",'#10'".........................,'
+  +'.,.,.,.,",'#10'"...-.*.*.*.*.*.*.*.*.*...,.,.,.,.,",'#10'"...a.b.c.d.d.d.d.'
+  +'d.d.*...,.,.,.,.,",'#10'"...e.a.f.g.h.i.j.j.k.l.m.n.n.o.m.p",'#10'"...a.-.q'
+  +'.r.s.-.*.*.*.*.*.*.*.*.*.t",'#10'"...e.u.v.w.x.a.b.c.d.d.d.d.c.y.*..",'#10
+  +'"...e.e.z.A.B.e.a.f.g.g.g.g.C.D.*..",'#10'"...E.-.F.r.G.a.-.q.r.r.r.H.q.r.*'
+  +'..",'#10'"...I.J.K.L.M.e.u.v.w.N.N.O.P.N.*..",'#10'"...Q.R.S.-.T.e.e.z.A.U.'
+  +'U.V.W.X.*.Y",'#10'"...Z.0.Z.1.2.E.-.F.r.F.3.H.Z.W.*.Y",'#10'"...a.1.e.4.Y.I'
+  +'.J.K.L.5.K.D.6.7.*.8",'#10'"...u.9.@.#.;.Q.R.S.-.-.:.=.+.%.a.$",'#10'".....'
+  +'......(.Z.0.Z.1.W.9.).[.],.,,",'#10'".,.,.,.,.,,-.a.1.e.4.S,*,a,b,c,d.,",'
+  +#10'".,.,.,.,.,,-.u.9.@.#,e.*,f,g,h.,.,",'#10'".,.,.,.,.,.,.B.j,i,i,j.x,k,l.'
+  +',.,.,"}'#10#7#12#0#0'/* XPM */'#10'static char *graphic[] = {'#10'"17 17 14'
+  +'9 2",'#10'".. c None",'#10'"., c #5A5B5B",'#10'".- c #666664",'#10'".* c #6'
+  +'66663",'#10'".a c #5F4E31",'#10'".b c #676764",'#10'".c c #797972",'#10'".d'
+  +' c #959587",'#10'".e c #949486",'#10'".f c #787972",'#10'".g c #676765",'#10
+  +'".h c #604F32",'#10'".i c #7F4D08",'#10'".j c #AB7321",'#10'".k c #7F663B",'
+  +#10'".l c #5E584E",'#10'".m c #898982",'#10'".n c #B8B8AC",'#10'".o c #B4B4A'
+  +'8",'#10'".p c #B4B4A9",'#10'".q c #B4B4AA",'#10'".r c #B9B9AD",'#10'".s c #'
+  +'8B8B85",'#10'".t c #5E594F",'#10'".u c #80673B",'#10'".v c #A77020",'#10'".'
+  +'w c #7B4D06",'#10'".x c #8C5906",'#10'".y c #A27B38",'#10'".z c #B7BABD",'
+  +#10'".A c #E6E7E9",'#10'".B c #848482",'#10'".C c #727271",'#10'".D c #74747'
+  ,'3",'#10'".E c #E5E6E8",'#10'".F c #B6BABD",'#10'".G c #A07A38",'#10'".H c #'
+  +'8B5806",'#10'".I c #8D5906",'#10'".J c #967236",'#10'".K c #BEC5CB",'#10'".'
+  +'L c #FFFFFF",'#10'".M c #FBFBFA",'#10'".N c #BDC4CB",'#10'".O c #957136",'
+  +#10'".P c #8C5806",'#10'".Q c #C2C2C1",'#10'".R c #BDBDBC",'#10'".S c #BEBEB'
+  +'D",'#10'".T c #C1C1C1",'#10'".U c #BEC4CB",'#10'".V c #8C5706",'#10'".W c #'
+  +'DEDEDD",'#10'".X c #DDDDDC",'#10'".Y c #DCDCDB",'#10'".Z c #DBDBDA",'#10'".'
+  +'0 c #DBDBD9",'#10'".1 c #FCFCFC",'#10'".2 c #967136",'#10'".3 c #BCBCBB",'
+  +#10'".4 c #B7B7B6",'#10'".5 c #B3B3B2",'#10'".6 c #B8B8B6",'#10'".7 c #FAFAF'
+  +'8",'#10'".8 c #BFC5CC",'#10'".9 c #CECECE",'#10'".@ c #CACAC9",'#10'".# c #'
+  +'C5C5C3",'#10'".; c #E4E4E1",'#10'".: c #F4F4F1",'#10'".= c #E9E9E7",'#10'".'
+  +'+ c #EAEAE9",'#10'".% c #C0C6CD",'#10'".$ c #D8D8D7",'#10'".( c #D4D4D2",'
+  +#10'".) c #D0D0CE",'#10'".[ c #E1E1DE",'#10'".] c #DEDEDB",'#10'",. c #D6D7D'
+  +'4",'#10'",, c #C2C8CF",'#10'",- c #8B5706",'#10'",* c #FDFCFC",'#10'",a c #'
+  +'ECECEA",'#10'",b c #EBEBE8",'#10'",c c #ECECE9",'#10'",d c #D3D3D0",'#10'",'
+  +'e c #C8C8C6",'#10'",f c #C1C1BE",'#10'",g c #DCDCDA",'#10'",h c #C1C7CE",'
+  +#10'",i c #FAFAFA",'#10'",j c #E7E7E5",'#10'",k c #E7E7E4",'#10'",l c #ECECE'
+  +'B",'#10'",m c #BBBBB8",'#10'",n c #EBEBEA",'#10'",o c #B0B8C1",'#10'",p c #'
+  +'92713A",'#10'",q c #8C5805",'#10'",r c #BEC5CC",'#10'",s c #F7F7F6",'#10'",'
+  +'t c #E3E3E1",'#10'",u c #E2E2DF",'#10'",v c #D7D7D4",'#10'",w c #C9C9C5",'
+  +#10'",x c #AAAAA5",'#10'",y c #EDEDEC",'#10'",z c #EEEEED",'#10'",A c #BFC3C'
+  +'7",'#10'",B c #827B6B",'#10'",C c #BA842F",'#10'",D c #875609",'#10'",E c #'
+  +'9D7636",'#10'",F c #AEB3B7",'#10'",G c #F4F7FB",'#10'",H c #F0F2F5",'#10'",'
+  +'I c #EFF1F4",'#10'",J c #EDEFF2",'#10'",K c #E9EBEE",'#10'",L c #E7EAEC",'
+  +#10'",M c #BABEC2",'#10'",N c #7B715A",'#10'",O c #B57E28",'#10'",P c #D08D2'
+  +'8",'#10'",Q c #84550B",'#10'",R c #8A590B",'#10'",S c #C3892D",'#10'",T c #'
+  +'927645",'#10'",U c #827153",'#10'",V c #827051",'#10'",W c #817151",'#10'",'
+  +'X c #827151",'#10'",Y c #817152",'#10'",Z c #8A744F",'#10'",0 c #C98B29",'
+  +#10'",1 c #CD8D28",'#10'",2 c #D0902C",'#10'",3 c #84540A",'#10'",4 c #794C0'
+  +'5",'#10'",5 c #94610F",'#10'",6 c #9B6105",'#10'",7 c #9D6104",'#10'",8 c #'
+  +'9C6104",'#10'",9 c #9B6104",'#10'",@ c #945E09",'#10'",# c #945F0A",'#10'",'
+  +'; c #915C09",'#10'",: c #734905",'#10'",= c #5F5945",'#10'".............,.-'
+  +'.*.-.,............",'#10'".........a.b.c.d.e.d.f.g.h........",'#10'"...i.j.'
+  +'k.l.m.n.o.p.q.r.s.t.u.v.w..",'#10'"...x.y.z.A.B.C.D.D.D.C.B.E.F.G.H..",'#10
+  +'"...I.J.K.L.M.M.M.M.M.M.M.L.N.O.P..",'#10'"...I.J.K.L.Q.R.S.S.S.R.T.L.U.O.V'
+  +'..",'#10'"...I.J.K.L.W.X.X.X.Y.Z.0.1.K.O.V..",'#10'"...I.2.U.L.Q.3.R.R.4.5.'
+  +'6.7.8.O.V..",'#10'"...I.2.U.L.9.@.@.#.;.:.=.+.%.O.V..",'#10'"...I.O.U.L.$.('
+  +'.(.).[.=.],.,,.O,-..",'#10'"...I.O.U,*,a,a,b,c,d,e,f,g,h.O,-..",'#10'"...I.'
+  +'O.K,i,j,j,k,l,m,n.L.L,o,p,q..",'#10'"...I.O,r,s,t,u,v,w,x,y,z,A,B,C,D..",'
+  +#10'"...H,E,F,G,H,I,J,K,K,L,M,N,O,P,Q..",'#10'"..,R,S,T,U,V,V,W,X,X,Y,Z,0,1,'
+  +'2,3..",'#10'"..,4,5,6,7,7,7,8,8,8,8,9,@,#,;,:..",'#10'"..............,=,=,='
+  +',=............"}'#10#135#11#0#0'/* XPM */'#10'static char *graphic[] = {'#10
+  +'"17 17 141 2",'#10'".. c None",'#10'"., c #3D3E3D",'#10'".- c #343533",'#10
+  +'".* c #A1A09B",'#10'".a c #A3A099",'#10'".b c #9E9D97",'#10'".c c #9F9D96",'
+  +#10'".d c #B0AEA7",'#10'".e c #3B3C3A",'#10'".f c #666864",'#10'".g c #BABAB'
+  +'6",'#10'".h c #ADBCCF",'#10'".i c #A3BFDD",'#10'".j c #A9C4E2",'#10'".k c #'
+  +'A5C0DE",'#10'".l c #A8BAD0",'#10'".m c #C3C3C1",'#10'".n c #6F706B",'#10'".'
+  +'o c #2D2E2C",'#10'".p c #BCBBB7",'#10'".q c #A1B7D0",'#10'".r c #8EB1D6",'
+  +#10'".s c #6B93C4",'#10'".t c #3065A7",'#10'".u c #5381B9",'#10'".v c #8BAFD'
+  +'6",'#10'".w c #9AB4D0",'#10'".x c #C1C2BF",'#10'".y c #444643",'#10'".z c #'
+  +'969691",'#10'".A c #A7B4C4",'#10'".B c #88AED6",'#10'".C c #F7FCFF",'#10'".'
+  +'D c #7595C1",'#10'".E c #86A8CE",'#10'".F c #5E86B7",'#10'".G c #CCDFF1",'
+  +#10'".H c #75A1D0",'#10'".I c #ADBBCB",'#10'".J c #9D9D98",'#10'".K c #B1AFA'
+  +'7",'#10'".L c #8FAED2",'#10'".M c #85A7CF",'#10'".N c #AAC0DC",'#10'".O c #'
+  +'4E77B0",'#10'".P c #92B0D3",'#10'".Q c #4772AC",'#10'".R c #87A8CE",'#10'".'
+  +'S c #5A89C1",'#10'".T c #8EAFD4",'#10'".U c #C3C1BB",'#10'".V c #B1AFA8",'
+  +#10'".W c #97B8DC",'#10'".X c #3366A5",'#10'".Y c #7E9FC8",'#10'".Z c #81A2C'
+  +'A",'#10'".0 c #ADC5E1",'#10'".1 c #82A2CB",'#10'".2 c #7E9FC9",'#10'".3 c #'
+  +'3F6EA9",'#10'".4 c #82A9D5",'#10'".5 c #C9C7C1",'#10'".6 c #B3AFA7",'#10'".'
+  +'7 c #9CBBDD",'#10'".8 c #3769A8",'#10'".9 c #658CBC",'#10'".@ c #5F87B9",'
+  +#10'".# c #A5BEDD",'#10'".; c #6189BA",'#10'".: c #648BBC",'#10'".= c #3B6BA'
+  +'8",'#10'".+ c #82A8D2",'#10'".% c #C6C2BC",'#10'".$ c #A1B8D0",'#10'".( c #'
+  +'6391C5",'#10'".) c #6C99CD",'#10'".[ c #3A6EAD",'#10'".] c #99B5D6",'#10'",'
+  +'. c #3B6CAA",'#10'",, c #6F9BCD",'#10'",- c #5E8ABD",'#10'",* c #96B1CD",'
+  +#10'",a c #B7B6B1",'#10'",b c #6B6D69",'#10'",c c #BBBEBF",'#10'",d c #8EB4D'
+  ,'B",'#10'",e c #6A99CC",'#10'",f c #3E6FAC",'#10'",g c #7194C3",'#10'",h c #'
+  +'6895C6",'#10'",i c #84ADD8",'#10'",j c #C3C8CD",'#10'",k c #757672",'#10'",'
+  +'l c #333331",'#10'",m c #303130",'#10'",n c #90908C",'#10'",o c #B1B9C0",'
+  +#10'",p c #9FBDDE",'#10'",q c #5887BB",'#10'",r c #3B71B0",'#10'",s c #97B7D'
+  +'A",'#10'",t c #A5B0B9",'#10'",u c #DAD9D8",'#10'",v c #99999A",'#10'",w c #'
+  +'686966",'#10'",x c #282927",'#10'",y c #6A6B67",'#10'",z c #81817B",'#10'",'
+  +'A c #A0A2A1",'#10'",B c #A8B2BD",'#10'",C c #C8D5E1",'#10'",D c #ACB7C2",'
+  +#10'",E c #929697",'#10'",F c #676662",'#10'",G c #9B9C99",'#10'",H c #BFBFB'
+  +'F",'#10'",I c #8C8C8C",'#10'",J c #6A6C67",'#10'",K c #292A28",'#10'",L c #'
+  +'858681",'#10'",M c #7B7A74",'#10'",N c #7A7972",'#10'",O c #7A7973",'#10'",'
+  +'P c #878881",'#10'",Q c #5A5B5B",'#10'",R c #A0A19F",'#10'",S c #B6B6B6",'
+  +#10'",T c #919191",'#10'",U c #20211F",'#10'",V c #545554",'#10'",W c #A9A9A'
+  +'6",'#10'",X c #BBBBBB",'#10'",Y c #A5A4A4",'#10'",Z c #696C68",'#10'",0 c #'
+  +'474746",'#10'",1 c #A5A6A5",'#10'",2 c #EFEFEE",'#10'",3 c #A9AAA8",'#10'",'
+  +'4 c #40413E",'#10'",5 c #9FA09E",'#10'",6 c #868685",'#10'".............,..'
+  +'..................",'#10'".......-.*.a.b.c.d.e..............",'#10'".....f.'
+  +'g.h.i.j.k.l.m.n............",'#10'"...o.p.q.r.s.t.u.v.w.x.y..........",'#10
+  +'"...z.A.B.C.D.E.F.G.H.I.J..........",'#10'"...K.L.M.N.O.P.Q.R.S.T.U........'
+  +'..",'#10'"...V.W.X.Y.Z.0.1.2.3.4.5..........",'#10'"...6.7.8.9.@.#.;.:.=.+.'
+  +'%..........",'#10'"...V.$.(.).[.],.,,,-,*,a..........",'#10'"..,b,c,d,e,f,g'
+  +'.=,h,i,j,k,l........",'#10'"..,m,n,o,p,q,r.u,s,t,u,v,w,x......",'#10'"....,'
+  +'y,z,A,B,C,D,E,F,G,H,I,J,K....",'#10'"........,L,M,N,O,P..,Q,R,S,T.f,U..",'
+  +#10'"......................,V,W,X,Y,Z..",'#10'"........................,0,1,'
+  +'2,3..",'#10'"..........................,4,5,6..",'#10'"....................'
+  +'.............."}'#10#183#11#0#0'/* XPM */'#10'static char *graphic[] = {'#10
+  +'"17 17 144 2",'#10'".. c None",'#10'"., c #3E3E3D",'#10'".- c #2D2E2C",'#10
+  +'".* c #A9A8A2",'#10'".a c #A5A29B",'#10'".b c #9E9D96",'#10'".c c #A3A19A",'
+  +#10'".d c #AFAEA7",'#10'".e c #3D3D3B",'#10'".f c #6E6F6C",'#10'".g c #BBBBB'
+  +'8",'#10'".h c #AEBDCF",'#10'".i c #9AB8D9",'#10'".j c #9BB9DA",'#10'".k c #'
+  +'9CB9DA",'#10'".l c #A9BBD0",'#10'".m c #C3C4C2",'#10'".n c #787A74",'#10'".'
+  +'o c #2D2D2B",'#10'".p c #BCBBB7",'#10'".q c #A1B7D1",'#10'".r c #81A7D1",'
+  +#10'".s c #BFD4EA",'#10'".t c #C4D6EB",'#10'".u c #B3CBE4",'#10'".v c #7EA7C'
+  +'F",'#10'".w c #9AB3D0",'#10'".x c #C2C2BF",'#10'".y c #454643",'#10'".z c #'
+  +'979691",'#10'".A c #A6B3C3",'#10'".B c #89AED6",'#10'".C c #E5EDF7",'#10'".'
+  +'D c #F8FAFD",'#10'".E c #F2F6FB",'#10'".F c #E8F0F8",'#10'".G c #BBD1E8",'
+  +#10'".H c #74A1D0",'#10'".I c #ADBBCB",'#10'".J c #9E9E98",'#10'".K c #B0AEA'
+  +'6",'#10'".L c #8FAED2",'#10'".M c #85A6CE",'#10'".N c #A0B7D7",'#10'".O c #'
+  +'A3BBD7",'#10'".P c #A3BAD7",'#10'".Q c #A2B9D5",'#10'".R c #7CA0C9",'#10'".'
+  +'S c #5A89C0",'#10'".T c #8EAFD3",'#10'".U c #C3C0BB",'#10'".V c #B1AFA8",'
+  +#10'".W c #97B8DC",'#10'".X c #3365A6",'#10'".Y c #7FA0CA",'#10'".Z c #789DC'
+  +'6",'#10'".0 c #7498C5",'#10'".1 c #779AC5",'#10'".2 c #7FA1CA",'#10'".3 c #'
+  +'3F6DA9",'#10'".4 c #82A9D5",'#10'".5 c #C9C7C1",'#10'".6 c #B3B0A8",'#10'".'
+  +'7 c #9CBBDD",'#10'".8 c #3668A8",'#10'".9 c #668CBC",'#10'".@ c #628ABB",'
+  +#10'".# c #5F88BA",'#10'".; c #6189BA",'#10'".: c #638ABB",'#10'".= c #3C6BA'
+  +'8",'#10'".+ c #82A8D3",'#10'".% c #C5C2BD",'#10'".$ c #A1B8D1",'#10'".( c #'
+  +'6491C5",'#10'".) c #6694C9",'#10'".[ c #6696C9",'#10'".] c #6894C9",'#10'",'
+  +'. c #6896C9",'#10'",, c #6B97CA",'#10'",- c #5E8ABD",'#10'",* c #96B0CD",'
+  +#10'",a c #B7B6B1",'#10'",b c #6C6D69",'#10'",c c #BCBFBF",'#10'",d c #8DB4D'
+  +'B",'#10'",e c #6594C7",'#10'",f c #6D99CB",'#10'",g c #739ECE",'#10'",h c #'
+  +'6D9AC9",'#10'",i c #628FC2",'#10'",j c #84ADD9",'#10'",k c #C4C9CE",'#10'",'
+  +'l c #757672",'#10'",m c #333331",'#10'",n c #313230",'#10'",o c #90918C",'
+  +#10'",p c #B0B8C0",'#10'",q c #9BBADB",'#10'",r c #6B96C7",'#10'",s c #6799C'
+  +'C",'#10'",t c #6995C6",'#10'",u c #93B4D9",'#10'",v c #A5B0B9",'#10'",w c #'
+  +'DAD9D9",'#10'",x c #9A999A",'#10'",y c #686B66",'#10'",z c #282927",'#10'",'
+  +'A c #696B66",'#10'",B c #80807A",'#10'",C c #A0A2A1",'#10'",D c #A4AFBA",'
+  +#10'",E c #C3D0DF",'#10'",F c #A8B4C0",'#10'",G c #929797",'#10'",H c #67666'
+  +'2",'#10'",I c #9B9C9A",'#10'",J c #C0BEBF",'#10'",K c #8C8D8C",'#10'",L c #'
+  +'696C67",'#10'",M c #292A28",'#10'",N c #868682",'#10'",O c #7C7A75",'#10'",'
+  +'P c #7A7973",'#10'",Q c #797872",'#10'",R c #878982",'#10'",S c #5A5B5A",'
+  +#10'",T c #A0A1A0",'#10'",U c #B6B6B7",'#10'",V c #929291",'#10'",W c #66686'
+  +'4",'#10'",X c #20211F",'#10'",Y c #545655",'#10'",Z c #A9A9A6",'#10'",0 c #'
+  +'BBBABB",'#10'",1 c #A6A5A4",'#10'",2 c #6B6D69",'#10'",3 c #474746",'#10'",'
+  +'4 c #A5A6A4",'#10'",5 c #EFEFEE",'#10'",6 c #A8AAA8",'#10'",7 c #3D3E3C",'
+  +#10'",8 c #9E9F9E",'#10'",9 c #868685",'#10'".............,.................'
+  ,'...",'#10'".......-.*.a.b.c.d.e..............",'#10'".....f.g.h.i.j.k.l.m.n'
+  +'............",'#10'"...o.p.q.r.s.t.u.v.w.x.y..........",'#10'"...z.A.B.C.D.'
+  +'E.F.G.H.I.J..........",'#10'"...K.L.M.N.O.P.Q.R.S.T.U..........",'#10'"...V'
+  +'.W.X.Y.Z.0.1.2.3.4.5..........",'#10'"...6.7.8.9.@.#.;.:.=.+.%..........",'
+  +#10'"...V.$.(.).[.],.,,,-,*,a..........",'#10'"..,b,c,d,e,f,g,h,i,j,k,l,m...'
+  +'.....",'#10'"..,n,o,p,q,r,s,t,u,v,w,x,y,z......",'#10'"....,A,B,C,D,E,F,G,H'
+  +',I,J,K,L,M....",'#10'"........,N,O,P,Q,R..,S,T,U,V,W,X..",'#10'"...........'
+  +'...........,Y,Z,0,1,2..",'#10'"........................,3,4,5,6..",'#10'"..'
+  +'........................,7,8,9..",'#10'".................................."'
+  +'}'#10#253#1#0#0'/* XPM */'#10'static char *graphic[] = {'#10'"17 17 7 1",'
+  +#10'". c None",'#10'", c #FF0000",'#10'"- c #DD0011",'#10'"* c #000088",'#10
+  +'"a c #000080",'#10'"b c #00007F",'#10'"c c #00008B",'#10'"...,,,,...,,,,...'
+  +'",'#10'"......,,.,,......",'#10'".......,,,.......",'#10'".......,,,.......'
+  +'",'#10'"......,,.,,......",'#10'".....,,...,,.....",'#10'"....,,-.*.,,,....'
+  +'",'#10'"........a........",'#10'".......bac.......",'#10'"..aaaaaaaaaaaaa..'
+  +'",'#10'".aaaaaaaaaaaaaaa.",'#10'"aaa.....a.....aaa",'#10'"aa......a......aa'
+  +'",'#10'"aa.............aa",'#10'"aaa...........aaa",'#10'".aaaaaaaaaaaaaaa.'
+  +'",'#10'"..aaaaaaaaaaaaa.."}'#10#253#1#0#0'/* XPM */'#10'static char *graphi'
+  +'c[] = {'#10'"17 17 7 1",'#10'". c None",'#10'", c #0000FF",'#10'"- c #0000F'
+  +'6",'#10'"* c #000078",'#10'"a c #000080",'#10'"b c #000079",'#10'"c c #0000'
+  +'75",'#10'".....,,...,,.....",'#10'".....,,...,,.....",'#10'"......,,.,,....'
+  +'..",'#10'".......,,,.......",'#10'".......,,........",'#10'"......,-.......'
+  +'..",'#10'".....,,.*........",'#10'"........a........",'#10'"...b...caa.aaa.'
+  +'..",'#10'"..aaaaaaaaaaaaa..",'#10'".aaaaaaaaaaaaaaa.",'#10'"aaa.....a.....a'
+  +'aa",'#10'"aa......a......aa",'#10'"aa.............aa",'#10'"aaa...........a'
+  +'aa",'#10'".aaaaaaaaaaaaaaa.",'#10'"..aaaaaaaaaaaaa.."}'#10'I'#2#0#0'/* XPM '
+  +'*/'#10'static char *graphic[] = {'#10'"17 17 12 1",'#10'". c None",'#10'", '
+  +'c #008000",'#10'"- c #007E00",'#10'"* c #008200",'#10'"a c #008E00",'#10'"b'
+  +' c #002E52",'#10'"c c #00008A",'#10'"d c #00007F",'#10'"e c #000086",'#10'"'
+  +'f c #00008D",'#10'"g c #00008B",'#10'"h c #000080",'#10'".....,,,,,,,....."'
+  +','#10'"....,,...,,......",'#10'".......,,,.......",'#10'"......,,...,....."'
+  +','#10'".....,,,,,,,.....",'#10'".....-,*a*,-.....",'#10'"........b........"'
+  +','#10'"........c........",'#10'"...def.ghg.fed...",'#10'"..hhhhhhhhhhhhh.."'
+  +','#10'".hhhhhhhhhhhhhhh.",'#10'"hhh.....h.....hhh",'#10'"hh......h......hh"'
+  +','#10'"hh.............hh",'#10'"hhh...........hhh",'#10'".hhhhhhhhhhhhhhh."'
+  +','#10'"..hhhhhhhhhhhhh.."}'#10'V'#8#0#0'/* XPM */'#10'static char *graphic['
+  +'] = {'#10'"17 17 90 2",'#10'".. c None",'#10'"., c #C1A10A",'#10'".- c #C3A'
+  +'614",'#10'".* c #D4B210",'#10'".a c #C1A208",'#10'".b c #FAE326",'#10'".c c'
+  +' #E1C61D",'#10'".d c #C3A307",'#10'".e c #F7DE1D",'#10'".f c #FEED4F",'#10
+  +'".g c #E1C623",'#10'".h c #C6A200",'#10'".i c #C2A000",'#10'".j c #B89800",'
+  +#10'".k c #C5A606",'#10'".l c #F6DE28",'#10'".m c #FAE429",'#10'".n c #F8E85'
+  +'9",'#10'".o c #FBE83C",'#10'".p c #FDE831",'#10'".q c #F7E130",'#10'".r c #'
+  +'E5C907",'#10'".s c #D3B203",'#10'".t c #CEAF09",'#10'".u c #F8E22E",'#10'".'
+  +'v c #F4E24B",'#10'".w c #F7E75E",'#10'".x c #F8E758",'#10'".y c #FAEA60",'
+  +#10'".z c #F8E75E",'#10'".A c #F2E14B",'#10'".B c #E9D30B",'#10'".C c #F0DA1'
+  +'6",'#10'".D c #DFBF00",'#10'".E c #BA9E0E",'#10'".F c #EACE18",'#10'".G c #'
+  +'F9E644",'#10'".H c #F3E148",'#10'".I c #F2E048",'#10'".J c #E4CF23",'#10'".'
+  +'K c #DCC70F",'#10'".L c #DBC60D",'#10'".M c #D5BF06",'#10'".N c #D9C304",'
+  +#10'".O c #EBD615",'#10'".P c #C2A505",'#10'".Q c #B3980D",'#10'".R c #E6C91'
+  +'7",'#10'".S c #EAD41C",'#10'".T c #DFC908",'#10'".U c #F6DF2D",'#10'".V c #'
+  +'F9DF30",'#10'".W c #F7DC27",'#10'".X c #DCC617",'#10'".Y c #DFC70D",'#10'".'
+  +'Z c #E2CD11",'#10'".0 c #CBB525",'#10'".1 c #BE9C01",'#10'".2 c #C2A818",'
+  +#10'".3 c #E4C611",'#10'".4 c #F9E41E",'#10'".5 c #E5C511",'#10'".6 c #72590'
+  +'0",'#10'".7 c #BDA616",'#10'".8 c #D1BA1F",'#10'".9 c #E0CB18",'#10'".@ c #'
+  +'D4BE17",'#10'".# c #BB9D0A",'#10'".; c #AB930D",'#10'".: c #E9CC20",'#10'".'
+  +'= c #F4D523",'#10'".+ c #BFA717",'#10'".% c #DAC521",'#10'".$ c #DFCA14",'
+  +#10'".( c #9B8106",'#10'".) c #E4BC03",'#10'".[ c #EFD726",'#10'".] c #E2CE1'
+  +'A",'#10'",. c #8E7807",'#10'",, c #F2DA2E",'#10'",- c #D7C21F",'#10'",* c #'
+  +'8B7505",'#10'",a c #927E0E",'#10'",b c #EBDA3B",'#10'",c c #BFA810",'#10'",'
+  +'d c #E8D117",'#10'",e c #B9A70B",'#10'",f c #786702",'#10'",g c #CAB40F",'
+  +#10'",h c #9F8E06",'#10'".............,....................",'#10'".........'
+  +'..-.*....................",'#10'".........a.b.c....................",'#10'"'
+  +'.......d.e.f.g.h.i.j..............",'#10'".....k.l.m.n.o.p.q.r.s...........'
+  +'.",'#10'"...t.u.v.w.x.y.z.A.B.C.D..........",'#10'"...E.F.G.H.I.J.K.L.M.N.O'
+  ,'.P........",'#10'".....Q.R.S.T.U.V.W.X.Y.Z.0.1......",'#10'".......2.3.4.5.'
+  +'6...7.8.9.@.#......",'#10'".........;.:.=.......+.%.$.(......",'#10'"......'
+  +'.......).........[.],.......",'#10'"......................,,,-,*......",'#10
+  +'"....................,a,b,c........",'#10'"....................,d,e,f......'
+  +'..",'#10'"..................,g,h............",'#10'".......................'
+  +'...........",'#10'".................................."}'#10'w'#12#0#0'/* XP'
+  +'M */'#10'static char *graphic[] = {'#10'"17 17 156 2",'#10'".. c None",'#10
+  +'"., c #BF4E4E",'#10'".- c #C55151",'#10'".* c #C65555",'#10'".a c #C54F4F",'
+  +#10'".b c #C04444",'#10'".c c #BF5353",'#10'".d c #CF6262",'#10'".e c #E2797'
+  +'9",'#10'".f c #ED7A7A",'#10'".g c #F57F7F",'#10'".h c #F47E7E",'#10'".i c #'
+  +'EB7777",'#10'".j c #DE7575",'#10'".k c #CA5656",'#10'".l c #C64949",'#10'".'
+  +'m c #DC7474",'#10'".n c #F27B7B",'#10'".o c #EF6161",'#10'".p c #DD5353",'
+  +#10'".q c #D54949",'#10'".r c #D74A4A",'#10'".s c #E05454",'#10'".t c #F2626'
+  +'2",'#10'".u c #F07878",'#10'".v c #D36767",'#10'".w c #C42D2D",'#10'".x c #'
+  +'C36060",'#10'".y c #DD7474",'#10'".z c #F46D6D",'#10'".A c #E34B4B",'#10'".'
+  +'B c #C43D3D",'#10'".C c #B83232",'#10'".D c #BD3B3B",'#10'".E c #C94141",'
+  +#10'".F c #E64E4E",'#10'".G c #F36E6E",'#10'".H c #D26767",'#10'".I c #D1606'
+  +'0",'#10'".J c #F17979",'#10'".K c #EB4747",'#10'".L c #EB4545",'#10'".M c #'
+  +'CD4545",'#10'".N c #BF4141",'#10'".O c #E54D4D",'#10'".P c #EE7070",'#10'".'
+  +'Q c #C95050",'#10'".R c #C55959",'#10'".S c #E67D7D",'#10'".T c #ED5656",'
+  +#10'".U c #CA4545",'#10'".V c #E64646",'#10'".W c #EC4747",'#10'".X c #CD444'
+  +'4",'#10'".Y c #C94343",'#10'".Z c #EF5A5A",'#10'".0 c #D96969",'#10'".1 c #'
+  +'CC5D5D",'#10'".2 c #EF7676",'#10'".3 c #D84F4F",'#10'".4 c #B94444",'#10'".'
+  +'5 c #C14242",'#10'".6 c #E84848",'#10'".7 c #ED4848",'#10'".8 c #CE4646",'
+  +#10'".9 c #BE3E3E",'#10'".@ c #DC4F4F",'#10'".# c #E26767",'#10'".; c #BE404'
+  +'0",'#10'".: c #BD2B2B",'#10'".= c #F45A5A",'#10'".+ c #C63636",'#10'".% c #'
+  +'BE3D3D",'#10'".$ c #E53A3A",'#10'".( c #EB3E3E",'#10'".) c #CB3D3D",'#10'".'
+  +'[ c #D14848",'#10'".] c #E76A6A",'#10'",. c #C24848",'#10'",, c #BC2525",'
+  +#10'",- c #F23939",'#10'",* c #B60202",'#10'",a c #AA0303",'#10'",b c #DE040'
+  +'4",'#10'",c c #E40404",'#10'",d c #BD0202",'#10'",e c #CE4747",'#10'",f c #'
+  +'E66D6D",'#10'",g c #C04545",'#10'",h c #B81A1A",'#10'",i c #EB3A3A",'#10'",'
+  +'j c #C50505",'#10'",k c #A90000",'#10'",l c #DC0000",'#10'",m c #DF0000",'
+  +#10'",n c #B90000",'#10'",o c #B93636",'#10'",p c #D14141",'#10'",q c #DA5F5'
+  +'F",'#10'",r c #BC3C3C",'#10'",s c #AB0909",'#10'",t c #E04242",'#10'",u c #'
+  +'DE1111",'#10'",v c #A60000",'#10'",w c #D60000",'#10'",x c #D80000",'#10'",'
+  +'y c #B40000",'#10'",z c #D21C1C",'#10'",A c #C53232",'#10'",B c #C82B2B",'
+  +#10'",C c #ED3232",'#10'",D c #C50101",'#10'",E c #A20000",'#10'",F c #A7000'
+  +'0",'#10'",G c #CD0000",'#10'",H c #C30606",'#10'",I c #D12E2E",'#10'",J c #'
+  +'B21515",'#10'",K c #A40202",'#10'",L c #DB3B3B",'#10'",M c #EA1E1E",'#10'",'
+  +'N c #A00000",'#10'",O c #B00000",'#10'",P c #C90202",'#10'",Q c #D12525",'
+  +#10'",R c #BD2929",'#10'",S c #B70808",'#10'",T c #DD3434",'#10'",U c #E82B2'
+  +'B",'#10'",V c #D80F0F",'#10'",W c #BF0606",'#10'",X c #B10000",'#10'",Y c #'
+  +'B00101",'#10'",Z c #BC0707",'#10'",0 c #CC1212",'#10'",1 c #D02F2F",'#10'",'
+  +'2 c #C52A2A",'#10'",3 c #BD0303",'#10'",4 c #9C0000",'#10'",5 c #D02020",'
+  +#10'",6 c #D93232",'#10'",7 c #DC2B2B",'#10'",8 c #DD2828",'#10'",9 c #D9282'
+  +'8",'#10'",@ c #D32B2B",'#10'",# c #CC3131",'#10'",; c #C21919",'#10'",: c #'
+  +'820000",'#10'",= c #4C0000",'#10'",+ c #8F0404",'#10'",% c #AB1010",'#10'",'
+  +'$ c #BE1919",'#10'",( c #BB1818",'#10'",) c #A30E0E",'#10'",[ c #810202",'
+  +#10'",] c #400000",'#10'".............,.-.*.a.b............",'#10'".........'
+  +'c.d.e.f.g.h.i.j.k........",'#10'".......l.m.n.o.p.q.r.s.t.u.v.w....",'#10'"'
+  +'.....x.y.z.A.B.C.....D.E.F.G.H....",'#10'".....I.J.K.L.M...........N.O.P.Q.'
+  +'.",'#10'"...R.S.T.U.V.W.X...........Y.Z.0..",'#10'"...1.2.3.4.5.6.7.8......'
+  +'...9.@.#.;",'#10'"...:.=.+.....%.$.(.).........[.],.",'#10'"..,,,-,*......,'
+  +'a,b,c,d......,e,f,g",'#10'"..,h,i,j........,k,l,m,n..,o,p,q,r",'#10'"..,s,t'
+  +',u,v........,v,w,x,y,k,z,A..",'#10'"....,B,C,D,E........,F,G,G,H,I,J..",'#10
+  +'"....,K,L,M,D,F......,N,O,P,Q,R....",'#10'"......,S,T,U,V,W,X,Y,Z,0,1,2,3..'
+  +'..",'#10'"........,4,5,6,7,8,9,@,#,;,:......",'#10'"..........,=,+,%,$,(,),'
+  +'[,]........",'#10'".................................."}'#10#131#4#0#0'/* XP'
+  +'M */'#10'static char *graphic[] = {'#10'"17 17 50 1",'#10'". c None",'#10'"'
+  +', c #3969A7",'#10'"- c #4E7AB1",'#10'"* c #5580B5",'#10'"a c #D7E8F6",'#10
+  +'"b c #537EB4",'#10'"c c #CCDFF1",'#10'"d c #517CB3",'#10'"e c #3868A6",'#10
+  +'"f c #4F7AB1",'#10'"g c #4D79B0",'#10'"h c #4A76AF",'#10'"i c #678EBE",'#10
+  +'"j c #C9DCF0",'#10'"k c #4A76AE",'#10'"l c #4E79B0",'#10'"m c #4E79B1",'#10
+  +'"n c #507BB2",'#10'"o c #D6E7F6",'#10'"p c #BED5EC",'#10'"q c #C0D6EC",'#10
+  ,'"r c #B7D0EA",'#10'"s c #A0BDDE",'#10'"t c #B4CDE9",'#10'"u c #B5CFEB",'#10
+  +'"v c #AFCBE9",'#10'"w c #C4DAF2",'#10'"x c #4D79B1",'#10'"y c #3D6CA9",'#10
+  +'"z c #618ABC",'#10'"A c #5481B7",'#10'"B c #517EB6",'#10'"C c #668FC1",'#10
+  +'"D c #91B6DF",'#10'"E c #5684BD",'#10'"F c #4C7BB5",'#10'"G c #4A7AB6",'#10
+  +'"H c #5783BA",'#10'"I c #3B6BA8",'#10'"J c #9CBEE5",'#10'"K c #3A6CAB",'#10
+  +'"L c #5983B8",'#10'"M c #9FC0E6",'#10'"N c #3C6FAF",'#10'"O c #6089BC",'#10
+  +'"P c #C6DCF4",'#10'"Q c #4777B5",'#10'"R c #497BBB",'#10'"S c #7BA1D0",'#10
+  +'"T c #4477BA",'#10'".................",'#10'".................",'#10'".....'
+  +'............",'#10'".......,-,.......",'#10'".......*a*.......",'#10'".....'
+  +'..bcb.......",'#10'".......dcd.......",'#10'"...efghijiklme...",'#10'"...no'
+  +'pqrstuvwx...",'#10'"...yzABCDEFGHI...",'#10'".......nJK.......",'#10'".....'
+  +'..LMN.......",'#10'".......OPQ.......",'#10'".......RST.......",'#10'".....'
+  +'............",'#10'".................",'#10'"................."}'#10#162#3#0
+  +#0'/* XPM */'#10'static char *graphic[] = {'#10'"17 17 35 1",'#10'". c None"'
+  +','#10'", c #3767A5",'#10'"- c #4875AD",'#10'"* c #4774AD",'#10'"a c #4673AD'
+  +'",'#10'"b c #4674AD",'#10'"c c #4874AD",'#10'"d c #4E79B1",'#10'"e c #CDDFF'
+  +'0",'#10'"f c #BAD1E8",'#10'"g c #B7CEE7",'#10'"h c #B6CEE7",'#10'"i c #B5CD'
+  +'E7",'#10'"j c #B3CDE7",'#10'"k c #B2CCE7",'#10'"l c #B0CAE6",'#10'"m c #BFD'
+  +'5ED",'#10'"n c #4B77B0",'#10'"o c #4572AC",'#10'"p c #8CADD2",'#10'"q c #75'
+  +'9CCA",'#10'"r c #739BCA",'#10'"s c #7199C9",'#10'"t c #6D97C9",'#10'"u c #6'
+  +'A94C8",'#10'"v c #6491C7",'#10'"w c #7AA1CF",'#10'"x c #4271AC",'#10'"y c #'
+  +'2B5D9E",'#10'"z c #3166AB",'#10'"A c #3269B0",'#10'"B c #3369B0",'#10'"C c '
+  +'#336AB0",'#10'"D c #346AB0",'#10'"E c #2F63A6",'#10'".................",'#10
+  +'".................",'#10'".................",'#10'".................",'#10
+  +'".................",'#10'".................",'#10'"...,-*ab****c,...",'#10
+  +'"...defghijklmn...",'#10'"...opqqrstuvwx...",'#10'"....yzAABBCDE....",'#10
+  +'".................",'#10'".................",'#10'".................",'#10
+  +'".................",'#10'".................",'#10'".................",'#10
+  +'"................."}'#10#183#9#0#0'/* XPM */'#10'static char *graphic[] = {'
+  +#10'"17 17 112 2",'#10'".. c #888A86",'#10'"., c #9D9F9B",'#10'".- c #9EA09C'
+  +'",'#10'".* c #9EA09B",'#10'".a c #9E9F9B",'#10'".b c #888A85",'#10'".c c #8'
+  +'B8D88",'#10'".d c #FFFFFF",'#10'".e c #FBFBFB",'#10'".f c #FCFCFC",'#10'".g'
+  +' c #FCFCFD",'#10'".h c #FDFDFD",'#10'".i c #D9D9D9",'#10'".j c #E0E0E0",'#10
+  +'".k c #D7D7D7",'#10'".l c #BEBEBE",'#10'".m c #C2C2C2",'#10'".n c #C3C3C3",'
+  +#10'".o c #C4C4C4",'#10'".p c #C1C1C1",'#10'".q c #DEDEDE",'#10'".r c #E1E1E'
+  +'1",'#10'".s c #E3E3E3",'#10'".t c #DFDFDF",'#10'".u c #D4D4D4",'#10'".v c #'
+  +'D8D8D8",'#10'".w c #E4E4E4",'#10'".x c #E5E5E5",'#10'".y c #E2E2E2",'#10'".'
+  +'z c #DCDCDC",'#10'".A c #C5C5C5",'#10'".B c #C9C9C9",'#10'".C c #CACACA",'
+  +#10'".D c #C6C6C6",'#10'".E c #BFBFBF",'#10'".F c #E7E7E7",'#10'".G c #CDCDC'
+  +'C",'#10'".H c #D3D3D3",'#10'".I c #D6D6D6",'#10'".J c #DBDBDB",'#10'".K c #'
+  +'B6B6B6",'#10'".L c #BABABA",'#10'".M c #E8E8E8",'#10'".N c #EAEAEA",'#10'".'
+  +'O c #C7C8C7",'#10'".P c #F8F8F8",'#10'".Q c #CCCCCC",'#10'".R c #B1B1B1",'
+  +#10'".S c #5C5C5C",'#10'".T c #454545",'#10'".U c #696969",'#10'".V c #ECECE'
+  +'C",'#10'".W c #EFEFEF",'#10'".X c #D0D0D0",'#10'".Y c #AFAFAF",'#10'".Z c #'
+  +'949494",'#10'".0 c #BBBBBB",'#10'".1 c #717171",'#10'".2 c #474747",'#10'".'
+  +'3 c #B3B3B3",'#10'".4 c #EDEDED",'#10'".5 c #E6E6E6",'#10'".6 c #E9E9E9",'
+  +#10'".7 c #EEEEEE",'#10'".8 c #B5B5B5",'#10'".9 c #4E4E4E",'#10'".@ c #A3A3A'
+  +'3",'#10'".# c #9F9F9F",'#10'".; c #676767",'#10'".: c #5E5E5E",'#10'".= c #'
+  +'B0B0B0",'#10'".+ c #F1F1F1",'#10'".% c #D1D2D1",'#10'".$ c #5F5F5F",'#10'".'
+  +'( c #535353",'#10'".) c #565656",'#10'".[ c #5A5A5A",'#10'".] c #616161",'
+  +#10'",. c #595959",'#10'",, c #A9A9A9",'#10'",- c #C6C6C5",'#10'",* c #F9F9F'
+  +'9",'#10'",a c #9B9B9B",'#10'",b c #A1A1A1",'#10'",c c #9D9D9D",'#10'",d c #'
+  +'6C6C6C",'#10'",e c #797979",'#10'",f c #F2F2F2",'#10'",g c #CDCDCD",'#10'",'
+  +'h c #CFCFCF",'#10'",i c #DADADA",'#10'",j c #7B7B7B",'#10'",k c #939393",'
+  +#10'",l c #9A9A9A",'#10'",m c #F0F0F0",'#10'",n c #B8B8B8",'#10'",o c #EBEBE'
+  +'B",'#10'",p c #C8C8C8",'#10'",q c #F7F7F7",'#10'",r c #FDFCFD",'#10'",s c #'
+  +'FEFEFF",'#10'",t c #8E908B",'#10'",u c #B5B6B3",'#10'",v c #BDBFBB",'#10'",'
+  +'w c #BCBEBA",'#10'",x c #BCBDBA",'#10'",y c #BCBDB9",'#10'",z c #BBBDB9",'
+  +#10'",A c #BBBCB9",'#10'",B c #BEC0BC",'#10'",C c #7D7F7B",'#10'",D c None",'
+  +#10'"...,.-.-.-.-.-.-.*.*.*.a.a.a.*.,.b",'#10'".c.d.e.f.g.d.d.d.d.d.d.d.d.h.'
+  +'h.d.c",'#10'".c.d.i.j.k.l.m.m.n.n.n.o.p.q.r.d.c",'#10'".c.d.q.s.t.u.v.v.k.v'
+  +'.i.i.v.w.x.d.c",'#10'".c.d.y.x.z.l.m.n.A.B.C.D.E.j.F.d.c",'#10'".c.d.G.F.r.'
+  +'H.I.J.A.K.L.H.v.M.N.d.c",'#10'".c.d.O.P.j.Q.H.z.R.S.T.U.l.V.V.d.c",'#10'".c'
+  +'.d.M.W.y.X.Y.Z.u.0.1.2.3.4.4.d.c",'#10'".c.d.5.F.6.7.8.9.@.#.;.:.=.7.+.d.c"'
+  ,','#10'".c.d.%.N.5.r.0.$.(.).[.],.,,.V.d.c",'#10'".c.d,-,*.x.H.v.l,a,b,c,d.U'
+  +',e.=.d.c",'#10'".c.d.V,f.w,g,h.I.J.z,i.R,j,k,l.d.c",'#10'".c.d.5.N.6.j.x.w.'
+  +'w.w.x,m.j,n,n.d.c",'#10'".c.d.w,o.s.D.C.Q.Q.Q,p.N,*,*,q.d.c",'#10'".c.d,r,s'
+  +',s.d.d.d.d.d.d.d.d.d.d.d,t",'#10'".b,u,v,w,w,x,x,x,y,z,z,A,A,A,z,B,C",'#10
+  +'",D,D,D,D,D,D,D,D,D,D,D,D,D,D,D,D,D"}'#10#183#13#0#0'/* XPM */'#10'static c'
+  +'har *graphic[] = {'#10'"17 17 176 2",'#10'".. c None",'#10'"., c #36466E",'
+  +#10'".- c #344572",'#10'".* c #4B5C88",'#10'".a c #54648E",'#10'".b c #53638'
+  +'D",'#10'".c c #55668E",'#10'".d c #415485",'#10'".e c #FAEA62",'#10'".f c #'
+  +'8F918D",'#10'".g c #C6C6C3",'#10'".h c #B3B2A7",'#10'".i c #485472",'#10'".'
+  +'j c #8A9CBC",'#10'".k c #A6BBD2",'#10'".l c #9EB3CC",'#10'".m c #AEC2D7",'
+  +#10'".n c #6A7EA5",'#10'".o c #616778",'#10'".p c #BABAB4",'#10'".q c #C5C2A'
+  +'0",'#10'".r c #EBE197",'#10'".s c #FAF8E3",'#10'".t c #EEEBCB",'#10'".u c #'
+  +'9A9C98",'#10'".v c #FFFFFF",'#10'".w c #DCDBD7",'#10'".x c #57607E",'#10'".'
+  +'y c #5B739A",'#10'".z c #59789F",'#10'".A c #507098",'#10'".B c #6381A5",'
+  +#10'".C c #4A618B",'#10'".D c #7F8394",'#10'".E c #F2F1EF",'#10'".F c #FCF6C'
+  +'7",'#10'".G c #FDF5B5",'#10'".H c #F9F6E0",'#10'".I c #F9EA6C",'#10'".J c #'
+  +'9B9D99",'#10'".K c #CBC9C7",'#10'".L c #4F5973",'#10'".M c #556B8E",'#10'".'
+  +'N c #526E91",'#10'".O c #49668A",'#10'".P c #5C7798",'#10'".Q c #485B83",'
+  +#10'".R c #646977",'#10'".S c #BBBBB8",'#10'".T c #C9C8BD",'#10'".U c #F2EBB'
+  +'4",'#10'".V c #FEF5B5",'#10'".W c #E2DA94",'#10'".X c #CECCC9",'#10'".Y c #'
+  +'535D7A",'#10'".Z c #5A7198",'#10'".0 c #59779C",'#10'".1 c #506F95",'#10'".'
+  +'2 c #627EA1",'#10'".3 c #4A6089",'#10'".4 c #6E7383",'#10'".5 c #D0CFCC",'
+  +#10'".6 c #D9D9DA",'#10'".7 c #E5E6E4",'#10'".8 c #FBF8E0",'#10'".9 c #BDBCA'
+  +'A",'#10'".@ c #9B9D98",'#10'".# c #D2D0CC",'#10'".; c #56617F",'#10'".: c #'
+  +'5E78A1",'#10'".= c #6180A8",'#10'".+ c #5777A2",'#10'".% c #6A88AE",'#10'".'
+  +'$ c #516794",'#10'".( c #707585",'#10'".) c #D0CFCB",'#10'".[ c #D9D9D9",'
+  +#10'".] c #E8E8E9",'#10'",. c #FDFDFF",'#10'",, c #B9BCBF",'#10'",- c #9E9F9'
+  +'B",'#10'",* c #F0F1F0",'#10'",a c #B8B7B1",'#10'",b c #5F6988",'#10'",c c #'
+  +'5E77A0",'#10'",d c #6282A9",'#10'",e c #5A7BA4",'#10'",f c #6B89B0",'#10'",'
+  +'g c #526996",'#10'",h c #6C7181",'#10'",i c #BFBEBB",'#10'",j c #CACACA",'
+  +#10'",k c #EDEDED",'#10'",l c #FEFEFE",'#10'",m c #BFC0BC",'#10'",n c #E3E1D'
+  +'C",'#10'",o c #67708F",'#10'",p c #5F78A1",'#10'",q c #6884A9",'#10'",r c #'
+  +'59749E",'#10'",s c #708DB1",'#10'",t c #506895",'#10'",u c #808596",'#10'",'
+  +'v c #DEDDDA",'#10'",w c #E3E3E3",'#10'",x c #BEBFBC",'#10'",y c #DFDED9",'
+  +#10'",z c #65708E",'#10'",A c #4F6793",'#10'",B c #415683",'#10'",C c #69749'
+  +'3",'#10'",D c #455C89",'#10'",E c #49608E",'#10'",F c #828798",'#10'",G c #'
+  +'D5D4D1",'#10'",H c #DADADA",'#10'",I c #EFEFEF",'#10'",J c #E7E5E1",'#10'",'
+  +'K c #6B7694",'#10'",L c #273B70",'#10'",M c #A0A6B6",'#10'",N c #E3E2DF",'
+  +#10'",O c #808AA3",'#10'",P c #1D336B",'#10'",Q c #9FA5B5",'#10'",R c #FAF9F'
+  +'5",'#10'",S c #F7F7F7",'#10'",T c #F1F1F1",'#10'",U c #EDEEED",'#10'",V c #'
+  +'C2C2C1",'#10'",W c #DADADB",'#10'",X c #C1C2C3",'#10'",Y c #CBCACA",'#10'",'
+  +'Z c #CECECD",'#10'",0 c #C9C9C8",'#10'",1 c #B9B9BB",'#10'",2 c #B9B9BA",'
+  +#10'",3 c #C9C9C9",'#10'",4 c #D2D2D2",'#10'",5 c #F4F4F4",'#10'",6 c #BDBFB'
+  +'C",'#10'",7 c #9B9C98",'#10'",8 c #FDFDFD",'#10'",9 c #EEEEEE",'#10'",@ c #'
+  +'F0F0F0",'#10'",# c #DDDDDD",'#10'",; c #D8D8D8",'#10'",: c #DBDBDB",'#10'",'
+  +'= c #DEDEDE",'#10'",+ c #DCDCDC",'#10'",% c #E1E1E1",'#10'",$ c #E6E6E6",'
+  +#10'",( c #EBEBEB",'#10'",) c #E0E0E0",'#10'",[ c #DFDFDF",'#10'",] c #E2E2E'
+  +'2",'#10'"-. c #F6F6F6",'#10'"-, c #BDBEBC",'#10'"-- c #FDFCFD",'#10'"-* c #'
+  +'CBCBCB",'#10'"-a c #CCCCCC",'#10'"-b c #FAFAFA",'#10'"-c c #BDBEBB",'#10'"-'
+  +'d c #9A9C97",'#10'"-e c #F8F8F9",'#10'"-f c #FAFAFB",'#10'"-g c #FCFCFC",'
+  +#10'"-h c #8E908B",'#10'"-i c #C2C3C0",'#10'"-j c #CBCCC9",'#10'"-k c #CACBC'
+  +'8",'#10'"-l c #C9CBC7",'#10'"-m c #C9CAC7",'#10'"-n c #C8CAC6",'#10'"-o c #'
+  +'CFD0CD",'#10'"-p c #A0A19E",'#10'".....,.-.*.a.b.c.d.........e......",'#10
+  +'".f.g.h.i.j.k.l.m.n.o.p.q.r.s.t....",'#10'".u.v.w.x.y.z.A.B.C.D.E.F.G.v.H.I'
+  +'..",'#10'".J.v.K.L.M.N.O.P.Q.R.S.T.U.V.W....",'#10'".J.v.X.Y.Z.0.1.2.3.4.5.'
+  +'6.7.8.9....",'#10'".@.v.#.;.:.=.+.%.$.(.).[.],.,,....",'#10'",-,*,a,b,c,d,e'
+  +',f,g,h,i,j,k,l,m....",'#10'".@.v,n,o,p,q,r,s,t,u,v,w,k.v,x....",'#10'".@.v,'
+  +'y,z,A,B,C,D,E,F,G,H,I.v,x....",'#10'".@.v,J,K,L,M,N,O,P,Q,R,S,T.v,x....",'
+  +#10'",-,U,V,W,X,Y,Z,0,1,2,3,4,5.v,6....",'#10'",7,8,9,@,#,;,:,#,=.[,+,%,5.v,'
+  +'6....",'#10'",7,8,$,(,),[,),),),],[,]-..v-,....",'#10'".@--,$,k,4,3-*-a-a,j'
+  +',I-b,S.v-c....",'#10'"-d.v-e-f-g,l.v.v.v.v.v.v.v.v,6....",'#10'"-h-i-j-k-l-'
+  +'l-m-m-m-m-n-n-n-o-p....",'#10'".................................."}'#10#0#0
+  +#10'TImageList'#10'ImageList3'#4'left'#3#168#0#3'top'#3#160#0#6'Bitmap'#10
+  +#206'*'#0#0'li'#8#0#0#0#16#0#0#0#16#0#0#0#253#2#0#0'/* XPM */'#10'static cha'
+  ,'r *graphic[] = {'#10'"17 17 24 1",'#10'". c None",'#10'", c #3666A2",'#10'"'
+  +'- c #5F7784",'#10'"* c #607884",'#10'"a c #647A81",'#10'"b c #4D7092",'#10
+  +'"c c #2F63A8",'#10'"d c #3465A4",'#10'"e c #3364A5",'#10'"f c #3A679F",'#10
+  +'"g c #A49553",'#10'"h c #A69651",'#10'"i c #B09A49",'#10'"j c #748074",'#10
+  +'"k c #285FAD",'#10'"l c #3565A3",'#10'"m c #486E95",'#10'"n c #496E95",'#10
+  +'"o c #4B6F94",'#10'"p c #406A9B",'#10'"q c #3264A6",'#10'"r c #3164A6",'#10
+  +'"s c #3063A7",'#10'"t c #3264A5",'#10'".................",'#10'"....,-*****'
+  +'abcd..",'#10'"...efghhhhhijkd..",'#10'"...dlmnnnnnopqd..",'#10'"..dddrrrrrr'
+  +'stdd..",'#10'"..ddddddddddddd..",'#10'"..ddddddddddddd..",'#10'"..ddddddddd'
+  +'dddd..",'#10'"..ddddddddddddd..",'#10'"..ddddddddddddd..",'#10'"..ddddddddd'
+  +'dddd..",'#10'"..ddddddddddddd..",'#10'"..ddddddddddddd..",'#10'"..ddddddddd'
+  +'dddd..",'#10'"..ddddddddddddd..",'#10'"..ddddddddddddd..",'#10'"...........'
+  +'......"}'#10#150#7#0#0'/* XPM */'#10'static char *graphic[] = {'#10'"17 17 '
+  +'78 2",'#10'".. c None",'#10'"., c #626262",'#10'".- c #6E6F6E",'#10'".* c #'
+  +'6C6D6C",'#10'".a c #626362",'#10'".b c #6A6B6A",'#10'".c c #6C6C6C",'#10'".'
+  +'d c #696969",'#10'".e c #6B6C6B",'#10'".f c #6D6D6D",'#10'".g c #616261",'
+  +#10'".h c #656565",'#10'".i c #767676",'#10'".j c #737373",'#10'".k c #66676'
+  +'6",'#10'".l c #757575",'#10'".m c #707170",'#10'".n c #676867",'#10'".o c #'
+  +'747474",'#10'".p c #656665",'#10'".q c #676767",'#10'".r c #7A7A7A",'#10'".'
+  +'s c #717171",'#10'".t c #828282",'#10'".u c #E5E5E5",'#10'".v c #D2D2D2",'
+  +#10'".w c #A3A3A3",'#10'".x c #9A9B9A",'#10'".y c #797979",'#10'".z c #7E7E7'
+  +'E",'#10'".A c #D7D7D7",'#10'".B c #C6C7C6",'#10'".C c #9C9C9C",'#10'".D c #'
+  +'939493",'#10'".E c #757675",'#10'".F c #6E6E6E",'#10'".G c #CACACA",'#10'".'
+  +'H c #BBBBBB",'#10'".I c #959595",'#10'".J c #8D8E8D",'#10'".K c #848484",'
+  +#10'".L c #EAEAEA",'#10'".M c #A6A6A6",'#10'".N c #9C9D9C",'#10'".O c #63636'
+  +'3",'#10'".P c #6B6B6B",'#10'".Q c #B9B9B9",'#10'".R c #ACACAC",'#10'".S c #'
+  +'8B8C8B",'#10'".T c #858685",'#10'".U c #6A6A6A",'#10'".V c #818181",'#10'".'
+  +'W c #777777",'#10'".X c #888888",'#10'".Y c #F8F8F8",'#10'".Z c #E3E3E3",'
+  +#10'".0 c #AEAEAE",'#10'".1 c #A3A4A3",'#10'".2 c #686968",'#10'".3 c #72727'
+  +'2",'#10'".4 c #A2A3A2",'#10'".5 c #868686",'#10'".6 c #808180",'#10'".7 c #'
+  +'838383",'#10'".8 c #787878",'#10'".9 c #8A8A8A",'#10'".@ c #FFFFFF",'#10'".'
+  +'# c #E9E9E9",'#10'".; c #B1B1B1",'#10'".: c #A6A7A6",'#10'".= c #717271",'
+  +#10'".+ c #ACADAC",'#10'".% c #A1A2A1",'#10'".$ c #858585",'#10'".( c #7F807'
+  +'F",'#10'".) c #A8A9A8",'#10'".[ c #9E9E9E",'#10'".] c #7E7F7E",'#10'"......'
+  +'............................",'#10'"..................................",'#10
+  +'".....,.-.*.a.b.c.d.a.c.e.e.f.g....",'#10'".....h.i.j.k.j.l.m.n.l.o.o.i.p..'
+  +'..",'#10'".....q.r.s.t.u.u.v.w.u.u.u.u.x....",'#10'".....k.y.m.z.A.A.B.C.A.'
+  +'A.A.A.D....",'#10'".....h.E.F.r.G.G.H.I.G.G.G.G.J....",'#10'".....d.z.o.K.L'
+  +'.L.A.M.L.L.L.L.N....",'#10'".....O.s.P.l.Q.Q.R.S.Q.Q.Q.Q.T....",'#10'".....'
+  +'U.V.W.X.Y.Y.Z.0.Y.Y.Y.Y.1....",'#10'".....,.-.2.3.0.0.4.5.0.0.0.0.6....",'
+  +#10'".....P.7.8.9.@.@.#.;.@.@.@.@.:....",'#10'".....,.F.2.=.+.+.%.$.+.+.+.+.'
+  +'(....",'#10'".....P.7.8.9.@.@.L.;.@.@.@.@.:....",'#10'".....g.f.n.m.).).[.7'
+  +'.).).).).]....",'#10'"..................................",'#10'"...........'
+  +'......................."}'#10'7'#10#0#0'/* XPM */'#10'static char *graphic['
+  +'] = {'#10'"17 17 120 2",'#10'".. c None",'#10'"., c #FFFFFF",'#10'".- c #E0'
+  +'DFFF",'#10'".* c #E5EEFF",'#10'".a c #FFE0DA",'#10'".b c #FFD6D6",'#10'".c '
+  +'c #E6EAFF",'#10'".d c #DECEF8",'#10'".e c #FF9898",'#10'".f c #FFC4C4",'#10
+  +'".g c #FFFFF1",'#10'".h c #646FC8",'#10'".i c #8269A5",'#10'".j c #FFAA8D",'
+  +#10'".k c #FFF5E7",'#10'".l c #FFFFF7",'#10'".m c #7884C9",'#10'".n c #6D59A'
+  +'5",'#10'".o c #FF896E",'#10'".p c #FF9790",'#10'".q c #D6DBFF",'#10'".r c #'
+  +'6F78C6",'#10'".s c #1D006C",'#10'".t c #520054",'#10'".u c #8272C1",'#10'".'
+  +'v c #A7ABFF",'#10'".w c #A7A7FF",'#10'".x c #7F83D4",'#10'".y c #1C046F",'
+  +#10'".z c #4F005A",'#10'".A c #7956A5",'#10'".B c #D6C7F0",'#10'".C c #DDC6E'
+  +'8",'#10'".D c #8C619F",'#10'".E c #51005A",'#10'".F c #1B0D71",'#10'".G c #'
+  +'9194D6",'#10'".H c #B6B6FF",'#10'".I c #B6BAFF",'#10'".J c #937CBB",'#10'".'
+  +'K c #560051",'#10'".L c #1A076F",'#10'".M c #8189C8",'#10'".N c #DDE1FF",'
+  +#10'".O c #FF918B",'#10'".P c #FF836A",'#10'".Q c #7E6EB7",'#10'".R c #8F9AD'
+  +'A",'#10'".S c #FFFFFC",'#10'".T c #FFEDE0",'#10'".U c #FFAB8F",'#10'".V c #'
+  +'9183BB",'#10'".W c #7C85D9",'#10'".X c #FFD2D2",'#10'".Y c #FFA9A9",'#10'".'
+  +'Z c #AFA0F9",'#10'".0 c #BEC1FF",'#10'".1 c #FFDCDC",'#10'".2 c #FFEAE5",'
+  +#10'".3 c #BDC5FF",'#10'".4 c #AFAEFF",'#10'".5 c #A7AAFF",'#10'".6 c #B6B5F'
+  +'F",'#10'".7 c #B6B7FF",'#10'".8 c #A8A8FF",'#10'".9 c #B6B3FC",'#10'".@ c #'
+  +'FFF6F7",'#10'".# c #A8A7FF",'#10'".; c #ADB4FF",'#10'".: c #B79EE3",'#10'".'
+  +'= c #FF6F6B",'#10'".+ c #FFB1B1",'#10'".% c #BDBDFF",'#10'".$ c #A7AEFF",'
+  ,#10'".( c #FFDFDB",'#10'".) c #FFF6F6",'#10'".[ c #E5E6DA",'#10'".] c #37439'
+  +'7",'#10'",. c #6D3371",'#10'",, c #F09485",'#10'",- c #FFBCBB",'#10'",* c #'
+  +'EEEEE7",'#10'",a c #465298",'#10'",b c #5B2E71",'#10'",c c #EC9383",'#10'",'
+  +'d c #FFF7F6",'#10'",e c #C4C5FF",'#10'",f c #484BC1",'#10'",g c #370068",'
+  +#10'",h c #3C0065",'#10'",i c #5753CA",'#10'",j c #8184FF",'#10'",k c #8181F'
+  +'F",'#10'",l c #8187FF",'#10'",m c #565AD1",'#10'",n c #30006A",'#10'",o c #'
+  +'420064",'#10'",p c #4A47BD",'#10'",q c #C4C6FF",'#10'",r c #F6F8FF",'#10'",'
+  +'s c #CF868C",'#10'",t c #55145E",'#10'",u c #2F3684",'#10'",v c #D2D4E0",'
+  +#10'",w c #ECEDFF",'#10'",x c #ECECFF",'#10'",y c #ECBCCF",'#10'",z c #D5969'
+  +'C",'#10'",A c #641D63",'#10'",B c #242983",'#10'",C c #C6C9D0",'#10'",D c #'
+  +'F6F6FF",'#10'",E c #FFBBBA",'#10'",F c #FFBDAB",'#10'",G c #9CA7F4",'#10'",'
+  +'H c #B3B6FE",'#10'",I c #FFA19E",'#10'",J c #FF584E",'#10'",K c #AD8FD1",'
+  +#10'",L c #A2ACFD",'#10'"..................................",'#10'"...,.,.-.'
+  +'*.a.b.,.,.,.,.,.c.d.e.f..",'#10'"...,.g.h.i.j.k.,.,.,.,.l.m.n.o.p..",'#10'"'
+  +'...q.r.s.t.u.v.w.w.w.w.x.y.z.A.B..",'#10'"...C.D.E.F.G.H.H.H.H.I.J.K.L.M.N.'
+  +'.",'#10'"...O.P.Q.R.S.,.,.,.,.T.U.V.W.l.,..",'#10'"...X.Y.Z.0.,.,.,.,.,.1.2'
+  +'.3.4.,.,..",'#10'"...,.,.5.6.,.,.,.,.,.,.,.6.w.,.,..",'#10'"...,.,.w.H.,.,.'
+  +',.,.,.,.,.H.w.,.,..",'#10'"...,.,.w.7.,.,.,.,.,.,.,.H.w.,.,..",'#10'"...,.,'
+  +'.8.9.@.,.,.,.,.,.,.H.#.,.,..",'#10'"...,.,.;.:.=.+.,.,.,.,.,.%.$.(.)..",'#10
+  +'"...,.[.],.,,,-.,.,.,.,,*,a,b,c,d..",'#10'"..,e,f,g,h,i,j,k,k,k,l,m,n,o,p,q'
+  +'..",'#10'"..,r,s,t,u,v,w,x,x,x,y,z,A,B,C,D..",'#10'"..,E,F,G,H.,.,.,.,.,,I,'
+  +'J,K,L.,.,..",'#10'".................................."}'#10't'#4#0#0'/* XPM'
+  +' */'#10'static char *graphic[] = {'#10'"17 17 49 1",'#10'". c None",'#10'",'
+  +' c #7A7B7A",'#10'"- c #ABACAB",'#10'"* c #A7A7A6",'#10'"a c #A9A9A7",'#10'"'
+  +'b c #ADACAA",'#10'"c c #91918F",'#10'"d c #717272",'#10'"e c #A1A2A1",'#10
+  +'"f c #FFFFFF",'#10'"g c #CFD0CF",'#10'"h c #6E6D6D",'#10'"i c #838383",'#10
+  +'"j c #E3EAF3",'#10'"k c #8EAACD",'#10'"l c #95AFD0",'#10'"m c #98B3D5",'#10
+  +'"n c #8094AC",'#10'"o c #5E5F5E",'#10'"p c #6E6F6F",'#10'"q c #727272",'#10
+  +'"r c #A6A6A3",'#10'"s c #EAF2FC",'#10'"t c #93ADCF",'#10'"u c #99B2D1",'#10
+  +'"v c #9BB4D3",'#10'"w c #8DA7C6",'#10'"x c #637D9E",'#10'"y c #B9C1CB",'#10
+  +'"z c #91908E",'#10'"A c #A6A6A4",'#10'"B c #92ACCE",'#10'"C c #9AB2D2",'#10
+  +'"D c #9CB4D4",'#10'"E c #9CB7D9",'#10'"F c #EDF5FF",'#10'"G c #A6A5A3",'#10
+  +'"H c #93ACCF",'#10'"I c #A7A6A4",'#10'"J c #E7F0FB",'#10'"K c #89A6CA",'#10
+  +'"L c #91ACCE",'#10'"M c #A4A4A2",'#10'"N c #F9FEFF",'#10'"O c #C4D5EC",'#10
+  +'"P c #C8D8ED",'#10'"Q c #AFAFAD",'#10'"R c #B2B0AB",'#10'"S c #B1AFAB",'#10
+  +'".................",'#10'".................",'#10'"...,-*aaabcd.....",'#10
+  +'"...effffffghi....",'#10'"...efjkllmnopq...",'#10'"...rstuuuvwxyz...",'#10
+  +'"...AsBCCCCDEFG...",'#10'"...rsHCCCCCHsr...",'#10'"...rsHCCCCCHsr...",'#10
+  +'"...rsHCCCCCHsr...",'#10'"...rsHCCCCCHsr...",'#10'"...rsHCCCCCHsr...",'#10
+  +'"...IJKLLLLLKJI...",'#10'"...MNOPPPPPONM...",'#10'"...,QRSSSSSRQ,...",'#10
+  +'".................",'#10'"................."}'#10#214#7#0#0'/* XPM */'#10's'
+  +'tatic char *graphic[] = {'#10'"17 17 82 2",'#10'".. c None",'#10'"., c #FFF'
+  +'FFF",'#10'".- c #FFFEFE",'#10'".* c #FFB7B7",'#10'".a c #FFC3C3",'#10'".b c'
+  +' #FFA3A3",'#10'".c c #FFBCBC",'#10'".d c #FFD5D5",'#10'".e c #FFB8B8",'#10
+  +'".f c #FFFBFB",'#10'".g c #FF9E9E",'#10'".h c #FFF8F8",'#10'".i c #FFA7A7",'
+  +#10'".j c #FFC5C5",'#10'".k c #FFA4A4",'#10'".l c #FFEAEA",'#10'".m c #FFB1B'
+  +'1",'#10'".n c #FFFDFD",'#10'".o c #FFE5E5",'#10'".p c #FF7979",'#10'".q c #'
+  +'FFF6F6",'#10'".r c #FFC2C2",'#10'".s c #FFC8C8",'#10'".t c #FFACAC",'#10'".'
+  +'u c #FFDFDF",'#10'".v c #FF8D8D",'#10'".w c #FFF3F3",'#10'".x c #FF8383",'
+  +#10'".y c #FF8080",'#10'".z c #F6A7A7",'#10'".A c #F8C2C2",'#10'".B c #FFABA'
+  +'B",'#10'".C c #FFE1E1",'#10'".D c #FF9393",'#10'".E c #ACA7A7",'#10'".F c #'
+  +'BAC2C2",'#10'".G c #FF8484",'#10'".H c #A5A7A7",'#10'".I c #B4C2C2",'#10'".'
+  +'J c #FEE1E1",'#10'".K c #FC9393",'#10'".L c #A7A7A7",'#10'".M c #B6C2C2",'
+  +#10'".N c #DAE1E1",'#10'".O c #A09393",'#10'".P c #FDFEFE",'#10'".Q c #D2808'
+  +'0",'#10'".R c #FCF6F6",'#10'".S c #C0C2C2",'#10'".T c #D3C8C8",'#10'".U c #'
+  +'BCABAB",'#10'".V c #DCE1E1",'#10'".W c #8A9393",'#10'".X c #FAFEFE",'#10'".'
+  +'Y c #798080",'#10'".Z c #F5F6F6",'#10'".0 c #AFAFAF",'#10'".1 c #CBCBCB",'
+  +#10'".2 c #CED1D1",'#10'".3 c #AFB3B3",'#10'".4 c #ECEBEB",'#10'".5 c #999A9'
+  +'A",'#10'".6 c #AB8A8A",'#10'".7 c #868686",'#10'".8 c #E6E6E6",'#10'".9 c #'
+  +'797979",'#10'".@ c #8F8F8F",'#10'".# c #949494",'#10'".; c #7C7C7C",'#10'".'
+  +': c #A8A8A8",'#10'".= c #686868",'#10'".+ c #B6B7B7",'#10'".% c #555C5C",'
+  +#10'".$ c #C0C0C0",'#10'".( c #595959",'#10'".) c #C4C4C4",'#10'".[ c #FEFEF'
+  +'E",'#10'".] c #D7D7D7",'#10'",. c #9A9A9A",'#10'",, c #9B9B9B",'#10'",- c #'
+  +'999999",'#10'",* c #ADADAD",'#10'"..................................",'#10
+  ,'"...,.,.,.,.,.,.,.,.,.,.,.,.,.,.,..",'#10'"...,.,.-.-.,.,.,.,.,.,.,.,.,.,.,'
+  +'..",'#10'"...,.,.*.a.,.,.,.,.,.,.,.,.,.,.,..",'#10'"...,.,.b.c.d.e.,.,.,.,.'
+  +'f.g.h.,.,..",'#10'"...,.,.i.a.j.k.l.m.n.o.f.p.q.,.,..",'#10'"...,.,.i.r.s.t'
+  +'.u.v.w.x.-.y.q.,.,..",'#10'"...,.,.z.A.s.B.C.D.w.x.-.y.q.,.,..",'#10'"...,.'
+  +',.E.F.s.B.C.D.w.G.-.y.q.,.,..",'#10'"...,.,.H.I.s.B.J.K.w.G.-.y.q.,.,..",'
+  +#10'"...,.,.L.M.s.B.N.O.w.G.P.Q.R.,.,..",'#10'"...,.,.L.S.T.U.V.W.w.G.X.Y.Z.'
+  +',.,..",'#10'"...,.,.0.1.2.3.4.5.-.6.,.7.,.,.,..",'#10'"...,.8.9.@.#.;.:.=.+'
+  +'.%.$.(.).[.,..",'#10'"...,.],.,.,.,.,,,.,,,.,,,-,*.[.,..",'#10'"...,.,.,.,.'
+  +',.,.,.,.,.,.,.,.,.,.,..",'#10'".................................."}'#10#25#5
+  +#0#0'/* XPM */'#10'static char *graphic[] = {'#10'"17 17 60 1",'#10'". c Non'
+  +'e",'#10'", c #676B6D",'#10'"- c #80888F",'#10'"* c #757B80",'#10'"a c #5151'
+  +'4F",'#10'"b c #858D96",'#10'"c c #CBE0F9",'#10'"d c #BCCFE5",'#10'"e c #9EA'
+  +'BBA",'#10'"f c #9FADBC",'#10'"g c #A2B1C0",'#10'"h c #8E99A4",'#10'"i c #82'
+  +'8A92",'#10'"j c #C3D7EE",'#10'"k c #BDD0E5",'#10'"l c #C7DCF4",'#10'"m c #C'
+  +'CE2FA",'#10'"n c #ADBDCF",'#10'"o c #BCCFE4",'#10'"p c #C0D3E8",'#10'"q c #'
+  +'AEBAC7",'#10'"r c #ADBAC6",'#10'"s c #B0BECB",'#10'"t c #99A2AB",'#10'"u c '
+  +'#C4D7ED",'#10'"v c #99A6B5",'#10'"w c #435C7A",'#10'"x c #465F7E",'#10'"y c'
+  +' #436083",'#10'"z c #505C68",'#10'"A c #CBE0F7",'#10'"B c #A5B2BD",'#10'"C '
+  +'c #405F86",'#10'"D c #2E63A8",'#10'"E c #3064A8",'#10'"F c #2E65AD",'#10'"G'
+  +' c #39639A",'#10'"H c #88919A",'#10'"I c #B7C5D4",'#10'"J c #476385",'#10'"'
+  +'K c #2D62A5",'#10'"L c #3465A5",'#10'"M c #3465A4",'#10'"N c #3266A8",'#10
+  +'"O c #38649B",'#10'"P c #56595C",'#10'"Q c #7A8083",'#10'"R c #5B7596",'#10
+  +'"S c #2B61A7",'#10'"T c #3266AA",'#10'"U c #3266A9",'#10'"V c #3166AB",'#10
+  +'"W c #3565A1",'#10'"X c #535B64",'#10'"Y c #565654",'#10'"Z c #48596E",'#10
+  +'"0 c #4B5E75",'#10'"1 c #4B5D73",'#10'"2 c #4A5E75",'#10'"3 c #515B67",'#10
+  +'".................",'#10'".................",'#10'".................",'#10
+  +'".................",'#10'"..,-*a...........",'#10'"..bcdefffffgh....",'#10
+  +'"..ijkjlllllmn....",'#10'"..ijopqrrrrst....",'#10'"..ijuvwxxxxxxyz..",'#10
+  +'"..iABCDEEEEEFG...",'#10'"..HIJKLMMMMNOP...",'#10'"..QRSTUUUUVWX....",'#10
+  +'"..YZ01111123.....",'#10'".................",'#10'".................",'#10
+  +'".................",'#10'"................."}'#10#193#2#0#0'/* XPM */'#10's'
+  +'tatic char *graphic[] = {'#10'"17 17 20 1",'#10'". c None",'#10'", c #686C6'
+  +'E",'#10'"- c #808890",'#10'"* c #73797E",'#10'"a c #50504D",'#10'"b c #8790'
+  +'99",'#10'"c c #CBE0F9",'#10'"d c #BBCDE2",'#10'"e c #9DAAB9",'#10'"f c #9FA'
+  +'DBC",'#10'"g c #A4B3C3",'#10'"h c #777E84",'#10'"i c #848D95",'#10'"j c #C3'
+  +'D7EE",'#10'"k c #BDD1E6",'#10'"l c #C2D7ED",'#10'"m c #CADFF8",'#10'"n c #B'
+  +'CCFE4",'#10'"o c #7E868E",'#10'"p c #7C838A",'#10'".................",'#10
+  +'".................",'#10'".................",'#10'".................",'#10
+  +'"...,-*a..........",'#10'"...bcdefffffgh...",'#10'"...ijkjlllllmb...",'#10
+  +'"...ijnnnnnnnji...",'#10'"...ijnnnnnnnji...",'#10'"...ijnnnnnnnji...",'#10
+  +'"...ijnnnnnnnji...",'#10'"...bmlllllllmb...",'#10'"...,opppppppo,...",'#10
+  +'".................",'#10'".................",'#10'".................",'#10
+  +'"................."}'#10#178#1#0#0'/* XPM */'#10'static char *graphic[] = {'
+  +#10'"17 17 2 1",'#10'". c None",'#10'", c #FF0000",'#10'".................",'
+  +#10'".................",'#10'".................",'#10'".............,...",'
+  +#10'".................",'#10'"............,....",'#10'"..,........,.....",'
+  +#10'"...,......,,.....",'#10'"...,,....,,......",'#10'"....,,...,,......",'
+  +#10'".....,,,,,.......",'#10'".....,,,,........",'#10'"......,,,........",'
+  +#10'".......,.........",'#10'".......,.........",'#10'".................",'
+  +#10'"................."}'#10#0#0#22'TApplicationProperties'#22'ApplicationPr'
+  +'operties1'#17'CaptureExceptions'#9#9'HintColor'#7#8'clInfoBk'#13'HintHidePa'
+  +'use'#3#196#9#9'HintPause'#3#244#1#13'HintShortCuts'#9#8'ShowHint'#9#5'Title'
+  +#6#18'Motif MASTER v.3.2'#4'left'#2'X'#3'top'#2'P'#0#0#17'THTMLHelpDatabase'
+  +#17'HTMLHelpDatabase1'#7'BaseURL'#6'/http://motifmaster.sourceforge.net/v3_2'
+  +'/manual/'#12'AutoRegister'#9#13'KeywordPrefix'#6#5'HTML/'#4'left'#2'X'#3'to'
+  +'p'#3#128#0#0#0#22'THTMLBrowserHelpViewer'#22'HTMLBrowserHelpViewer1'#13'Bro'
+  +'wserParams'#6#2'%s'#12'AutoRegister'#9#4'left'#2'X'#3'top'#3#160#0#0#0#0
+]);

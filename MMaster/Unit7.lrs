@@ -1,0 +1,23 @@
+{ Это - файл ресурсов, автоматически созданный lazarus }
+
+LazarusResources.Add('TSetMeanMomentValueDlg','FORMDATA',[
+  'TPF0'#22'TSetMeanMomentValueDlg'#21'SetMeanMomentValueDlg'#4'Left'#2'Y'#6'He'
+  +'ight'#3#189#0#3'Top'#3#189#0#5'Width'#3'9'#1#18'HorzScrollBar.Page'#3'8'#1
+  +#18'VertScrollBar.Page'#3#188#0#13'ActiveControl'#7#5'OKBtn'#11'BorderStyle'
+  +#7#8'bsDialog'#7'Caption'#6#27'Set Mean Moment At The Site'#10'ParentFont'#9
+  +#8'Position'#7#14'poScreenCenter'#0#6'TBevel'#6'Bevel1'#4'Left'#2#8#6'Height'
+  +#3#137#0#3'Top'#2#8#5'Width'#3')'#1#5'Shape'#7#7'bsFrame'#0#0#6'TLabel'#6'La'
+  +'bel1'#4'Left'#2#20#6'Height'#2#14#3'Top'#2#28#5'Width'#2'c'#7'Caption'#6#23
+  +'Input site identifier :'#5'Color'#7#6'clNone'#11'ParentColor'#8#0#0#6'TBeve'
+  +'l'#6'Bevel2'#4'Left'#2#20#6'Height'#2#9#3'Top'#2'^'#5'Width'#3#13#1#5'Shape'
+  +#7#12'bsBottomLine'#0#0#7'TButton'#5'OKBtn'#4'Left'#3#134#0#6'Height'#2#25#3
+  +'Top'#3#152#0#5'Width'#2'K'#25'BorderSpacing.InnerBorder'#2#4#7'Caption'#6#2
+  +'OK'#7'Default'#9#11'ModalResult'#2#1#8'TabOrder'#2#0#0#0#7'TButton'#9'Cance'
+  +'lBtn'#4'Left'#3#214#0#6'Height'#2#25#3'Top'#3#152#0#5'Width'#2'K'#25'Border'
+  +'Spacing.InnerBorder'#2#4#6'Cancel'#9#7'Caption'#6#6'Cancel'#11'ModalResult'
+  +#2#2#8'TabOrder'#2#1#0#0#9'TCheckBox'#15'ApplyToAllCheck'#4'Left'#2#24#6'Hei'
+  +'ght'#2#13#3'Top'#2'p'#5'Width'#2'_'#7'Caption'#6#18'Apply to all sites'#7'O'
+  +'nClick'#7#20'ApplyToAllCheckClick'#8'TabOrder'#2#2#0#0#5'TEdit'#19'InputSit'
+  +'eIdentifier'#4'Left'#3#200#0#6'Height'#2#21#3'Top'#2#24#5'Width'#2'Y'#8'Tab'
+  +'Order'#2#3#0#0#0
+]);

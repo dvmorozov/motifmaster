@@ -1,37 +1,36 @@
-{------------------------------------------------------------------------------
-    This file is part of the MotifMASTER project. This software is
-    distributed under GPL (see gpl.txt for details).
 
-    This software is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-    Copyright (C) 1999-2007 D.Morozov (dvmorozov@mail.ru)
-------------------------------------------------------------------------------}
 
+{------------------------------------------------------------------------------}
+{       Copyright (C) 1999-2007 D.Morozov (dvmorozov@mail.ru)                  }
+{------------------------------------------------------------------------------}
 unit Unit11;
+
+{$MODE Delphi}
 
 interface
 
 uses
   Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
-  StdCtrls, ComCtrls, DataClasses, ExtCtrls, Plotter2, ColorGrd, DsgnIntf,
-  ComponentList, Tools;
+  StdCtrls, ComCtrls, DataClasses, ExtCtrls, Plotter2, ComponentList, Tools,
+  LResources, Buttons, MyExceptions, ColorBox, HelpIntfs;
 
 type
   TUpdateEvent = procedure(Sender: TObject) of object;
 
-  EStructViewPropDlg = class(Exception);
+  EStructViewPropDlg = class(EMyException);
+
+  { TStructViewPropDlg }
 
   TStructViewPropDlg = class(TForm)
+    ColorBox1: TColorBox;
+    GroupBox1: TGroupBox;
+    RadioMomentsMode: TRadioGroup;
     TabControlSites: TTabControl;
     BtnOk: TButton;
     BtnCancel: TButton;
     BtnApply: TButton;
     BtnHelp: TButton;
-    RadioMomentsMode: TRadioGroup;
-    GroupBox1: TGroupBox;
-    ColorGrid: TColorGrid;
 
     procedure TabControlSitesChange(Sender: TObject);
     procedure TabControlSitesChanging(Sender: TObject;
@@ -42,14 +41,14 @@ type
 
   protected
     FEditedSiteList: TSiteList;
-    PlotParamsList: TComponentList;
+    PlotParamsList: TComponentList;     
     FOnUpdate: TUpdateEvent;
 
     procedure SetEditedSiteList(const AEditedSiteList: TSiteList);
     procedure SetSitesToTabs;
-    procedure SetMomentsMode;
-    procedure GetMomentsMode;
-    procedure GetChanges;
+    procedure SetMomentsMode;           
+    procedure GetMomentsMode;           
+    procedure GetChanges;               
     procedure UpdateChanges;
 
   public
@@ -65,8 +64,6 @@ var
   StructViewPropDlg: TStructViewPropDlg;
 
 implementation
-
-{$R *.DFM}
 
 procedure TStructViewPropDlg.SetEditedSiteList(const AEditedSiteList: TSiteList);
 var i: LongInt;
@@ -110,25 +107,24 @@ begin
                PM_ELEMENT : RadioMomentsMode.ItemIndex := 2;
                PM_SERIAL_NUMBER : RadioMomentsMode.ItemIndex := 3;
           end;
-
           case TSP.Color of
-               clBlack : ColorGrid.ForegroundIndex := 0;
-               clMaroon : ColorGrid.ForegroundIndex := 1;
-               clGreen : ColorGrid.ForegroundIndex := 2;
-               clOlive : ColorGrid.ForegroundIndex := 3;
-               clNavy : ColorGrid.ForegroundIndex := 4;
-               clPurple : ColorGrid.ForegroundIndex := 5;
-               clTeal : ColorGrid.ForegroundIndex := 6;
-               clGray : ColorGrid.ForegroundIndex := 7;
-               clSilver : ColorGrid.ForegroundIndex := 8;
-               clRed : ColorGrid.ForegroundIndex := 9;
-               clLime : ColorGrid.ForegroundIndex := 10;
-               clYellow : ColorGrid.ForegroundIndex := 11;
-               clBlue : ColorGrid.ForegroundIndex := 12;
-               clFuchsia : ColorGrid.ForegroundIndex := 13;
-               clAqua : ColorGrid.ForegroundIndex := 14;
-               clWhite : ColorGrid.ForegroundIndex := 15;
-               else ColorGrid.ForegroundIndex := -1;
+               clBlack : ColorBox1.ItemIndex := 0;
+               clMaroon : ColorBox1.ItemIndex := 1;
+               clGreen : ColorBox1.ItemIndex := 2;
+               clOlive : ColorBox1.ItemIndex := 3;
+               clNavy : ColorBox1.ItemIndex := 4;
+               clPurple : ColorBox1.ItemIndex := 5;
+               clTeal : ColorBox1.ItemIndex := 6;
+               clGray : ColorBox1.ItemIndex := 7;
+               clSilver : ColorBox1.ItemIndex := 8;
+               clRed : ColorBox1.ItemIndex := 9;
+               clLime : ColorBox1.ItemIndex := 10;
+               clYellow : ColorBox1.ItemIndex := 11;
+               clBlue : ColorBox1.ItemIndex := 12;
+               clFuchsia : ColorBox1.ItemIndex := 13;
+               clAqua : ColorBox1.ItemIndex := 14;
+               clWhite : ColorBox1.ItemIndex := 15;
+               else ColorBox1.ItemIndex := -1;
           end;
      end;
 end;
@@ -145,7 +141,25 @@ begin
                2 : TSP.MomentsPlotMode := PM_ELEMENT;
                3 : TSP.MomentsPlotMode := PM_SERIAL_NUMBER;
           end;
-          TSP.Color := ColorGrid.ForegroundColor;
+          case ColorBox1.ItemIndex of
+               0 : TSP.Color := clBlack;
+               1 : TSP.Color := clMaroon;
+               2 : TSP.Color := clGreen;
+               3 : TSP.Color := clOlive;
+               4 : TSP.Color := clNavy;
+               5 : TSP.Color := clPurple;
+               6 : TSP.Color := clTeal;
+               7 : TSP.Color := clGray;
+               8 : TSP.Color := clSilver;
+               9 : TSP.Color := clRed;
+               10 : TSP.Color := clLime;
+               11 : TSP.Color := clYellow;
+               12 : TSP.Color := clBlue;
+               13 : TSP.Color := clFuchsia;
+               14 : TSP.Color := clAqua;
+               15 : TSP.Color := clWhite;
+               else TSP.Color := clBlack;
+          end;
      end;
 end;
 
@@ -195,15 +209,17 @@ begin
      UpdateChanges;
 end;
 
-procedure TStructViewPropDlg.GetChanges;
+procedure TStructViewPropDlg.GetChanges;    
 begin
      GetMomentsMode;
 end;
 
 procedure TStructViewPropDlg.BtnHelpClick(Sender: TObject);
 begin
-    Application.HelpJump('hlp_StructViewPropDlg');
+    ShowHelpOrErrorForKeyword('','HTML/struct_view_prop_dlg.html');
 end;
 
+initialization
+{$I Unit11.lrs}
 end.
- 
+  

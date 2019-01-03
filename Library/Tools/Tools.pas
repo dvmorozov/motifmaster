@@ -11,9 +11,17 @@
 
 unit Tools;
 
+{$IFDEF Lazarus}
+{$MODE Delphi}
+{$ENDIF}
+
 interface
 
-uses SysUtils, WinTypes, WinProcs, Classes, SimpMath, CBRCComponent;
+uses SysUtils,
+{$IFNDEF Lazarus}
+WinTypes, WinProcs,
+{$ENDIF}
+Classes, SimpMath, CBRCComponent;
 
 type
     FParamRequest = function(Param: string): Double of object;
@@ -75,7 +83,9 @@ function WithGivenAccuracy(
     Value: Double;
     Decimals: LongInt
     ): Double;
+{$IFNDEF Lazarus}
 function GetCmdLineParameters: string;
+{$ENDIF}
 function GetRandomWithSign: Double;
 
 function CalculateSimpExpr(var Expression: string; var ErrorCode: LongInt;
@@ -188,6 +198,7 @@ begin
     Result := TempLong / PowerOf10;
 end;
 
+{$IFNDEF Lazarus}
 function GetCmdLineParameters: string;
 var St: string;
     Index: LongInt;
@@ -206,6 +217,7 @@ begin
     if UpperCase(ST) = UpperCase(ParamStr(0)) then St := '';
     Result := St;
 end;
+{$ENDIF}
 
 function GetCharPosition(St: string; Ch: Char;
     Direction: ShortInt; StartIndex: LongInt): LongInt;

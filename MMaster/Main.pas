@@ -1,21 +1,18 @@
-{------------------------------------------------------------------------------
-    This file is part of the MotifMASTER project. This software is
-    distributed under GPL (see gpl.txt for details).
 
-    This software is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-    Copyright (C) 1999-2007 D.Morozov (dvmorozov@mail.ru)
-------------------------------------------------------------------------------}
 
+{------------------------------------------------------------------------------}
+{       Copyright (C) 1999-2007 D.Morozov (dvmorozov@mail.ru)                  }
+{------------------------------------------------------------------------------}
 unit Main;
+
+{$MODE Delphi}
 
 interface
 
 uses
-    Windows, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
-    ShellAPI;
+    LCLIntf, Messages, SysUtils, Classes, Graphics, Controls, Forms, Dialogs,
+    ShellAPI, LResources;
 
 type
     THiddenForm = class(TForm)
@@ -28,6 +25,7 @@ type
         procedure SetIconToTaskBar;
         procedure DeleteIconFromTaskBar;
         procedure ProcessIconMessage(var Msg : TMessage); message WM_USER;
+            
     end;
 
 var
@@ -37,11 +35,14 @@ implementation
 
 uses Unit1;
 
+{$IFDEF USE_DELPHI}
 {$R *.DFM}
+{$ENDIF}
 
 procedure THiddenForm.SetIconToTaskBar;
 var i: LongInt;
 begin
+    (*???
     with NotifyIconData do begin
         cbSize := SizeOf(NotifyIconData);
         Wnd := Handle;
@@ -53,10 +54,12 @@ begin
             szTip[i - 1] := PROGRAM_CAPTION[i];
     end;
     Shell_NotifyIcon(NIM_ADD, @NotifyIconData);
+    *)
 end;
 
 procedure THiddenForm.DeleteIconFromTaskBar;
 begin
+    (*???
     with NotifyIconData do begin
         cbSize := SizeOf(NotifyIconData);
         Wnd := Handle;
@@ -67,15 +70,18 @@ begin
         szTip := '';
     end;
     Shell_NotifyIcon(NIM_DELETE, @NotifyIconData);
+    *)
 end;
 
 procedure THiddenForm.ProcessIconMessage(var Msg : TMessage);
 begin
+    (*???
     if Msg.lParam = wm_LButtonDblClk then begin
         if Form1.WindowState = wsMinimized then Form1.WindowState := wsNormal;
         Form1.Show;
     end;
     inherited;
+    *)
 end;
 
 procedure THiddenForm.FormCreate(Sender: TObject);
@@ -93,5 +99,9 @@ begin
     Form1.FormCloseQuery(Sender, CanClose);
 end;
 
+initialization
+{$IFNDEF USE_DELPHI}
+{$I Main.lrs}
+{$ENDIF}
 end.
  

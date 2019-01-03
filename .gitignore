@@ -1,1 +1,6 @@
 /MMaster/*.exe
+/MMaster/backup/*.bak
+/MMaster/o/*.exe
+/MMaster/o/*.o
+/MMaster/o/*.compiled
+/MMaster/o/*.ppu

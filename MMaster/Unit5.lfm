@@ -1,0 +1,105 @@
+object EditPropVectorDlg: TEditPropVectorDlg
+  Left = 107
+  Height = 194
+  Top = 409
+  Width = 297
+  HorzScrollBar.Page = 296
+  VertScrollBar.Page = 193
+  ActiveControl = EditXCoord
+  BorderStyle = bsDialog
+  Caption = 'Edit Propagation Vector Parameters'
+  OnActivate = FormActivate
+  ParentFont = True
+  Position = poScreenCenter
+  object Bevel1: TBevel
+    Left = 8
+    Height = 137
+    Top = 8
+    Width = 281
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Shape = bsFrame
+  end
+  object Label16: TLabel
+    Left = 29
+    Height = 17
+    Top = 108
+    Width = 17
+    Caption = 'Z :'
+    Color = clNone
+    ParentColor = False
+  end
+  object Label15: TLabel
+    Left = 28
+    Height = 17
+    Top = 68
+    Width = 17
+    Caption = 'Y :'
+    Color = clNone
+    ParentColor = False
+  end
+  object Label14: TLabel
+    Left = 28
+    Height = 17
+    Top = 28
+    Width = 18
+    Caption = 'X :'
+    Color = clNone
+    ParentColor = False
+  end
+  object OKBtn: TButton
+    Left = 42
+    Height = 25
+    Top = 157
+    Width = 74
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.InnerBorder = 4
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    OnClick = OKBtnClick
+    TabOrder = 3
+  end
+  object CancelBtn: TButton
+    Left = 120
+    Height = 25
+    Top = 157
+    Width = 74
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.InnerBorder = 4
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 4
+  end
+  object EditZCoord: TEdit
+    Left = 184
+    Height = 21
+    Top = 104
+    Width = 89
+    TabOrder = 2
+  end
+  object EditYCoord: TEdit
+    Left = 184
+    Height = 21
+    Top = 64
+    Width = 89
+    TabOrder = 1
+  end
+  object EditXCoord: TEdit
+    Left = 184
+    Height = 21
+    Top = 24
+    Width = 89
+    TabOrder = 0
+  end
+  object ButtonHelp: TButton
+    Left = 198
+    Height = 25
+    Top = 157
+    Width = 75
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.InnerBorder = 4
+    Caption = '&Help'
+    TabOrder = 5
+  end
+end

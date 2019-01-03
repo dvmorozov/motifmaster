@@ -1,0 +1,91 @@
+object SetMomentValueDlg: TSetMomentValueDlg
+  Left = 89
+  Height = 189
+  Top = 365
+  Width = 313
+  HorzScrollBar.Page = 312
+  VertScrollBar.Page = 188
+  ActiveControl = OKBtn
+  BorderStyle = bsDialog
+  Caption = 'Set Moment At The Site'
+  OnCloseQuery = FormCloseQuery
+  ParentFont = True
+  Position = poScreenCenter
+  object Bevel1: TBevel
+    Left = 8
+    Height = 137
+    Top = 8
+    Width = 297
+    Shape = bsFrame
+  end
+  object Label1: TLabel
+    Left = 22
+    Height = 17
+    Top = 28
+    Width = 117
+    Caption = 'Input site identifier :'
+    Color = clNone
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 22
+    Height = 17
+    Top = 68
+    Width = 124
+    Caption = 'Input moment value :'
+    Color = clNone
+    ParentColor = False
+  end
+  object Bevel2: TBevel
+    Left = 22
+    Height = 9
+    Top = 94
+    Width = 268
+    Shape = bsBottomLine
+  end
+  object OKBtn: TButton
+    Left = 135
+    Height = 25
+    Top = 152
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 0
+  end
+  object CancelBtn: TButton
+    Left = 215
+    Height = 25
+    Top = 152
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 1
+  end
+  object InputSiteIdentifier: TEdit
+    Left = 201
+    Height = 21
+    Top = 24
+    Width = 89
+    TabOrder = 2
+  end
+  object InputMomentValue: TEdit
+    Left = 201
+    Height = 21
+    Top = 64
+    Width = 89
+    TabOrder = 3
+  end
+  object ApplyToAllCheck: TCheckBox
+    Left = 24
+    Height = 15
+    Top = 112
+    Width = 97
+    Caption = 'Apply to all sites'
+    OnClick = ApplyToAllCheckClick
+    TabOrder = 4
+  end
+end

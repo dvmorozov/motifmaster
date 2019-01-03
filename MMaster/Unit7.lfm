@@ -1,0 +1,74 @@
+object SetMeanMomentValueDlg: TSetMeanMomentValueDlg
+  Left = 89
+  Height = 189
+  Top = 189
+  Width = 313
+  HorzScrollBar.Page = 312
+  VertScrollBar.Page = 188
+  ActiveControl = OKBtn
+  BorderStyle = bsDialog
+  Caption = 'Set Mean Moment At The Site'
+  ParentFont = True
+  Position = poScreenCenter
+  object Bevel1: TBevel
+    Left = 8
+    Height = 137
+    Top = 8
+    Width = 297
+    Shape = bsFrame
+  end
+  object Label1: TLabel
+    Left = 20
+    Height = 14
+    Top = 28
+    Width = 99
+    Caption = 'Input site identifier :'
+    Color = clNone
+    ParentColor = False
+  end
+  object Bevel2: TBevel
+    Left = 20
+    Height = 9
+    Top = 94
+    Width = 269
+    Shape = bsBottomLine
+  end
+  object OKBtn: TButton
+    Left = 134
+    Height = 25
+    Top = 152
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Caption = 'OK'
+    Default = True
+    ModalResult = 1
+    TabOrder = 0
+  end
+  object CancelBtn: TButton
+    Left = 214
+    Height = 25
+    Top = 152
+    Width = 75
+    BorderSpacing.InnerBorder = 4
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 1
+  end
+  object ApplyToAllCheck: TCheckBox
+    Left = 24
+    Height = 13
+    Top = 112
+    Width = 95
+    Caption = 'Apply to all sites'
+    OnClick = ApplyToAllCheckClick
+    TabOrder = 2
+  end
+  object InputSiteIdentifier: TEdit
+    Left = 200
+    Height = 21
+    Top = 24
+    Width = 89
+    TabOrder = 3
+  end
+end

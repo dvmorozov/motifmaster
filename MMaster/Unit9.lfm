@@ -1,0 +1,134 @@
+object EditSiteDlg: TEditSiteDlg
+  Left = 89
+  Height = 182
+  Top = 419
+  Width = 321
+  HorzScrollBar.Page = 320
+  VertScrollBar.Page = 181
+  ActiveControl = OKBtn
+  BorderStyle = bsDialog
+  Caption = 'Edit Site Parameters'
+  Font.CharSet = RUSSIAN_CHARSET
+  Font.Height = -11
+  Font.Name = 'MS Sans Serif'
+  Icon.Data = {
+    FE0200000000010001002020100000000000E802000016000000280000002000
+    0000400000000100040000000000800200000000000000000000000000000000
+    000000000000000080000080000000808000800000008000800080800000C0C0
+    C000808080000000FF0000FF000000FFFF00FF000000FF00FF00FFFF0000FFFF
+    FF00FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    FFFFFFF9FFFCFFFFFFFFFFFF999FCFFFFFFFFFFF9FFCFFFFFFFFFFFF9FFFCFFF
+    FFFFFFFFF90C0FFFFFFFFFFF9F90C0FFFFFFFFFFF09C00FFFFFFFFFFFF09C00F
+    FFFFFFFCCCC9CCCCCCCCCCCCCCCC9CCCCFFFFFFFF00C90FFFFFFFFFFFF00C90F
+    FFFFFFFFFF0C09F9FFFFFFFFFFF0C09FFFFFFFFFFFFCFFF9FFFFFFFFFFFFCFF9
+    FFFFFFFFFFFCF999FFFFFFFFFFFFCFFFFFFFFFFFFFFCFFFFFFFFFFFFFFFFCFFF
+    FFFFFFFFFFFCFFFFFFFFFFFFFFFFCFFFFFFFFFFFFFFCFFFFFFFFFFFFFFFFCFFF
+    FFFFFFFFFFFCFFFFFFFFFFFFFFFFCFFFFFFFFFFFFFFCFFFFFFFFFFFFFFFFCFFF
+    FFFFFFFFFFFCFFFFFFFFFFFFFFFFCFFFFFFFFFFFFFFCFFFFFFFFFFFFFFFFCFFF
+    FFFFFFFFFFFCFFFFFFFFFFFFFFFFCFFFFFFFFFFFFFFCFFFFFFFFFFFFFFFFCFFF
+    FFFFFFF999FCFFFFFFFFFFFF9FFFCFFFFFFFFFF9FFFCFFFFFFFFFFFFF9FFCFFF
+    FFFFFFF9F90C0FFFFFFFFFFFFF90C0FFFFFFFFFFF09C00FFFFFFFFFFFF09C00F
+    FFFFFFFCCCC9CCCCCCCCCCCCCCCC9CCCCFFFFFFFF00C90FFFFFFFFFFFF00C90F
+    FFFFFFFFFF0C09FFFFFFFFFFFFF0C09F9FFFFFFFFFFCFF9FFFFFFFFFFFFFCFFF
+    9FFFFFFFFFFCFFF9FFFFFFFFFFFFCF999FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    FFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFFF
+    FFFF000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000000000000000000000000000000000000000000000000000000000000000
+    0000
+  }
+  OnActivate = FormActivate
+  Position = poScreenCenter
+  object Bevel1: TBevel
+    Left = 8
+    Height = 132
+    Top = 8
+    Width = 305
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    Shape = bsFrame
+  end
+  object Label17: TLabel
+    Left = 24
+    Height = 17
+    Top = 27
+    Width = 87
+    Caption = 'Site Identifier :'
+    Color = clNone
+    ParentColor = False
+  end
+  object Label1: TLabel
+    Left = 24
+    Height = 17
+    Top = 67
+    Width = 116
+    Caption = 'Chemical Element : '
+    Color = clNone
+    ParentColor = False
+  end
+  object Label2: TLabel
+    Left = 24
+    Height = 17
+    Top = 107
+    Width = 180
+    Caption = 'Nuclear Scattering Amplitude : '
+    Color = clNone
+    ParentColor = False
+  end
+  object OKBtn: TButton
+    Left = 66
+    Height = 25
+    Top = 146
+    Width = 75
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.InnerBorder = 4
+    Caption = 'OK'
+    Default = True
+    OnClick = OKBtnClick
+    TabOrder = 0
+  end
+  object CancelBtn: TButton
+    Left = 144
+    Height = 25
+    Top = 146
+    Width = 75
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.InnerBorder = 4
+    Cancel = True
+    Caption = 'Cancel'
+    ModalResult = 2
+    TabOrder = 1
+  end
+  object EditSiteName: TEdit
+    Left = 208
+    Height = 21
+    Top = 23
+    Width = 89
+    TabOrder = 2
+  end
+  object EditElement: TEdit
+    Left = 208
+    Height = 21
+    Top = 63
+    Width = 89
+    TabOrder = 3
+  end
+  object EditNuclearScatAmpl: TEdit
+    Left = 208
+    Height = 21
+    Top = 103
+    Width = 89
+    OnKeyPress = EditNuclearScatAmplKeyPress
+    TabOrder = 4
+  end
+  object ButtonHelp: TButton
+    Left = 222
+    Height = 25
+    Top = 146
+    Width = 75
+    Anchors = [akLeft, akBottom]
+    BorderSpacing.InnerBorder = 4
+    Caption = '&Help'
+    TabOrder = 5
+  end
+end
