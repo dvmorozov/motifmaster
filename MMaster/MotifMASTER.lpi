@@ -13,7 +13,8 @@
       <AutoIncrementBuild Value="True"/>
       <MajorVersionNr Value="3"/>
       <MinorVersionNr Value="2"/>
-      <StringTable ProductVersion=""/>
+      <BuildNr Value="1"/>
+      <StringTable ProductVersion="3.2.0.0"/>
     </VersionInfo>
     <BuildModes Count="1">
       <Item1 Name="default" Default="True"/>

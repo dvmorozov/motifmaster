@@ -130,25 +130,6 @@ object StructViewPropDlg: TStructViewPropDlg
       Height = 24
       Top = 1
       Width = 152
-      Items.Strings = (
-        'clBlack'
-        'clMaroon'
-        'clGreen'
-        'clOlive'
-        'clNavy'
-        'clPurple'
-        'clTeal'
-        'clGray'
-        'clSilver'
-        'clRed'
-        'clLime'
-        'clYellow'
-        'clBlue'
-        'clFuchsia'
-        'clAqua'
-        'clWhite'
-      )
-      MaxLength = 0
       ParentColor = False
       TabOrder = 0
     end
